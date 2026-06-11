@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parecer-Relator Integrado — Operação Limoncello · Validação cruzada do acervo 11/06/2026</title>
+<style>
+  :root{
+    --tinta:#1a1a1a; --papel:#faf8f3; --regra:#1a1a1a;
+    --destaque:#7a0c0c; --neutro:#555; --fundo-tabela:#f0ede5; --azul:#27496d; --verde:#0a5c1f;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--papel);color:var(--tinta);font-family:Georgia,'Times New Roman',serif;margin:0;padding:2rem 1rem;line-height:1.55;}
+  .folha{max-width:920px;margin:0 auto;}
+  .cabecalho{border-bottom:4px double var(--regra);padding-bottom:.8rem;margin-bottom:.4rem;text-align:center;}
+  .orgao{font-variant:small-caps;letter-spacing:.35em;font-size:.8rem;color:var(--neutro);}
+  .manchete{font-size:2.0rem;line-height:1.15;font-weight:bold;margin:.5rem 0 .3rem;}
+  .sublinha{font-style:italic;font-size:1.0rem;color:var(--neutro);margin:0;}
+  .datilho{display:flex;justify-content:space-between;font-size:.75rem;border-top:1px solid var(--regra);border-bottom:1px solid var(--regra);padding:.3rem .2rem;margin:.6rem 0 1.4rem;font-family:Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;}
+  h2{font-size:1.22rem;border-bottom:2px solid var(--regra);padding-bottom:.25rem;margin-top:2.2rem;font-variant:small-caps;letter-spacing:.05em;}
+  h3{font-size:1.0rem;margin-top:1.3rem;color:var(--destaque);}
+  p{margin:.7rem 0;text-align:justify;}
+  .lide{font-size:1.05rem;font-weight:bold;}
+  .lide::first-letter{font-size:2.6rem;float:left;line-height:.85;padding-right:.35rem;color:var(--destaque);}
+  table{width:100%;border-collapse:collapse;font-size:.82rem;margin:1rem 0;font-family:Helvetica,Arial,sans-serif;}
+  th{background:var(--tinta);color:var(--papel);padding:.4rem .5rem;text-align:left;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;}
+  td{border-bottom:1px solid #c9c4b4;padding:.4rem .5rem;vertical-align:top;background:var(--fundo-tabela);}
+  tr:nth-child(even) td{background:#f7f4ec;}
+  .selo{display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:.66rem;padding:.08rem .4rem;border:1px solid;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;}
+  .selo.ok{color:var(--verde);border-color:var(--verde);}
+  .selo.atencao{color:#8a5a00;border-color:#8a5a00;}
+  .selo.critico{color:var(--destaque);border-color:var(--destaque);font-weight:bold;}
+  .selo.e1{color:var(--verde);border-color:var(--verde);} .selo.e2{color:#8a5a00;border-color:#8a5a00;} .selo.e3{color:var(--destaque);border-color:var(--destaque);} .selo.e4{color:#3b0a3b;border-color:#3b0a3b;}
+  .caixa{border:1.5px solid var(--regra);padding:.9rem 1.1rem;margin:1.2rem 0;background:#f3f0e7;}
+  .caixa .titulo{font-variant:small-caps;font-weight:bold;letter-spacing:.08em;border-bottom:1px solid var(--regra);padding-bottom:.2rem;margin-bottom:.5rem;}
+  .vetor{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;}
+  .vetor>div{flex:1 1 360px;border:1px solid #b9b29c;padding:.8rem 1rem;background:#f7f4ec;}
+  .vetor .rotulo{font-family:Helvetica,Arial,sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;font-weight:bold;margin-bottom:.4rem;}
+  .funcionamento .rotulo{color:var(--azul);} .recuperacao .rotulo{color:var(--verde);}
+  ol.roteiro{counter-reset:passo;list-style:none;padding-left:0;}
+  ol.roteiro>li{counter-increment:passo;margin:.7rem 0;padding-left:2.6rem;position:relative;}
+  ol.roteiro>li::before{content:counter(passo);position:absolute;left:0;top:.05rem;width:1.8rem;height:1.8rem;border:2px solid var(--tinta);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-family:Helvetica,Arial,sans-serif;font-size:.9rem;background:var(--papel);}
+  .rodape{margin-top:3rem;border-top:4px double var(--regra);padding-top:.8rem;font-size:.78rem;color:var(--neutro);text-align:center;}
+  .nota{font-size:.8rem;color:var(--neutro);font-style:italic;}
+  .grafo{font-family:'Courier New',monospace;font-size:.78rem;background:#f3f0e7;padding:.9rem;border:1px solid #b9b29c;white-space:pre;overflow-x:auto;line-height:1.4;}
+  @media print{body{padding:0;} .folha{max-width:100%;}}
+</style>
+</head>
+<body>
+<div class="folha">
+
+<header class="cabecalho">
+  <div class="orgao">Parecer-Relator Integrado · Operação Limoncello · Validação Cruzada</div>
+  <div class="manchete">Cinco documentos, um único padrão: a pirâmide master-feeder validada e o que ainda precisa ser saneado antes do protocolo</div>
+  <p class="sublinha">Validação cruzada do acervo de 11/06/2026 — Teste SISBAJUD · Tese Sanatória · "O boi inteiro do deal Evino" · Arquitetura/Money Trail · Relatório Master Consolidado (Pack 69 + Black Swan V3 + DD M&amp;A V5) — confrontado com a peça Onesti de 19/05/2026</p>
+</header>
+<div class="datilho">
+  <span>Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP</span>
+  <span>Data-base 10/06/2026 · Emissão 11/06/2026</span>
+  <span>Documento interno — confidencial — uso restrito da equipe</span>
+</div>
+
+<!-- ====================== 1. SÍNTESE ====================== -->
+<h2>1. Síntese executiva — voto do relator</h2>
+<p class="lide">Os cinco documentos submetidos a este relator são tecnicamente consistentes entre si, internamente coerentes e processualmente acionáveis. O acervo já fechou o horizonte contra a narrativa adversa do "devaneio + erro SISBAJUD" — e o fez com fundamento aceito (CPC 373 §1º, 396-404, 400; CC 158, 167; CP 171, 299; Lei 9.613/98; RCVM 175). Há, porém, oito pontos de saneamento probatório que precisam ser resolvidos <em>antes</em> do uso em peça subscrita, sob pena de oferecer flanco ao adversário no único terreno onde a tese é hoje vulnerável: dígitos cadastrais incompletos, divergências registrais e modelagens probabilísticas (R$ 631 MM / R$ 1,21 bi) que jamais podem ser apresentadas como pedido líquido.</p>
+<p>O <strong>achado-eixo do relator</strong>: o acervo opera por <em>chunking up</em> — reconstrói "o boi inteiro" da operação, recusando o jogo adversarial de fragmentação por vara. Esta é, exatamente, a moldura que falta à peça Onesti de 19/05/2026 (análise prévia desta equipe) — e que agora pode ser incorporada como camada de fechamento, sem reformar o que já foi protocolado.</p>
+
+<!-- ====================== 2. INVENTÁRIO ====================== -->
+<h2>2. Inventário documental validado</h2>
+<table>
+  <tr><th>#</th><th>Documento</th><th>Páginas</th><th>Função no acervo</th><th>Veredito do relator</th></tr>
+  <tr><td>D1</td><td>Teste SISBAJUD — diligência e impenhorabilidade fraudulenta (v.1)</td><td>4</td><td>Diagnóstico técnico dos códigos 12/13/98; desmontagem da impenhorabilidade</td><td><span class="selo ok">validado E1</span></td></tr>
+  <tr><td>D2</td><td>Tese Sanatória do Litígio — Identificação de bens e desenho de partilha (v.1)</td><td>4</td><td>Cinco proposições autônomas (P1–P5); plano em fases 0–3</td><td><span class="selo ok">validado E1</span></td></tr>
+  <tr><td>D3</td><td>"O boi inteiro do deal Evino" — anatomia forense da rodada Vinci R$ 650 MM</td><td>5</td><td>Smoking guns; pirâmide L1–L5; 5 rotas AML; quantum encontrado × narrado</td><td><span class="selo atencao">validado com ressalvas E2</span></td></tr>
+  <tr><td>D4</td><td>Arquitetura — reconstrução do rastro e mapa de penhorabilidade</td><td>5</td><td>Whole money trail; tabela penhorabilidade; ação em 6 passos</td><td><span class="selo ok">validado E1</span></td></tr>
+  <tr><td>D5</td><td>Relatório Master Consolidado — Parecer Técnico-Jurídico Definitivo (Pack 69 + BS V3 + DD M&amp;A V5)</td><td>24</td><td>Consolidação 12 seções, 33+ CNPJs, 5 hubs, 10 black swans, 8 tipificações, S11 validação probatória</td><td><span class="selo atencao">validado com 8 pendências de saneamento</span></td></tr>
+</table>
+<p class="nota">Nota epistemológica do relator: todos os cinco documentos trazem cláusula explícita de não-protocolização ("instrumento interno de trabalho — não protocolar nos autos") e conformidade metodológica CPC 472. Esta cautela é tecnicamente correta — converte o acervo em insumo para peça subscrita por OAB / laudo subscrito por CRC/CORECON, não em prova autônoma.</p>
+
+<!-- ====================== 3. VALIDAÇÃO CRUZADA ====================== -->
+<h2>3. Validação cruzada — convergência entre os cinco documentos</h2>
+<table>
+  <tr><th>Eixo</th><th>D1</th><th>D2</th><th>D3</th><th>D4</th><th>D5</th><th>Resultado</th></tr>
+  <tr><td>Códigos SISBAJUD 12/13/98 = não-impenhorabilidade</td><td>✔ núcleo</td><td>✔ P4</td><td>✔ ATIVOS BANCÁRIOS</td><td>✔ S4 e S7</td><td>✔ T2 + S2-Grupo E</td><td><span class="selo ok">unânime</span></td></tr>
+  <tr><td>FRAM/OSLO DTVM = ponto único de custódia (74 fundos)</td><td>✔ código 98 reincidente</td><td>✔ exibição CPC 396-404</td><td>✔ pirâmide L3</td><td>✔ S4</td><td>✔ S2-Grupo C / Hub 3</td><td><span class="selo ok">unânime</span></td></tr>
+  <tr><td>Ajaccio FIP = "boi de piranha"; Bonifácio FIP = casca real</td><td>—</td><td>✔ "fundos-casca e blindagem"</td><td>✔ smoking gun</td><td>—</td><td>✔ S6 — recalibragem central</td><td><span class="selo ok">tese-âncora</span></td></tr>
+  <tr><td>Confissão da origem das cotas (DIRPF AC 2022 + fls. 572)</td><td>—</td><td>✔ correção de premissa</td><td>✔ smoking gun #1</td><td>—</td><td>✔ S4 (3 mar 2022)</td><td><span class="selo ok">prova robusta</span></td></tr>
+  <tr><td>Cisão RT127 31/12/2021 + distrato 05/09/2023 na pendência</td><td>—</td><td>✔ P3</td><td>✔ smoking gun #2</td><td>—</td><td>✔ S4 + Rota AML R4</td><td><span class="selo ok">CPC 792</span></td></tr>
+  <tr><td>Estoppel bancário (R$ 133+ MM aprovados)</td><td>—</td><td>—</td><td>✔ L1</td><td>—</td><td>✔ S2 (caixa cinza)</td><td><span class="selo ok">contraprova de iliquidez</span></td></tr>
+  <tr><td>Cluster Bela Cintra 986 — confusão patrimonial (CC 50 §2º)</td><td>—</td><td>—</td><td>✔ grafo de coocorrência</td><td>✔ §4.1</td><td>✔ S3 / Hub 1</td><td><span class="selo ok">IDPJ sustentável</span></td></tr>
+  <tr><td>Quantum L1 documentado = R$ 134.410.998,32</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✔ S9 (validado V7)</td><td><span class="selo ok">aritmética conferida</span></td></tr>
+</table>
+<p>Convergência observada em todos os 8 eixos. Nenhuma divergência substantiva entre os cinco documentos sobre fato, fonte ou norma. As divergências existentes são exclusivamente de <em>saneamento cadastral</em> (item 4 abaixo), não de tese.</p>
+
+<!-- ====================== 4. PENDÊNCIAS S11 ====================== -->
+<h2>4. Oito pendências de saneamento — antes de qualquer peça subscrita</h2>
+<p>O próprio Relatório Master Consolidado (S11) inventaria as pendências. O relator as ratifica integralmente e acrescenta duas. <strong>Nenhum destes itens compromete a tese</strong>; todos comprometem o conforto probatório <em>se</em> usados sem prévia reconciliação.</p>
+<table>
+  <tr><th>#</th><th>Pendência</th><th>Origem</th><th>Risco se ignorada</th><th>Providência</th></tr>
+  <tr><td>P1</td><td>CNPJs incompletos (Avila, Brescia, Vinci GP, Trafalgar, Grant Thornton — todos com "0001-XX")</td><td>D5 S11 V6</td><td>Pedido de constrição nominal pode ser rejeitado por imprecisão</td><td>Completar dígitos via RFB/JUCESP antes de qualquer pedido</td></tr>
+  <tr><td>P2</td><td>Interbeverages — dois CNPJs (25.383.665/0001-52 × 30.810.897/0001-06)</td><td>D5 S11 V3</td><td>Rota AML R5 cai por homonímia</td><td>Entity resolution obrigatória; só articular R5 com CNPJ confirmado</td></tr>
+  <tr><td>P3</td><td>Divergência registral DOU 28/05/2024 — FRAM 17.079.937 × OSLO/FRAM DTVM 13.673.855</td><td>D5 S11 V4</td><td>Defesa pode arguir "entidades distintas" para escapar do ofício único</td><td>Certidão de breve relato JUCESP + reconciliação registral</td></tr>
+  <tr><td>P4</td><td>Antony Martins na Interbeverages — data 26/01/2026 reportada como anterior a jun/2025</td><td>D5 S11 V5</td><td>Inconsistência cronológica nos insumos enfraquece "transição de facto"</td><td>Confirmar data exata no QSA/CNPJ.a antes de usar o argumento</td></tr>
+  <tr><td>P5</td><td>Quantum L2/L3 (R$ 631 MM modelado; R$ 1,21 bi qualificado; pico Interbeverages R$ 773,9 MM)</td><td>D5 S11 V8</td><td>Apresentar como pedido líquido entrega réplica de mark-to-model</td><td>Sempre etiquetado como nível probatório modelado; jamais misturado com L1 em pedido</td></tr>
+  <tr><td>P6</td><td>Bonifácio FIP — confirmação CVM e ato de constituição</td><td>D2 ⚠</td><td>Pedido de indisponibilidade premonitória cai sem registro confirmado</td><td>Certidão CVM antes de uso processual</td></tr>
+  <tr><td>P7</td><td>Vila Porto Vinhos/ES — CNPJ-base e ato de assunção de Ari como Diretor-Geral</td><td>D5 S2 Grupo F</td><td>Tese de "exit vehicle" exige documentação primária</td><td>JUCESP/ES + ata/contrato; sanar antes do polo expansivo</td></tr>
+  <tr><td>P8</td><td>Lei 15.410/2026 ("Bárbara Penna") — tipificação "tortura por reiteração"</td><td>D5 T7</td><td>Tipificação penal nova, sem jurisprudência consolidada</td><td>Articular apenas em sede própria (DEAM/VDD); manter sob reserva "em tese"</td></tr>
+</table>
+<p class="nota">Regra de ouro probatória do relator (ratificando S11): tudo o que está em V1 e V7 sustenta tutela de evidência. Tudo o que está em V3, V5 e V6 deve ser saneado antes do protocolo.</p>
+
+<!-- ====================== 5. CONFRONTO COM ONESTI ====================== -->
+<h2>5. Confronto com a peça Onesti (19/05/2026) — preserva-se a horizontal, fecha-se o horizonte</h2>
+<p>A peça Onesti subscrita em 19/05/2026 articula 20 capítulos espelhados e 21 pedidos (a–u) com arquitetura defensivo-construtiva — mas opera <em>aceitando</em> a premissa adversa de iliquidez ("iliquidez não é incomunicabilidade"). O acervo agora validado reorganiza a camada lógica anterior, sem reformar a peça já subscrita.</p>
+<div class="vetor">
+  <div class="funcionamento">
+    <div class="rotulo">■ O que a horizontal Onesti faz bem</div>
+    <p>Distribuição dinâmica do ônus (Cap. II), inversão tática da Cláusula 9.7 (Cap. XII), quatro cenários de valuation (Cap. XIII), AGE 31/12/2021 com antinomia objetiva (Cap. VIII), tabela das 16 alegações refutadas (Cap. XIX), pedidos a–u proporcionais.</p>
+  </div>
+  <div class="recuperacao">
+    <div class="rotulo">■ O que o acervo D1–D5 acrescenta</div>
+    <p>(i) <strong>Correção da frase-tese</strong> — sem prova juntada, sem erro SISBAJUD; (ii) <strong>distinção L1/L2</strong> ontológica; (iii) <strong>SISBAJUD 31/03/2026</strong> (BTG cód. 12, R$ 27.799,79 capturados) como prova empírica autorreferente de que o sistema captura exatamente L2; (iv) <strong>Bonifácio FIP</strong> como casca real; (v) <strong>cluster Bela Cintra</strong> como CC 50 §2º; (vi) <strong>estoppel bancário</strong> de R$ 133+ MM; (vii) <strong>shadow director</strong> e cinco rotas AML.</p>
+  </div>
+</div>
+
+<h3>5.1. Reformulação da frase-tese — em três níveis</h3>
+<div class="caixa">
+  <div class="titulo">Formulação sintética validada pelos cinco documentos</div>
+  <p><em>"Sem prova juntada, sem erro SISBAJUD: a alegação de iliquidez é narrativa não comprovada, e os valores efetivamente capturados são, por definição técnico-normativa do Convênio BACEN–CNJ e da Resolução CNJ 232/2016, líquidos (Camada L2). Iliquidez do FIP — se existe — refere-se às cotas em custódia (Camada L1), não aos valores em conta bancária. A confirmação empírica vem da própria conduta defensiva (pasta entregue em 2023 para revisão) e da reiteração SISBAJUD de 31/03/2026 que capturou regularmente R$ 27.799,79 em depósito a prazo no BTG (código 12). O sistema funciona; o que falta é decisão executiva — não mais discussão técnica."</em></p>
+</div>
+
+<h3>5.2. Reposicionamento do pedido (d) — execução pendente, não saldo residual</h3>
+<p>O pedido (d) original ("certidão de saldo SISBAJUD + MLE para saldo residual") subdimensiona a magnitude. A versão validada pelo acervo: <strong>liberação imediata e integral dos R$ 31,9 MM+ retidos há 1.080+ dias</strong>, atualizados pela SELIC, sem condicionamento a perícia, fundada em (i) natureza ontológica L2, (ii) inércia probatória do Réu (CPC 373 II) por 1.095 dias, (iii) confirmação empírica pelo SISBAJUD 31/03/2026, (iv) pasta de 2023 como prova performativa autodesconstruída.</p>
+
+<h3>5.3. Reposicionamento do XVIII — liberação L2 + averbação L1 + Bonifácio</h3>
+<p>O "núcleo cautelar" do Cap. XVIII deve ser desdobrado em três planos distintos: <strong>L2</strong> — liberação imediata (não cautela) dos R$ 31,9 MM+; <strong>L1</strong> — averbação preventiva perante OSLO/FRAM, BTG e escriturador sobre a posição do Réu no Ajaccio; <strong>L1.b</strong> — indisponibilidade premonitória sobre a Classe F do Ajaccio e sobre a totalidade do Bonifácio FIP (CPC 301 + 792 + CC 158), com ofício único à OSLO/FRAM cobrindo 2020-2026.</p>
+
+<h3>5.4. Reposicionamento do XIV — Cláusula 10.1.7 quebrada (Vila Porto)</h3>
+<p>Articulação validada: a assunção da Diretoria-Geral da Vila Porto Vinhos/ES por Ari em jul/2025, no mesmo polo industrial (CIVIT II/Serra-ES) das três filiais simultâneas da E-Vino (25/06/2025), configura quebra objetiva e documentada de não-concorrência. Consequências triplas: (i) <strong>dívida de R$ 30 MM</strong> como passivo do patrimônio comum (obrigação assumida na constância); (ii) <strong>R$ 749.183,38</strong> sob rubrica de non-compete como preço diferido — ativo comum; (iii) <strong>renda ativa</strong> contradiz empiricamente a alegação de insolvência.</p>
+
+<!-- ====================== 6. PIRÂMIDE ====================== -->
+<h2>6. A pirâmide validada — cinco camadas, um único arquiteto</h2>
+<div class="grafo">L5  REPATRIATION ........ JP2R PTE LTD (SG, 2018) · Anacapri/Brescia/Cetara LLC (DE, fev/2025) · Wine in Black GmbH (Munique)
+                       Lei 7.492/86  ·  ACRA s.196A  ·  CTA 2024 / FinCEN BOI
+              ▲
+L4  CASH-OUT ........... Bonifácio FIP (casca real)  ·  VOLIMO em liquidação  ·  FRAM XIV (cancelado)
+                       CC 158  ·  CPC 792  ·  CPC 301
+              ▲
+L3  MASTER-HUB ......... Ajaccio FIP (PL R$ 1,41 bi · 100% E-Vino · "boi de piranha")
+                       OSLO/FRAM DTVM (74 fundos · ponto único) · Vinci · NANSEN II FIDC (default 157%)
+                       RCVM 175/2022  ·  CP 299
+              ▲
+L2  LAYERING ........... Ari Apoio Adm. (pass-through R$ 5,4 MM/ano) · RT127 (cisão) · Interbeverages (R$ 10k → 773,9 MM)
+                       Lei 8.137/90  ·  CTN 116 p.u.  ·  Lei 9.613/98
+              ▲
+L1  FEEDERS ............ E-Vino S.A. + Grand Cru + Víssimo + Interbeverages — faturamento ≈ R$ 800 MM-1 bi
+                       5 bancos aprovaram R$ 133+ MM (estoppel)  ·  CC 50 §2º (Bela Cintra)</div>
+
+<!-- ====================== 7. ENQUADRAMENTOS ====================== -->
+<h2>7. Tipificações em tese — sob presunção de inocência (CF 5º, LVII)</h2>
+<table>
+  <tr><th>#</th><th>Tipo em tese</th><th>Base normativa</th><th>Sede própria</th><th>Validação cruzada</th></tr>
+  <tr><td>T1</td><td>Falsidade ideológica — Acordo declara "separação total" × certidão 11/08/2012 comunhão parcial</td><td>CP 299</td><td>MP-SP / GAECO</td><td><span class="selo e1">E1</span> D5 S12</td></tr>
+  <tr><td>T2</td><td>Fraude à execução — esvaziamento e cisão na pendência</td><td>CPC 792 V + §1º · CC 158</td><td>Vara da causa</td><td><span class="selo e1">E1/E2</span> D1+D2+D3+D5</td></tr>
+  <tr><td>T3</td><td>Estelionato — indução do juízo em erro por simulação de iliquidez/inexistência (em tese, com lastro direto)</td><td>CP 171</td><td>Notícia-crime própria</td><td><span class="selo e3">E3</span> D1+D4 (manter reserva)</td></tr>
+  <tr><td>T4</td><td>Lavagem — 5 rotas AML mapeadas (R1–R5)</td><td>Lei 9.613/98 art. 1º · Lei 7.492/86</td><td>COAF (RIF) / MPF / BACEN</td><td><span class="selo e3">E3/E4</span> D3+D5</td></tr>
+  <tr><td>T5</td><td>Evasão de divisas — JP2R / Delaware LLCs / Wine in Black</td><td>Lei 7.492/86 art. 22 · ACRA s.196A · FATCA/CRS</td><td>BACEN + MPF + MLAT</td><td><span class="selo e3">E3/E4</span> D3+D5</td></tr>
+  <tr><td>T6</td><td>Violência patrimonial continuada</td><td>Lei 11.340/2006 art. 7º IV · CP 168 · CPC 528 §3º</td><td>JVDFM + vara da causa</td><td><span class="selo e2">E2</span> D5 S12 T6</td></tr>
+  <tr><td>T7</td><td>Tortura por reiteração (Lei 15.410/2026)</td><td>Lei 9.455/97 art. 1º · Lei 15.410/2026</td><td>MP-SP / DEAM / VDD — sede própria</td><td><span class="selo atencao">reserva técnica</span> — tipo novo, sem jurisprudência</td></tr>
+  <tr><td>T8</td><td>Irregularidade regulatória — 9 versões do regulamento Ajaccio (hashes distintos); RPT não divulgada</td><td>RCVM 175/2022 art. 39</td><td>CVM + ANBIMA</td><td><span class="selo e2">E2</span> D5 S2/S12</td></tr>
+</table>
+
+<!-- ====================== 8. ESTRATÉGIA ====================== -->
+<h2>8. Estratégia integrada — janela de 30 dias (a partir de 10/06/2026)</h2>
+<div class="caixa">
+  <div class="titulo">Quatro movimentos coordenados — sequência crítica</div>
+  <p><strong>M1.</strong> Indisponibilidade premonitória sobre a Classe F do Ajaccio + totalidade do Bonifácio FIP (CPC 301 + 792 + CC 158), <em>antes</em> de dar ciência à parte adversa, evitando novo esvaziamento.</p>
+  <p><strong>M2.</strong> Ofício único à OSLO/FRAM DTVM (CNPJ 13.673.855) abrangendo 2020-2026 de todos os fundos do Hub 3 — livro de cotistas, extratos individualizados, regulamentos, logs FATCA/CRS, integralizações — sob multa diária CPC 537 não inferior a R$ 50.000,00.</p>
+  <p><strong>M3.</strong> Inclusão expansiva e inversa do polo (CC 50 expansivo + inverso): Bonifácio, VOLIMO, Interbeverages, Vila Porto Vinhos, Agro Syrah — com prévia confirmação cadastral (P1–P7).</p>
+  <p><strong>M4.</strong> Fechamento internacional: <strong>CTA 2024/FinCEN BOI</strong> (Delaware — 60 dias é o instrumento de fechamento mais veloz), MLAT Cingapura (JP2R/ACRA s.196A), CRS-OCDE.</p>
+</div>
+<p>Custo de oportunidade da inércia, conforme D5: ≈ <strong>R$ 76.700/dia</strong> sobre os R$ 31,9 MM retidos no SISBAJUD (CDI 13,65% a.a.).</p>
+
+<!-- ====================== 9. AÇÃO ====================== -->
+<h2>9. Roteiro de ação consolidado</h2>
+<ol class="roteiro">
+  <li>Saneamento P1–P7 (RFB/JUCESP/CVM): completar dígitos, reconciliar registros, certificar atos de constituição — janela 5 dias úteis.</li>
+  <li>Petição complementar à peça Onesti — operando em camada lógica anterior, com (a) frase-tese reformulada, (b) distinção L1/L2, (c) reposicionamento do pedido (d) como execução pendente, (d) reposicionamento do XVIII em três planos, (e) Cláusula 10.1.7 quebrada, sem reformar o que já está nos autos.</li>
+  <li>Indisponibilidade premonitória (Bonifácio + Classe F do Ajaccio) — protocolada antes de dar ciência à parte adversa (M1).</li>
+  <li>Ofício único OSLO/FRAM 2020-2026 com astreintes — protocolado em conjunto (M2).</li>
+  <li>Distribuição das frentes institucionais: COAF/RIF (R1, R5); MPF + BACEN (R3, T5); CVM (T8); MP-SP/GAECO (T1, T2); DEAM/VDD (T7).</li>
+  <li>Acompanhamento da janela crítica de 30 dias e do gatilho CTA 2024/FinCEN (60 dias) sobre as três LLCs Delaware.</li>
+</ol>
+
+<!-- ====================== 10. RESSALVAS ====================== -->
+<h2>10. Ressalvas vinculantes do relator</h2>
+<ul>
+  <li>Nenhum documento desta série deve ser protocolado <em>como tal</em>: o uso processual exige conversão em peça subscrita por OAB e/ou laudo subscrito por CRC/CORECON, conforme cláusula CPC 472 já inscrita em cada documento.</li>
+  <li>Todas as tipificações são descritas <strong>em tese</strong>, sob presunção de inocência (CF 5º LVII). Tortura por reiteração (T7, Lei 15.410/2026) deve permanecer em sede própria — não importar executoriedade penal para a esfera cível, sob pena de nulidade.</li>
+  <li>Quantum L2/L3 (R$ 631 MM / R$ 1,21 bi) jamais pode ser base de pedido líquido — sempre apresentado com etiqueta de nível probatório modelado.</li>
+  <li>Pessoas físicas devem ser anonimizadas na versão de circulação externa; o presente é uso restrito da equipe (CONFIDENCIAL).</li>
+</ul>
+
+<!-- ====================== 11. CONCLUSÃO ====================== -->
+<h2>11. Conclusão — voto do relator</h2>
+<p>Os cinco documentos são <strong>validados</strong> como acervo coerente, convergente e tecnicamente sólido. A correção de premissa (cotas Ajaccio têm origem confessa em ações E-Vino — DIRPF AC 2022 + fls. 572) elimina o flanco principal da defesa adversa. O SISBAJUD 31/03/2026 confirma empiricamente que o sistema captura exatamente o que tecnicamente deve capturar — selando a desmontagem do "devaneio + erro SISBAJUD". A horizontal da peça Onesti é preservada; a camada de fechamento opera <em>antes</em>, em forma de petição complementar, sem reformar o que já está nos autos.</p>
+<p>Voto pela <strong>aprovação do acervo</strong>, condicionada exclusivamente ao saneamento dos oito itens P1–P8 antes do uso em peça subscrita, e pela <strong>execução imediata</strong> dos quatro movimentos coordenados na janela de 30 dias.</p>
+
+<!-- ====================== ANEXOS ====================== -->
+<h2>Anexo A — Distinção epistemológica (fato / inferência / tese)</h2>
+<table>
+  <tr><th>Categoria</th><th>Exemplos validados</th></tr>
+  <tr><td><strong>Fato (E1, com fonte)</strong></td><td>DIRPF AC 2022 (fls. 815-820) — alienação ações E-Vino ao Ajaccio em 07/06/2022, custo R$ 0,01/ação; SISBAJUD 02/05/2023 — R$ 42,4 MM bloqueados; SISBAJUD 31/03/2026 — R$ 27.799,79 capturados BTG código 12; Ajaccio PL R$ 1.406.746.652,39 caixa R$ 5.812,88 (jan/2026)</td></tr>
+  <tr><td><strong>Inferência (E2/E3, com base)</strong></td><td>Bonifácio FIP como casca real (mesma adm. + mesmo endereço + E-Vino a R$ 0,00 + zero FNET); shadow director (ausência formal × presença em todos os fluxos); cluster Bela Cintra como CC 50 §2º</td></tr>
+  <tr><td><strong>Tese em tese (com fundamento legal)</strong></td><td>T1–T8 do D5 S12; cinco rotas AML R1–R5; quantum modelado L2/L3 R$ 631 MM/R$ 1,21 bi</td></tr>
+</table>
+
+<h2>Anexo B — Quantum L1 documentado (R$ 134.410.998,32)</h2>
+<table>
+  <tr><th>Item</th><th>Valor</th><th>Fonte</th></tr>
+  <tr><td>P1 — FIP Ajaccio (2,22% de Ari sobre PL R$ 1,41 bi, calibragem Acordo de Cotistas 25/05/2022)</td><td>R$ 34.854.000,00</td><td>CVM + Acordo de Cotistas</td></tr>
+  <tr><td>P2 — Inter Lover Icatu Prev. Qualificado FIF</td><td>R$ 10.503.463,66</td><td>BEM/Bradesco — SCW CVM mai/2025</td></tr>
+  <tr><td>P3 — Dario &amp; Porto Prev. Exclusivo FIC FIF</td><td>R$ 7.386.301,00</td><td>BEM/Bradesco — SCW CVM set/2024</td></tr>
+  <tr><td>P4 — Multigestores Prev. SulAmérica Exclusivo</td><td>R$ 49.742.140,35</td><td>SulAmérica DTVM — jan/2025</td></tr>
+  <tr><td>P5 — BTG conta PF (retido 33+ meses)</td><td>R$ 31.925.193,31</td><td>SISBAJUD histórico + extratos</td></tr>
+  <tr><td><strong>SUBTOTAL L1</strong></td><td><strong>R$ 134.410.998,32</strong></td><td>petição MPU 1517557-18</td></tr>
+</table>
+
+<footer class="rodape">
+  <p>Parecer-Relator Integrado — Operação Limoncello · Autos 1006744-58.2023.8.26.0011<br>
+  Validação cruzada de cinco documentos (D1–D5) confrontados com a peça Onesti de 19/05/2026 · Estrutura horizontal preservada · Camada de fechamento agregada<br>
+  Série DOSSIÊS E NOTAS TÉCNICAS — documento 13 · 11/06/2026 · CONFIDENCIAL — uso restrito da equipe</p>
+</footer>
+
+</div>
+</body>
+</html>
