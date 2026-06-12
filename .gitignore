@@ -1,0 +1,18 @@
+# Sensitive / large
+documentos/**/*.pdf
+*.env
+*.key
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*~
+
+# Local Claude state (keep shared settings.json versioned)
+.claude/settings.local.json
+.claude/sessions/
+.claude/projects/
