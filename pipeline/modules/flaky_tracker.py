@@ -302,9 +302,9 @@ class FlakyTestTracker:
                     f"Padrão de esvaziamento pré-bloqueio confirmado."
                 ),
                 legal_refs=[
-                    LEGAL_REFS["art_792_cpc"],
-                    LEGAL_REFS["art_171_cp"],
-                    LEGAL_REFS["law_9613_98"],
+                    "art_792_cpc",
+                    "art_171_cp",
+                    "law_9613_98",
                 ],
                 recommended_action=(
                     f"Requerer ao {movement['institution']} comprovante de destino dos "

@@ -231,6 +231,61 @@ class BriefingModule:
                     )
                 )
 
+        # Post-litigation asset creation alerts
+        for asset in trail.assets:
+            if asset.is_post_litigation:
+                alerts.append(
+                    Alert(
+                        level=RiskLevel.CRITICAL,
+                        category="post_litigation_creation",
+                        description=(
+                            f"{asset.name} ({asset.institution}): ativo criado após o "
+                            f"início do litígio. Criação pós-litígio é indicador de "
+                            "fraude à execução (Art. 792 CPC)."
+                        ),
+                        legal_refs=[
+                            LEGAL_REFS["art_792_cpc"],
+                            LEGAL_REFS["art_50_cc"],
+                            LEGAL_REFS["art_171_cp"],
+                        ],
+                        recommended_action=(
+                            "Requerer declaração de ineficácia e desconsideração da personalidade jurídica."
+                        ),
+                        institution=asset.institution,
+                        asset=asset,
+                        module=MODULE_NAME,
+                    )
+                )
+
+        # Code 13 (zero balance) with prior positive history — zero-balance-after-movement
+        for inst in trail.institutions:
+            if inst.sisbajud_code != SisbajudCode.CODE_13:
+                continue
+            curr = inst.latest_balance()
+            # Use the maximum historical value as the reference, not just the previous entry
+            peak = max((v for _, v in inst.balance_history), default=Decimal("0"))
+            if peak > TACTICAL_EMPTYING_THRESHOLD and curr is not None and curr == Decimal("0.00"):
+                alerts.append(
+                    Alert(
+                        level=RiskLevel.CRITICAL,
+                        category="zero_balance_after_movement",
+                        description=(
+                            f"{inst.name}: retornou Código 13 (saldo zero) mas possuía "
+                            f"R${peak:,.2f} em período anterior. "
+                            "Saldo zero após movimentação prévia é padrão de esvaziamento."
+                        ),
+                        legal_refs=[
+                            LEGAL_REFS["art_792_cpc"],
+                            LEGAL_REFS["law_9613_98"],
+                        ],
+                        recommended_action=(
+                            "Requerer extrato completo e rastreamento de destino dos recursos via BACEN JUD."
+                        ),
+                        institution=inst.name,
+                        module=MODULE_NAME,
+                    )
+                )
+
         trail.alerts.extend(alerts)
         return alerts
 
