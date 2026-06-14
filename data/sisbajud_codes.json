@@ -1,0 +1,33 @@
+{
+  "codes": {
+    "01": "Bloqueio total do saldo disponível",
+    "02": "Bloqueio parcial do saldo disponível",
+    "03": "Conta encerrada",
+    "04": "Conta inexistente",
+    "05": "CPF/CNPJ divergente",
+    "06": "Conta com restrição judicial anterior",
+    "07": "Saldo zerado – bloqueio anterior",
+    "08": "Bloqueio efetuado com saldo insuficiente",
+    "09": "Conta poupança – regime especial",
+    "10": "Conta salário – impenhorável (art. 833 CPC)",
+    "11": "Conta de investimento – pendente de avaliação",
+    "12": "Multibloqueio – aguardando consolidação",
+    "13": "Respondida sem saldo disponível",
+    "14": "Operação em análise pela instituição",
+    "15": "Conta com múltiplos titulares",
+    "16": "Conta corrente de pessoa jurídica",
+    "17": "Conta em moeda estrangeira",
+    "18": "Saldo bloqueado – aguardando transferência ao juízo",
+    "19": "Conta de investimento coletivo (FIP/FII/FIC)",
+    "20": "Divergência entre CNPJ e CPF do executado",
+    "97": "Erro técnico na transmissão – reenvio necessário",
+    "98": "Instituição não respondeu no prazo legal",
+    "99": "Resposta fora do padrão SISBAJUD – revisão manual"
+  },
+  "risk_flags": {
+    "98": "CRÍTICO – Não resposta configura desobediência (art. 77 CPC)",
+    "13": "ATENÇÃO – Verificar histórico de movimentação anterior ao bloqueio",
+    "07": "CRÍTICO – Possível esvaziamento tático pré-ordem",
+    "03": "INVESTIGAR – Encerramento de conta após citação pode configurar fraude"
+  }
+}

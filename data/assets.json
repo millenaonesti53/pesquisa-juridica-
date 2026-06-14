@@ -1,0 +1,75 @@
+{
+  "whole_money_trail": {
+    "last_updated": "2026-06-14",
+    "total_identified_brl": 6247514.07,
+    "assets": [
+      {
+        "id": "FRAM_XIV_FIP",
+        "institution": "FRAM",
+        "description": "FRAM XIV FIP – Fundo de Investimento em Participações",
+        "value_brl": 3877255.47,
+        "status": "BLOQUEIO_PENDENTE",
+        "penhorability": "PENHORAVEL",
+        "impenhorability_claim": false,
+        "flags": ["side_pocket_suspeito", "ausencia_resposta_sisbajud"],
+        "legal_basis_seizure": "art. 831 CPC – penhora de cotas de fundo"
+      },
+      {
+        "id": "LIG_ITAU",
+        "institution": "ITAU",
+        "description": "LIG – Letra Imobiliária Garantida Itaú",
+        "value_brl": 1250000.00,
+        "status": "IMPENHORABILIDADE_ALEGADA",
+        "penhorability": "INVESTIGANDO",
+        "impenhorability_claim": true,
+        "impenhorability_basis": "alegação de proteção da LIG como garantia real",
+        "flags": ["impenhorabilidade_contestavel", "investigar_titularidade_real"],
+        "legal_basis_seizure": "STJ – penhora de LIG é possível quando não vinculada a contrato específico"
+      },
+      {
+        "id": "CDB_BTG",
+        "institution": "BTG",
+        "description": "CDB BTG Pactual",
+        "value_brl": 650758.60,
+        "status": "SALDO_ZERO_SUSPEITO",
+        "penhorability": "PENHORAVEL",
+        "impenhorability_claim": false,
+        "flags": ["saldo_zero_repetido", "esvaziamento_tatico_confirmado"],
+        "legal_basis_seizure": "art. 831 CPC – penhora de aplicações financeiras"
+      },
+      {
+        "id": "CC_ITAU_ANTERIOR",
+        "institution": "ITAU",
+        "description": "Conta Corrente Itaú – saldo anterior ao esvaziamento",
+        "value_brl": 469575.00,
+        "status": "ESVAZIADO",
+        "penhorability": "INVESTIGANDO",
+        "impenhorability_claim": false,
+        "flags": ["variacao_abrupta_confirmada", "rastrear_destino"],
+        "legal_basis_seizure": "CPC 792 – fraude à execução – recomposição do patrimônio"
+      }
+    ],
+    "legal_frameworks": {
+      "art_171_CP": {
+        "description": "Estelionato – obtenção de vantagem ilícita mediante fraude",
+        "applicable": true,
+        "elements": ["engano", "erro", "prejuízo patrimonial"]
+      },
+      "CPC_792": {
+        "description": "Fraude à execução – alienação de bens após citação",
+        "applicable": true,
+        "elements": ["pendência de ação", "insolvência do devedor", "ato de disposição"]
+      },
+      "CC_50": {
+        "description": "Desconsideração da personalidade jurídica",
+        "applicable": true,
+        "elements": ["confusão patrimonial", "desvio de finalidade"]
+      },
+      "Lei_9613_98": {
+        "description": "Lei de Lavagem de Dinheiro",
+        "applicable": true,
+        "elements": ["ocultação", "dissimulação", "origem ilícita"]
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "institutions": [
+    {
+      "id": "FRAM",
+      "name": "FRAM Capital Gestora de Recursos",
+      "type": "gestora_fip",
+      "cnpj": "00.000.000/0001-00",
+      "sisbajud_code": "98",
+      "status": "NAO_RESPONDEU",
+      "risk_level": "CRITICO",
+      "assets": [
+        {
+          "id": "FRAM_XIV",
+          "name": "FRAM XIV FIP",
+          "type": "FIP",
+          "pl_reported": 3877255.47,
+          "pl_verified": null,
+          "currency": "BRL",
+          "flags": ["side_pocket", "classe_retroativa", "ausencia_resposta"]
+        }
+      ],
+      "notes": "Ausência sistemática de resposta. Possível ocultação patrimonial via FIP.",
+      "legal_framework": ["art_171_CP", "Lei_9613_98", "CPC_792"]
+    },
+    {
+      "id": "OSLO",
+      "name": "OSLO Capital Gestão de Recursos",
+      "type": "gestora_fip",
+      "cnpj": "00.000.000/0002-00",
+      "sisbajud_code": "98",
+      "status": "NAO_RESPONDEU",
+      "risk_level": "CRITICO",
+      "assets": [],
+      "notes": "Sem resposta. Investigar vinculação com FRAM.",
+      "legal_framework": ["art_171_CP", "Lei_9613_98"]
+    },
+    {
+      "id": "BTG",
+      "name": "BTG Pactual S.A.",
+      "type": "banco",
+      "cnpj": "00.000.000/0003-00",
+      "sisbajud_code": "13",
+      "status": "SALDO_ZERO_SUSPEITO",
+      "risk_level": "ALTO",
+      "assets": [
+        {
+          "id": "CDB_BTG",
+          "name": "CDB BTG Pactual",
+          "type": "CDB",
+          "pl_reported": 650758.60,
+          "pl_verified": 0.0,
+          "currency": "BRL",
+          "flags": ["saldo_zero_repetido", "movimentacao_previa", "esvaziamento_tatico"]
+        }
+      ],
+      "notes": "Saldo zero repetido com evidência de movimentação prévia ao bloqueio. Padrão de esvaziamento tático identificado.",
+      "legal_framework": ["art_171_CP", "CPC_792", "CC_50"]
+    },
+    {
+      "id": "ITAU",
+      "name": "Itaú Unibanco S.A.",
+      "type": "banco",
+      "cnpj": "00.000.000/0004-00",
+      "sisbajud_code": "13",
+      "status": "ESVAZIAMENTO_TATICO",
+      "risk_level": "CRITICO",
+      "assets": [
+        {
+          "id": "LIG_ITAU",
+          "name": "LIG Itaú (Letra Imobiliária Garantida)",
+          "type": "LIG",
+          "pl_reported": 1250000.00,
+          "pl_verified": null,
+          "currency": "BRL",
+          "flags": ["impenhorabilidade_alegada", "investigar_impenhorabilidade"]
+        },
+        {
+          "id": "CC_ITAU",
+          "name": "Conta Corrente Itaú",
+          "type": "conta_corrente",
+          "pl_reported": 469575.00,
+          "pl_verified": 5491.00,
+          "currency": "BRL",
+          "flags": ["variacao_abrupta", "esvaziamento_confirmado"]
+        }
+      ],
+      "notes": "Variação abrupta confirmada: R$ 469.575 → R$ 5.491. Esvaziamento tático entre citação e bloqueio.",
+      "legal_framework": ["art_171_CP", "CPC_792", "CC_50"]
+    },
+    {
+      "id": "BONIFACIO",
+      "name": "Bonifácio FIP",
+      "type": "fip",
+      "cnpj": "00.000.000/0005-00",
+      "sisbajud_code": "19",
+      "status": "SUSPEITO",
+      "risk_level": "ALTO",
+      "assets": [
+        {
+          "id": "BONIFACIO_FIP",
+          "name": "Bonifácio FIP",
+          "type": "FIP",
+          "pl_reported": null,
+          "pl_verified": null,
+          "currency": "BRL",
+          "flags": ["criado_pos_litigio", "spv_suspeita", "investigar_origem"]
+        }
+      ],
+      "notes": "FIP criado após início do litígio. Possível veículo para ocultação patrimonial.",
+      "legal_framework": ["art_171_CP", "Lei_9613_98", "CC_50", "CPC_792"]
+    },
+    {
+      "id": "AJACCIO",
+      "name": "Ajaccio Fundo de Investimento",
+      "type": "fundo",
+      "cnpj": "00.000.000/0006-00",
+      "sisbajud_code": "11",
+      "status": "INCONSISTENCIA_TEMPORAL",
+      "risk_level": "MEDIO",
+      "assets": [],
+      "notes": "Inconsistência temporal detectada no histórico do fundo.",
+      "legal_framework": ["Lei_9613_98", "CPC_792"]
+    }
+  ]
+}
