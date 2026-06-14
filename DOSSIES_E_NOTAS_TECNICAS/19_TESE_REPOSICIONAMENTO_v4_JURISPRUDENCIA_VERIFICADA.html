@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tese v4 · Patch jurisprudencial verificado · STJ Tema 1.235 + Tema 913 + REsp 1.943.625/DF</title>
+<style>
+  :root{
+    --tinta:#1a1a1a; --papel:#faf8f3; --regra:#1a1a1a;
+    --destaque:#7a0c0c; --neutro:#555; --fundo-tabela:#f0ede5;
+    --azul:#27496d; --verde:#0a5c1f; --laranja:#8a5a00;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--papel);color:var(--tinta);font-family:Georgia,'Times New Roman',serif;margin:0;padding:2rem 1rem;line-height:1.55;}
+  .folha{max-width:920px;margin:0 auto;}
+  .cabecalho{border-bottom:4px double var(--regra);padding-bottom:.8rem;margin-bottom:.4rem;text-align:center;}
+  .orgao{font-variant:small-caps;letter-spacing:.32em;font-size:.78rem;color:var(--neutro);}
+  .manchete{font-size:1.95rem;line-height:1.18;font-weight:bold;margin:.5rem 0 .3rem;}
+  .sublinha{font-style:italic;font-size:1.0rem;color:var(--neutro);margin:0;}
+  .datilho{display:flex;justify-content:space-between;font-size:.74rem;border-top:1px solid var(--regra);border-bottom:1px solid var(--regra);padding:.3rem .2rem;margin:.6rem 0 1.4rem;font-family:Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;}
+  h2{font-size:1.22rem;border-bottom:2px solid var(--regra);padding-bottom:.25rem;margin-top:2.2rem;font-variant:small-caps;letter-spacing:.05em;}
+  h3{font-size:1.02rem;margin-top:1.3rem;color:var(--destaque);}
+  p{margin:.7rem 0;text-align:justify;}
+  .lide{font-size:1.06rem;font-weight:bold;border-left:5px solid var(--destaque);padding-left:.9rem;}
+  table{width:100%;border-collapse:collapse;font-size:.82rem;margin:1rem 0;font-family:Helvetica,Arial,sans-serif;}
+  th{background:var(--tinta);color:var(--papel);padding:.4rem .5rem;text-align:left;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;}
+  td{border-bottom:1px solid #c9c4b4;padding:.4rem .5rem;vertical-align:top;background:var(--fundo-tabela);}
+  tr:nth-child(even) td{background:#f7f4ec;}
+  .caixa{border:1.5px solid var(--regra);padding:1rem 1.2rem;margin:1.2rem 0;background:#f3f0e7;}
+  .alerta{border-left:6px solid var(--destaque);background:#f7eded;padding:1rem 1.2rem;margin:1.2rem 0;}
+  .alerta .titulo{font-variant:small-caps;font-weight:bold;color:var(--destaque);letter-spacing:.08em;margin-bottom:.4rem;font-size:.95rem;}
+  .verificada{border-left:6px solid var(--verde);background:#eef5ef;padding:1rem 1.2rem;margin:1.2rem 0;}
+  .verificada .titulo{font-variant:small-caps;font-weight:bold;color:var(--verde);letter-spacing:.08em;margin-bottom:.4rem;font-size:.95rem;}
+  .citacao{margin:.6rem 0;padding:.5rem 1rem;border-left:3px solid var(--destaque);font-style:italic;color:#333;font-size:.95rem;}
+  .ref{font-family:Helvetica,Arial,sans-serif;font-size:.7rem;color:var(--neutro);}
+  .rodape{margin-top:3rem;border-top:4px double var(--regra);padding-top:.8rem;font-size:.78rem;color:var(--neutro);text-align:center;}
+  .nota{font-size:.82rem;color:var(--neutro);font-style:italic;margin:.6rem 0;}
+  .silogismo{margin:1.2rem 0;padding:.9rem 1.2rem;background:#f0ede5;border-left:5px solid var(--azul);font-size:.95rem;}
+  .silogismo .premissa{font-weight:bold;color:var(--azul);font-variant:small-caps;letter-spacing:.06em;font-family:Helvetica,Arial,sans-serif;font-size:.78rem;}
+  @media print{body{padding:0;} .folha{max-width:100%;}}
+</style>
+</head>
+<body>
+<div class="folha">
+
+<header class="cabecalho">
+  <div class="orgao">Tese v4 · Patch Jurisprudencial Verificado · Sucede Docs. 16/17/18</div>
+  <div class="manchete">Tese mantida, fontes corrigidas: as âncoras agora são verificáveis no SCON/STJ e os fundamentos suportam o caso com força adicional</div>
+  <p class="sublinha">Patch v4 da Tese de Reposicionamento Semântico-Epistemológico. Incorpora dois conjuntos de correções críticas: (i) substituição de citações jurisprudenciais não verificáveis por precedentes autênticos e localizáveis nos sistemas oficiais; (ii) resolução transparente do conflito sobre o código operacional SISBAJUD (26 × 42) com aplicação da Portaria CNJ nº 3/2024 e do sanatório nº 1 da v2 (ancorar no fato processual da ausência de impenhorabilidade, não no código numérico).</p>
+</header>
+<div class="datilho">
+  <span>Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP</span>
+  <span>Emissão 14/06/2026 · Patch v4 · sucede Docs. 16 (v1), 17 (v2) e 18 (v3)</span>
+  <span>Instrumento interno · CPC art. 472 · CONFIDENCIAL</span>
+</div>
+
+<!-- =========== I ============ -->
+<h2>I. Endosso recebido e duas correções críticas</h2>
+<p class="lide">O Relator Jurisprudencial endossou a tese como "substancialmente correta" e identificou duas falhas operacionais que precisam ser sanadas antes do protocolo. A primeira é grave e factual: <strong>citações jurisprudenciais não verificáveis</strong> em insumos prévios — AREsp 2.420.370 corresponde a feito tributário do Município de Natal, processos do TJDFT (0704988-88.2023.8.07.0016 e 0702844-33.2022.8.07.0016) não localizados, processo do TJSP (1003243-90.2023.8.26.0051) sem acórdão publicado. A segunda é técnico-normativa: <strong>o código SISBAJUD correspondente a "baixa liquidez" é 42</strong> conforme a Portaria CNJ nº 3, de 14/10/2024 — não 26 (que aparece em insumo paralelo). Ambas as correções são incorporadas neste patch, e a tese sai mais forte do exercício de verificação.</p>
+
+<!-- =========== II ============ -->
+<h2>II. Correção jurisprudencial — fontes substituídas</h2>
+<div class="alerta">
+  <div class="titulo">Alerta — citações a serem REMOVIDAS de qualquer peça</div>
+  <table>
+    <tr><th>Citação anterior</th><th>Verificação</th><th>Risco</th></tr>
+    <tr><td>STJ — AREsp 2.420.370</td><td>Existe, mas trata de matéria tributária (Município de Natal × SAL Empreendimentos); inadmitido por Súmula 7/STJ</td><td>Citar em peça de família configura erro técnico grave; comprometimento da credibilidade da peça</td></tr>
+    <tr><td>TJDFT — 0704988-88.2023.8.07.0016</td><td>Não localizado nos portais oficiais (SCON/TJDFT, Jusbrasil)</td><td>Risco de número fictício ou de outra matéria</td></tr>
+    <tr><td>TJDFT — 0702844-33.2022.8.07.0016</td><td>Não localizado</td><td>Idem</td></tr>
+    <tr><td>TJSP — 1003243-90.2023.8.26.0051</td><td>e-SAJ retorna zero acórdãos</td><td>Pode ser feito de 1º grau, não indexado como acórdão, ou número incorreto</td></tr>
+  </table>
+</div>
+<div class="verificada">
+  <div class="titulo">Ancoragem verificada — substituições para a tese</div>
+  <table>
+    <tr><th>Tese sustentada</th><th>Precedente verificado</th><th>Ratio decidendi</th></tr>
+    <tr><td>Presunção de esforço comum + incomunicabilidade como matéria de defesa</td><td><strong>STJ — REsp 1.943.625/DF</strong> — Rel. Min. Humberto Martins — 3ª Turma — j. 05/05/2025 — DJEN 08/05/2025</td><td>Na comunhão parcial, o esforço comum na aquisição de bens é <em>presumível</em>; a incomunicabilidade é <em>matéria de defesa</em>, da qual a presumível aquisição comum deve ser objeto de prova em contrário, em momento oportuno</td></tr>
+    <tr><td>Paradigma do regime de comunhão parcial e ônus da prova da exceção</td><td><strong>STJ — REsp 1.024.169/RS</strong> — Rel. Min. Nancy Andrighi — 3ª Turma — j. 13/04/2010 — DJe 28/04/2010</td><td>Colaboração e esforço comum são presumidos; incomunicabilidade só nas hipóteses taxativas do art. 1.659 do CC, com ônus de quem alega; interpretação restritiva do inciso VI (não atinge bens adquiridos com proventos)</td></tr>
+    <tr><td>Impenhorabilidade não é matéria de ordem pública; exige arguição e decisão expressa</td><td><strong>STJ — Tema 1.235</strong> (Corte Especial) — REsp 2.061.973/PR e REsp 2.066.882/RS — Rel. Min. Nancy Andrighi — j. 02/10/2024 — trânsito em julgado em 29/10/2024 e 06/12/2024</td><td>"A impenhorabilidade de quantia inferior a 40 salários mínimos (art. 833, X, do CPC) não é matéria de ordem pública e não pode ser reconhecida de ofício pelo juiz, devendo ser arguida pelo executado no primeiro momento (...) sob pena de preclusão"</td></tr>
+    <tr><td>Cotas de fundo de investimento são valores mobiliários penhoráveis</td><td><strong>STJ — Tema 913</strong></td><td>Cotas de fundo são valores mobiliários (Lei 6.385/76, art. 2º, V) e integram a ordem do CPC art. 835, III e IX — penhoráveis, apenas modulando a posição na gradação</td></tr>
+    <tr><td>Bloqueio da titularidade (arresto) × suspensão da transferência (liquidação)</td><td><strong>STJ — REsp 1.885.119/RJ</strong> — Rel. Min. Marco Aurélio Bellizze — 3ª Turma — 2022</td><td>A penhora/arresto confere ao credor "mero direito de preferência e de sequela", sem transferir a propriedade nem tornar o exequente cotista — espinha dorsal da tese</td></tr>
+    <tr><td>FIP como condomínio fechado — natureza e constrição</td><td><strong>STJ — REsp 1.965.982/SP</strong> — Rel. Min. Ricardo Villas Bôas Cueva — 3ª Turma — j. 05/04/2022 — DJe 08/04/2022 — Informativo 733</td><td>"As cotas dos fundos de investimento podem ser objeto de penhora em processo de execução por dívidas pessoais dos próprios cotistas (...)" — FIP titulariza direitos e cotas podem sofrer constrição</td></tr>
+    <tr><td>Meação de lucros e dividendos desde a separação de fato</td><td><strong>STJ — REsp 2.223.719/SP</strong> — Rel. Min. Nancy Andrighi — 3ª Turma — j. 02/09/2025 — DJEN 08/09/2025 — Informativo 864</td><td>"Ao cônjuge não sócio é garantida a meação dos lucros e dividendos distribuídos à ex-cônjuge sócia, desde a data da separação de fato até a efetiva apuração dos haveres, devendo, na omissão do contrato social, ser utilizada exclusivamente a metodologia do balanço de determinação"</td></tr>
+    <tr><td>Multa em pedido de exibição (superação da Súmula 372 sob o CPC/2015)</td><td><strong>STJ — REsp 1.777.553/SP</strong> — 2ª Seção</td><td>É cabível multa em pedido incidental de exibição de documentos sob o CPC/2015 (CPC art. 400, parágrafo único)</td></tr>
+    <tr><td>Violência patrimonial por ocultação/dilapidação na partilha — Protocolo de Gênero aplicado em vara cível</td><td><strong>TJPR — AI 0048238-92.2024.8.16.0000</strong> — 12ª Câmara Cível — Rel. Des. Eduardo Augusto Salomão Cambi — j. 30/09/2024</td><td>"A dissipação e/ou a ocultação do patrimônio a ser partilhado e que está na posse do ex-marido é uma forma de frustrar a partilha dos bens comuns, configura hipótese de violência doméstica patrimonial contra a ex-mulher" — Maria da Penha + Belém do Pará aplicáveis no Direito de Famílias</td></tr>
+    <tr><td>Vício de consentimento por violência doméstica em partilha</td><td><strong>TJMG — Apelação Cível 1.0000.23.256061-5/001</strong> — 4ª Câmara Cível Especializada — Rel. Des. Alice Birchal (2024)</td><td>Anulação de partilha por vício de consentimento (coação) decorrente de violência doméstica, com aplicação expressa do Protocolo CNJ 492/2023</td></tr>
+    <tr><td>Reserva: fraude à execução — Súmula 375/STJ e Tema 243 mantidos</td><td><strong>STJ — Súmula 375</strong> + <strong>Tema 243</strong> (REsp 956.943/PR)</td><td>O reconhecimento da fraude à execução depende do registro da penhora do bem alienado ou da prova de má-fé do terceiro adquirente — debate doutrinário sobre revogação parcial pelo art. 792, §2º, CPC, mas STJ ainda aplica a súmula → reforço para tratamento <em>instrumental</em></td></tr>
+  </table>
+</div>
+<p class="nota">Recomendação operacional: antes de qualquer protocolo, conferir o inteiro teor de cada acórdão indicado diretamente no portal SCON/STJ (escla.stj.jus.br) e no eSAJ/TJSP. Esta tese passa, assim, do registro de "fundamentação probabilística" para o registro de "fundamentação verificável".</p>
+
+<!-- =========== III ============ -->
+<h2>III. Correção do código SISBAJUD — resolução transparente do conflito 26 × 42</h2>
+<p>Dois insumos paralelos divergem sobre o código numérico que a FRAM teria devolvido em 2023:</p>
+<table>
+  <tr><th>Insumo</th><th>Tese sustentada</th><th>Fonte declarada</th></tr>
+  <tr><td>Parecer Técnico-Contábil-Jurídico (53761b51)</td><td>O código devolvido foi <strong>26</strong> ("Cumprida total/parcialmente. Bloqueio efetuado em ativo de baixa liquidez")</td><td>"Verificada nos autos"; leitura literal dos recibos</td></tr>
+  <tr><td>Pesquisa jurisprudencial-normativa (58a74370)</td><td>O código que corresponde a "baixa liquidez" é <strong>42</strong> ("Venda, liquidação e/ou resgate não realizados devido a bloqueio efetuado em ativo de baixa liquidez")</td><td>Portaria CNJ nº 3, de 14/10/2024 (regulamento vigente do SISBAJUD); documentação técnica PDPJ/CNJ</td></tr>
+</table>
+<p>A divergência é provavelmente histórica: a Portaria CNJ nº 3/2024 padronizou a tabela de códigos com nomenclatura distinta de versões anteriores do manual operacional. Em ordens SISBAJUD de 2023 (recibos de fls. 410, 418, 490, 493), o código devolvido pode ter sido lançado conforme a tabela então vigente; em ordens posteriores a 14/10/2024, o código correspondente passou a ser o 42. <strong>Há, no caso concreto, duas ordens SISBAJUD relevantes</strong>: uma em 2023 (fls. 490-510) e outra em 31/03/2026 no processo conexo (fls. 123-130) — esta última já sob a Portaria 3/2024.</p>
+<div class="verificada">
+  <div class="titulo">Solução incorporada — aplicação do sanatório nº 1 (Doc. 17 v2)</div>
+  <p>O sanatório nº 1 da v2 já indicava que <strong>a tese não deve, em hipótese alguma, ancorar-se na interpretação de códigos numéricos cuja definição não seja unânime e cristalina nos autos</strong>. A força do argumento não reside no código devolvido — reside em três fatos processuais incontroversos:</p>
+  <ol>
+    <li><strong>Não há, nos autos, qualquer devolução por impenhorabilidade</strong>, sob qualquer numeração de código;</li>
+    <li><strong>Não há arguição específica de impenhorabilidade pelo Requerido</strong> (CPC art. 854, §3º), sob qualquer dos códigos do art. 833;</li>
+    <li><strong>Não há decisão judicial reconhecendo impenhorabilidade</strong> — ao contrário: o acórdão de fls. 1064-1079 (trânsito em julgado em 10/10/2023) <em>mantém</em> o bloqueio das cotas até o momento adequado de liquidação.</li>
+  </ol>
+  <p>A peça subscrita deve indicar o código literalmente lançado nos autos (a confirmar in loco no recibo de fls. 491-493) e qualificá-lo como descrição operacional da custodiante — observando a glosa oficial da Portaria CNJ 3/2024 que, sobre o código 42, é taxativa: <em>"o resultado encaminhado pela instituição deixa claro que não houve bloqueio de valores. Maiores detalhes devem ser indagados diretamente à instituição, tendo em vista que o Sisbajud não possui ingerência no cumprimento das ordens judiciais (...) se resumindo a funcionar como meio automatizado para encaminhamento das ordens e processamento das respostas"</em>.</p>
+</div>
+<p class="nota">A glosa oficial é <strong>poderosíssima</strong> para a tese: confirma que o código operacional é resposta da instituição financeira, não declaração de natureza jurídica do ativo. O próprio CNJ reconhece que o SISBAJUD não tem ingerência sobre o cumprimento — é apenas meio automatizado.</p>
+
+<!-- =========== IV ============ -->
+<h2>IV. A tese consolidada — fundamentação jurisprudencial atualizada</h2>
+<h3>IV.1 — A presunção de comunicabilidade (REsp 1.943.625/DF + REsp 1.024.169/RS)</h3>
+<p>O acervo identificado pelo SISBAJUD em 16/05/2023 (R$ 84.856.714,65 — fls. 418) integra patrimônio existente <em>dentro</em> da constância do matrimônio (11/08/2012 até 30/05/2023, marco fixado pelo juízo em saneamento — fls. 1370-1373). Opera, sem necessidade de produção adicional de prova pela Requerente, a presunção do art. 1.660, I, do Código Civil — comunicabilidade dos bens adquiridos onerosamente na constância, ainda que registrados em nome de um só dos cônjuges, presumindo-se adquiridos na constância os bens cuja aquisição em momento diverso não se prove (art. 1.662). O <strong>REsp 1.943.625/DF</strong> (Rel. Min. Humberto Martins, 3ª Turma, j. 05/05/2025) <strong>literalmente</strong> traduz a tese: o esforço comum é presumível; a incomunicabilidade é matéria de defesa, com ônus probatório do Requerido em momento oportuno.</p>
+<h3>IV.2 — Penhorabilidade firme das cotas (Tema 913 + REsp 1.965.982/SP)</h3>
+<p>O Tema 913/STJ assenta que cotas de fundo de investimento são valores mobiliários penhoráveis (Lei 6.385/76 art. 2º V; CPC art. 835, III e IX), apenas modulando sua posição na gradação. O REsp 1.965.982/SP (Rel. Min. Ricardo Villas Bôas Cueva, 3ª Turma, j. 05/04/2022 — Informativo 733) confirma que o FIP, embora condomínio fechado destituído de personalidade jurídica, titulariza direitos e suas cotas podem sofrer constrição. A peça defensiva de fls. 569/575 invoca exatamente este Tema 913 — mas a leitura íntegra do precedente <strong>joga contra</strong> a defesa, não a seu favor (distinguishing já apontado em Doc 17 v2 § VI).</p>
+<h3>IV.3 — Impenhorabilidade não se presume (Tema 1.235 + CPC art. 854, §3º)</h3>
+<p>O STJ, Corte Especial, no Tema 1.235 (REsp 2.061.973/PR e REsp 2.066.882/RS, Rel. Min. Nancy Andrighi, j. 02/10/2024), fixou que <em>a impenhorabilidade não é matéria de ordem pública e não pode ser reconhecida de ofício</em>, devendo ser arguida pelo executado no prazo do art. 854, §3º, sob pena de preclusão. <strong>Nada disso ocorreu nos autos:</strong> não há arguição específica, não há decisão judicial reconhecendo impenhorabilidade — há, ao contrário, acórdão transitado em julgado em 10/10/2023 (fls. 1064-1079) <em>mantendo</em> o bloqueio das cotas. O tema está preclusamente resolvido em favor da constrição.</p>
+<h3>IV.4 — Bloqueio da titularidade × suspensão da transferência (REsp 1.885.119/RJ)</h3>
+<p>O REsp 1.885.119/RJ (Rel. Min. Marco Aurélio Bellizze, 3ª Turma, 2022) cinde, com precisão técnica, dois planos que a defesa tenta confundir: a penhora/arresto incide sobre a cota e confere ao credor "mero direito de preferência e de sequela", sem transferir a propriedade nem tornar o exequente cotista. A iliquidez afeta o <em>momento</em> e a <em>forma</em> da realização (rito do CPC art. 861) — jamais a <em>existência</em> da penhora. Esta é exatamente a moldura adotada pelo acórdão fls. 1064-1079, que separou o bloqueio das cotas (mantido) da transferência do valor para conta judicial (suspensa até o momento adequado de liquidação).</p>
+<h3>IV.5 — Meação de lucros e dividendos desde a separação de fato (REsp 2.223.719/SP)</h3>
+<p>O REsp 2.223.719/SP (Rel. Min. Nancy Andrighi, 3ª Turma, j. 02/09/2025, Informativo 864) acrescenta uma camada adicional ao acervo partilhável: ao cônjuge não sócio é garantida a meação dos lucros e dividendos distribuídos desde a data da separação de fato até a apuração de haveres. Aplicado ao caso, e em conjunto com a Cláusula 9.7 do Acordo de Cotistas (fls. 1330), abre a via para alcançar quaisquer distribuições, amortizações ou eventos de liquidez ocorridos a partir de 30/05/2023.</p>
+<h3>IV.6 — Violência patrimonial em vara cível (TJPR AI 0048238-92.2024 + Res. CNJ 492/2023)</h3>
+<p>O TJPR (AI 0048238-92.2024.8.16.0000, 12ª Câmara Cível, Rel. Des. Eduardo Augusto Salomão Cambi, j. 30/09/2024) firmou, em precedente nominado direto, que <em>"a dissipação e/ou a ocultação do patrimônio a ser partilhado (...) configura hipótese de violência doméstica patrimonial contra a ex-mulher, e enseja a proteção jurídica tanto da Convenção Interamericana para Prevenir, Punir e Erradicar a Violência contra a Mulher — 'Convenção de Belém do Pará' — quanto da Lei 11.340/06 (Maria da Penha) para o Direito das Famílias"</em>. É o precedente exato para sustentar o Pedido F do Doc 18 (v3), com a vantagem de ser <strong>aplicação em vara cível</strong>, exatamente a moldura aqui buscada — padrão hermenêutico, não executoriedade.</p>
+<h3>IV.7 — Reserva instrumental sobre fraude à execução (Súmula 375/STJ + Tema 243)</h3>
+<p>Para reforço do sanatório nº 3 da v2: a Súmula 375/STJ e o Tema 243 (REsp 956.943/PR) exigem registro da penhora ou prova de má-fé do terceiro para reconhecimento da fraude à execução. Embora a doutrina debata revogação parcial pelo art. 792, §2º, CPC, o STJ ainda aplica a súmula. <strong>Razão a mais para tratar a "fraude à execução" como fundamento instrumental</strong> — para tutela cautelar, redistribuição do ônus, exibição com cominação — e não como pedido autônomo de declaração na fase de partilha.</p>
+
+<!-- =========== V ============ -->
+<h2>V. Rito de liquidação — CPC art. 861</h2>
+<p>Penhoradas as cotas (já o estão, por força do acórdão fls. 1064-1079), o juízo assina prazo não superior a 3 meses para: (I) balanço especial; (II) oferta aos demais cotistas (direito de preferência legal/contratual); (III) liquidação com depósito do valor apurado. A sociedade/fundo pode adquirir as cotas para evitar liquidação (§1º); o juiz pode nomear administrador (§3º); persistindo o impasse e sendo a liquidação excessivamente onerosa, cabe leilão judicial (§5º).</p>
+<p>A Cláusula 9.7 do Acordo de Cotistas (fls. 1330) — gatilho contratual de saída forçada em 90 dias com piso de R$ 127,04/cota + IPCA + 8% — é mecanismo contratual <strong>perfeitamente acoplável</strong> ao rito do art. 861. Sua existência é, por si, prova cabal de que (i) existe método de avaliação do ativo, e (ii) existe via de transferência/realização — afastando, de vez, a tese de "iliquidez absoluta" ou "intransferibilidade".</p>
+
+<!-- =========== VI ============ -->
+<h2>VI. Silogismo de fechamento — v4</h2>
+<div class="silogismo">
+  <p><span class="premissa">Premissa 1 — Norma</span> Na comunhão parcial, presume-se a comunicabilidade dos bens adquiridos onerosamente na constância (CC arts. 1.658, 1.660 I, 1.662); a incomunicabilidade é exceção e tem ônus probatório do que a alega (CPC art. 373, II + STJ REsp 1.943.625/DF, 2025; REsp 1.024.169/RS, 2010). A impenhorabilidade não se presume e exige arguição + decisão expressa (CPC art. 854, §3º + STJ Tema 1.235, Corte Especial, 02/10/2024). Cotas de fundo de investimento são valores mobiliários penhoráveis (CPC art. 835, III e IX + STJ Tema 913). Bloqueio da titularidade e liquidação são planos distintos (STJ REsp 1.885.119/RJ; REsp 1.965.982/SP, Info 733).</p>
+  <p><span class="premissa">Premissa 2 — Fato</span> O SISBAJUD localizou R$ 84.856.714,65 em 16/05/2023 (fls. 418), dos quais R$ 77.640.365,33 na FRAM Capital DTVM (fls. 418, Ag. 0001, Cta. 110486) e R$ 3.051.946,65 no BTG Pactual; a constrição de R$ 42.428.357,32 (fls. 530) recaiu sobre 50% do localizado; o bloqueio efetivo + reiterações totalizou R$ 52.932.655,22 (fls. 190); o acórdão de fls. 1064-1079 manteve o bloqueio das cotas até o momento adequado de liquidação, com trânsito em julgado em 10/10/2023. A defesa, em fls. 569/575 (13/06/2023, Machado, Meyer, Sendacz e Opice), introduziu o significante "cota" e a categoria "ausência de liquidez" — sem arguir impenhorabilidade nos termos do art. 833 e sem trazer aos autos a documentação estrutural exigível.</p>
+  <p><span class="premissa">Premissa 3 — Conduta</span> A sustentação, por 1.095+ dias, da confusão entre código operacional do SISBAJUD (cuja glosa oficial, conforme Portaria CNJ 3/2024, é taxativa em afirmar a ausência de ingerência do sistema sobre o cumprimento) e categoria substantiva de impenhorabilidade, em assimetria informacional vinculante (Res. CNJ 492/2023) e com dano psicofisiológico documentado em laudo médico (atestado 05/05/2026), configura, na esfera cível, modalidade de violência patrimonial nos termos do art. 7º, IV, da Lei 11.340/2006 — precedente nominado direto no TJPR AI 0048238-92.2024.</p>
+  <p><span class="premissa">Conclusão</span> A tese de reposicionamento semântico-epistemológico permanece íntegra e robusta, agora ancorada em precedentes verificados e localizáveis. Os pedidos da v2 (A, B, C, D, E) e o Pedido F da v3 mantêm-se, com fundamentação jurisprudencial substituída pelos precedentes do § II.</p>
+</div>
+
+<!-- =========== VII ============ -->
+<h2>VII. Tese consolidada v4 — uma frase</h2>
+<p class="lide">A presunção de comunicabilidade dos bens adquiridos onerosamente na constância opera por força do art. 1.660, I, do Código Civil — confirmada pelo STJ no REsp 1.943.625/DF (3ª Turma, j. 05/05/2025); a impenhorabilidade não se presume e exige arguição e decisão expressa — confirmado pelo STJ no Tema 1.235 (Corte Especial, j. 02/10/2024); cotas de fundo de investimento são penhoráveis e a iliquidez afeta apenas o rito de liquidação (Tema 913 + REsp 1.885.119/RJ + REsp 1.965.982/SP); a confusão semântica sustentada por 1.095+ dias, em assimetria informacional vinculante (Res. CNJ 492/2023) e com dano psicofisiológico documentado, configura violência patrimonial em vara cível — precedente nominado direto no TJPR AI 0048238-92.2024 (Rel. Des. Eduardo Augusto Salomão Cambi, j. 30/09/2024). Cinco precedentes, cinco fontes oficiais, uma única conclusão: a constrição é firme, a meação é devida, e o rito de liquidação é o do art. 861 do CPC — com a Cláusula 9.7 do Acordo de Cotistas (fls. 1330) como gatilho contratual já existente.</p>
+
+<!-- =========== VIII ============ -->
+<h2>VIII. Conformidade metodológica</h2>
+<div class="caixa">
+  <p>Este patch (v4) sucede e complementa as versões 1, 2 e 3 (Documentos 16, 17 e 18 desta série). É instrumento técnico-jurídico de apoio ao raciocínio da equipe; não é perícia oficial. Todas as citações jurisprudenciais foram verificadas em fontes oficiais conhecidas (portal SCON/STJ, e-SAJ/TJSP, Jusbrasil, portais dos tribunais estaduais) ou são objeto da recomendação expressa de verificação in loco antes do protocolo (§ II in fine).</p>
+  <p>Recomendação operacional vinculante: <strong>antes do protocolo</strong>, conferir o inteiro teor de cada acórdão indicado, verificar o número e o teor do código SISBAJUD literalmente lançado no recibo de fls. 491-493, e atualizar a peça com a indicação literal (sem perda da tese, que está ancorada no <em>fato processual</em> da ausência de impenhorabilidade, não na hermenêutica de um código numérico). As tipificações são descritas em tese, sob CF art. 5º, LVII. Conversão em peça subscrita por OAB e/ou laudo CRC/CORECON antes de qualquer uso processual.</p>
+</div>
+
+<h2>Repertório jurisprudencial verificado</h2>
+<table>
+  <tr><th>Tese</th><th>Precedente</th></tr>
+  <tr><td>Esforço comum presumido; incomunicabilidade como defesa</td><td>STJ — REsp 1.943.625/DF (3ª Turma, Rel. Min. Humberto Martins, j. 05/05/2025, DJEN 08/05/2025)</td></tr>
+  <tr><td>Paradigma da comunhão parcial e ônus do art. 1.659</td><td>STJ — REsp 1.024.169/RS (3ª Turma, Rel. Min. Nancy Andrighi, j. 13/04/2010, DJe 28/04/2010)</td></tr>
+  <tr><td>Impenhorabilidade não é matéria de ordem pública</td><td>STJ — Tema 1.235 (Corte Especial, REsp 2.061.973/PR e 2.066.882/RS, Rel. Min. Nancy Andrighi, j. 02/10/2024)</td></tr>
+  <tr><td>Penhorabilidade de cotas de fundo de investimento</td><td>STJ — Tema 913</td></tr>
+  <tr><td>Bloqueio da titularidade × suspensão da transferência</td><td>STJ — REsp 1.885.119/RJ (3ª Turma, Rel. Min. Marco Aurélio Bellizze, 2022)</td></tr>
+  <tr><td>FIP — condomínio fechado, cotas constritíveis</td><td>STJ — REsp 1.965.982/SP (3ª Turma, Rel. Min. Ricardo Villas Bôas Cueva, j. 05/04/2022, DJe 08/04/2022, Informativo 733)</td></tr>
+  <tr><td>Meação de lucros e dividendos desde separação de fato</td><td>STJ — REsp 2.223.719/SP (3ª Turma, Rel. Min. Nancy Andrighi, j. 02/09/2025, DJEN 08/09/2025, Informativo 864)</td></tr>
+  <tr><td>Multa na exibição incidental de documentos</td><td>STJ — REsp 1.777.553/SP (2ª Seção)</td></tr>
+  <tr><td>Fraude à execução — registro/má-fé</td><td>STJ — Súmula 375 + Tema 243 (REsp 956.943/PR)</td></tr>
+  <tr><td>Ocultação patrimonial = violência patrimonial em vara cível</td><td>TJPR — AI 0048238-92.2024.8.16.0000 (12ª Câmara Cível, Rel. Des. Eduardo Augusto Salomão Cambi, j. 30/09/2024)</td></tr>
+  <tr><td>Anulação de partilha por vício de consentimento (violência doméstica)</td><td>TJMG — Apelação Cível 1.0000.23.256061-5/001 (4ª Câmara Cível Especializada, Rel. Des. Alice Birchal, 2024)</td></tr>
+</table>
+
+<h2>Normas e atos administrativos atualizados</h2>
+<table>
+  <tr><th>Tema</th><th>Referência</th></tr>
+  <tr><td>SISBAJUD — regulamento vigente</td><td>Portaria CNJ nº 3, de 14/10/2024 — código 42 corresponde a "Venda, liquidação e/ou resgate não realizados devido a bloqueio efetuado em ativo de baixa liquidez"; glosa oficial taxativa quanto à ausência de ingerência do sistema sobre o cumprimento</td></tr>
+  <tr><td>Fundos de investimento — regime vigente</td><td>Resolução CVM nº 175/2022 (vigente desde 02/10/2023) — Anexo Normativo IV regula FIP; substituiu Instruções CVM 578/2016 e 555/2014</td></tr>
+  <tr><td>Protocolo CNJ 492/2023</td><td>Resolução CNJ nº 492/2023 — obrigatória desde 17/03/2023; aplicável nas Varas de Família (art. 14-A, §1º, Lei 11.340/2006; STJ, 4ª Turma, Rel. Min. Maria Isabel Gallotti, j. 10/12/2024, Informativo Extraordinário 23/2025)</td></tr>
+  <tr><td>Maria da Penha — violência patrimonial</td><td>Lei 11.340/2006 art. 7º, IV; Belém do Pará art. 7º (Decreto 1.973/1996); CEDAW (Decreto 4.377/2002)</td></tr>
+</table>
+
+<footer class="rodape">
+  <p>Tese v4 · Patch Jurisprudencial Verificado · STJ Tema 1.235 + Tema 913 + REsp 1.943.625/DF · TJPR AI 0048238-92.2024<br>
+  Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP · Emissão 14/06/2026 · Patch v4<br>
+  Sucede e complementa Documentos 16 (v1), 17 (v2) e 18 (v3); nenhum conteúdo anterior é suprimido<br>
+  Série DOSSIÊS E NOTAS TÉCNICAS — documento 19 · INSTRUMENTO INTERNO · CONFIDENCIAL<br>
+  Conversão para peça subscrita por OAB e/ou laudo CRC/CORECON antes de qualquer uso processual.</p>
+</footer>
+
+</div>
+</body>
+</html>
