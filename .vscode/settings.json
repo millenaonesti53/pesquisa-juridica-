@@ -1,0 +1,13 @@
+{
+  "claudeCode.preferredLocation": "sidebar",
+  "claudeCode.initialPermissionMode": "default",
+  "claudeCode.autosave": true,
+  "claudeCode.respectGitIgnore": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true
+  },
+  "files.associations": {
+    "CLAUDE.md": "markdown"
+  }
+}
