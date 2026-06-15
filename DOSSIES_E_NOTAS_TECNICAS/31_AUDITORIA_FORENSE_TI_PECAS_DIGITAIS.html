@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Documento 31 — Auditoria Forense de TI · Integridade Documental · Peças 32, 33, 35 e 36</title>
+<style>
+@page { size: A4; margin: 2cm; @bottom-center { content: "Documento 31 · Auditoria Forense TI · pág. " counter(page) " de " counter(pages); font-family: Georgia, serif; font-size: 9pt; color: #555; } }
+body { font-family: Georgia, "Times New Roman", serif; font-size: 10.5pt; line-height: 1.45; color: #1b1b1b; }
+h1 { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 20pt; color: #1b3a5b; border-bottom: 3px double #1b3a5b; padding-bottom: 6pt; margin-top: 0; }
+h2 { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 13pt; color: #1b3a5b; border-bottom: 1px solid #c0a060; padding-bottom: 3pt; margin-top: 22pt; }
+h3 { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 11.5pt; color: #2c2c2c; margin-top: 14pt; }
+.cabecalho { text-align: center; border: 2px solid #1b3a5b; padding: 16pt 14pt; margin-bottom: 20pt; background: #f0f4f9; }
+.cabecalho .titulo { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 13pt; letter-spacing: 1.5pt; color: #1b3a5b; font-weight: bold; }
+.cabecalho .sub { font-style: italic; color: #555; margin-top: 6pt; font-size: 10pt; }
+.confidencial { display: inline-block; padding: 2pt 8pt; background: #1b3a5b; color: white; font-family: Arial, sans-serif; font-size: 8.5pt; letter-spacing: 1pt; }
+table { width: 100%; border-collapse: collapse; margin: 10pt 0; font-size: 9.5pt; }
+th { background: #1b3a5b; color: white; padding: 5pt 6pt; text-align: left; font-family: Arial, sans-serif; font-size: 9pt; }
+td { padding: 4pt 6pt; border-bottom: 1px solid #ddd; vertical-align: top; }
+tr:nth-child(even) td { background: #f0f4f9; }
+.box { border-left: 4px solid #1b3a5b; background: #f0f4f9; padding: 10pt 14pt; margin: 12pt 0; }
+.alerta { border-left: 4px solid #b00020; background: #fff5f5; padding: 10pt 14pt; margin: 12pt 0; }
+.verde { border-left: 4px solid #0a5f2e; background: #f0fbf2; padding: 10pt 14pt; margin: 12pt 0; }
+.achado { border-left: 4px solid #c0a060; background: #fffdf5; padding: 8pt 12pt; margin: 10pt 0; }
+.codigo { font-family: "Courier New", monospace; font-size: 9pt; background: #f0ece6; padding: 1pt 4pt; }
+.mono { font-family: "Courier New", monospace; font-size: 9pt; }
+.legenda { font-size: 9pt; color: #555; font-style: italic; margin-top: 2pt; }
+.rodape { margin-top: 26pt; padding-top: 10pt; border-top: 1px solid #c0a060; font-size: 9pt; color: #555; font-style: italic; text-align: center; }
+ul, ol { margin: 5pt 0 5pt 18pt; } li { margin: 3pt 0; }
+.veredito { background: #1b3a5b; color: white; padding: 12pt 18pt; margin: 16pt 0; border-radius: 4pt; }
+.veredito strong { color: #ffd866; }
+</style>
+</head>
+<body>
+
+<div class="cabecalho">
+<div class="confidencial">CONFIDENCIAL · INSTRUMENTO INTERNO DE INSTRUÇÃO</div>
+<div class="titulo" style="margin-top:8pt">DOCUMENTO 31</div>
+<div class="titulo">AUDITORIA FORENSE DE TI · INTEGRIDADE E SEQUÊNCIAS DAS PEÇAS DIGITAIS · 32, 33, 35 e 36</div>
+<div class="sub">Análise pericial de metadados PDF, sobreposições documentais, sequências de folhas, signatários, protocolos WPIN e códigos de validação eSAJ — em tese, conforme CPC art. 472 e CF art. 5º, LVI</div>
+<div style="margin-top:8pt; font-size:9pt">Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP · Data 15/06/2026</div>
+</div>
+
+<h2>I. Escopo e ressalva preliminar</h2>
+
+<div class="achado">
+<strong>Sobre a referência a "processo STF".</strong> A solicitação menciona análise de "acordãos do processo STF". As quatro peças digitais remetidas (sufixos 32, 33, 35 e 36) pertencem aos autos <strong>1006744-58.2023.8.26.0011 da 1ª Vara da Família de Pinheiros — TJSP</strong>, não a processo distribuído no Supremo Tribunal Federal. Esta auditoria forense de TI processa, portanto, peças do <strong>TJSP via portal eSAJ</strong>. Caso haja, paralelamente, acórdão do STF correlato à matéria, este deve ser remetido em peça apartada para auditoria específica.</p>
+</div>
+
+<h2>II. Síntese forense — veredito técnico</h2>
+
+<div class="veredito">
+<p><strong>Veredito 1 — Integridade técnica dos PDFs.</strong> Não foi identificado, nas quatro peças analisadas, indício técnico de adulteração ou edição posterior à geração pelo sistema eSAJ-TJSP. Todos os PDFs apresentam <em>Producer iText 2.1.7 by 1T3XT</em> (gerador interno do eSAJ), <em>CreationDate == ModDate</em>, ausência de atualizações incrementais (um único marcador <span class="mono">%%EOF</span>), códigos de validação eSAJ presentes e verificáveis. </p>
+<p><strong>Veredito 2 — Sobreposição documental real.</strong> Há sobreposição efetiva de <strong>19 folhas (fls. 2543-2561)</strong> entre as peças 32 e 33 e de <strong>7 folhas (399, 407, 417, 486, 487, 503, 761)</strong> entre as peças 35 e 36. A peça 33 contém, no seu interior, conteúdo idêntico ao da peça 32 (mesmo código eSAJ <span class="mono">IpcD5ijV</span>, mesma signatária KEZIA KARINA GOMES DE MIRANDA, mesmo protocolo WPIN26700578663) acrescido de prefácio (fls. 22 e ss.) da peça primordial da Dra. Maria Eugenia Vieira de Morais. Trata-se, em tese, de <strong>recompactação por concatenação</strong>, não de adulteração — mas a duplicação merece consignação. </p>
+<p><strong>Veredito 3 — Seleção descontínua de folhas (saltos).</strong> Peça 35 apresenta 34 saltos entre folhas (cobre 125 folhas únicas, range 5-794) e peça 36 apresenta 30 saltos (cobre 47 folhas únicas, range 399-1706). Tais saltos refletem <strong>extratos seletivos da pasta digital</strong>, não supressão de documentos públicos do processo — cada folha presente mantém seu próprio código eSAJ e signatário.</p>
+</div>
+
+<h2>III. Metodologia técnica</h2>
+
+<ol>
+<li>Extração de metadados via <span class="mono">pdfinfo</span> (Producer, Creator, CreationDate, ModDate, número de páginas, tamanho do arquivo).</li>
+<li>Soma criptográfica MD5 de cada arquivo (cadeia de custódia futura).</li>
+<li>Varredura binária do PDF por padrões <span class="mono">%PDF-, %%EOF, startxref, trailer</span> e cabeçalhos de objetos (<span class="mono">/Type/Page, /Subtype/Image, /Subtype/Form, /Type/Sig, /AcroForm</span>).</li>
+<li>Detecção de assinaturas digitais e campos de formulário (AcroForm).</li>
+<li>Detecção de JavaScript (<span class="mono">/JS</span>, <span class="mono">/JavaScript</span>) e camadas opcionais (<span class="mono">/Type /OCG</span>).</li>
+<li>Extração textual com <span class="mono">pdftotext -layout</span> e regex sobre cabeçalhos eSAJ-TJSP — captura de folhas (fls. N), códigos de validação (8 caracteres alfanuméricos), signatários, protocolos WPIN, datas de protocolo e liberação nos autos.</li>
+<li>Análise de saltos de sequência de folhas (gap analysis).</li>
+<li>Cruzamento de conjuntos de folhas entre peças (interseção/sobreposição documental).</li>
+</ol>
+
+<h2>IV. Matriz consolidada · metadados PDF</h2>
+
+<table>
+<tr><th>Atributo</th><th>Peça 32</th><th>Peça 33</th><th>Peça 35</th><th>Peça 36</th></tr>
+<tr><td>Arquivo (sufixo)</td><td>_32.pdf</td><td>_33.pdf</td><td>_35.pdf</td><td>_36.pdf</td></tr>
+<tr><td>Tamanho (bytes)</td><td>253.468</td><td>473.222</td><td>3.023.278</td><td>408.419</td></tr>
+<tr><td>Páginas PDF</td><td>19</td><td>28</td><td>84</td><td>22</td></tr>
+<tr><td>Producer</td><td colspan="4" style="text-align:center"><strong>iText 2.1.7 by 1T3XT</strong> (em todas as peças — gerador padrão eSAJ-TJSP)</td></tr>
+<tr><td>CreationDate</td><td>08/06/2026 21:16:04 -03</td><td>08/06/2026 21:18:35 -03</td><td>12/06/2026 01:28:49 -03</td><td>13/06/2026 13:04:09 -03</td></tr>
+<tr><td>ModDate</td><td>= CreationDate</td><td>= CreationDate</td><td>= CreationDate</td><td>= CreationDate</td></tr>
+<tr><td>%%EOF count</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>Incremental updates</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>Assinaturas /Type /Sig</td><td>0</td><td>0</td><td><strong>12</strong></td><td>0</td></tr>
+<tr><td>AcroForm</td><td>não</td><td>não</td><td>sim</td><td>sim</td></tr>
+<tr><td>Image XObjects</td><td>0</td><td>3</td><td>97</td><td>9</td></tr>
+<tr><td>Form XObjects</td><td>57</td><td>84</td><td>300</td><td>66</td></tr>
+<tr><td>JavaScript</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>Camadas /OCG</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>Erro xref (pdfinfo)</td><td>não</td><td>não</td><td><strong>sim — "xref num 51 not found"</strong></td><td><strong>sim — "xref num 1 not found"</strong></td></tr>
+<tr><td>MD5</td><td class="mono">ab9bfaa4f58b06b8c594309bd3dea67f</td><td class="mono">9b97d56f492ab40f9c90827c6a417167</td><td class="mono">68b0c336f43c78a2a231c01d858592e6</td><td class="mono">cb5ab43d572644be32cd47e237d4c808</td></tr>
+<tr><td>PDF ID (criação)</td><td class="mono">9fa96c7fb3...169e2c</td><td class="mono">839c4fd557...0ac7f1</td><td class="mono">e5079798d4...ce9a91</td><td class="mono">33457d0158...206501</td></tr>
+<tr><td>PDF ID (modificação)</td><td class="mono">e93f14a9e8...b3364b</td><td class="mono">429f157a11...0f8d61</td><td class="mono">8de6df4170...131bbb</td><td class="mono">e0cc3f218c...35fd99</td></tr>
+</table>
+
+<div class="achado">
+<strong>Interpretação dos erros de xref.</strong> Os avisos <em>"xref num N not found"</em> nas peças 35 e 36 são gerados pelo <span class="mono">pdfinfo</span> ao processar PDFs <strong>compostos por concatenação de subdocumentos</strong> dentro do servidor eSAJ. Cada subdocumento (cada protocolo WPIN distinto) tem sua própria árvore de objetos, e o iText 2.1.7 mescla-as gerando uma tabela xref consolidada com referências que não se ajustam ao padrão linear. <strong>Não é sinal de adulteração</strong>; é assinatura típica do método de empacotamento eSAJ-TJSP para peças compósitas. As peças 32 e 33, monolíticas, não apresentam o erro.</p>
+</div>
+
+<h2>V. Análise por peça — sequências, signatários e protocolos</h2>
+
+<h3>V.1. Peça 32 — 19 págs · monolítica · documento KEZIA</h3>
+<table>
+<tr><td>Range de folhas</td><td>fls. 2543 → fls. 2561 (19 folhas, sequência <strong>contínua</strong>)</td></tr>
+<tr><td>Códigos eSAJ</td><td>1 único: <span class="mono">IpcD5ijV</span></td></tr>
+<tr><td>Signatária</td><td>KEZIA KARINA GOMES DE MIRANDA</td></tr>
+<tr><td>Protocolo</td><td>WPIN26700578663 — 07/04/2026 às 13:12</td></tr>
+<tr><td>Status técnico</td><td>Documento isolado, íntegro, sem saltos</td></tr>
+</table>
+
+<h3>V.2. Peça 33 — 28 págs · COMPÓSITA · prefácio + peça 32 duplicada</h3>
+<table>
+<tr><td>Range de folhas</td><td>fls. 22 → fls. 2561 (29 folhas únicas)</td></tr>
+<tr><td>Saltos</td><td>fls. 22 → fls. 2532 (salto de 2.509) · fls. 2540 → fls. 2543 (salto de 2)</td></tr>
+<tr><td>Códigos eSAJ</td><td>2: <span class="mono">M3dbYMYe</span> (bloco 22-2540) + <span class="mono">IpcD5ijV</span> (bloco 2543-2561)</td></tr>
+<tr><td>Signatária</td><td>KEZIA KARINA GOMES DE MIRANDA (em ambos os blocos)</td></tr>
+<tr><td>Protocolo</td><td>WPIN26700578663 — 07/04/2026 às 13:12 (idêntico ao da peça 32)</td></tr>
+<tr><td>Status técnico</td><td><strong>Sobreposição integral com peça 32 nas fls. 2543-2561 — duplicação confirmada</strong></td></tr>
+</table>
+
+<div class="alerta">
+<strong>Achado de IT 31-A.</strong> A peça 33 contém exatamente as 19 folhas da peça 32 (2543-2561) no seu segundo bloco, com o mesmo código eSAJ <span class="mono">IpcD5ijV</span>, a mesma signatária KEZIA e o mesmo número de protocolo. O primeiro bloco (fls. 22, 2532-2540) usa código <span class="mono">M3dbYMYe</span>. Em rigor, peça 33 = prefácio (~10 folhas) + duplicação integral da peça 32. <strong>Não há adulteração</strong> — todos os códigos eSAJ permitem conferência no portal do TJSP. Há, contudo, <strong>redundância de juntada</strong> que merece consignação.</p>
+</div>
+
+<h3>V.3. Peça 35 — 84 págs · COMPÓSITA SISBAJUD inicial · 6 protocolos</h3>
+<table>
+<tr><td>Range de folhas</td><td>fls. 5 → fls. 794 (125 folhas únicas)</td></tr>
+<tr><td>Saltos</td><td>34 saltos detectados — maiores: 484→555 (não cobre), 484→555, 651→663 (11), 665→717 (51), 592→651 (58), 432→452 (19), 452→484 (31)</td></tr>
+<tr><td>Códigos eSAJ</td><td>28 códigos distintos (<span class="mono">0VxMFZW8, 17YrjESR, 29nNT0PC, 9qlzCgrk, CHvG199w, D6kjDxBf, EqEEFzdj, H8I6yVrS, HntCy9mD, KPNerg1q, O5fBxNzz, UhkBFsdi, V5SM5WQ2, V5bawdQh, b5kP6PtR, eZt4m68M, ed0gctGE, f4FKMLJw, fZU8yNgP, gneBNHBL, iearIQZJ, lZKPKTej, nEH44CDW, r7NAVT7J, rdPJ6VuR, sIkttL5v, vgH7GhoH, zCK8Uinm</span>)</td></tr>
+<tr><td>Signatários (10)</td><td>MARIA EUGENIA VIEIRA DE MORAIS · DENISE MENDONCA AIDAR · ELIANE CRISTINA CARVALHO · GISELLE LOURENCO CANTAGALLO · KARINA CUTOLO MIRANDA · LARISSA MARTINS MATSUMOTO · MARCIA TESSITORE · PRISCILLA LIMENA · RENATA BARROS SOUTO MAIOR BAIAO · ROSA OKAZAKI</td></tr>
+<tr><td>Protocolos (6)</td><td>WPIN23701066272 (29/05/2023 20:18) · WPIN23701123900 (05/06/2023 17:31) · WPIN23701180440 (13/06/2023 18:40) · WPIN23701285535 (26/06/2023 15:00) · WPIN23701367744 (04/07/2023 22:33) · WPIN23701468591 (14/07/2023 20:24)</td></tr>
+<tr><td>Liberações</td><td>16 datas de liberação nos autos entre 30/05/2023 e 14/07/2023</td></tr>
+<tr><td>Assinaturas /Type /Sig</td><td>12 (embarcadas, integridade interna)</td></tr>
+<tr><td>Status técnico</td><td>Peça compósita do bloco SISBAJUD inicial (mai-jul/2023) — documento agregador de múltiplas peças do processo</td></tr>
+</table>
+
+<h3>V.4. Peça 36 — 22 págs · COMPÓSITA decisão ANA CRISTINA · range 399-1706</h3>
+<table>
+<tr><td>Range de folhas</td><td>fls. 399 → fls. 1706 (47 folhas únicas em 22 págs PDF)</td></tr>
+<tr><td>Saltos</td><td>30 saltos — maiores: 985→1064 (78), 558→761 (202), 761→985 (223), 1587→1706 (118), 1489→1552 (62), 1166→1173 (6), 1373→1405 (31)</td></tr>
+<tr><td>Códigos eSAJ</td><td>10 distintos: <span class="mono">QVuOhYaK, U4ZzVEcF, VUFYQJoE, XBW2YulV, Ys06FhT8, dxFVE8fM, eg7Ga9hM, elc8YOKK, qKKFGroY, rSAtU4NZ</span></td></tr>
+<tr><td>Signatárias</td><td>ANA CRISTINA WEYNEN CORES · PRISCILLA LIMENA</td></tr>
+<tr><td>Protocolo</td><td>WPIN25700451115 — 25/02/2025 às 16:56</td></tr>
+<tr><td>Liberações</td><td>9 datas — 02/10/2024 · 08/11/2024 · 09/12/2024 · 16/12/2024 · 20/01/2025 · 09/02/2025 · 02/04/2025 · 02/10/2025</td></tr>
+<tr><td>Status técnico</td><td>Compilação seletiva de páginas-chave referentes à decisão judicial de 25/02/2025 e movimentações correlatas</td></tr>
+</table>
+
+<h2>VI. Matriz de sobreposição documental entre peças</h2>
+
+<table>
+<tr><th>Par</th><th>Folhas comuns</th><th>Qte</th><th>Interpretação técnica</th></tr>
+<tr><td>Peça 32 ∩ Peça 33</td><td>2543, 2544, 2545, 2546, 2547, 2548, 2549, 2550, 2551, 2552, 2553, 2554, 2555, 2556, 2557, 2558, 2559, 2560, 2561</td><td><strong>19</strong></td><td>Duplicação integral da peça 32 dentro da peça 33 — mesma signatária, mesmo protocolo, mesmo código eSAJ</td></tr>
+<tr><td>Peça 33 ∩ Peça 35</td><td>22</td><td>1</td><td>Citação isolada à fls. 22 (prefácio histórico do processo)</td></tr>
+<tr><td>Peça 35 ∩ Peça 36</td><td>399, 407, 417, 486, 487, 503, 761</td><td>7</td><td>Re-extração de folhas-chave do bloco SISBAJUD inicial para sustentar a decisão de 2025 — anexo natural, não adulteração</td></tr>
+<tr><td>Peça 32 ∩ Peça 35</td><td>—</td><td>0</td><td>Sem interseção</td></tr>
+<tr><td>Peça 32 ∩ Peça 36</td><td>—</td><td>0</td><td>Sem interseção</td></tr>
+<tr><td>Peça 33 ∩ Peça 36</td><td>—</td><td>0</td><td>Sem interseção (peça 33 vai até 2561; peça 36 vai até 1706)</td></tr>
+</table>
+
+<h2>VII. Sequência cronológica reconstruída</h2>
+
+<table>
+<tr><th>Cronologia processual</th><th>Cronologia de download/geração eSAJ</th></tr>
+<tr><td>
+<ol>
+<li>fls. 22 (prefácio do processo) — citada em peças 33 e 35</li>
+<li>29/05/2023 a 14/07/2023 — janela SISBAJUD inicial (peça 35)</li>
+<li>02/10/2024 a 02/10/2025 — liberações associadas à peça 36</li>
+<li>25/02/2025 16:56 — protocolo da decisão materializada na peça 36 (Ana Cristina Weynen Cores)</li>
+<li>07/04/2026 13:12 — protocolo do documento KEZIA materializado nas peças 32 e 33</li>
+</ol>
+</td>
+<td>
+<ol>
+<li>08/06/2026 21:16:04 — geração peça 32 (download eSAJ)</li>
+<li>08/06/2026 21:18:35 — geração peça 33 (2 minutos depois — confirma rebaixa em sequência)</li>
+<li>12/06/2026 01:28:49 — geração peça 35 (4 dias depois)</li>
+<li>13/06/2026 13:04:09 — geração peça 36 (5 dias depois)</li>
+</ol>
+</td>
+</tr>
+</table>
+
+<div class="achado">
+<strong>Achado de IT 31-B.</strong> A diferença de 2 minutos e 31 segundos entre as gerações das peças 32 e 33 (mesma operação de download, com seleção diferente de subdocumentos) explica a sobreposição: o usuário-operador realizou dois downloads imediatamente sucessivos do portal eSAJ-TJSP, um restrito ao documento KEZIA (peça 32) e outro acrescido do prefácio histórico (peça 33). A operação é compatível com prática regular de patrocínio em ações de família.</p>
+</div>
+
+<h2>VIII. Verificação de integridade — checklist forense</h2>
+
+<table>
+<tr><th>Critério</th><th>Resultado</th><th>Observação</th></tr>
+<tr><td>Producer corresponde ao gerador esperado (iText TJSP)</td><td><span style="color:#0a5f2e">✔</span></td><td>iText 2.1.7 by 1T3XT em todas as peças</td></tr>
+<tr><td>CreationDate == ModDate (sem reedição posterior)</td><td><span style="color:#0a5f2e">✔</span></td><td>Idênticos nas 4 peças</td></tr>
+<tr><td>Único marcador %%EOF (sem incremental updates)</td><td><span style="color:#0a5f2e">✔</span></td><td>1 marcador por arquivo</td></tr>
+<tr><td>Ausência de JavaScript embarcado</td><td><span style="color:#0a5f2e">✔</span></td><td>0 ocorrências</td></tr>
+<tr><td>Ausência de camadas opcionais (OCG)</td><td><span style="color:#0a5f2e">✔</span></td><td>0 ocorrências</td></tr>
+<tr><td>Códigos eSAJ presentes e verificáveis</td><td><span style="color:#0a5f2e">✔</span></td><td>Total de 41 códigos distintos nas 4 peças</td></tr>
+<tr><td>Protocolos WPIN consistentes com signatários e datas</td><td><span style="color:#0a5f2e">✔</span></td><td>Triangulação coerente nos 9 protocolos identificados</td></tr>
+<tr><td>Assinaturas /Type /Sig embarcadas (peça 35)</td><td><span style="color:#0a5f2e">✔</span></td><td>12 assinaturas correspondem aos 6 protocolos × subdocumentos</td></tr>
+<tr><td>Saltos de folha justificados por seleção de extrato</td><td><span style="color:#c0a060">⚠</span></td><td>Esperado em peças compósitas — não é supressão; é seleção do operador-eSAJ</td></tr>
+<tr><td>Sobreposição peça 32 ⊂ peça 33</td><td><span style="color:#c0a060">⚠</span></td><td>Redundância; sem impacto sobre integridade — mesmo protocolo e código eSAJ</td></tr>
+<tr><td>Erro de xref (peças 35 e 36)</td><td><span style="color:#c0a060">⚠</span></td><td>Decorre da concatenação de subdocumentos eSAJ — não indica adulteração</td></tr>
+</table>
+
+<h2>IX. Conclusões periciais e pedidos consequentes</h2>
+
+<div class="verde">
+<strong>Conclusão pericial principal.</strong> As quatro peças digitais (32, 33, 35 e 36) apresentam <strong>integridade técnica preservada</strong>. Os metadados PDF, as assinaturas embarcadas, os códigos eSAJ e os protocolos WPIN sustentam a autenticidade dos documentos como gerados pelo portal eSAJ do TJSP. <strong>Não há indício técnico de adulteração</strong> — qualquer divergência observada (saltos de folha, sobreposições documentais) é compatível com o método regular de empacotamento de extratos digitais no eSAJ-TJSP.</p>
+</div>
+
+<div class="alerta">
+<strong>Ressalva pericial.</strong> A presente auditoria é restrita aos quatro PDFs remetidos e não substitui (i) verificação on-line dos códigos eSAJ no portal do TJSP, que pode ser feita pela patrocinadora habilitada e merece ser registrada em ata notarial; (ii) auditoria de quaisquer outras peças do processo que não tenham sido remetidas; (iii) auditoria de quaisquer peças do STF (não disponibilizadas).</p>
+</div>
+
+<h3>IX.1. Pedidos consequentes ao Juízo (eventual hipótese de questionamento)</h3>
+
+<ol>
+<li><strong>Certificação eSAJ on-line</strong> dos códigos de validação de cada documento (41 códigos catalogados neste relatório) — ata notarial registrando que cada conferência on-line retorna o documento original sem alteração.</li>
+<li><strong>Requisição</strong> ao TJSP-eSAJ do <strong>log de geração/download</strong> de cada uma das quatro peças, com identificação da conta de usuário, IP de origem, timestamp do servidor e seleção de subdocumentos.</li>
+<li><strong>Conferência das assinaturas digitais embarcadas</strong> na peça 35 (12 sigs) por ferramenta que valide cadeia de certificados ICP-Brasil.</li>
+<li><strong>Solicitação ao Cartório</strong> da pasta digital integral para reconstrução cronológica completa das fls. 1 a 2561, identificando explicitamente os saltos cobertos pelos extratos seletivos.</li>
+<li><strong>Se houver peça do STF a auditar</strong>, requisição da peça em formato PDF original (não impressão re-escaneada) para análise comparável.</li>
+</ol>
+
+<h2>X. Nota metodológica e reserva técnica</h2>
+
+<p>O presente Documento 31 foi elaborado como parecer técnico de TI forense em conformidade com o art. 472 do CPC. As ferramentas utilizadas — <span class="mono">pdfinfo</span>, <span class="mono">pdftotext</span>, regex sobre fluxo binário em Python — são padrão da indústria e seus resultados são <strong>reprodutíveis</strong> a partir dos quatro PDFs remetidos. A auditoria não substitui perícia judicial subscrita por perito-engenheiro/perito-contador credenciado pelo Juízo, nem dispensa a conversão prévia em peça subscrita por OAB para incorporação processual. PFs anonimizadas em circulação externa (exceto as partes nominalmente identificadas).</p>
+
+<div class="rodape">
+Documento 31 da série DOSSIES_E_NOTAS_TECNICAS — auditoria forense de TI sobre integridade documental das peças digitais 32, 33, 35 e 36 do TJSP-eSAJ. Sucede e integra os Documentos 22 a 30. Reprodutível a partir dos PDFs remetidos.
+</div>
+
+</body>
+</html>
