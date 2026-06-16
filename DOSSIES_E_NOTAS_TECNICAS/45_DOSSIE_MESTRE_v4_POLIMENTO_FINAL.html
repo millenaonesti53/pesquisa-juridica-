@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Documento 45 — Dossiê-Mestre v4 · Polimento Final · Painel Refinado</title>
+<style>
+@page { size: A4; margin: 1.8cm; @bottom-center { content: "Documento 45 · Dossiê-Mestre v4 · pág. " counter(page) " de " counter(pages); font-family: Helvetica, Arial, sans-serif; font-size: 8pt; color: #666; } }
+@page panel { size: A3 landscape; margin: 0.8cm; }
+.panel { page: panel; }
+body { font-family: Georgia, "Times New Roman", serif; font-size: 10.5pt; line-height: 1.45; color: #1b1b1b; margin: 0; }
+h1 { font-family: Helvetica, Arial, sans-serif; font-size: 20pt; color: #5b1a1a; border-bottom: 3px double #5b1a1a; padding-bottom: 6pt; margin-top: 0; }
+h2 { font-family: Helvetica, Arial, sans-serif; font-size: 14pt; color: #5b1a1a; border-bottom: 1px solid #c0a060; padding-bottom: 3pt; margin-top: 18pt; }
+h3 { font-family: Helvetica, Arial, sans-serif; font-size: 11.5pt; color: #2c2c2c; margin-top: 12pt; }
+.cabecalho { text-align: center; border: 2px solid #5b1a1a; padding: 14pt; margin-bottom: 14pt; background: #faf6f0; }
+.titulo { font-family: Helvetica, Arial, sans-serif; font-size: 12pt; letter-spacing: 1.5pt; color: #5b1a1a; font-weight: bold; }
+.sub { font-style: italic; color: #555; margin-top: 6pt; font-size: 10pt; }
+.confidencial { display: inline-block; padding: 2pt 8pt; background: #5b1a1a; color: white; font-family: Arial, sans-serif; font-size: 8.5pt; letter-spacing: 1pt; }
+table { width: 100%; border-collapse: collapse; margin: 8pt 0; font-size: 9.5pt; }
+th { background: #5b1a1a; color: white; padding: 5pt 6pt; text-align: left; font-family: Arial, sans-serif; font-size: 9pt; }
+td { padding: 4pt 6pt; border-bottom: 1px solid #ddd; vertical-align: top; }
+tr:nth-child(even) td { background: #faf6f0; }
+.parte { background: #5b1a1a; color: white; padding: 14pt; margin: 18pt 0 8pt 0; text-align: center; border-radius: 4pt; }
+.parte h2 { color: #ffd866; border: none; text-align: center; margin: 0; font-size: 14pt; }
+.veredito { background: #1b3a5b; color: white; padding: 10pt 14pt; margin: 10pt 0; border-radius: 4pt; }
+.veredito strong { color: #ffd866; }
+.executive { background: linear-gradient(135deg, #5b1a1a 0%, #8a2a2a 100%); color: white; padding: 16pt; margin: 14pt 0; border-radius: 6pt; }
+.executive h3 { color: #ffd866; margin-top: 0; font-size: 13pt; }
+.executive .num { display: inline-block; padding: 3pt 8pt; background: #ffd866; color: #5b1a1a; border-radius: 3pt; font-weight: bold; margin-right: 6pt; }
+.cn-row { display: flex; gap: 8pt; margin: 4pt 0; padding: 5pt 8pt; background: #f8f4ed; border-left: 3px solid #c0a060; font-size: 9.5pt; }
+.cn-tag { font-family: Arial, sans-serif; font-weight: bold; color: white; background: #5b1a1a; padding: 1pt 6pt; border-radius: 2pt; font-size: 8.5pt; flex-shrink: 0; }
+.cn-text { flex: 1; }
+.cn-consec { color: #b00020; font-style: italic; font-size: 9pt; }
+.box { border-left: 4px solid #5b1a1a; background: #faf6f0; padding: 8pt 12pt; margin: 10pt 0; }
+.alerta { border-left: 4px solid #b00020; background: #fff5f5; padding: 8pt 12pt; margin: 10pt 0; }
+.achado { border-left: 4px solid #c0a060; background: #fffdf5; padding: 8pt 12pt; margin: 10pt 0; }
+.rodape { margin-top: 22pt; padding-top: 10pt; border-top: 1px solid #c0a060; font-size: 9pt; color: #555; font-style: italic; text-align: center; }
+ul, ol { margin: 4pt 0 4pt 18pt; } li { margin: 2pt 0; }
+.mono { font-family: "Courier New", monospace; font-size: 9pt; background: #f0ece6; padding: 1pt 4pt; }
+.cap { text-align: center; font-size: 9pt; color: #555; font-style: italic; margin-top: 4pt; }
+.page-break { page-break-after: always; }
+.no-break { page-break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<!-- ==================== CAPA + SUMÁRIO EXECUTIVO 1 PÁGINA ==================== -->
+<div class="cabecalho" style="padding: 22pt">
+<div class="confidencial">CONFIDENCIAL · DOSSIÊ-MESTRE FINAL v4 · POLIMENTO DEFINITIVO</div>
+<div class="titulo" style="margin-top:14pt; font-size:18pt">DOCUMENTO 45</div>
+<div class="titulo" style="font-size:14pt">DOSSIÊ-MESTRE INTEGRADO · v4 POLIDO</div>
+<div class="titulo" style="font-size:11pt; margin-top:4pt">+ PAINEL VISUAL DA FRAUDE REFINADO + SUMÁRIO EXECUTIVO 1 PÁGINA</div>
+<div class="sub">Versão definitiva polida. Refina o Doc 44 com: (i) Sumário Executivo de uma página · 60 segundos · para a primeira leitura do julgador; (ii) reagrupamento dos 42 cisnes negros por <strong>consequência jurídica</strong> (não por vetor) · maior eficácia argumentativa; (iii) Painel Visual da Fraude com hierarquia tipográfica refinada · contrastes ajustados; (iv) Infográfico 5 com barras de alto contraste e callout "Δ 14,5×"; (v) Infográfico 6 com narrativa visceral e frame legal CNJ 492/2023.</div>
+<div style="margin-top:12pt; font-size:9.5pt">Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP · 15/06/2026<br>
+Subscrição: <strong>Dr. Luiz Carlos Guieseler Junior · OAB/PR 44.937 · Dra. Michele Hilgenberg · OAB/SC 41.607</strong></div>
+</div>
+
+<!-- SUMÁRIO EXECUTIVO -->
+<div class="executive">
+<h3>SUMÁRIO EXECUTIVO · LEITURA DE 60 SEGUNDOS</h3>
+
+<p style="margin: 6pt 0"><span class="num">1</span> <strong>O caso em uma frase.</strong> Patrimônio comum de aproximadamente R$ 1,5 bi (cônjuge Ari Gorenstein) — estrutura via FIP Ajaccio CNPJ 37.381.595/0001-82, PL CVM <strong>R$ 1,57 bilhão</strong>, 99,97% em E-Vino S.A. — está sendo objeto, na esfera regulatória e cível, de <strong>deflação artificial de 14,5×</strong> (oferta de R$ 4,78 MM pela meação) por meio de arquitetura cross-border em 8 jurisdições e cláusulas de aniquilação pré-constituídas no Acordo de Acionistas de 25/05/2022.</p>
+
+<p style="margin: 6pt 0"><span class="num">2</span> <strong>O quê está provado.</strong> SISBAJUD em 18/05/2023 identificou <strong>R$ 84.856.714,65</strong> (R$ 42,42 MM bloqueados); 91% custodiados na OSLO Capital DTVM. Iliquidez alegada pela OSLO foi <strong>refutada por experimento empírico</strong> em 2026 (autos 0005199-67: cotas liberadas em 18 horas). Acórdão "Bloqueio Mantido" transitou em julgado em 10/10/2023 (AI 2157767-67).</p>
+
+<p style="margin: 6pt 0"><span class="num">3</span> <strong>Quatro sincronizações criminais</strong> (deltas de poucos dias entre marcos processuais e reações societárias): WIB→Volimo <strong>+15d</strong>; Penhor Evino→Cisão <strong>+4d</strong>; Vencimento mútuo→Divórcio <strong>+8d</strong>; Destituição→Bonifácio <strong>+46d</strong> — padrão objetivo de premeditação (CPC art. 374, IV).</p>
+
+<p style="margin: 6pt 0"><span class="num">4</span> <strong>O quanto se pleiteia.</strong> Meação Millena cenário central (probabilidade 85%) = <strong>R$ 717-765 milhões</strong>. Target settlement realista: <strong>R$ 215-285 MM em 6-12 meses</strong> (32-42% recovery integral).</p>
+
+<p style="margin: 6pt 0"><span class="num">5</span> <strong>Janela tática.</strong> Lock-Up Cláusula 7.3 do Acordo de Acionistas vence em <strong>25/05/2027</strong>. Intervenção judicial urgente em <strong>até 30 dias</strong>.</p>
+
+<p style="margin: 6pt 0"><span class="num">6</span> <strong>O quê executar agora.</strong> Petição-mestre + IDPJ ampliado + denúncia CVM (Doc 42) + notícia-crime GAECO/MP-SP articulada à Operação Carbono Oculto + cooperação MLAT (8 jurisdições) + Curadoria Judicial dos ativos sob constrição.</p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== PARTE I - DIAGNÓSTICO ==================== -->
+<div class="parte"><h2>PARTE I — DIAGNÓSTICO DA FRAUDE</h2></div>
+
+<h2>1.1 · O VEREDITO FINANCEIRO · A DEFLAÇÃO DE 14,5×</h2>
+
+<table>
+<tr><th>Cenário</th><th>PL Ajaccio</th><th>× 4,40%</th><th>Valor Ari</th><th>Meação 50%</th></tr>
+<tr><td style="background:#fff5f5"><strong>DEFESA (réu)</strong></td><td>R$ 108 MM</td><td>4,40%</td><td>R$ 4,75 MM</td><td><strong>R$ 2,38 MM</strong></td></tr>
+<tr><td style="background:#f0fbf2"><strong>REAL · CVM nov/2024</strong></td><td><strong>R$ 1.570 MM</strong></td><td>4,40%</td><td><strong>R$ 69,08 MM</strong></td><td><strong>R$ 34,54 MM</strong></td></tr>
+<tr><td style="background:#f0fbf2"><strong>REAL + control premium 30%</strong></td><td>—</td><td>—</td><td>R$ 89,8 MM</td><td><strong>R$ 44,9 MM</strong></td></tr>
+<tr><td style="background:#f0fbf2"><strong>REAL + control premium 50%</strong></td><td>—</td><td>—</td><td>R$ 103,6 MM</td><td><strong>R$ 51,8 MM</strong></td></tr>
+</table>
+
+<div class="alerta"><strong>Deflação 14,5×.</strong> A defesa apresenta PL fictício de R$ 108 MM. O PL real reportado nos Informes Quadrimestrais CVM e auditado pela E&amp;Y é de R$ 1,53-1,57 bilhão. Com control premium da Classe F (que detém 4 de 5 cadeiras no Comitê), o valor corrigido vai a R$ 89-103 MM (meação R$ 44-52 MM). Ainda assim, é fração do patrimônio total (Doc 35: R$ 1,43-1,53 bi · meação central R$ 717-765 MM).</div>
+
+<h2>1.2 · OS SEIS PILARES DA FRAUDE SISTÊMICA</h2>
+
+<div class="veredito"><strong>PILAR 1 — SINCRONIZAÇÃO TEMPORAL QUÁDRUPLA.</strong> WIB→Volimo +15d · Penhor Evino→Cisão +4d · Vencimento mútuo→Divórcio +8d · Destituição→Bonifácio +46d. Padrão objetivo de preparação patrimonial antecipada (CPC 374 IV).</div>
+
+<div class="veredito"><strong>PILAR 2 — MANIPULAÇÃO DO PL.</strong> PL real R$ 1,57 bi vs PL deflacionado R$ 108 MM = deflação 14,5×.</div>
+
+<div class="veredito"><strong>PILAR 3 — PARADOXO OSLO.</strong> Em 2026, OSLO liberou cotas em <strong>~18 horas</strong> nos autos 0005199-67 — refuta tese de iliquidez. Paradoxo: mesma OSLO administra Oslo Soberano FIF RF Simples (R$ 152 MM, 99,29% TPF, D+0).</div>
+
+<div class="veredito"><strong>PILAR 4 — RETENÇÃO BTG.</strong> R$ 31.925.193,31 retidos pelo BTG há 33+ meses (ID <span class="mono">072023000013575779</span>) — inexecução substantiva.</div>
+
+<div class="veredito"><strong>PILAR 5 — SHADOW DIRECTOR.</strong> Ari sob 12/12 indicadores (UK Companies Act 2006 s.251 + CC 1.011 + LSA 158 + ICVM 175/22 art. 39).</div>
+
+<div class="veredito"><strong>PILAR 6 — CLÁUSULAS DE ANIQUILAÇÃO.</strong> Acordo 25/05/2022 — Cláusulas 7.3.5 (divórcio) + 7.7.1 (Penhora-Suicídio) + 7.3 (Lock-Up) + 9.1.1 (IPO compulsório).</div>
+
+<h2>1.3 · CONEXÃO: BLINDAGEM PATRIMONIAL COMO MODUS OPERANDI DA VIOLÊNCIA PATRIMONIAL</h2>
+
+<p>A complexidade financeira documentada NÃO é planejamento patrimonial neutro. É o <em>modus operandi</em> tipificado da <strong>violência patrimonial</strong> (LMP art. 7º IV, redação Lei 14.550/2023). A Resolução CNJ nº 492/2023 (Protocolo de Julgamento com Perspectiva de Gênero) é vinculante. Cada cisão, cada subscrição em fundo durante litígio, cada renúncia ao direito de preferência, cada criação de subclasse retroativa configura, em tese, ato concreto de violência patrimonial.</p>
+
+<div class="page-break"></div>
+
+<!-- ==================== PARTE II - ANATOMIA ==================== -->
+<div class="parte"><h2>PARTE II — ANATOMIA DA FRAUDE</h2></div>
+
+<h2>2.1 · O ECOSSISTEMA DA OCULTAÇÃO</h2>
+
+<table>
+<tr><th>Camada</th><th>Função</th><th>Entidades-chave</th></tr>
+<tr><td>1 — Núcleo (PF)</td><td>Controle real</td><td>Ari · Marcos Leal · Ricardo Costa (Madrid) · Tatiana/Thiago (testas) · Felzenszwalb/Martins · cocredores Penhor (Shayo · Levy × 2 · Sarquis) · Felix Zipse · Fraschini · Maggi</td></tr>
+<tr><td>2 — Fundo Master</td><td>Concentração</td><td>Ajaccio FIP (R$ 1,57 bi · 99,97% E-Vino) · feeders Volimo+Avila+XPA+Sharp · cascas Bonifácio+FRAM XIV</td></tr>
+<tr><td>3 — Cluster Operacional</td><td>Geração de caixa</td><td>E-Vino + Agro Syrah + Grand Cru Imp/Distr + Víssimo + Interbeverages (Bela Cintra 986)</td></tr>
+<tr><td>4 — Blindagem</td><td>Cascas</td><td>RT 127 · Apoio Admin MEI · Vila Porto · Aqua Capital · Subclasse J retroativa</td></tr>
+<tr><td>5 — Véu Offshore</td><td>Opacidade</td><td>JP2R Singapura · Anacapri+Brescia+Cetara+Raffaello LP Delaware · WIB GmbH Munique · Puddle Glum LLC Miami · ACPE Advisors Uruguai · Spectra I/II + Agrofundo</td></tr>
+<tr><td>Suporte</td><td>Capturados</td><td>OSLO DTVM (GIIN <span class="mono">0W2JW5...076</span>) · Vinci Compass · BTG · Itaú · KPMG · Grant Thornton</td></tr>
+</table>
+
+<h2>2.2 · QUATRO VETORES DE APROFUNDAMENTO</h2>
+
+<h3>(a) "Buraco Negro" do Volimo FIP — Mútuo R$ 200 MM</h3>
+<p>Volimo (CNPJ 36.642.430/0001-54) constituído em 07/07/2021 — <strong>15 dias após</strong> dívida WIB. 97,48% PL alocado no mesmo dia em mútuo conversível à E-Vino. Vencimento 02/01/2023 (8 dias antes do divórcio). <strong>Grant Thornton emitiu ABSTENÇÃO DE OPINIÃO em 17/08/2022</strong>.</p>
+
+<h3>(b) "Paradoxo Oslo" e Gatilho FATCA</h3>
+<p>OSLO administra Ajaccio (ilíquido alegado) E Oslo Soberano (R$ 152 MM · 99,29% TPF · liquidez D+0). GIIN FATCA <span class="mono">0W2JW5.99999.SL.076</span> ativo no IRS — gatilho automático cooperação Brasil-EUA via IGA Modelo 1 (Decreto 8.506/2015).</p>
+
+<h3>(c) "Rota da Seda" do Desvio (DE-SG-DE)</h3>
+<p>Cisão E-Vino → RT 127 → WIB Brazil München → WIB Berlim → quitação dívida pessoal Ari (€2,276 MM, liquidada até 31/12/2023). Cluster offshore amplia para 8 jurisdições.</p>
+
+<h3>(d) "Jogador-Chave" Ricardo Costa — Nexo Espanha</h3>
+<p>Acionista Indireto majoritário 39,90%. Lisboa (Rua Santo Antonio a Estrela 33, 2022) → Madrid (Calle del Camino del Sur 6, Alcobendas, 2025). Em 14/02/2025 subscreveu sozinho 137.452 ações via 15.777 Debêntures Incentivadas CEP 28109. Recebeu R$ 35,17 MM "de dentro" e propõe R$ 4,78 MM pela meação.</p>
+
+<h2>2.3 · OS 42 CISNES NEGROS · AGRUPADOS POR CONSEQUÊNCIA JURÍDICA</h2>
+
+<h3>GRUPO A · Indícios de FRAUDE PROCESSUAL e ATO ATENTATÓRIO (CPC 80, 774; CC 167)</h3>
+<div class="cn-row"><span class="cn-tag">CN-39</span><div class="cn-text">Manipulação do PL de R$ 108 MM (deflação 14,5×). <span class="cn-consec">→ Fraude processual; ato atentatório CPC 774 II; litigância má-fé CPC 80 II e V.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-40</span><div class="cn-text">OSLO liberou cotas em ~18h em 2026 (autos 0005199-67). <span class="cn-consec">→ Tese de iliquidez declarada FALSA; CPC 80 II.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-41</span><div class="cn-text">R$ 31,9 MM BTG retidos 33+ meses (ID 072023000013575779). <span class="cn-consec">→ Inexecução substantiva CPC 854 §3º; astreintes; representação BACEN.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-05</span><div class="cn-text">Classe J criada 04/06/2024 com amortizações retroativas para 26/12/2022. <span class="cn-consec">→ Backdating; falsidade ideológica CP 299.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-08</span><div class="cn-text">Ari AUSENTE da AGE 14/02/2025. <span class="cn-consec">→ Reabertura do termo final do regime (CC 1.571 II + 1.576).</span></div></div>
+
+<h3>GRUPO B · Indícios de FRAUDE À EXECUÇÃO e SIMULAÇÃO (CPC 792 IV; CC 167-169)</h3>
+<div class="cn-row"><span class="cn-tag">CN-01</span><div class="cn-text">Ajaccio FIC FIM IE cancelado CVM 29/12/2021 — 2 dias antes da cisão. <span class="cn-consec">→ Simulação por reutilização de denominação (CC 167-169); nulidade.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-02</span><div class="cn-text">Penhor Evino constituído 27/12/2021 — 4 dias antes da cisão. <span class="cn-consec">→ Encargo real anterior; afeta partilha (CC 1.658).</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-03</span><div class="cn-text">RT 127 vida útil 20 meses. <span class="cn-consec">→ Padrão laranja; CC 167 simulação; CC 50 desconsideração.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-27</span><div class="cn-text">Cash-out R$ 157,9 MM no IRPF 2024. <span class="cn-consec">→ Movimentação patrimonial DURANTE litígio; CPC 792 IV.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-42</span><div class="cn-text">Sincronização temporal quádrupla (15+4+8+46 dias). <span class="cn-consec">→ Prova indiciária qualificada CPC 374 IV; premeditação.</span></div></div>
+
+<h3>GRUPO C · Indícios de VIOLAÇÃO de DEVERES FIDUCIÁRIOS e SOCIETÁRIOS (RCVM 175/2022; LSA 115, 117, 154-158)</h3>
+<div class="cn-row"><span class="cn-tag">CN-04</span><div class="cn-text">FRAM Capital XIV FIP constituído MESMO dia que Ajaccio e baixado. <span class="cn-consec">→ Casca; CC 50 desconsideração.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-09</span><div class="cn-text">Cláusula 7.3.5 — divórcio como gatilho. <span class="cn-consec">→ Inoponível à meeira; CC 50; LMP 7º IV.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-10</span><div class="cn-text">Cláusula 7.7.1 Penhora-Suicídio R$ 127,04+IPCA+8%. <span class="cn-consec">→ Cláusula leonina; CC 422; nula.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-11</span><div class="cn-text">Cláusula 7.3 Lock-Up até 25/05/2027. <span class="cn-consec">→ Janela tática crítica 24 meses.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-12</span><div class="cn-text">Cláusula 9.1.1 IPO compulsório. <span class="cn-consec">→ Tripla blindagem; restrições 20 anos pós-IPO.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-28</span><div class="cn-text">Marcos Leal em 7 diretorias + co-controle 50/50. <span class="cn-consec">→ LSA 115 §1º conflito; anulação dos atos.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-29</span><div class="cn-text">Diluição programada AGE 14/02/2025. <span class="cn-consec">→ Hostile dilution; LSA 117 abuso de poder.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-35</span><div class="cn-text">Contradição KPMG/CVM — "sem demandas" com R$ 42 MM bloqueados. <span class="cn-consec">→ NBC TA 220/240/580 + RCVM 175 art. 39.</span></div></div>
+
+<h3>GRUPO D · Indícios de LAVAGEM, EVASÃO DE DIVISAS e CRIMES FINANCEIROS (Lei 9.613/98; 7.492/86; 8.137/90; 12.850/13)</h3>
+<div class="cn-row"><span class="cn-tag">CN-18-23</span><div class="cn-text">JP2R + Anacapri/Brescia/Cetara/Raffaello + WIB + Puddle Glum + ACPE + Spectra/Agrofundo. <span class="cn-consec">→ Lei 7.492/86 art. 22 evasão; Lei 9.613/98 lavagem; cooperação MLAT.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-24</span><div class="cn-text">R$ 1,86 MM em 22 transferências E-Vino → Apoio Admin. <span class="cn-consec">→ Flow-through; Lei 8.137/90 sonegação; layering.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-25</span><div class="cn-text">R$ 749.183,38 non-compete + 3 TEDs R$ 680k em 24h. <span class="cn-consec">→ CP 168 apropriação; STJ REsp 1.846.138/SP.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-26</span><div class="cn-text">Debêntures CEP 28109 — 15.777 unidades por Ricardo Costa. <span class="cn-consec">→ Canal off-SISBAJUD; quebra sigilo CETIP.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-32</span><div class="cn-text">GIIN FATCA OSLO 0W2JW5.99999.SL.076. <span class="cn-consec">→ Cooperação Brasil-EUA; retenção 30% por omissão.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-33</span><div class="cn-text">Conexão Miami (residência Ari) = U.S. Indicia ignorada. <span class="cn-consec">→ Falha KYC FATCA — RCVM 50/2021.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-34</span><div class="cn-text">Canal triangular Puddle Glum (FL) → ACPE (UY) → Aqua (BR). <span class="cn-consec">→ Lei 9.613/98; MLAT BCU+DGI.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-36</span><div class="cn-text">7 marcadores GAECO coincidentes com Carbono Oculto. <span class="cn-consec">→ Representação MP-SP/GAECO; Lei 12.850/13.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-37</span><div class="cn-text">REAG + Trustee DTVM Nível A Carbono Oculto. <span class="cn-consec">→ Janela documental (BACEN liquidação REAG 2025).</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-38</span><div class="cn-text">Vila Porto importa Almaviva+Don Melchor; E-Vino vende ambos. <span class="cn-consec">→ Violação Cláusula 10.1.7 + LSA 155.</span></div></div>
+
+<h3>GRUPO E · LACUNAS DOCUMENTAIS (CPC 396-404; presunção CPC 400 I)</h3>
+<div class="cn-row"><span class="cn-tag">CN-13</span><div class="cn-text">Boletim de integralização das cotas Ari — ausente. <span class="cn-consec">→ Presunção CPC 400 I.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-14</span><div class="cn-text">Acordo de Cotistas FIP Ajaccio — não localizado. <span class="cn-consec">→ Exibição compulsória CPC 396-404.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-15</span><div class="cn-text">Boletins Subscrição históricos E-Vino — ausentes. <span class="cn-consec">→ Rastreio da transição direto→indireto.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-16</span><div class="cn-text">Ata original cisão 31/12/2021 — não juntada. <span class="cn-consec">→ Insuficiency probatória; nulidade.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-17</span><div class="cn-text">Escritura cessão RT 127 → Ajaccio — não juntada. <span class="cn-consec">→ Rompe cadeia; fraude execução CPC 792 IV.</span></div></div>
+
+<h3>GRUPO F · OUTROS ACHADOS</h3>
+<div class="cn-row"><span class="cn-tag">CN-06</span><div class="cn-text">Ari assina como INTERVENIENTE (não cotista). <span class="cn-consec">→ Inverte tese de "partilha limitada".</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-07</span><div class="cn-text">Participação corrigida 4,40% vs 2,22%. <span class="cn-consec">→ DOBRA o universo da partilha indireta (CC 1.658-1.660).</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-30</span><div class="cn-text">DC Associados — assessor Vinci. <span class="cn-consec">→ Mapear histórico defensivo.</span></div></div>
+<div class="cn-row"><span class="cn-tag">CN-31</span><div class="cn-text">Tatiana + Thiago — shadow paralelos Agro Syrah. <span class="cn-consec">→ CC 1.011 + LSA 158.</span></div></div>
+
+<div class="page-break"></div>
+
+<!-- ==================== PARTE III - ROTEIRO ==================== -->
+<div class="parte"><h2>PARTE III — ROTEIRO PARA A AÇÃO</h2></div>
+
+<h2>3.1 · CHAVES DO COFRE · documentos faltantes</h2>
+<table>
+<tr><th>Documento</th><th>Obtenção</th><th>Astreintes</th></tr>
+<tr><td>Acordo de Cotistas FIP Ajaccio (todas as versões)</td><td>Exibição CPC 396-404 contra OSLO + Vinci</td><td>R$ 50k/dia</td></tr>
+<tr><td>Boletins de subscrição das cotas Ari</td><td>Exibição + ofício CVM-SIN</td><td>R$ 50k/dia</td></tr>
+<tr><td>Registros UBO das 8 entidades estrangeiras (KYC FATCA)</td><td>Ofício OSLO + SEC/IRS/FinCEN via DRCI</td><td>R$ 100k/dia</td></tr>
+<tr><td>Contrato integral Mútuo Volimo + conversibilidade</td><td>Exibição BTG + papéis Grant Thornton</td><td>R$ 50k/dia</td></tr>
+<tr><td>Laudo UHY Bendoraytes 30/03/2022 integral</td><td>Ofício UHY</td><td>R$ 20k/dia</td></tr>
+<tr><td>Cap table E-Vino + ações remanescentes Ari</td><td>Exibição + JUCESP</td><td>R$ 30k/dia</td></tr>
+<tr><td>DIRPF AC 2022 (ex 2023) — alienação E-Vino→Ajaccio</td><td>Ofício RFB</td><td>—</td></tr>
+<tr><td>Histórico Custodiantes CVM Ajaccio</td><td>Ofício CVM-SIN</td><td>—</td></tr>
+<tr><td>Extrato bancário Bonifácio FIP (origem R$ 18 MM)</td><td>Quebra sigilo + ofício OSLO</td><td>R$ 50k/dia</td></tr>
+<tr><td>PDF AI 2231738-85.2023 (185 págs)</td><td>Ofício TJSP</td><td>R$ 5k/dia</td></tr>
+</table>
+
+<h2>3.2 · DILEMA FECHADO · 3 frentes simultâneas</h2>
+
+<table>
+<tr><th>Frente</th><th>Ações</th><th>Prazo</th></tr>
+<tr><td>CÍVEL (1ª VF Pinheiros)</td><td>Petição-mestre + tutela inibitória + astreinte + bloqueio universal + IDPJ ampliado + perícia integral + declaração incontrovérsia R$ 84,86 MM</td><td>0-30 dias</td></tr>
+<tr><td>CRIMINAL (GAECO + GEVID + MPF)</td><td>Notícia-crime articulada (8 tipificações) + representação Carbono Oculto</td><td>15-45 dias</td></tr>
+<tr><td>REGULATÓRIA (CVM + BACEN + COAF + RFB + OAB)</td><td>Doc 42 Denúncia CVM-PAS + Res. 244/2022 BACEN + RIF COAF + FATCA RFB + suspensão postulatória OAB</td><td>15-45 dias</td></tr>
+</table>
+
+<h2>3.3 · CONEXÃO CARBONO OCULTO</h2>
+<p>Minuta autônoma de petição ao GAECO/MP-SP aproveitando: (i) liquidação REAG BACEN 2025 = janela documental; (ii) 7 marcadores GAECO coincidentes; (iii) tipologia compartilhada FIP+DTVM+single cotist; (iv) vínculo Nível A REAG–PCC já mapeado na Operação deflagrada em 28/08/2025.</p>
+
+<h2>3.4 · TARGET SETTLEMENT e MEDIDAS CAUTELARES</h2>
+
+<table>
+<tr><th>Cenário</th><th>Valor</th><th>Janela</th><th>% recovery</th></tr>
+<tr><td>Pessimista</td><td>R$ 100-150 MM</td><td>imediato</td><td>15-22%</td></tr>
+<tr><td><strong>Realista recomendado</strong></td><td><strong>R$ 215-285 MM</strong></td><td><strong>6-12 m</strong></td><td><strong>32-42%</strong></td></tr>
+<tr><td>Otimista</td><td>R$ 285-450 MM</td><td>12-24 m</td><td>42-67%</td></tr>
+<tr><td>Recovery integral litigado</td><td>R$ 717-765 MM</td><td>24-60 m</td><td>100%</td></tr>
+</table>
+
+<h3>3.4.1 — 8 medidas cautelares específicas</h3>
+<ol>
+<li><strong>Arresto</strong> da parte não bloqueada dos R$ 84,86 MM incontroversos;</li>
+<li><strong>Arresto</strong> dos bens identificados no aumento de capital durante litígio (R$ 250-285 MM);</li>
+<li><strong>Indisponibilidade premental</strong> Classe F Ajaccio + Bonifácio FIP;</li>
+<li><strong>Tutela inibitória</strong> proibindo novas reorganizações no Grupo Víssimo sem prévia anuência;</li>
+<li><strong>Astreinte</strong> R$ 100k/dia (elevação automática a R$ 200k/dia após 30 dias);</li>
+<li><strong>Bloqueio universal</strong> CCS-BACEN + SISBAJUD + Renajud + Infojud + CETIP/B3 + CVM em R$ 717-765 MM;</li>
+<li><strong>Holding de Litígios / Curadoria Judicial</strong> para gerir ativos sob constrição;</li>
+<li><strong>Suspensão postulatória</strong> profissionais com custeio E-Vino (EAOAB 18 + Provimento CFOAB 188).</li>
+</ol>
+
+<div class="achado"><strong>Janela tática</strong>: 25/05/2027 (vencimento Lock-Up Acordo Acionistas) — intervenção judicial urgente em até 30 dias da data-base (10/06/2026).</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== PAINEL VISUAL DA FRAUDE - A3 REFINADO ==================== -->
+<div class="panel">
+<div style="text-align:center; padding: 6pt 0">
+<div style="font-family: Helvetica, Arial, sans-serif; font-size: 16pt; font-weight: bold; color: #5b1a1a; letter-spacing: 2pt;">PAINEL VISUAL DA FRAUDE · DASHBOARD INTEGRADO</div>
+<div style="font-size: 10pt; color: #555; font-style: italic; margin-top: 3pt;">5 infográficos coordenados · timeline como espinha dorsal · compreensão em 60 segundos</div>
+</div>
+
+<svg width="1550" height="1020" viewBox="0 0 1550 1020" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" font-size="9">
+<defs>
+<marker id="arRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b00020"/></marker>
+<marker id="arGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0a5f2e"/></marker>
+<marker id="arDk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+<linearGradient id="centralGrad" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#1b3a5b"/><stop offset="1" stop-color="#0e2238"/></linearGradient>
+</defs>
+
+<!-- 1. ORGANOGRAMA - canto superior esquerdo -->
+<g>
+<rect x="20" y="10" width="450" height="295" rx="8" fill="white" stroke="#5b1a1a" stroke-width="2"/>
+<rect x="20" y="10" width="450" height="32" rx="8" fill="#5b1a1a"/>
+<text x="245" y="31" font-size="12" font-weight="bold" fill="#ffd866" text-anchor="middle">① ORGANOGRAMA DA OCULTAÇÃO · QUEM</text>
+
+<!-- Camadas concêntricas -->
+<rect x="195" y="58" width="100" height="28" rx="4" fill="#5b1a1a"/>
+<text x="245" y="76" font-size="10" font-weight="bold" fill="white" text-anchor="middle">ARI (PF)</text>
+
+<rect x="170" y="94" width="150" height="28" rx="4" fill="#6b3e00"/>
+<text x="245" y="112" font-size="10" font-weight="bold" fill="white" text-anchor="middle">AJACCIO FIP R$ 1,57bi</text>
+
+<rect x="135" y="130" width="220" height="28" rx="4" fill="#1b4d6b"/>
+<text x="245" y="148" font-size="10" font-weight="bold" fill="white" text-anchor="middle">E-VINO + cluster operacional (5 PJs)</text>
+
+<rect x="40" y="170" width="100" height="32" rx="4" fill="#b8860b"/>
+<text x="90" y="187" font-size="9" font-weight="bold" fill="white" text-anchor="middle">RT 127</text>
+<text x="90" y="198" font-size="7.5" fill="white" text-anchor="middle">vida 20 meses</text>
+
+<rect x="160" y="170" width="100" height="32" rx="4" fill="#b8860b"/>
+<text x="210" y="187" font-size="9" font-weight="bold" fill="white" text-anchor="middle">BONIFÁCIO FIP</text>
+<text x="210" y="198" font-size="7.5" fill="white" text-anchor="middle">durante litígio</text>
+
+<rect x="280" y="170" width="100" height="32" rx="4" fill="#b8860b"/>
+<text x="330" y="187" font-size="9" font-weight="bold" fill="white" text-anchor="middle">APOIO ADMIN</text>
+<text x="330" y="198" font-size="7.5" fill="white" text-anchor="middle">saldo R$ 30</text>
+
+<rect x="400" y="170" width="50" height="32" rx="4" fill="#b8860b"/>
+<text x="425" y="190" font-size="8" font-weight="bold" fill="white" text-anchor="middle">+ Vila Porto</text>
+
+<text x="245" y="225" font-size="9" font-weight="bold" fill="#8a4d7a" text-anchor="middle">VÉU OFFSHORE · 8 jurisdições</text>
+
+<rect x="40" y="232" width="80" height="26" rx="4" fill="#8a4d7a"/>
+<text x="80" y="249" font-size="8.5" font-weight="bold" fill="white" text-anchor="middle">JP2R SG</text>
+
+<rect x="125" y="232" width="80" height="26" rx="4" fill="#8a4d7a"/>
+<text x="165" y="249" font-size="8.5" font-weight="bold" fill="white" text-anchor="middle">DELAWARE</text>
+
+<rect x="210" y="232" width="80" height="26" rx="4" fill="#8a4d7a"/>
+<text x="250" y="249" font-size="8.5" font-weight="bold" fill="white" text-anchor="middle">WIB DE</text>
+
+<rect x="295" y="232" width="90" height="26" rx="4" fill="#8a4d7a"/>
+<text x="340" y="249" font-size="8.5" font-weight="bold" fill="white" text-anchor="middle">PUDDLE GLUM</text>
+
+<rect x="390" y="232" width="60" height="26" rx="4" fill="#8a4d7a"/>
+<text x="420" y="249" font-size="8.5" font-weight="bold" fill="white" text-anchor="middle">ACPE UY</text>
+
+<rect x="100" y="270" width="290" height="26" rx="4" fill="#4d6b1b"/>
+<text x="245" y="287" font-size="9" font-weight="bold" fill="white" text-anchor="middle">SUPORTE · OSLO + Vinci + BTG + KPMG</text>
+
+<line x1="245" y1="86" x2="245" y2="94" stroke="#444" stroke-width="1.5" marker-end="url(#arDk)"/>
+<line x1="245" y1="122" x2="245" y2="130" stroke="#444" stroke-width="1.5" marker-end="url(#arDk)"/>
+</g>
+
+<!-- 3. MAPA DE JURISDIÇÕES - canto superior direito -->
+<g>
+<rect x="1080" y="10" width="450" height="295" rx="8" fill="white" stroke="#5b1a1a" stroke-width="2"/>
+<rect x="1080" y="10" width="450" height="32" rx="8" fill="#5b1a1a"/>
+<text x="1305" y="31" font-size="12" font-weight="bold" fill="#ffd866" text-anchor="middle">③ MAPA DE JURISDIÇÕES · ONDE</text>
+
+<rect x="1090" y="58" width="430" height="240" fill="#e8eef5" stroke="#9aa8b8" stroke-width="0.5"/>
+
+<!-- Equador -->
+<line x1="1090" y1="195" x2="1520" y2="195" stroke="#999" stroke-width="0.5" stroke-dasharray="2,3"/>
+
+<!-- Brasil -->
+<circle cx="1190" cy="240" r="18" fill="#0a5f2e" stroke="white" stroke-width="3"/>
+<circle cx="1190" cy="240" r="26" fill="none" stroke="#0a5f2e" stroke-width="1" opacity="0.4"/>
+<text x="1190" y="246" font-size="11" font-weight="bold" fill="white" text-anchor="middle">BR</text>
+<text x="1190" y="280" font-size="9" fill="#0a5f2e" font-weight="bold" text-anchor="middle">São Paulo</text>
+<text x="1190" y="290" font-size="7.5" fill="#0a5f2e" text-anchor="middle">HUB CENTRAL</text>
+
+<!-- Miami -->
+<circle cx="1120" cy="135" r="12" fill="#b00020" stroke="white" stroke-width="2"/>
+<text x="1120" y="139" font-size="9" font-weight="bold" fill="white" text-anchor="middle">FL</text>
+<text x="1120" y="115" font-size="8" fill="#b00020" font-weight="bold" text-anchor="middle">Miami</text>
+
+<!-- Delaware -->
+<circle cx="1150" cy="98" r="12" fill="#8a4d7a" stroke="white" stroke-width="2"/>
+<text x="1150" y="102" font-size="9" font-weight="bold" fill="white" text-anchor="middle">DE</text>
+<text x="1150" y="80" font-size="8" fill="#8a4d7a" font-weight="bold" text-anchor="middle">Delaware</text>
+
+<!-- Uruguai -->
+<circle cx="1210" cy="285" r="11" fill="#8a4d7a" stroke="white" stroke-width="2"/>
+<text x="1210" y="289" font-size="9" font-weight="bold" fill="white" text-anchor="middle">UY</text>
+<text x="1210" y="305" font-size="8" fill="#8a4d7a" text-anchor="middle">Montevidéu</text>
+
+<!-- Lisboa -->
+<circle cx="1330" cy="120" r="10" fill="#8a4d7a" stroke="white" stroke-width="2" opacity="0.85"/>
+<text x="1330" y="124" font-size="9" font-weight="bold" fill="white" text-anchor="middle">PT</text>
+<text x="1330" y="103" font-size="8" fill="#8a4d7a" text-anchor="middle">Lisboa</text>
+
+<!-- Madrid -->
+<circle cx="1355" cy="105" r="12" fill="#b00020" stroke="white" stroke-width="2"/>
+<text x="1355" y="109" font-size="9" font-weight="bold" fill="white" text-anchor="middle">ES</text>
+<text x="1355" y="86" font-size="8" fill="#b00020" font-weight="bold" text-anchor="middle">Madrid</text>
+
+<!-- Munique -->
+<circle cx="1390" cy="95" r="14" fill="#b00020" stroke="white" stroke-width="2"/>
+<text x="1390" y="99" font-size="9" font-weight="bold" fill="white" text-anchor="middle">DE</text>
+<text x="1390" y="73" font-size="8" fill="#b00020" font-weight="bold" text-anchor="middle">Munique</text>
+
+<!-- Singapura -->
+<circle cx="1490" cy="200" r="14" fill="#b00020" stroke="white" stroke-width="2"/>
+<text x="1490" y="204" font-size="9" font-weight="bold" fill="white" text-anchor="middle">SG</text>
+<text x="1490" y="225" font-size="8" fill="#b00020" font-weight="bold" text-anchor="middle">Singapura</text>
+
+<!-- Rotas -->
+<path d="M 1190 240 Q 1340 175 1490 200" fill="none" stroke="#c0a060" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arDk)"/>
+<path d="M 1190 240 Q 1170 170 1150 98" fill="none" stroke="#c0a060" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arDk)"/>
+<path d="M 1190 240 Q 1150 190 1120 135" fill="none" stroke="#b00020" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arRed)"/>
+<path d="M 1190 240 Q 1290 170 1390 95" fill="none" stroke="#b00020" stroke-width="2.5" stroke-dasharray="4,3" marker-end="url(#arRed)"/>
+<path d="M 1190 240 Q 1330 175 1355 105" fill="none" stroke="#b00020" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arRed)"/>
+<path d="M 1190 240 Q 1200 260 1210 285" fill="none" stroke="#c0a060" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arDk)"/>
+</g>
+
+<!-- 4. TIMELINE - peça central (eixo horizontal) -->
+<g>
+<rect x="20" y="320" width="1510" height="345" rx="8" fill="white" stroke="#1b3a5b" stroke-width="3"/>
+<rect x="20" y="320" width="1510" height="36" rx="8" fill="url(#centralGrad)"/>
+<text x="775" y="343" font-size="13" font-weight="bold" fill="#ffd866" text-anchor="middle">④ LINHA DO TEMPO DA FRAUDE · QUANDO + POR QUÊ · ESPINHA DORSAL</text>
+
+<!-- Anos -->
+<text x="120" y="380" font-size="10" font-weight="bold" fill="#777" text-anchor="middle">2021</text>
+<text x="380" y="380" font-size="10" font-weight="bold" fill="#777" text-anchor="middle">2022</text>
+<text x="640" y="380" font-size="10" font-weight="bold" fill="#777" text-anchor="middle">2023</text>
+<text x="900" y="380" font-size="10" font-weight="bold" fill="#777" text-anchor="middle">2024</text>
+<text x="1160" y="380" font-size="10" font-weight="bold" fill="#777" text-anchor="middle">2025</text>
+<text x="1420" y="380" font-size="10" font-weight="bold" fill="#777" text-anchor="middle">2026</text>
+
+<!-- Linha central -->
+<rect x="60" y="488" width="1450" height="16" rx="2" fill="#5b1a1a"/>
+<text x="775" y="501" font-size="11" font-weight="bold" fill="#ffd866" text-anchor="middle">TIMELINE 2021 → 2026</text>
+
+<!-- EVENTOS SOCIETÁRIOS (acima) -->
+<!-- WIB -->
+<circle cx="105" cy="430" r="9" fill="#1b3a5b" stroke="white" stroke-width="2"/>
+<text x="105" y="412" font-size="8" font-weight="bold" fill="#1b3a5b" text-anchor="middle">22/06/21</text>
+<text x="105" y="455" font-size="7.5" fill="#1b1b1b" text-anchor="middle">WIB €2,276MM</text>
+
+<!-- Volimo -->
+<circle cx="160" cy="408" r="13" fill="#ffd866" stroke="#5b1a1a" stroke-width="3"/>
+<text x="160" y="413" font-size="11" font-weight="bold" fill="#5b1a1a" text-anchor="middle">!</text>
+<text x="160" y="392" font-size="9" font-weight="bold" fill="#b00020" text-anchor="middle">+15d</text>
+<text x="160" y="435" font-size="7.5" font-weight="bold" fill="#1b3a5b" text-anchor="middle">07/07/21</text>
+<text x="160" y="450" font-size="8" font-weight="bold" fill="#b00020" text-anchor="middle">VOLIMO</text>
+<text x="160" y="462" font-size="7.5" fill="#1b1b1b" text-anchor="middle">R$ 200 MM</text>
+
+<!-- Penhor -->
+<circle cx="290" cy="430" r="9" fill="#1b3a5b" stroke="white" stroke-width="2"/>
+<text x="290" y="412" font-size="8" font-weight="bold" fill="#1b3a5b" text-anchor="middle">27/12/21</text>
+<text x="290" y="455" font-size="7.5" fill="#1b1b1b" text-anchor="middle">Penhor Evino</text>
+
+<!-- Cisão -->
+<circle cx="335" cy="408" r="13" fill="#ffd866" stroke="#5b1a1a" stroke-width="3"/>
+<text x="335" y="413" font-size="11" font-weight="bold" fill="#5b1a1a" text-anchor="middle">!</text>
+<text x="335" y="392" font-size="9" font-weight="bold" fill="#b00020" text-anchor="middle">+4d</text>
+<text x="335" y="435" font-size="7.5" font-weight="bold" fill="#1b3a5b" text-anchor="middle">31/12/21</text>
+<text x="335" y="450" font-size="8" font-weight="bold" fill="#b00020" text-anchor="middle">CISÃO</text>
+<text x="335" y="462" font-size="7.5" fill="#1b1b1b" text-anchor="middle">RT 127 R$ 57,18</text>
+
+<!-- Acordo Acionistas -->
+<circle cx="475" cy="430" r="11" fill="#1b3a5b" stroke="#ffd866" stroke-width="2.5"/>
+<text x="475" y="412" font-size="8" font-weight="bold" fill="#1b3a5b" text-anchor="middle">25/05/22</text>
+<text x="475" y="455" font-size="8" font-weight="bold" fill="#b00020" text-anchor="middle">ACORDO</text>
+<text x="475" y="467" font-size="7.5" fill="#1b1b1b" text-anchor="middle">Lock-Up + 4 cláusulas</text>
+
+<!-- Vencimento mútuo -->
+<circle cx="640" cy="408" r="13" fill="#ffd866" stroke="#5b1a1a" stroke-width="3"/>
+<text x="640" y="413" font-size="11" font-weight="bold" fill="#5b1a1a" text-anchor="middle">!</text>
+<text x="640" y="435" font-size="7.5" font-weight="bold" fill="#1b3a5b" text-anchor="middle">02/01/23</text>
+<text x="640" y="450" font-size="8" font-weight="bold" fill="#b00020" text-anchor="middle">VENC. MÚTUO</text>
+
+<!-- Regulamento 2024 -->
+<circle cx="920" cy="430" r="9" fill="#1b3a5b" stroke="white" stroke-width="2"/>
+<text x="920" y="412" font-size="8" font-weight="bold" fill="#1b3a5b" text-anchor="middle">04/06/24</text>
+<text x="920" y="455" font-size="7.5" font-weight="bold" fill="#b00020" text-anchor="middle">Reg 2024</text>
+<text x="920" y="467" font-size="7" fill="#1b1b1b" text-anchor="middle">Classe J retroativa</text>
+
+<!-- Destituição -->
+<circle cx="1145" cy="430" r="9" fill="#1b3a5b" stroke="white" stroke-width="2"/>
+<text x="1145" y="412" font-size="8" font-weight="bold" fill="#1b3a5b" text-anchor="middle">13/01/25</text>
+<text x="1145" y="455" font-size="7.5" fill="#1b1b1b" text-anchor="middle">Destituição</text>
+
+<!-- Bonifácio -->
+<circle cx="1200" cy="408" r="13" fill="#ffd866" stroke="#5b1a1a" stroke-width="3"/>
+<text x="1200" y="413" font-size="11" font-weight="bold" fill="#5b1a1a" text-anchor="middle">!</text>
+<text x="1200" y="392" font-size="9" font-weight="bold" fill="#b00020" text-anchor="middle">+46d</text>
+<text x="1200" y="435" font-size="7.5" font-weight="bold" fill="#1b3a5b" text-anchor="middle">11/02/25</text>
+<text x="1200" y="450" font-size="8" font-weight="bold" fill="#b00020" text-anchor="middle">BONIFÁCIO</text>
+
+<!-- LOI -->
+<circle cx="1340" cy="430" r="11" fill="#b00020" stroke="#ffd866" stroke-width="2"/>
+<text x="1340" y="412" font-size="8" font-weight="bold" fill="#b00020" text-anchor="middle">20/08/25</text>
+<text x="1340" y="455" font-size="8" font-weight="bold" fill="#b00020" text-anchor="middle">LOI R$ 108MM</text>
+<text x="1340" y="467" font-size="7" fill="#1b1b1b" text-anchor="middle">oferta R$ 4,78MM</text>
+
+<!-- EVENTOS PROCESSUAIS (abaixo) -->
+<!-- Divórcio -->
+<circle cx="655" cy="540" r="13" fill="#5b1a1a" stroke="#ffd866" stroke-width="3"/>
+<text x="655" y="545" font-size="11" font-weight="bold" fill="#ffd866" text-anchor="middle">D</text>
+<text x="655" y="572" font-size="8" font-weight="bold" fill="#5b1a1a" text-anchor="middle">10/01/23</text>
+<text x="655" y="585" font-size="8" font-weight="bold" fill="#5b1a1a" text-anchor="middle">DIVÓRCIO</text>
+
+<!-- SISBAJUD efetivo -->
+<circle cx="690" cy="540" r="10" fill="#0a5f2e" stroke="white" stroke-width="2"/>
+<text x="690" y="545" font-size="10" font-weight="bold" fill="white" text-anchor="middle">$</text>
+<text x="720" y="540" font-size="8" font-weight="bold" fill="#0a5f2e">02/05/23</text>
+<text x="720" y="552" font-size="8" font-weight="bold" fill="#0a5f2e">R$ 42,42MM</text>
+
+<!-- SISBAJUD reiterado -->
+<circle cx="715" cy="615" r="10" fill="#0a5f2e" stroke="white" stroke-width="2"/>
+<text x="715" y="620" font-size="10" font-weight="bold" fill="white" text-anchor="middle">$</text>
+<text x="715" y="640" font-size="8" font-weight="bold" fill="#0a5f2e" text-anchor="middle">18/05/23</text>
+<text x="715" y="652" font-size="8" font-weight="bold" fill="#0a5f2e" text-anchor="middle">R$ 84,86MM</text>
+
+<!-- Acórdão -->
+<circle cx="825" cy="540" r="13" fill="#0a5f2e" stroke="#ffd866" stroke-width="3"/>
+<text x="825" y="545" font-size="11" font-weight="bold" fill="white" text-anchor="middle">✓</text>
+<text x="825" y="572" font-size="8" font-weight="bold" fill="#0a5f2e" text-anchor="middle">27/10/23</text>
+<text x="825" y="585" font-size="7.5" fill="#0a5f2e" font-weight="bold" text-anchor="middle">BLOQUEIO MANTIDO</text>
+
+<!-- Atas Petroni -->
+<circle cx="1170" cy="540" r="10" fill="#b00020" stroke="white" stroke-width="2"/>
+<text x="1170" y="570" font-size="7.5" font-weight="bold" fill="#b00020" text-anchor="middle">14/01/25</text>
+<text x="1170" y="582" font-size="7" fill="#b00020" font-weight="bold" text-anchor="middle">Atas Petroni</text>
+<text x="1170" y="592" font-size="7" fill="#1b1b1b" text-anchor="middle">retroação 8m</text>
+
+<!-- OSLO 18h -->
+<circle cx="1465" cy="540" r="13" fill="#b00020" stroke="#ffd866" stroke-width="3"/>
+<text x="1465" y="545" font-size="11" font-weight="bold" fill="white" text-anchor="middle">!</text>
+<text x="1465" y="572" font-size="8" font-weight="bold" fill="#b00020" text-anchor="middle">2026</text>
+<text x="1465" y="585" font-size="8" font-weight="bold" fill="#b00020" text-anchor="middle">OSLO 18h</text>
+
+<!-- Setas vermelhas (sincronizações) -->
+<path d="M 110 420 Q 134 380 158 395" fill="none" stroke="#b00020" stroke-width="3" marker-end="url(#arRed)"/>
+<path d="M 295 422 Q 315 382 332 395" fill="none" stroke="#b00020" stroke-width="3" marker-end="url(#arRed)"/>
+<path d="M 640 421 Q 645 480 654 528" fill="none" stroke="#b00020" stroke-width="3" stroke-dasharray="6,3" marker-end="url(#arRed)"/>
+<path d="M 1148 421 Q 1175 388 1196 395" fill="none" stroke="#b00020" stroke-width="3" marker-end="url(#arRed)"/>
+
+<!-- Setas tracejadas (reações) -->
+<path d="M 690 530 Q 800 360 918 421" fill="none" stroke="#b00020" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arRed)"/>
+<path d="M 1170 528 Q 1185 470 1200 421" fill="none" stroke="#b00020" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arRed)"/>
+
+<!-- Painel 4 sincronizações dentro -->
+<rect x="80" y="635" width="1410" height="22" rx="3" fill="#ffd866"/>
+<text x="775" y="650" font-size="11" font-weight="bold" fill="#5b1a1a" text-anchor="middle">4 SINCRONIZAÇÕES CRÍTICAS · WIB→Volimo +15d · Penhor→Cisão +4d · Mútuo→Divórcio +8d · Destituição→Bonifácio +46d</text>
+</g>
+
+<!-- 2. SANKEY - canto inferior esquerdo -->
+<g>
+<rect x="20" y="680" width="755" height="330" rx="8" fill="white" stroke="#5b1a1a" stroke-width="2"/>
+<rect x="20" y="680" width="755" height="32" rx="8" fill="#5b1a1a"/>
+<text x="397" y="701" font-size="12" font-weight="bold" fill="#ffd866" text-anchor="middle">② DIAGRAMA DO FLUXO FINANCEIRO · O QUE</text>
+
+<!-- Origens -->
+<rect x="40" y="730" width="140" height="40" rx="4" fill="#0a5f2e"/>
+<text x="110" y="748" font-size="10" font-weight="bold" fill="white" text-anchor="middle">VINCI 03/2022</text>
+<text x="110" y="763" font-size="11" font-weight="bold" fill="#ffd866" text-anchor="middle">R$ 650 MM</text>
+
+<rect x="40" y="780" width="140" height="40" rx="4" fill="#0a5f2e" opacity="0.85"/>
+<text x="110" y="798" font-size="10" font-weight="bold" fill="white" text-anchor="middle">VOLIMO 07/2021</text>
+<text x="110" y="813" font-size="11" font-weight="bold" fill="#ffd866" text-anchor="middle">R$ 200 MM</text>
+
+<rect x="40" y="830" width="140" height="40" rx="4" fill="#0a5f2e" opacity="0.7"/>
+<text x="110" y="848" font-size="10" font-weight="bold" fill="white" text-anchor="middle">WIB 06/2021</text>
+<text x="110" y="863" font-size="11" font-weight="bold" fill="#ffd866" text-anchor="middle">€2,276 MM</text>
+
+<!-- Centro -->
+<rect x="280" y="755" width="180" height="70" rx="4" fill="#1b3a5b"/>
+<text x="370" y="780" font-size="11" font-weight="bold" fill="white" text-anchor="middle">AJACCIO FIP</text>
+<text x="370" y="800" font-size="14" font-weight="bold" fill="#ffd866" text-anchor="middle">R$ 1,57 BI</text>
+<text x="370" y="815" font-size="9" fill="white" text-anchor="middle">caixa R$ 0,00</text>
+
+<!-- Destinos -->
+<rect x="560" y="730" width="180" height="40" rx="4" fill="#5b1a1a"/>
+<text x="650" y="748" font-size="10" font-weight="bold" fill="white" text-anchor="middle">BTG ARI (retido)</text>
+<text x="650" y="763" font-size="11" font-weight="bold" fill="#ffd866" text-anchor="middle">R$ 31,9 MM</text>
+
+<rect x="560" y="780" width="180" height="40" rx="4" fill="#5b1a1a" opacity="0.85"/>
+<text x="650" y="798" font-size="10" font-weight="bold" fill="white" text-anchor="middle">OFFSHORE</text>
+<text x="650" y="813" font-size="10" font-weight="bold" fill="#ffd866" text-anchor="middle">R$ 316-432 MM</text>
+
+<rect x="560" y="830" width="180" height="40" rx="4" fill="#b00020"/>
+<text x="650" y="848" font-size="10" font-weight="bold" fill="white" text-anchor="middle">OFERTA VIL</text>
+<text x="650" y="863" font-size="11" font-weight="bold" fill="#ffd866" text-anchor="middle">R$ 4,42 MM</text>
+
+<!-- Setas -->
+<line x1="180" y1="750" x2="280" y2="780" stroke="#0a5f2e" stroke-width="4" marker-end="url(#arGreen)"/>
+<line x1="180" y1="800" x2="280" y2="790" stroke="#0a5f2e" stroke-width="3" marker-end="url(#arGreen)"/>
+<line x1="180" y1="850" x2="280" y2="800" stroke="#0a5f2e" stroke-width="2.5" marker-end="url(#arGreen)"/>
+
+<line x1="460" y1="775" x2="560" y2="745" stroke="#b00020" stroke-width="2.5" marker-end="url(#arRed)"/>
+<line x1="460" y1="790" x2="560" y2="795" stroke="#b00020" stroke-width="2.5" marker-end="url(#arRed)"/>
+<line x1="460" y1="810" x2="560" y2="850" stroke="#b00020" stroke-width="2.5" marker-end="url(#arRed)"/>
+
+<!-- Bloqueio -->
+<rect x="40" y="890" width="700" height="36" rx="4" fill="#c0a060"/>
+<text x="390" y="906" font-size="10" font-weight="bold" fill="#5b1a1a" text-anchor="middle">BLOQUEIO SISBAJUD 18/05/2023</text>
+<text x="390" y="918" font-size="10" font-weight="bold" fill="#5b1a1a" text-anchor="middle">R$ 84,86 MM identificados · R$ 42,42 MM bloqueados · R$ 77,64 MM FRAM/OSLO (91%)</text>
+
+<!-- Meação -->
+<rect x="40" y="938" width="700" height="48" rx="4" fill="#1b3a5b"/>
+<text x="390" y="958" font-size="10" font-weight="bold" fill="#ffd866" text-anchor="middle">MEAÇÃO MILLENA · CENÁRIO CENTRAL (probabilidade 85%)</text>
+<text x="390" y="978" font-size="15" font-weight="bold" fill="#ffd866" text-anchor="middle">R$ 717 - 765 MILHÕES</text>
+</g>
+
+<!-- 5. COMPARATIVO DE MEAÇÃO - canto inferior direito -->
+<g>
+<rect x="785" y="680" width="745" height="330" rx="8" fill="white" stroke="#b00020" stroke-width="3"/>
+<rect x="785" y="680" width="745" height="32" rx="8" fill="#b00020"/>
+<text x="1157" y="701" font-size="12" font-weight="bold" fill="#ffd866" text-anchor="middle">⑤ COMPARATIVO DE MEAÇÃO · QUANTO ⚖</text>
+
+<!-- Label REAL -->
+<text x="810" y="740" font-size="11" font-weight="bold" fill="#0a5f2e">CENÁRIO REAL · CVM nov/2024:</text>
+<rect x="810" y="748" width="700" height="40" rx="3" fill="#0a5f2e"/>
+<text x="1160" y="768" font-size="13" font-weight="bold" fill="white" text-anchor="middle">PL AJACCIO R$ 1.570 MILHÕES</text>
+<text x="1160" y="783" font-size="9" fill="#ffd866" text-anchor="middle">4,40% Ari = R$ 69,08 MM · meação 50% = R$ 34,54 MM</text>
+
+<!-- Label DEFESA -->
+<text x="810" y="810" font-size="11" font-weight="bold" fill="#b00020">CENÁRIO DEFESA (réu):</text>
+<rect x="810" y="818" width="48" height="40" rx="3" fill="#b00020"/>
+<text x="870" y="843" font-size="13" font-weight="bold" fill="#b00020">PL R$ 108 MM</text>
+<text x="870" y="857" font-size="9" fill="#1b1b1b">(apenas 6,87% do PL real) · meação alegada R$ 2,38 MM</text>
+
+<!-- Oferta vil -->
+<text x="810" y="880" font-size="11" font-weight="bold" fill="#b00020">OFERTA VIL (20/08/2025):</text>
+<rect x="810" y="888" width="10" height="40" rx="3" fill="#b00020" stroke="#ffd866" stroke-width="2"/>
+<text x="830" y="912" font-size="13" font-weight="bold" fill="#b00020">R$ 4,42 MM</text>
+<text x="830" y="925" font-size="9" fill="#1b1b1b">vs PL real = 0,28% (treze vezes menor que a meação real)</text>
+
+<!-- Box destaque deflação -->
+<rect x="810" y="945" width="700" height="55" rx="6" fill="#b00020" stroke="#ffd866" stroke-width="3"/>
+<text x="1160" y="966" font-size="20" font-weight="bold" fill="#ffd866" text-anchor="middle">DEFLAÇÃO ARTIFICIAL DE 14,5×</text>
+<text x="1160" y="985" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Δ R$ 32,16 MM apenas na meação direta · sem control premium · sem ativos paralelos</text>
+</g>
+
+</svg>
+<div class="cap">Figura 5 · Painel Visual da Fraude · A3 paisagem · refinamento tipográfico · espinha dorsal timeline · 4 painéis perimetrais · Compreensão integral em 60 segundos.</div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== INFOGRÁFICO 6 - VIOLÊNCIA PATRIMONIAL ==================== -->
+<div class="cabecalho">
+<div class="titulo" style="font-size:14pt">INFOGRÁFICO 6 — DESVELANDO A VIOLÊNCIA PATRIMONIAL</div>
+<div class="sub">Peça narrativa autônoma · para abertura da petição · humaniza o caso · frame legal CNJ 492/2023</div>
+</div>
+
+<div style="text-align:center">
+<svg width="1080" height="560" viewBox="0 0 1080 560" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="vp2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b00020"/></marker>
+</defs>
+
+<text x="540" y="28" font-size="15" font-weight="bold" fill="#5b1a1a" text-anchor="middle">DA ENGENHARIA FINANCEIRA À VIOLÊNCIA PATRIMONIAL</text>
+<text x="540" y="46" font-size="10" fill="#555" text-anchor="middle">Cada ato de blindagem é, em tese, ato de violência patrimonial sob LMP art. 7º, IV</text>
+
+<!-- Coluna esquerda - Ações -->
+<rect x="20" y="64" width="320" height="22" fill="#1b1b1b"/>
+<text x="180" y="79" font-size="11" font-weight="bold" fill="#ffd866" text-anchor="middle">AS AÇÕES DO REQUERIDO</text>
+
+<rect x="20" y="96" width="320" height="55" rx="5" fill="#333"/>
+<text x="180" y="116" font-size="10" font-weight="bold" fill="white" text-anchor="middle">1. Manipulação do PL Ajaccio</text>
+<text x="180" y="132" font-size="8.5" fill="#ddd" text-anchor="middle">PL real R$ 1,57 bi vs PL alegado R$ 108 MM</text>
+<text x="180" y="144" font-size="8" fill="#ffd866" text-anchor="middle">deflação 14,5×</text>
+
+<rect x="20" y="161" width="320" height="55" rx="5" fill="#333"/>
+<text x="180" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">2. Bonifácio FIP constituído PÓS-CITAÇÃO</text>
+<text x="180" y="197" font-size="8.5" fill="#ddd" text-anchor="middle">11/02/2025 · zero FNET · zero cotistas</text>
+<text x="180" y="209" font-size="8" fill="#ffd866" text-anchor="middle">veículo de deflacionamento da Classe F</text>
+
+<rect x="20" y="226" width="320" height="55" rx="5" fill="#333"/>
+<text x="180" y="246" font-size="10" font-weight="bold" fill="white" text-anchor="middle">3. Apoio Admin como "conta-bolsão"</text>
+<text x="180" y="262" font-size="8.5" fill="#ddd" text-anchor="middle">22 transferências · R$ 1,86 MM acumulado</text>
+<text x="180" y="274" font-size="8" fill="#ffd866" text-anchor="middle">saldo permanente R$ 30 = flow-through puro</text>
+
+<rect x="20" y="291" width="320" height="55" rx="5" fill="#333"/>
+<text x="180" y="311" font-size="10" font-weight="bold" fill="white" text-anchor="middle">4. Ocultação do non-compete</text>
+<text x="180" y="327" font-size="8.5" fill="#ddd" text-anchor="middle">R$ 749.183,38 em 29/01/2025 + 3 TEDs R$ 680k</text>
+<text x="180" y="339" font-size="8" fill="#ffd866" text-anchor="middle">salário oculto 46,4× pró-labore declarado</text>
+
+<rect x="20" y="356" width="320" height="55" rx="5" fill="#333"/>
+<text x="180" y="376" font-size="10" font-weight="bold" fill="white" text-anchor="middle">5. Falso cancelamento do plano de saúde</text>
+<text x="180" y="392" font-size="8.5" fill="#ddd" text-anchor="middle">refutado por Porto Seguro Reg ANS 000582</text>
+<text x="180" y="404" font-size="8" fill="#ffd866" text-anchor="middle">titular ATIVO da Apólice 1785599/357050</text>
+
+<rect x="20" y="421" width="320" height="55" rx="5" fill="#333"/>
+<text x="180" y="441" font-size="10" font-weight="bold" fill="white" text-anchor="middle">6. Tentativa de redução de alimentos</text>
+<text x="180" y="457" font-size="8.5" fill="#ddd" text-anchor="middle">alegando "receita zero" 05/12/2024</text>
+<text x="180" y="469" font-size="8" fill="#ffd866" text-anchor="middle">enquanto recebe R$ 70k/mês non-compete</text>
+
+<!-- Setas conectoras -->
+<text x="540" y="80" font-size="11" font-weight="bold" fill="#b00020" text-anchor="middle">CONFIGURA, EM TESE,</text>
+<text x="540" y="95" font-size="10" fill="#b00020" text-anchor="middle">violência patrimonial qualificada</text>
+
+<line x1="340" y1="123" x2="720" y2="123" stroke="#b00020" stroke-width="2" marker-end="url(#vp2)"/>
+<line x1="340" y1="188" x2="720" y2="188" stroke="#b00020" stroke-width="2" marker-end="url(#vp2)"/>
+<line x1="340" y1="253" x2="720" y2="253" stroke="#b00020" stroke-width="2" marker-end="url(#vp2)"/>
+<line x1="340" y1="318" x2="720" y2="318" stroke="#b00020" stroke-width="2" marker-end="url(#vp2)"/>
+<line x1="340" y1="383" x2="720" y2="383" stroke="#b00020" stroke-width="2" marker-end="url(#vp2)"/>
+<line x1="340" y1="448" x2="720" y2="448" stroke="#b00020" stroke-width="2" marker-end="url(#vp2)"/>
+
+<!-- Coluna direita - Impactos -->
+<rect x="720" y="64" width="340" height="22" fill="#b00020"/>
+<text x="890" y="79" font-size="11" font-weight="bold" fill="#ffd866" text-anchor="middle">O IMPACTO NA REQUERENTE</text>
+
+<rect x="720" y="96" width="340" height="55" rx="5" fill="#ffe082" stroke="#b00020" stroke-width="1"/>
+<text x="890" y="116" font-size="10" font-weight="bold" fill="#5b1a1a" text-anchor="middle">Subtração da meação</text>
+<text x="890" y="132" font-size="8.5" fill="#1b1b1b" text-anchor="middle">Δ R$ 32,16 MM apenas na meação direta</text>
+<text x="890" y="144" font-size="8" fill="#5b1a1a" font-style="italic" text-anchor="middle">"a meeira não pode acessar o patrimônio que é seu"</text>
+
+<rect x="720" y="161" width="340" height="55" rx="5" fill="#ffe082" stroke="#b00020" stroke-width="1"/>
+<text x="890" y="181" font-size="10" font-weight="bold" fill="#5b1a1a" text-anchor="middle">Drenagem de recursos essenciais</text>
+<text x="890" y="197" font-size="8.5" fill="#1b1b1b" text-anchor="middle">esvaziamento contínuo do patrimônio comum</text>
+<text x="890" y="209" font-size="8" fill="#5b1a1a" font-style="italic" text-anchor="middle">"cada dia de bloqueio não-executado é dia de fruição exclusiva"</text>
+
+<rect x="720" y="226" width="340" height="55" rx="5" fill="#ffe082" stroke="#b00020" stroke-width="1"/>
+<text x="890" y="246" font-size="10" font-weight="bold" fill="#5b1a1a" text-anchor="middle">Ocultação de fluxos remuneratórios</text>
+<text x="890" y="262" font-size="8.5" fill="#1b1b1b" text-anchor="middle">para forjar quadro fictício de "iliquidez"</text>
+<text x="890" y="274" font-size="8" fill="#5b1a1a" font-style="italic" text-anchor="middle">"silêncio estratégico convertido em arma processual"</text>
+
+<rect x="720" y="291" width="340" height="55" rx="5" fill="#ffe082" stroke="#b00020" stroke-width="1"/>
+<text x="890" y="311" font-size="10" font-weight="bold" fill="#5b1a1a" text-anchor="middle">Prejuízo à saúde e dignidade</text>
+<text x="890" y="327" font-size="8.5" fill="#1b1b1b" text-anchor="middle">PCD F33+F90 · atestado psiquiátrico fls. 2879</text>
+<text x="890" y="339" font-size="8" fill="#5b1a1a" font-style="italic" text-anchor="middle">"vulnerabilidade material qualifica a tutela diferenciada"</text>
+
+<rect x="720" y="356" width="340" height="55" rx="5" fill="#ffe082" stroke="#b00020" stroke-width="1"/>
+<text x="890" y="376" font-size="10" font-weight="bold" fill="#5b1a1a" text-anchor="middle">Cerceamento da dignidade material</text>
+<text x="890" y="392" font-size="8.5" fill="#1b1b1b" text-anchor="middle">dependência judicial para subsistência básica</text>
+<text x="890" y="404" font-size="8" fill="#5b1a1a" font-style="italic" text-anchor="middle">"litigiosidade estressora prolongada por mais de 1000 dias"</text>
+
+<rect x="720" y="421" width="340" height="55" rx="5" fill="#ffe082" stroke="#b00020" stroke-width="1"/>
+<text x="890" y="441" font-size="10" font-weight="bold" fill="#5b1a1a" text-anchor="middle">Violência institucional secundária</text>
+<text x="890" y="457" font-size="8.5" fill="#1b1b1b" text-anchor="middle">instrumentalização de protetiva, alimentos, guarda</text>
+<text x="890" y="469" font-size="8" fill="#5b1a1a" font-style="italic" text-anchor="middle">"o processo convertido em prolongamento da agressão"</text>
+
+<!-- Frame legal -->
+<rect x="20" y="495" width="1040" height="56" rx="8" fill="#0a5f2e"/>
+<text x="540" y="515" font-size="13" font-weight="bold" fill="#ffd866" text-anchor="middle">FRAME LEGAL · violência patrimonial sob a Lei Maria da Penha</text>
+<text x="540" y="532" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Lei nº 11.340/2006 art. 7º, IV (com redação dada pela Lei nº 14.550/2023) · Resolução CNJ nº 492/2023 (Protocolo de Julgamento com Perspectiva de Gênero) · </text>
+<text x="540" y="546" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Convenção Interamericana de Belém do Pará (Decreto 1.973/1996) · CtIDH Caso Campo Algodonero v. México (2009)</text>
+</svg>
+<div class="cap">Figura 6 · Desvelando a Violência Patrimonial. Conecta engenharia financeira (esquerda · cinza) com impacto na Requerente (direita · âmbar) sob frame legal LMP + CNJ 492/2023 + Belém do Pará + Corte IDH. Indicado para abertura da petição (humanização).</div>
+</div>
+
+<h2>NOTA METODOLÓGICA · LEGAL DESIGN V4</h2>
+
+<p>O polimento v4 refina três elementos do Doc 44: (i) <strong>Sumário Executivo de uma página</strong> para que o julgador apreenda o caso em 60 segundos antes de ler o Painel Visual; (ii) <strong>reagrupamento dos 42 cisnes negros por consequência jurídica</strong> (Grupos A–F) em vez de por vetor — formato pragmático que sustenta diretamente as teses processuais; (iii) <strong>refinamento tipográfico do Painel Visual da Fraude</strong> com hierarquia visual aprimorada, contrastes ajustados (vermelho saturado para alertas, dourado #ffd866 para cifras de destaque) e numeração explícita dos painéis (① a ⑤). O Infográfico 6 (Violência Patrimonial) recebe falas adicionais em itálico ("a meeira não pode acessar o patrimônio que é seu") para humanizar a leitura. Base doutrinária mantida: Hagan (Stanford d.school) + Haapio (Proactive Law) + Buonomano (<em>temporal pattern recognition</em>, 2017).</p>
+
+<h2>RESERVA TÉCNICA</h2>
+
+<p>Documento sob CPC art. 472. Em tese sob CF art. 5º, LVII e LV. Subscrição: <strong>Dr. Luiz Carlos Guieseler Junior · OAB/PR 44.937 + Dra. Michele Hilgenberg · OAB/SC 41.607</strong>. PFs anonimizadas em circulação externa exceto partes nominalmente identificadas. Conversão prévia em peça subscrita por OAB e laudo CRC com ata notarial das fontes primárias antes do uso processual.</p>
+
+<div class="rodape">
+Documento 45 da série DOSSIES_E_NOTAS_TECNICAS — Dossiê-Mestre v4 · Polimento Final.<br>
+Sucede e integra os Documentos 22 a 44 · Versão definitiva polida · CPC 472 + CF 5º LVII e LV.
+</div>
+
+</body>
+</html>

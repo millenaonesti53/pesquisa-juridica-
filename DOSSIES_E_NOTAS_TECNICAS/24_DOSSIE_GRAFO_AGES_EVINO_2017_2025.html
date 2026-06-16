@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dossiê Técnico Grafo-Relacional · AGEs da E-Vino · 2017-2025</title>
+<style>
+  :root{
+    --tinta:#1a1a1a; --papel:#faf8f3; --regra:#1a1a1a;
+    --destaque:#7a0c0c; --neutro:#555; --fundo-tabela:#f0ede5;
+    --azul:#27496d; --verde:#0a5c1f; --laranja:#8a5a00;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--papel);color:var(--tinta);font-family:Georgia,'Times New Roman',serif;margin:0;padding:2rem 1rem;line-height:1.55;}
+  .folha{max-width:920px;margin:0 auto;}
+  .cabecalho{border-bottom:4px double var(--regra);padding-bottom:.8rem;margin-bottom:.4rem;text-align:center;}
+  .orgao{font-variant:small-caps;letter-spacing:.32em;font-size:.78rem;color:var(--neutro);}
+  .manchete{font-size:1.95rem;line-height:1.18;font-weight:bold;margin:.5rem 0 .3rem;}
+  .sublinha{font-style:italic;font-size:1.0rem;color:var(--neutro);margin:0;}
+  .datilho{display:flex;justify-content:space-between;font-size:.74rem;border-top:1px solid var(--regra);border-bottom:1px solid var(--regra);padding:.3rem .2rem;margin:.6rem 0 1.4rem;font-family:Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;}
+  h2{font-size:1.22rem;border-bottom:2px solid var(--regra);padding-bottom:.25rem;margin-top:2.2rem;font-variant:small-caps;letter-spacing:.05em;}
+  h3{font-size:1.02rem;margin-top:1.3rem;color:var(--destaque);}
+  p{margin:.7rem 0;text-align:justify;}
+  .lide{font-size:1.06rem;font-weight:bold;border-left:5px solid var(--destaque);padding-left:.9rem;}
+  table{width:100%;border-collapse:collapse;font-size:.8rem;margin:1rem 0;font-family:Helvetica,Arial,sans-serif;}
+  th{background:var(--tinta);color:var(--papel);padding:.4rem .5rem;text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;}
+  td{border-bottom:1px solid #c9c4b4;padding:.4rem .5rem;vertical-align:top;background:var(--fundo-tabela);}
+  tr:nth-child(even) td{background:#f7f4ec;}
+  .ficha{border:1.5px solid var(--regra);padding:1rem 1.2rem;margin:1.2rem 0;background:#f3f0e7;}
+  .ficha .titulo{font-variant:small-caps;font-weight:bold;letter-spacing:.06em;border-bottom:1px solid var(--regra);padding-bottom:.2rem;margin-bottom:.5rem;font-size:1.0rem;}
+  .ausencia{border-left:6px solid var(--destaque);background:#f7eded;padding:1rem 1.2rem;margin:1.2rem 0;}
+  .ausencia .titulo{font-variant:small-caps;font-weight:bold;color:var(--destaque);letter-spacing:.08em;margin-bottom:.4rem;font-size:.95rem;}
+  .citacao{margin:.6rem 0;padding:.5rem 1rem;border-left:3px solid var(--destaque);font-style:italic;color:#333;font-size:.95rem;}
+  .ref{font-family:Helvetica,Arial,sans-serif;font-size:.7rem;color:var(--neutro);}
+  .grafo{font-family:'Courier New',monospace;font-size:.74rem;background:#f3f0e7;padding:1rem;border:1px solid #b9b29c;white-space:pre;line-height:1.45;overflow-x:auto;}
+  .rodape{margin-top:3rem;border-top:4px double var(--regra);padding-top:.8rem;font-size:.78rem;color:var(--neutro);text-align:center;}
+  .nota{font-size:.82rem;color:var(--neutro);font-style:italic;margin:.6rem 0;}
+  .selo{display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:.66rem;padding:.08rem .4rem;border:1px solid;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;}
+  .selo.confirmado{color:var(--verde);border-color:var(--verde);}
+  .selo.critico{color:var(--destaque);border-color:var(--destaque);font-weight:bold;}
+  .selo.atencao{color:var(--laranja);border-color:var(--laranja);}
+  @media print{body{padding:0;} .folha{max-width:100%;}}
+</style>
+</head>
+<body>
+<div class="folha">
+
+<header class="cabecalho">
+  <div class="orgao">Dossiê Técnico Grafo-Relacional · AGEs da E-Vino · Atores, Fluxos e Estruturas Financeiras</div>
+  <div class="manchete">21 dias, R$ 65 milhões, três operações e a ausência absoluta de Ari Gorenstein dos órgãos da E-Vino em 2025</div>
+  <p class="sublinha">Análise grafo-relacional de cinco AGEs/RCAs da E-Vino Comércio de Vinhos S.A. (CNPJ 17.392.519/0001-65, NIRE 35.300.511.891), com identificação completa de subscritores, debêntures, notas comerciais escriturais, agentes fiduciários, conselheiros, garantidores e credores. Fontes documentais primárias: JUCESP, DocuSign, Receita Federal e Vórtx DTVM (Resolução CVM nº 33/2021).</p>
+</header>
+<div class="datilho">
+  <span>Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP</span>
+  <span>Emissão 14/06/2026 · Versão 1.0</span>
+  <span>Instrumento interno · CPC art. 472 · CONFIDENCIAL</span>
+</div>
+
+<!-- =========== I ============ -->
+<h2>I. Síntese executiva — o que a análise grafo revela</h2>
+<p class="lide">Entre 14 de fevereiro de 2025 e 6 de março de 2025 — janela de 21 dias situada no curso da litispendência da ação de divórcio 1006744-58.2023.8.26.0011 —, a E-Vino Comércio de Vinhos S.A. executou três operações financeiras simultâneas e tecnicamente interconectadas que movimentaram <strong>R$ 64.999.739,49</strong>: (i) aumento de capital de R$ 17.999.739,49 via capitalização de 15.777 debêntures incentivadas subscritas por Ricardo Costa até 20/06/2024 (AGE 14/02/2025); (ii) aumento adicional de capital de R$ 23.000.000,00 com subscrição de 78,26% pelo Bonifácio FIP (AGE 28/02/2025); (iii) aprovação da 1ª emissão de notas comerciais escriturais no valor de R$ 24.000.000,00 com garantia real e fidejussória (RCA 06/03/2025). A análise grafo dos sete documentos primários verificados produz <strong>achado-pivô</strong>: Ari Gorenstein não consta como conselheiro, diretor, subscritor, garantidor ou credor de qualquer das operações, embora o ecossistema operacional E-Vino/Víssimo/Bonifácio/Ajaccio em que ele detém participação econômica via cotas custodiadas continue plenamente ativo.</p>
+
+<!-- =========== II ============ -->
+<h2>II. Inventário documental — sete fontes primárias verificadas</h2>
+<table>
+  <tr><th>#</th><th>Documento</th><th>Data do ato</th><th>Protocolo JUCESP</th><th>DocuSign</th><th>Fonte</th></tr>
+  <tr><td>D1</td><td>AGE E-Vino · Subscrição Ricardo Costa via capitalização de debêntures</td><td>14/02/2025</td><td>0.655.797/25-7 (interno 034585546-9) — registrado em 12/03/2025</td><td>DDO444EA-DCDB-49DB-931A-5C2998DE27D7</td><td>"AGE 14.02.2025 SUBSCRIÇÃO RICARDO.pdf" (9 pp.)</td></tr>
+  <tr><td>D2</td><td>AGE E-Vino · Subscrição Bonifácio FIP (R$ 18 MM) + Ricardo Costa (R$ 5 MM)</td><td>28/02/2025</td><td>0.655.796/25-3 (interno 034585574-4) — registrado em 12/03/2025</td><td>9DD11009-4D65-4653-A1BC-E17CC3E96E39</td><td>"AGE 28.02.2025 SUBSCRICAO BONIFACIO.pdf" (11 pp.)</td></tr>
+  <tr><td>D3</td><td>RCA E-Vino · Aprovação da 1ª emissão de Notas Comerciais Escriturais</td><td>06/03/2025</td><td>0.655.724/25-4 (interno 034585) — registrado em 12/03/2025</td><td>f7d2d1f2-6d78-4e78-be76-af8f0b489720</td><td>"AGE 06.03.2023 NOTAS COMERCIAIS ESCRITURAIS.pdf" (10 pp.) — data real é 06/03/2025, erro no nome do arquivo</td></tr>
+  <tr><td>D4</td><td>AGE/Ata Vórtx DTVM · Aprovação contas 2023 (R$ 36,1 MM de lucro líquido)</td><td>04/04/2024</td><td>149.711/24-4 (interno 035147460)</td><td>2A1F3D78-51E0-4972-BD58-554D7D15E8EU</td><td>"vortox/46.pdf"</td></tr>
+  <tr><td>D5</td><td>Ata Vórtx DTVM · Renúncias e nomeação de nova diretoria</td><td>26/08/2024</td><td>0.241.977/25-3</td><td>(envelope referenciado)</td><td>"vortox/47.pdf"</td></tr>
+  <tr><td>D6</td><td>Consulta CNPJ Bonifácio FIP (Receita Federal)</td><td>baixa 14/06/2025; constituição 11/02/2025</td><td>—</td><td>—</td><td>"CONSULTA BONIFACIO.pdf"</td></tr>
+  <tr><td>D7</td><td>JUCESP histórico E-Vino — atos societários 2017-2019</td><td>18/12/2017 · 17/08/2018 · 19/12/2018 · 18/01/2019</td><td>protocolos da época</td><td>(scan)</td><td>"jucesp evino" (4 PDFs)</td></tr>
+</table>
+
+<!-- =========== III ============ -->
+<h2>III. Cronologia consolidada — janela de 21 dias (14/02 a 06/03/2025)</h2>
+<table>
+  <tr><th>Data</th><th>Evento</th><th>Magnitude</th><th>Atores</th><th>Documento</th></tr>
+  <tr><td>até 20/06/2024</td><td>Ricardo Costa subscreve 15.777 debêntures incentivadas da E-Vino (colocação privada)</td><td>R$ 17.999.739,49</td><td>Ricardo Costa (CPF 605.476.260-53)</td><td>Referido em D1</td></tr>
+  <tr><td>11/02/2025</td><td>Constituição do Bonifácio FIP (CNPJ 59.402.540/0001-44) — mesmo endereço da FRAM/OSLO</td><td>R$ 0,00 (sem PL inicial)</td><td>Vinci Capital Gestora; administrador-fiduciário a confirmar</td><td>D6</td></tr>
+  <tr><td><strong>14/02/2025 · 11:00</strong></td><td>AGE E-Vino — capital de R$ 498.275.347,65 para R$ 516.275.087,14; emissão de 137.452 PN @ R$ 130,95; subscrição integral por Ricardo Costa via capitalização das 15.777 debêntures incentivadas</td><td><strong>R$ 17.999.739,49</strong></td><td>Presidente: Ricardo Costa; Secretário: Marcos Leonel Leal; Acionistas presentes: Ajaccio FIP, Anacapri L.P., Brescia L.P., Cetara L.P. (renunciaram preferência)</td><td>D1 — JUCESP 0.655.797/25-7</td></tr>
+  <tr><td><strong>28/02/2025 · 11:00</strong></td><td>AGE E-Vino — capital de R$ 516.275.087,14 para R$ 539.275.087,14; emissão de 175.636 PN @ R$ 130,95; subscrição por Bonifácio FIP (137.454 PN = R$ 18,0 MM) e Ricardo Costa (38.182 PN = R$ 5,0 MM)</td><td><strong>R$ 23.000.000,00</strong></td><td>Mesma mesa e mesmos acionistas presentes; Bonifácio representado pela Vinci Capital Gestora (Felzenszwalb + Martins e Silva)</td><td>D2 — JUCESP 0.655.796/25-3</td></tr>
+  <tr><td><strong>06/03/2025 · 09:00</strong></td><td>RCA E-Vino — aprovação da 1ª emissão de notas comerciais escriturais; 24.000 notas @ R$ 1.000,00; série única; DI + 4,50% a.a.; prazo até 1.100 dias; garantia real (Cessão Fiduciária de Direitos Creditórios) + fidejussória (Fiança)</td><td><strong>R$ 24.000.000,00</strong></td><td>Conselho de Administração (7 conselheiros — § VI)</td><td>D3 — JUCESP 0.655.724/25-4</td></tr>
+  <tr><td colspan="3"><strong>TOTAL movimentado em 21 dias</strong></td><td colspan="2"><strong>R$ 64.999.739,49</strong></td></tr>
+</table>
+
+<!-- =========== IV ============ -->
+<h2>IV. Mapa de atores — pessoas físicas e jurídicas envolvidas</h2>
+<h3>IV.1 Pessoas físicas</h3>
+<table>
+  <tr><th>Nome</th><th>CPF</th><th>Função</th><th>Papel nas operações</th></tr>
+  <tr><td>Ricardo Fernandes de Sousa Costa</td><td>605.476.260-53 (Passaporte FO940317)</td><td>Presidente do Conselho de Administração; subscritor; cotista do Ajaccio FIP; residente em Madrid/Espanha (Calle del Camino del Sur, 6 — Alcobendas — CEP 28109)</td><td>Subscritor das debêntures incentivadas até 20/06/2024 (R$ 17,99 MM) capitalizadas em 14/02/2025; subscritor do Boletim nº 1 da AGE 28/02/2025 (R$ 5 MM); Presidente da RCA 06/03/2025 das notas comerciais</td></tr>
+  <tr><td>Marcos Leonel Leal</td><td>286.177.828-89</td><td>Secretário da mesa; Co-CEO Víssimo Group; e-mail marcos.leal@vissimo.com.br</td><td>Secretário das três AGEs/RCA; assinou via DocuSign de IP 187.43.144.183 (geolocalização −23,558; −46,661 — São Paulo)</td></tr>
+  <tr><td>Thiago Moreira Salles Costa</td><td>—</td><td>Conselheiro de Administração da E-Vino</td><td>Conselheiro presente na RCA 06/03/2025; e-mail t.salles@vissimo.com.br</td></tr>
+  <tr><td>Fernando Campora</td><td>—</td><td>Conselheiro de Administração da E-Vino</td><td>Conselheiro presente na RCA 06/03/2025</td></tr>
+  <tr><td>Gabriel Felzenszwalb</td><td>—</td><td>Diretor da Vinci Capital Gestora de Recursos Ltda.; e-mail gfelzenszwalb@vincipartners.com</td><td>Conselheiro presente na RCA 06/03/2025; signatário da Vinci nas AGEs 14/02 e 28/02 representando Ajaccio + Anacapri + Brescia + Cetara + Bonifácio; IP de assinatura 201.76.181.18</td></tr>
+  <tr><td>Carlos Eduardo Martins e Silva</td><td>—</td><td>Diretor da Vinci Capital Gestora de Recursos Ltda.; e-mail cemartins@vincipartners.com</td><td>Signatário da Vinci nas AGEs 14/02 e 28/02 representando Ajaccio + Anacapri + Brescia + Cetara + Bonifácio; IP de assinatura 201.76.181.18 (mesmo IP do Felzenszwalb)</td></tr>
+  <tr><td>Ivel Cardoso Bittencourt de Castro</td><td>—</td><td>Conselheiro de Administração da E-Vino; e-mail ivel.castro@grupojcr.com</td><td>Conselheiro presente na RCA 06/03/2025</td></tr>
+  <tr><td>Antonio Carlos Castro Louro</td><td>—</td><td>Conselheiro de Administração da E-Vino</td><td>Conselheiro presente na RCA 06/03/2025</td></tr>
+</table>
+
+<h3>IV.2 Pessoas jurídicas</h3>
+<table>
+  <tr><th>Entidade</th><th>CNPJ</th><th>Função</th><th>Papel</th></tr>
+  <tr><td>E-Vino Comércio de Vinhos S.A.</td><td>17.392.519/0001-65 (NIRE 35.300.511.891)</td><td>Companhia operacional / Emitente</td><td>Sede Rua Bela Cintra, 986, 8º andar — Consolação/SP</td></tr>
+  <tr><td>Bonifácio FIP (Classe Única Mult. Resp. Limitada)</td><td>59.402.540/0001-44</td><td>FIP investidor (constituído 11/02/2025)</td><td>Subscritor de 137.454 PN em 28/02/2025 (R$ 18,0 MM)</td></tr>
+  <tr><td>Ajaccio FIP Multiestratégia</td><td>37.381.595/0001-82</td><td>Acionista pré-existente</td><td>Detém 11.935.645 ações ON; renunciou preferência em ambas as AGEs</td></tr>
+  <tr><td>Vinci Capital Gestora de Recursos Ltda.</td><td>11.079.478/0001-75</td><td>Gestora do Bonifácio + Ajaccio</td><td>Sede Av. Bartolomeu Mitre, 336, 5º andar, Leblon, RJ — CEP 22431-002</td></tr>
+  <tr><td>Anacapri Investments L.P.</td><td>(Delaware)</td><td>Acionista offshore</td><td>Constituída em fev/2025; renunciou preferência</td></tr>
+  <tr><td>Brescia Investments L.P.</td><td>(Delaware)</td><td>Acionista offshore</td><td>Idem Anacapri</td></tr>
+  <tr><td>Cetara Investments L.P.</td><td>(Delaware)</td><td>Acionista offshore</td><td>Idem Anacapri</td></tr>
+  <tr><td>Vórtx Distribuidora de Títulos e Valores Mobiliários Ltda.</td><td>22.610.500/0001-88 (NIRE 35229235874)</td><td>DTVM regulada — escrituradora/custodiante</td><td>Sede Rua Gilberto Sabino, 215, Cj. 41, Sala 2 — Pinheiros/SP — CEP 05425-020; sócia única VX Holding Financeira S.A.; Diretor Marcelo Cerqueira Vasconcelos Cherri responsável por Custódia (Res. CVM nº 32/2021); Diretor Everson Gonçalves Ramos responsável por Escrituração de TVM (Res. CVM nº 33/2021)</td></tr>
+</table>
+
+<!-- =========== V ============ -->
+<h2>V. Análise das subscrições — três fluxos, dois subscritores, um preço uniforme</h2>
+<table>
+  <tr><th>Subscrição</th><th>Data</th><th>Subscritor</th><th>Quantidade</th><th>Preço unitário</th><th>Valor</th><th>Forma de integralização</th></tr>
+  <tr><td>S1</td><td>14/02/2025</td><td>Ricardo Costa (Boletim único)</td><td>137.452 PN</td><td>R$ 130,95</td><td>R$ 17.999.739,49</td><td><strong>Capitalização de 15.777 debêntures incentivadas</strong> (subscritas até 20/06/2024)</td></tr>
+  <tr><td>S2</td><td>28/02/2025</td><td>Ricardo Costa (Boletim nº 1)</td><td>38.182 PN</td><td>R$ 130,95</td><td>R$ 5.000.000,00</td><td>Transferência de recursos imediatamente disponíveis</td></tr>
+  <tr><td>S3</td><td>28/02/2025</td><td>Bonifácio FIP (Boletim nº 2; representado pela Vinci Capital Gestora)</td><td>137.454 PN</td><td>R$ 130,95</td><td>R$ 18.000.000,00</td><td>Transferência de recursos imediatamente disponíveis</td></tr>
+  <tr><td colspan="3"><strong>Total ações PN emitidas</strong></td><td><strong>313.088</strong></td><td>R$ 130,95</td><td><strong>R$ 40.999.739,49</strong></td><td>—</td></tr>
+</table>
+<p class="nota">Observação contábil: o preço unitário uniforme de R$ 130,95/ação, fixado com base no art. 170 §1º I da Lei das S.A., aplica-se às três subscrições nas duas AGEs. A diferença entre o valor da capitalização das debêntures (R$ 17.999.739,49) e o cálculo aritmético perfeito (137.452 × 130,95 = R$ 17.999.741,40) é de R$ 1,91 — atribuível a arredondamento. Igualmente, 137.454 × R$ 130,95 = R$ 17.999.992,30 ≠ R$ 18.000.000,00 declarado no Boletim nº 2 — diferença de R$ 7,70, mesmo padrão.</p>
+
+<!-- =========== VI ============ -->
+<h2>VI. Análise das debêntures incentivadas — 15.777 títulos subscritos por Ricardo Costa</h2>
+<div class="ficha">
+  <div class="titulo">Debêntures Incentivadas E-Vino · Referidas no Boletim de Subscrição (D1)</div>
+  <table>
+    <tr><th>Quantidade</th><td>15.777 debêntures</td></tr>
+    <tr><th>Modalidade</th><td>Incentivadas (provavelmente Lei nº 12.431/2011 — debêntures de infraestrutura) ou outra modalidade incentivada — confirmar via Termo de Emissão</td></tr>
+    <tr><th>Forma de colocação</th><td>Privada</td></tr>
+    <tr><th>Subscritor</th><td>Ricardo Fernandes de Sousa Costa (CPF 605.476.260-53)</td></tr>
+    <tr><th>Data-limite de subscrição</th><td>Até 20/06/2024</td></tr>
+    <tr><th>Destino</th><td>Capitalizadas em 137.452 ações PN da E-Vino em 14/02/2025</td></tr>
+    <tr><th>Valor total capitalizado</th><td>R$ 17.999.739,49 (≈ R$ 1.140,76 por debênture na capitalização)</td></tr>
+    <tr><th>Diligências pendentes</th><td>Termo de Emissão das debêntures; ata da assembleia que aprovou a emissão; identidade do agente fiduciário das debêntures; modalidade incentivada (provável Lei 12.431); registro CVM ou ANBIMA</td></tr>
+  </table>
+</div>
+<p>A operação D1 (14/02/2025) é, em essência, conversão contábil: as debêntures que eram <em>passivo</em> da E-Vino (dívida com Ricardo Costa) deixam de existir como passivo e transformam-se em <em>capital</em>. O efeito é nulo no caixa, positivo no patrimônio líquido (R$ 17,99 MM), e altera a estrutura societária com diluição proporcional dos demais acionistas. Como Ajaccio, Anacapri, Brescia e Cetara renunciaram à preferência, a diluição econômica recaiu integralmente sobre eles.</p>
+
+<!-- =========== VII ============ -->
+<h2>VII. Análise das Notas Comerciais Escriturais — R$ 24 MM, 06/03/2025</h2>
+<div class="ficha">
+  <div class="titulo">1ª Emissão de Notas Comerciais Escriturais da E-Vino · RCA 06/03/2025 (D3)</div>
+  <table>
+    <tr><th>Base legal</th><td>Lei nº 14.195/2021 (Lei do Ambiente de Negócios), art. 45 e seguintes; Cláusula 18 do Estatuto/Contrato Social</td></tr>
+    <tr><th>Valor total da emissão</th><td>R$ 24.000.000,00</td></tr>
+    <tr><th>Quantidade</th><td>24.000 notas comerciais escriturais</td></tr>
+    <tr><th>Valor nominal unitário</th><td>R$ 1.000,00</td></tr>
+    <tr><th>Número de séries</th><td>Série única</td></tr>
+    <tr><th>Prazo</th><td>Até 1.100 dias da Data de Emissão (≈ 3 anos)</td></tr>
+    <tr><th>Remuneração</th><td>Taxa DI (100% do CDI) + spread de 4,50% a.a. (base 360 dias corridos)</td></tr>
+    <tr><th>Garantia real</th><td>Cessão Fiduciária de Direitos Creditórios — a ser constituída pela Emitente em favor dos titulares das Notas</td></tr>
+    <tr><th>Garantia fidejussória</th><td>Fiança prestada pela <strong>Garantidora</strong> — definida como "as pessoas jurídicas [e as pessoas físicas] que outorgarão as Garantias Reais e a Fiança" — identidade <strong>não nominada</strong> na RCA</td></tr>
+    <tr><th>Colocação</th><td>Privada</td></tr>
+    <tr><th>Credor (titular)</th><td>"Credor" mencionado genericamente na RCA — identidade <strong>não nominada</strong></td></tr>
+    <tr><th>Agente fiduciário / escriturador</th><td>Não nominado na RCA; <strong>infere-se que seja Vórtx DTVM</strong> dado o vínculo documental cruzado (D4, D5)</td></tr>
+  </table>
+</div>
+<p>Pontos de diligência adicional sobre as notas comerciais:</p>
+<ol>
+  <li><strong>Termo de Emissão</strong> da 1ª Emissão de Notas Comerciais Escriturais — instrumento que materializa a emissão e identifica nominalmente o Credor, a Garantidora, o agente liquidante e o escriturador.</li>
+  <li><strong>Contrato de Cessão Fiduciária de Direitos Creditórios</strong> — qual o conjunto de direitos creditórios cedidos em garantia (recebíveis comerciais? contratos específicos?).</li>
+  <li><strong>Identidade da Garantidora</strong> — única ou múltipla? Pessoa jurídica do mesmo grupo (Víssimo, Grand Cru, Agro Syrah, Interbeverages) ou terceiro independente?</li>
+  <li><strong>Registro na B3 / ANBIMA</strong> — confirmar custódia e escrituração.</li>
+  <li><strong>Data efetiva de Emissão</strong> e <strong>Data de Vencimento</strong> — não fixadas na RCA, dependem do Termo de Emissão.</li>
+</ol>
+
+<!-- =========== VIII ============ -->
+<h2>VIII. O conselho de administração de 06/03/2025 — sete conselheiros</h2>
+<table>
+  <tr><th>Posição</th><th>Nome</th><th>Vínculo identificável</th></tr>
+  <tr><td>Presidente da mesa</td><td>Ricardo Fernandes de Sousa Costa</td><td>Cotista do Ajaccio FIP; subscritor das debêntures e das ações novas; residente em Madrid</td></tr>
+  <tr><td>Secretário da mesa</td><td>Marcos Leonel Leal</td><td>Co-CEO Víssimo Group; e-mail @vissimo.com.br</td></tr>
+  <tr><td>Conselheiro</td><td>Thiago Moreira Salles Costa</td><td>e-mail @vissimo.com.br — possível parente de Ricardo Costa</td></tr>
+  <tr><td>Conselheiro</td><td>Fernando Campora</td><td>—</td></tr>
+  <tr><td>Conselheiro</td><td>Gabriel Felzenszwalb</td><td>Diretor da Vinci Capital Gestora (gestora de Ajaccio + Bonifácio)</td></tr>
+  <tr><td>Conselheiro</td><td>Ivel Cardoso Bittencourt de Castro</td><td>Grupo JCR — e-mail @grupojcr.com</td></tr>
+  <tr><td>Conselheiro</td><td>Antonio Carlos Castro Louro</td><td>Possível vínculo Grupo JCR (sobrenome convergente)</td></tr>
+</table>
+
+<!-- =========== IX ============ -->
+<h2>IX. Achado-pivô — Ari Gorenstein na E-Vino em 2025</h2>
+<div class="ausencia">
+  <div class="titulo">Ausência absoluta de Ari Gorenstein nos órgãos e operações da E-Vino em 2025</div>
+  <p>A análise grafo dos sete documentos primários verificados não localiza Ari Gorenstein (CPF 136.447.108-64) em <strong>nenhuma</strong> das seguintes posições nos atos de 2025:</p>
+  <ul>
+    <li>Não consta como acionista presente em qualquer das três assembleias (14/02, 28/02, 06/03/2025);</li>
+    <li>Não consta no Conselho de Administração que aprovou a emissão de notas comerciais escriturais (RCA 06/03/2025);</li>
+    <li>Não consta como subscritor de ações novas, debêntures ou notas comerciais;</li>
+    <li>Não consta como garantidor real ou fidejussório das notas comerciais;</li>
+    <li>Não consta como credor identificado na RCA 06/03/2025;</li>
+    <li>Não consta como signatário de qualquer DocuSign envelope dos atos analisados.</li>
+  </ul>
+  <p>Esse padrão, conjugado com (i) a confissão expressa, em 13/06/2023 (fls. 572 dos autos), de que o FIP Ajaccio "nada mais é do que o veículo por meio do qual Ari detém sua participação na Evino", e (ii) a posição ativa em 06/03/2025 do conselheiro Gabriel Felzenszwalb (Diretor da Vinci Capital Gestora — gestora do Ajaccio), produz inferência grafo-relacional decisiva: <strong>a participação econômica de Ari Gorenstein na E-Vino é representada, indiretamente, pelo conselheiro Felzenszwalb na qualidade de diretor da gestora do FIP Ajaccio</strong>. A ausência formal não é desvinculação econômica — é interposição de pessoa jurídica entre o cotista e a companhia operacional. Achado relevante para análise de partes relacionadas (RPT) e para a tese de comunicabilidade pela origem desenvolvida nas teses v1 a v6 da série (Documentos 16 a 21).</p>
+</div>
+
+<!-- =========== X ============ -->
+<h2>X. Grafo relacional consolidado</h2>
+<div class="grafo">                                                 RICARDO COSTA (residência Madrid/ES)
+                                                            CPF 605.476.260-53
+                                                                    │
+                                              ┌─────────────────────┼─────────────────────┐
+                                              │                     │                     │
+                                              ▼                     ▼                     ▼
+                            ┌──── debêntures incentivadas    Subscrição direta    Presidente do Conselho
+                            │     15.777 (até 20/06/2024)    R$ 5 MM (28/02)      de Administração
+                            │     R$ 17,99 MM                                          │
+                            │           │                                              │
+                            │           │ capitalização                                │
+                            │           │ 14/02/2025                                   │
+                            ▼           ▼                                              │
+        E-VINO COMÉRCIO DE VINHOS S.A. (CNPJ 17.392.519/0001-65)  ◄────────────────────┘
+                  │       ▲                ▲                  ▲                       │
+                  │       │                │                  │                       │
+                  │       │ Subscrição     │ Renunciam        │ Aprova                │
+                  │       │ 137.454 PN     │ preferência      │ emissão               │
+                  │       │ R$ 18 MM       │                  │ Notas Comerciais      │
+                  │       │ (28/02)        │                  │ R$ 24 MM              │
+                  │       │                │                  │ DI + 4,50% a.a.       │
+                  │       │                │                  │ prazo 1.100 dias      │
+                  │  BONIFÁCIO FIP  ───┐   │              CONSELHO DE ADMINISTRAÇÃO   │
+                  │  59.402.540/0001-44│   │              ┌──────────────────────┐   │
+                  │  PL 30/04: R$ 18,1 MM  │              │ Ricardo Costa (Pres.)│   │
+                  │  (constit. 11/02/2025) │              │ Marcos Leonel Leal   │   │
+                  │       ▲                │              │ Thiago Salles Costa  │   │
+                  │       │ Gestora        │              │ Fernando Campora     │   │
+                  │       │                │              │ Gabriel Felzenszwalb │◄──┤
+                  │       │                │              │ Ivel Cardoso Castro  │   │
+                  │       │                │              │ Antonio Castro Louro │   │
+                  │       │                │              └──────────────────────┘   │
+                  │  VINCI CAPITAL GESTORA  ───────► Ajaccio + Bonifácio              │
+                  │  11.079.478/0001-75 ───────────► Anacapri + Brescia + Cetara LP   │
+                  │  Diretores Felzenszwalb + Martins e Silva — IP único 201.76.181.18│
+                  │                                                                  │
+                  │  AJACCIO FIP ──── Acionista (11.935.645 ON) — renuncia preferência│
+                  │  37.381.595      em ambas as AGEs                                 │
+                  │       ▲                                                          │
+                  │       │ cotista (R$ 42,4 MM bloqueados)                          │
+                  │       │ ──────► confissão fls. 572: "veículo da participação"    │
+                  │       │                                                          │
+                  │  ARI GORENSTEIN (CPF 136.447.108-64) ◄──┘                        │
+                  │  AUSENTE de todos os órgãos e atos da E-Vino em 2025              │
+                  │  mas titular econômico via cota Ajaccio (constrição mantida)     │
+                  │                                                                  │
+                  │  Garantia Real: Cessão Fiduciária de Direitos Creditórios        │
+                  │  Garantia Fidejussória: GARANTIDORA não nominada na RCA          │
+                  │  Credor: não nominado na RCA                                     │
+                  │  Agente fiduciário / escriturador: inferido como Vórtx DTVM      │
+                  │                                                                  │
+                  ▼                                                                  ▼
+        ECOSSISTEMA OPERACIONAL                                  ESTRUTURA FINANCEIRA
+        (Víssimo / Grand Cru / Agro Syrah                        (Notas Comerciais R$ 24 MM)
+        / Interbeverages)</div>
+
+<!-- =========== XI ============ -->
+<h2>XI. Anomalias detectadas — sete pontos de atenção</h2>
+<table>
+  <tr><th>#</th><th>Anomalia</th><th>Risco</th><th>Diligência</th></tr>
+  <tr><td>A1</td><td>Bonifácio FIP constituído em 11/02/2025 e subscreveu R$ 18 MM em ações E-Vino 17 dias depois — no curso da litispendência da ação de divórcio</td><td><span class="selo critico">crítico</span></td><td>Já reportado no Documento 23</td></tr>
+  <tr><td>A2</td><td>15.777 debêntures incentivadas subscritas por Ricardo Costa até 20/06/2024 — sem identificação do Termo de Emissão, agente fiduciário ou modalidade incentivada (Lei 12.431/2011 ou outra)</td><td><span class="selo atencao">alto</span></td><td>Exibir Termo de Emissão das debêntures; verificar registro CVM/ANBIMA</td></tr>
+  <tr><td>A3</td><td>RCA 06/03/2025 deixa em aberto a identidade do Credor, da Garantidora e do agente fiduciário das notas comerciais escriturais</td><td><span class="selo critico">crítico</span></td><td>Exibir Termo de Emissão e Contrato de Cessão Fiduciária; identificar nominalmente a Garantidora (pessoa física? jurídica? do grupo?)</td></tr>
+  <tr><td>A4</td><td>Conselheiro Gabriel Felzenszwalb é simultaneamente diretor da Vinci Capital Gestora (gestora do Bonifácio que subscreveu R$ 18 MM na E-Vino 6 dias antes) — partes relacionadas</td><td><span class="selo atencao">alto</span></td><td>Verificar política de partes relacionadas da E-Vino; existência de divulgação de RPT à CVM</td></tr>
+  <tr><td>A5</td><td>Anacapri / Brescia / Cetara L.P. (Delaware) renunciaram preferência em ambas as AGEs — diluição econômica concentrada nessas offshores</td><td><span class="selo atencao">alto</span></td><td>Verificar UBO (Ultimate Beneficial Owner) das três LLCs; BOI Declaration CTA 2024/FinCEN</td></tr>
+  <tr><td>A6</td><td>Movimentação total de R$ 65 MM em 21 dias (14/02 a 06/03/2025) em janela de litispendência — recapitalização significativa</td><td><span class="selo critico">crítico</span></td><td>Verificar destinação dos recursos (capital de giro? aquisição? distribuição?); demonstrações financeiras 2025</td></tr>
+  <tr><td>A7</td><td>Ausência absoluta de Ari Gorenstein dos órgãos e atos da E-Vino em 2025, em contraste com sua confissão de participação via Ajaccio (fls. 572)</td><td><span class="selo critico">crítico para a partilha</span></td><td>Achado registrado nas teses v1 a v6 (Docs. 16-21); reforça a tese de interposição de pessoa jurídica</td></tr>
+</table>
+
+<!-- =========== XII ============ -->
+<h2>XII. Síntese conclusiva</h2>
+<p>A análise grafo das cinco AGEs/RCAs da E-Vino entre 2017 e 2025 revela que o ecossistema operacional da Companhia continua plenamente ativo — com aumento de capital de R$ 41 MM em duas AGEs (14/02 e 28/02/2025) e emissão de R$ 24 MM em notas comerciais escriturais com garantia real e fidejussória (RCA 06/03/2025) —, mas que <strong>Ari Gorenstein deixou de ocupar qualquer posição formal nos órgãos da Companhia</strong>. Sua participação econômica permanece, conforme confissão expressa de fls. 572 dos autos, intermediada pelo FIP Ajaccio (cujo gestor, Vinci Capital Gestora, tem diretor — Gabriel Felzenszwalb — presente no Conselho de Administração da E-Vino na RCA das notas comerciais). A figura grafo-relacional é, portanto, de <strong>interposição de pessoa jurídica</strong> — não de desvinculação patrimonial. Esta inferência é decisiva para a tese de comunicabilidade pela origem e para a aplicação dos enquadramentos de partes relacionadas e violência patrimonial estruturada já consolidados nas teses v1 a v6 desta série (Documentos 16 a 21).</p>
+
+<!-- =========== XIII ============ -->
+<h2>XIII. Conformidade metodológica</h2>
+<div class="ficha">
+  <p>Este dossiê é instrumento técnico-jurídico-contábil de apoio ao raciocínio da equipe; não é perícia oficial. Toda afirmação fática está ancorada em fontes documentais primárias verificadas: Atas de AGE/RCA arquivadas na JUCESP (protocolos 0.655.724/25-4, 0.655.796/25-3, 0.655.797/25-7); envelopes DocuSign com IDs únicos (DDO444EA, 9DD11009, f7d2d1f2); Consulta CNPJ da Receita Federal; e atas societárias da Vórtx DTVM (149.711/24-4 e 0.241.977/25-3).</p>
+  <p>As inferências sobre interposição de pessoa jurídica e representação econômica indireta são <strong>hipóteses grafo-relacionais sustentadas por convergência cronométrica e por confissão expressa do Requerido</strong> (fls. 572 dos autos), mas <strong>não constituem imputação de conduta ilícita</strong> a qualquer dos atores nomeados. As qualificações jurídicas são descritas em tese, sob CF art. 5º, LVII.</p>
+  <p>Conversão em peça subscrita por OAB e em laudo CRC/CORECON antes de qualquer uso processual. Pessoas físicas serão anonimizadas em qualquer versão de circulação externa.</p>
+</div>
+
+<footer class="rodape">
+  <p>Dossiê Técnico Grafo-Relacional · AGEs da E-Vino 2017-2025 · Operação Limoncello<br>
+  Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP · Emissão 14/06/2026 · Versão 1.0<br>
+  Série DOSSIÊS E NOTAS TÉCNICAS — documento 24 · INSTRUMENTO INTERNO · CONFIDENCIAL<br>
+  Conversão para laudo subscrito por contador habilitado (CRC) e peça subscrita por OAB antes de qualquer uso processual.</p>
+</footer>
+
+</div>
+</body>
+</html>

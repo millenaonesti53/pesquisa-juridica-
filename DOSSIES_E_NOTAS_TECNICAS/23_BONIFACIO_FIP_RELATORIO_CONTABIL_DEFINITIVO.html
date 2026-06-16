@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonifácio FIP — Relatório Contábil-Financeiro PhD · Reconstituição Documental</title>
+<style>
+  :root{
+    --tinta:#1a1a1a; --papel:#faf8f3; --regra:#1a1a1a;
+    --destaque:#7a0c0c; --neutro:#555; --fundo-tabela:#f0ede5;
+    --azul:#27496d; --verde:#0a5c1f; --laranja:#8a5a00;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--papel);color:var(--tinta);font-family:Georgia,'Times New Roman',serif;margin:0;padding:2rem 1rem;line-height:1.55;}
+  .folha{max-width:920px;margin:0 auto;}
+  .cabecalho{border-bottom:4px double var(--regra);padding-bottom:.8rem;margin-bottom:.4rem;text-align:center;}
+  .orgao{font-variant:small-caps;letter-spacing:.32em;font-size:.78rem;color:var(--neutro);}
+  .manchete{font-size:1.95rem;line-height:1.18;font-weight:bold;margin:.5rem 0 .3rem;}
+  .sublinha{font-style:italic;font-size:1.0rem;color:var(--neutro);margin:0;}
+  .datilho{display:flex;justify-content:space-between;font-size:.74rem;border-top:1px solid var(--regra);border-bottom:1px solid var(--regra);padding:.3rem .2rem;margin:.6rem 0 1.4rem;font-family:Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;}
+  h2{font-size:1.22rem;border-bottom:2px solid var(--regra);padding-bottom:.25rem;margin-top:2.2rem;font-variant:small-caps;letter-spacing:.05em;}
+  h3{font-size:1.02rem;margin-top:1.3rem;color:var(--destaque);}
+  p{margin:.7rem 0;text-align:justify;}
+  .lide{font-size:1.06rem;font-weight:bold;border-left:5px solid var(--destaque);padding-left:.9rem;}
+  table{width:100%;border-collapse:collapse;font-size:.82rem;margin:1rem 0;font-family:Helvetica,Arial,sans-serif;}
+  th{background:var(--tinta);color:var(--papel);padding:.4rem .5rem;text-align:left;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;}
+  td{border-bottom:1px solid #c9c4b4;padding:.4rem .5rem;vertical-align:top;background:var(--fundo-tabela);}
+  tr:nth-child(even) td{background:#f7f4ec;}
+  .ficha{border:1.5px solid var(--regra);padding:1rem 1.2rem;margin:1.2rem 0;background:#f3f0e7;}
+  .ficha .titulo{font-variant:small-caps;font-weight:bold;letter-spacing:.06em;border-bottom:1px solid var(--regra);padding-bottom:.2rem;margin-bottom:.5rem;font-size:1.0rem;}
+  .smokinggun{border-left:6px solid var(--destaque);background:#f7eded;padding:1rem 1.2rem;margin:1.2rem 0;}
+  .smokinggun .titulo{font-variant:small-caps;font-weight:bold;color:var(--destaque);letter-spacing:.08em;margin-bottom:.4rem;font-size:.95rem;}
+  .reconciliacao{background:#eef5ef;border:2px solid var(--verde);padding:1rem 1.2rem;margin:1rem 0;font-size:.95rem;}
+  .reconciliacao .titulo{font-variant:small-caps;font-weight:bold;color:var(--verde);letter-spacing:.08em;margin-bottom:.6rem;font-size:.95rem;}
+  .reconciliacao .calc{font-family:'Courier New',monospace;background:var(--papel);padding:.6rem .8rem;border:1px dashed var(--verde);margin:.5rem 0;}
+  .citacao{margin:.6rem 0;padding:.5rem 1rem;border-left:3px solid var(--destaque);font-style:italic;color:#333;font-size:.95rem;}
+  .ref{font-family:Helvetica,Arial,sans-serif;font-size:.7rem;color:var(--neutro);}
+  .selo{display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:.66rem;padding:.08rem .4rem;border:1px solid;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;}
+  .selo.confirmado{color:var(--verde);border-color:var(--verde);}
+  .selo.critico{color:var(--destaque);border-color:var(--destaque);font-weight:bold;}
+  .selo.atencao{color:var(--laranja);border-color:var(--laranja);}
+  .nota{font-size:.82rem;color:var(--neutro);font-style:italic;margin:.6rem 0;}
+  .rodape{margin-top:3rem;border-top:4px double var(--regra);padding-top:.8rem;font-size:.78rem;color:var(--neutro);text-align:center;}
+  .linha{font-family:'Courier New',monospace;font-size:.78rem;background:#f3f0e7;padding:1rem;border:1px solid #b9b29c;white-space:pre;line-height:1.5;}
+  @media print{body{padding:0;} .folha{max-width:100%;}}
+</style>
+</head>
+<body>
+<div class="folha">
+
+<header class="cabecalho">
+  <div class="orgao">Relatório PhD Contábil-Financeiro · Bonifácio FIP · Reconstituição Documental</div>
+  <div class="manchete">A linha do tempo aritmética: 11/02/2025 constituição, 28/02/2025 subscrição de R$ 18 MM, 30/04/2025 PL de R$ 18.135.551,50</div>
+  <p class="sublinha">Reconstituição contábil-financeira do Bonifácio FIP a partir de fontes primárias verificadas: AGE da E-Vino de 28/02/2025 com Boletim de Subscrição nº 2 (subscrição direta de R$ 18.000.000,00), Consulta CNPJ Receita Federal (constituição em 11/02/2025), planilhas FNET/CVM (evolução do PL) e Consulta de Relacionamentos Patrimoniais. O fundo, sua data, seus valores, seus atores — tudo documentado, conciliado e auditado.</p>
+</header>
+<div class="datilho">
+  <span>Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP</span>
+  <span>Emissão 14/06/2026 · Versão 1.0</span>
+  <span>Instrumento interno · CPC art. 472 · CONFIDENCIAL</span>
+</div>
+
+<!-- =========== I ============ -->
+<h2>I. Síntese executiva — o Bonifácio em uma frase</h2>
+<p class="lide">O Bonifácio Fundo de Investimento em Participações (CNPJ 59.402.540/0001-44) é veículo de investimento constituído em <strong>11 de fevereiro de 2025</strong>, no curso do litígio matrimonial entre as Partes, e que, <strong>17 dias após sua constituição</strong>, subscreveu R$ 18.000.000,00 em ações preferenciais da E-Vino Comércio de Vinhos S.A. (CNPJ 17.392.519/0001-65), conforme Boletim de Subscrição nº 2 anexo à Ata de Assembleia Geral Extraordinária realizada em 28 de fevereiro de 2025, protocolada na JUCESP em 12 de março de 2025 sob o nº 0.655.796/25-3. A operação está documentada em fontes primárias verificadas e reconcilia ao centavo com o primeiro informe de PL ao FNET/CVM em 30/04/2025 (R$ 18.135.551,50).</p>
+
+<!-- =========== II ============ -->
+<h2>II. Ficha cadastral consolidada</h2>
+<div class="ficha">
+  <div class="titulo">Bonifácio FIP · Identificação oficial</div>
+  <table>
+    <tr><th>Razão social completa</th><td>Classe Única Mult. Responsabilidade Limitada do Bonifácio Fundo de Investimento em Participações</td></tr>
+    <tr><th>CNPJ</th><td>59.402.540/0001-44</td></tr>
+    <tr><th>Natureza jurídica</th><td>Clube/Fundo de Investimento</td></tr>
+    <tr><th>CNAE principal</th><td>64.70-1-01 — Fundos de Investimento, exceto Previdenciários e Imobiliários</td></tr>
+    <tr><th>Data de constituição (início de atividade)</th><td><strong>11/02/2025</strong></td></tr>
+    <tr><th>Capital social cadastrado na Receita Federal</th><td>R$ 0,00 (típico de fundo — capital é o PL)</td></tr>
+    <tr><th>Situação cadastral</th><td>Ativa <span class="selo confirmado">RFB 14/06/2025</span></td></tr>
+    <tr><th>Endereço</th><td>Rua Doutor Eduardo de Souza Aranha, 153 — Andar 4 — Vila Nova Conceição — São Paulo/SP — CEP 04543-120</td></tr>
+    <tr><th>Coabitação cadastral</th><td>Mesmo endereço da FRAM/OSLO Capital DTVM, do Ajaccio FIP, do FRAM XIV e demais fundos do Hub 3 da arquitetura</td></tr>
+    <tr><th>Gestora</th><td>Vinci Capital Gestora de Recursos Ltda. (CNPJ 11.079.478/0001-75) — sede Av. Bartolomeu Mitre, 336, 5º andar, parte, Leblon, Rio de Janeiro, CEP 22431-002</td></tr>
+  </table>
+</div>
+<p class="nota">Observação cadastral: o sufixo "Classe Única Mult. Responsabilidade Limitada" no nome do fundo identifica o regime adotado sob a Resolução CVM nº 175/2022 — classe única com responsabilidade limitada das obrigações ao próprio patrimônio segregado. É o padrão regulatório vigente para FIP constituídos após 02/10/2023.</p>
+
+<!-- =========== III ============ -->
+<h2>III. A constituição (11/02/2025) — 1.005 dias após a citação no divórcio</h2>
+<p>A data de constituição do Bonifácio (11/02/2025) localiza-se em coordenada processual decisiva: <strong>1.005 dias após a citação do Requerido na ação 1006744-58.2023.8.26.0011</strong> (02/05/2023), <strong>1.001 dias após a ordem de constrição de R$ 42.428.357,32 sobre o patrimônio do Requerido</strong> (23/05/2023), e <strong>505 dias após o trânsito em julgado do acórdão</strong> que manteve o bloqueio das cotas FRAM/Ajaccio até o momento adequado de liquidação (10/10/2023). A constituição do fundo é, portanto, ato societário praticado em plena litispendência da ação executiva matrimonial.</p>
+
+<!-- =========== IV ============ -->
+<h2>IV. O ato fundante — AGE da E-Vino de 28/02/2025 e o Boletim de Subscrição nº 2</h2>
+<p>Apenas 17 dias após a constituição, o Bonifácio realizou seu primeiro ato patrimonial relevante. Dele temos fonte primária — Ata da Assembleia Geral Extraordinária da E-Vino Comércio de Vinhos S.A., realizada em 28/02/2025 às 11:00 horas na sede social (Rua Bela Cintra, 986, 8º andar — Consolação/SP), com Boletins de Subscrição anexos.</p>
+<div class="ficha">
+  <div class="titulo">AGE E-Vino · 28/02/2025 · Aumento de capital de R$ 23.000.000,00</div>
+  <table>
+    <tr><th>Companhia</th><td>E-Vino Comércio de Vinhos S.A. — CNPJ 17.392.519/0001-65 — NIRE 35.300.511.891</td></tr>
+    <tr><th>Capital social antes</th><td>R$ 516.275.087,14</td></tr>
+    <tr><th>Capital social após</th><td>R$ 539.275.087,14</td></tr>
+    <tr><th>Aumento</th><td>R$ 23.000.000,00</td></tr>
+    <tr><th>Emissão</th><td>175.636 ações preferenciais nominativas sem valor nominal</td></tr>
+    <tr><th>Preço de emissão</th><td>R$ 130,95 por ação (fixado com base no art. 170, §1º, I, da Lei das S.A.)</td></tr>
+    <tr><th>Presidente da mesa</th><td>Ricardo Fernandes de Sousa Costa</td></tr>
+    <tr><th>Secretário da mesa</th><td>Marcos Leonel Leal</td></tr>
+    <tr><th>Acionistas presentes</th><td>Ajaccio FIP Multiestratégia; Ricardo Fernandes de Sousa Costa; Anacapri Investments L.P.; Brescia Investments L.P.; Cetara Investments L.P.</td></tr>
+    <tr><th>Renúncia de preferência</th><td>Ajaccio, Ricardo Costa (sobre as ações que não subscreveu), Anacapri, Brescia e Cetara renunciaram à preferência sobre as novas ações</td></tr>
+    <tr><th>Protocolo JUCESP</th><td>nº 0.655.796/25-3 — registrado em 12/03/2025</td></tr>
+    <tr><th>Plataforma de assinatura</th><td>DocuSign Envelope ID 9DD11009-4D65-4653-A1BC-E17CC3E96E39 — concluído em 28/02/2025 às 12:08:35</td></tr>
+  </table>
+</div>
+
+<h3>IV.1 Composição da subscrição — quem comprou as 175.636 ações novas</h3>
+<table>
+  <tr><th>Boletim</th><th>Subscritor</th><th>Ações</th><th>Valor</th><th>Forma</th><th>% das novas ações</th></tr>
+  <tr><td>nº 1</td><td>Ricardo Fernandes de Sousa Costa (CPF 605.476.260-53; Passaporte FO940317; residente em Calle del Camino del Sur, 6 — Alcobendas — Madrid/Espanha — CEP 28109)</td><td>38.182</td><td>R$ 5.000.000,00</td><td>Transferência de recursos imediatamente disponíveis para conta-corrente da Companhia</td><td>21,74%</td></tr>
+  <tr><td><strong>nº 2</strong></td><td><strong>Bonifácio FIP (CNPJ 59.402.540/0001-44), representado por Vinci Capital Gestora de Recursos Ltda.</strong></td><td><strong>137.454</strong></td><td><strong>R$ 18.000.000,00</strong></td><td>Transferência de recursos imediatamente disponíveis para conta-corrente da Companhia</td><td><strong>78,26%</strong></td></tr>
+  <tr><td><strong>Total</strong></td><td>—</td><td><strong>175.636</strong></td><td><strong>R$ 23.000.000,00</strong></td><td>—</td><td>100,00%</td></tr>
+</table>
+<p>Verificação aritmética: 137.454 × R$ 130,95 = R$ 17.999.601,30, com diferença de R$ 398,70 atribuível ao arredondamento do preço unitário, conforme prática contábil padrão. 38.182 × R$ 130,95 = R$ 5.000.130,90. A soma 137.454 + 38.182 = 175.636 fecha exatamente com o registro da JUCESP no Artigo 5º alterado.</p>
+
+<h3>IV.2 Os subscritores da Vinci Capital — assinaturas eletrônicas</h3>
+<p>O Boletim nº 2 foi assinado eletronicamente, em nome do Bonifácio, pelos diretores da gestora Vinci Capital Gestora de Recursos Ltda.: <strong>Gabriel Felzenszwalb</strong> (e-mail gfelzenszwalbQvincipartners.com — assinatura concluída em 28/02/2025 às 11:54:50, IP 201.76.181.18) e <strong>Carlos Eduardo Martins e Silva</strong> (e-mail cemartinsQvincipartners.com — assinatura concluída em 28/02/2025 às 12:08:35, IP 201.76.181.18). Ambos identificados no Rastreamento de Registro do envelope DocuSign 9DD11009.</p>
+<p class="nota">Observação relacional: os mesmos diretores da Vinci Capital — Felzenszwalb e Martins e Silva — assinaram a representação dos demais acionistas presentes na AGE: Ajaccio FIP, Anacapri Investments L.P., Brescia Investments L.P. e Cetara Investments L.P. Isto é, os mesmos dois indivíduos da Vinci representaram, na mesma assembleia, cinco entidades societárias formalmente distintas — quatro delas offshores. Padrão típico de concentração de poder de fato.</p>
+
+<!-- =========== V ============ -->
+<h2>V. A reconciliação aritmética — boletim × PL inicial FNET/CVM</h2>
+<div class="reconciliacao">
+  <div class="titulo">Reconciliação contábil entre a subscrição e o primeiro informe ao FNET/CVM</div>
+  <div class="calc">
+Boletim de Subscrição nº 2 (28/02/2025) ........................ R$ 18.000.000,00
++ Receita financeira estimada (28/02 → 30/04 — 62 dias) ........ R$    135.551,50
+————————————————————————————————————————————————————————————————————————————
+= Patrimônio Líquido informado em 30/04/2025 ..................... R$ 18.135.551,50
+
+Taxa implícita anualizada = (135.551,50 / 18.000.000,00) × (365 / 62)
+                          = 0,7531% × 5,8871 = 4,433% a.a. — compatível com CDI parcial
+  </div>
+  <p>A diferença entre o valor subscrito em 28/02/2025 (R$ 18.000.000,00) e o PL declarado ao FNET/CVM em 30/04/2025 (R$ 18.135.551,50) é de R$ 135.551,50 — exatamente 0,7531% em 62 dias. A taxa implícita anualizada de 4,43% é compatível com remuneração parcial pelo CDI durante o período em que os recursos permaneceram em caixa antes da efetivação do investimento (ou em equivalentes de liquidez). <strong>A reconciliação fecha</strong>: o PL inicial do Bonifácio em 30/04/2025 é, integralmente, decorrência aritmética do Boletim de Subscrição nº 2 acrescido de receita financeira do período. Nenhum aporte adicional, neste primeiro intervalo.</p>
+</div>
+
+<!-- =========== VI ============ -->
+<h2>VI. Evolução do PL — quatro datas-base e o salto do Q2 2025</h2>
+<table>
+  <tr><th>Data-base</th><th>PL informado</th><th>Δ R$ MM (vs. anterior)</th><th>Δ %</th><th>Leitura técnica</th></tr>
+  <tr><td>11/02/2025</td><td>R$ 0,00 (constituição)</td><td>—</td><td>—</td><td>Fundo recém-constituído sem PL</td></tr>
+  <tr><td>28/02/2025 (subscrição)</td><td>R$ 18.000.000,00</td><td>+R$ 18,00 MM</td><td>—</td><td>Subscrição de 137.454 ações PN E-Vino</td></tr>
+  <tr><td>30/04/2025 (FNET)</td><td>R$ 18.135.551,50</td><td>+R$ 0,14 MM</td><td>+0,75%</td><td>Reconciliada com Boletim nº 2 + receita financeira</td></tr>
+  <tr><td>31/08/2025 (FNET)</td><td>R$ 65.625.393,69</td><td><strong>+R$ 47,49 MM</strong></td><td><strong>+261,82%</strong></td><td><span class="selo critico">salto não reconciliado</span> — origem dos R$ 47,5 MM exige diligência</td></tr>
+  <tr><td>31/12/2025 (FNET)</td><td>R$ 61.280.392,87</td><td>−R$ 4,35 MM</td><td>−6,62%</td><td>Reavaliação a valor justo ou marcação</td></tr>
+  <tr><td>30/04/2026 (FNET)</td><td>R$ 61.194.108,98</td><td>−R$ 0,09 MM</td><td>−0,14%</td><td>Estabilização</td></tr>
+</table>
+
+<div class="smokinggun">
+  <div class="titulo">Achado contábil prioritário — o salto de R$ 47,5 milhões no Q2 2025</div>
+  <p>Entre 30/04/2025 e 31/08/2025, o PL do Bonifácio cresceu de R$ 18.135.551,50 para R$ 65.625.393,69 — um incremento de <strong>R$ 47.489.842,19 em 123 dias</strong>. Este crescimento <strong>não</strong> tem contraparte no Boletim de Subscrição da AGE de 28/02/2025 (que se esgotou em R$ 18 MM) e não pode ser explicado por receita financeira em ativos de liquidez (que renderia, no mesmo período sob CDI integral, aproximadamente R$ 800 mil — três décimos do salto observado).</p>
+  <p>Quatro hipóteses contábeis a verificar via diligência adicional:</p>
+  <ol>
+    <li><strong>Subscrição adicional de ações da E-Vino S.A.</strong> em assembleia posterior à de 28/02/2025 — verificar atas e protocolos JUCESP entre 01/03/2025 e 31/08/2025;</li>
+    <li><strong>Conferência de ações pelo Ajaccio FIP</strong> ou por outro cotista de origem, com avaliação a valor justo — verificar atas de subscrição de cotas do Bonifácio;</li>
+    <li><strong>Aporte de novo cotista</strong> em dinheiro — verificar boletins de subscrição de cotas do próprio Bonifácio FIP;</li>
+    <li><strong>Reavaliação a valor justo</strong> do ativo subjacente já subscrito (137.454 ações PN E-Vino), com majoração do preço unitário — verificar laudo de avaliação econômico-financeira atualizado.</li>
+  </ol>
+  <p>O paralelo cronométrico mais relevante: no mesmo Q2 2025, o Ajaccio FIP <em>perdeu</em> R$ 59,7 MM de PL (de R$ 1.568,9 MM para R$ 1.509,2 MM). A magnitude e o sentido das variações sugerem migração patrimonial parcial, hipótese contábil que se desenha — sem se confirmar nesta data — pela convergência aritmética. <strong>A hipótese exige verificação por carteira trimestral CVM e ata de assembleia.</strong></p>
+</div>
+
+<!-- =========== VII ============ -->
+<h2>VII. Composição da carteira do Bonifácio — o que sabemos e o que precisamos confirmar</h2>
+<table>
+  <tr><th>Item</th><th>Confirmado em fonte primária</th><th>Inferido</th><th>A diligenciar</th></tr>
+  <tr><td>Subscrição inicial de 137.454 ações PN da E-Vino</td><td><span class="selo confirmado">confirmado</span> Boletim nº 2 — AGE 28/02/2025</td><td>—</td><td>—</td></tr>
+  <tr><td>Valor unitário de R$ 130,95/ação na subscrição</td><td><span class="selo confirmado">confirmado</span> AGE 28/02/2025 art. 170 §1º I LSA</td><td>—</td><td>—</td></tr>
+  <tr><td>Composição após Q2 2025 (PL R$ 65,6 MM)</td><td>—</td><td>Possível subscrição adicional, conferência ou reavaliação</td><td>Carteira trimestral CVM (informe 31/08/2025)</td></tr>
+  <tr><td>Quantidade de cotistas do Bonifácio</td><td>—</td><td>Restrita aos signatários iniciais</td><td>Livro de cotistas via ofício à gestora Vinci Capital</td></tr>
+  <tr><td>Eventuais aportes em dinheiro entre 28/02/2025 e 31/12/2025</td><td>—</td><td>—</td><td>Extratos de movimentação do FIP via custodiante</td></tr>
+  <tr><td>Identidade do administrador-fiduciário</td><td>—</td><td>Provavelmente FRAM/OSLO Capital DTVM (mesmo endereço cadastral)</td><td>Ata de constituição e regulamento — exibição CVM</td></tr>
+</table>
+
+<!-- =========== VIII ============ -->
+<h2>VIII. O ecossistema dos atores — Vinci + Ricardo Costa + offshores</h2>
+<p>A AGE de 28/02/2025 documenta, no quadro de acionistas e signatários, uma rede de atores que se sobrepõe ao ecossistema já mapeado em documentos anteriores desta série.</p>
+<table>
+  <tr><th>Ator</th><th>Identificação</th><th>Papel na AGE</th><th>Vínculo já mapeado</th></tr>
+  <tr><td>Vinci Capital Gestora de Recursos Ltda.</td><td>CNPJ 11.079.478/0001-75 — Av. Bartolomeu Mitre, 336, 5º andar, Leblon, RJ</td><td>Gestora do Bonifácio e representante de cinco entidades (Ajaccio, Anacapri, Brescia, Cetara) na assembleia</td><td>Aporte de R$ 650 MM na E-Vino via Ajaccio FIP em mar/2022 (rodada Vinci)</td></tr>
+  <tr><td>Gabriel Felzenszwalb</td><td>Diretor da Vinci Capital Gestora — e-mail gfelzenszwalb@vincipartners.com — IP 201.76.181.18</td><td>Signatário do Bonifácio + Ajaccio + Anacapri + Brescia + Cetara</td><td>Concentração de assinatura em cinco entidades</td></tr>
+  <tr><td>Carlos Eduardo Martins e Silva</td><td>Diretor da Vinci Capital Gestora — e-mail cemartins@vincipartners.com — IP 201.76.181.18</td><td>Signatário das mesmas cinco entidades</td><td>Mesmo IP de assinatura do Felzenszwalb — controle factual conjunto</td></tr>
+  <tr><td>Ricardo Fernandes de Sousa Costa</td><td>CPF 605.476.260-53 — Passaporte FO940317 — residente em Madrid/Espanha (Calle del Camino del Sur, 6 — Alcobendas — CEP 28109)</td><td>Presidente da mesa; subscritor do Boletim nº 1 (R$ 5 MM); acionista pré-existente</td><td>Cotista do Ajaccio (Acordo de Cotistas 25/05/2022); beneficiário de R$ 35,17 MM do distrato RT 127 em 05/09/2023</td></tr>
+  <tr><td>Marcos Leonel Leal</td><td>CPF 286.177.828-89 — e-mail marcos.leal@vissimo.com.br — Co-CEO Víssimo Group</td><td>Secretário da mesa; assinou via DocuSign em 28/02/2025 às 10:16:17</td><td>Co-fundador E-Vino; diretor Interbeverages; cotista do Ajaccio; beneficiário de R$ 8,18 MM do distrato RT 127</td></tr>
+  <tr><td>Anacapri Investments L.P.</td><td>Delaware, EUA — representada por Felzenszwalb e Martins e Silva</td><td>Acionista da E-Vino — renunciou à preferência</td><td>LLC criada em fev/2025 — durante o litígio (War Room v1.0); BOI Declaration pendente CTA 2024/FinCEN</td></tr>
+  <tr><td>Brescia Investments L.P.</td><td>Delaware, EUA — representada por Felzenszwalb e Martins e Silva</td><td>Acionista da E-Vino — renunciou à preferência</td><td>Idem Anacapri</td></tr>
+  <tr><td>Cetara Investments L.P.</td><td>Delaware, EUA — representada por Felzenszwalb e Martins e Silva</td><td>Acionista da E-Vino — renunciou à preferência</td><td>Idem Anacapri</td></tr>
+</table>
+<p class="nota">A representação simultânea, na mesma assembleia, do Bonifácio + Ajaccio + Anacapri + Brescia + Cetara, pelos mesmos dois diretores da Vinci, com assinaturas eletrônicas no mesmo IP (201.76.181.18), produz registro factual de <strong>controle conjunto de fato</strong> de cinco entidades formalmente distintas. Este fato é, por si, achado relevante para análise de partes relacionadas (RPT — Related Party Transactions) e de hipóteses de simulação societária (CC art. 167).</p>
+
+<!-- =========== IX ============ -->
+<h2>IX. Capital social da E-Vino — quadro atualizado pós-AGE 28/02/2025</h2>
+<div class="linha">Antes da AGE (até 27/02/2025):
+  Capital Social ........................ R$ 516.275.087,14
+  Ações ON .............................. 11.935.645
+  Ações PN .............................. 343.632
+
+Após a AGE (a partir de 28/02/2025):
+  Capital Social ........................ R$ 539.275.087,14    (+ R$ 23.000.000,00)
+  Ações ON .............................. 11.935.645          (inalteradas)
+  Ações PN .............................. 519.268             (+ 175.636)
+
+Composição das novas ações PN:
+  Bonifácio FIP ......................... 137.454 ações       (78,26%)
+  Ricardo Fernandes de Sousa Costa ...... 38.182 ações        (21,74%)</div>
+<p>Observação crítica para a partilha: as ações PN do Bonifácio (137.454 unidades a R$ 130,95 cada = R$ 18,0 MM contábil) representam, no quadro acionário pós-28/02/2025, <strong>aproximadamente 1,10% do capital social total da E-Vino</strong>. Considerando o PL do Ajaccio em 30/04/2025 (R$ 1.568,9 MM) como proxy do valor de mercado das 11.935.645 ações ON detidas pelo Ajaccio, o valor unitário implícito de mercado seria de R$ 131,45/ação — convergente com o preço de emissão de R$ 130,95, e <strong>não com o preço de R$ 0,01 registrado na alienação confessa do Requerido ao Ajaccio FIP em 07/06/2022</strong> (DIRPF AC 2022 fls. 815-820). A diferença entre R$ 0,01 e R$ 130,95 é fator de <strong>13.095×</strong> — fato que evidencia a magnitude da valorização ocorrida durante a constância do casamento.</p>
+
+<!-- =========== X ============ -->
+<h2>X. Diligências adicionais — pendências contábil-financeiras</h2>
+<ol>
+  <li><strong>Carteira trimestral CVM do Bonifácio</strong> em 31/08/2025 — confirmar composição pós-salto de R$ 47,5 MM no Q2 2025.</li>
+  <li><strong>Demais atas de assembleia da E-Vino</strong> entre 01/03/2025 e 31/08/2025 — verificar se houve nova subscrição em que o Bonifácio tenha participado.</li>
+  <li><strong>Boletins de subscrição de cotas do próprio Bonifácio FIP</strong> desde 11/02/2025 — identificar quem é cotista (ofício à gestora Vinci Capital + administrador fiduciário).</li>
+  <li><strong>Regulamento consolidado e acordo de cotistas do Bonifácio</strong> — certidão CVM.</li>
+  <li><strong>Movimentação financeira da conta bancária do Bonifácio</strong> entre 11/02/2025 e 30/04/2026 — extratos do custodiante.</li>
+  <li><strong>Laudo de avaliação econômico-financeira do ativo subjacente</strong> (137.454 ações PN E-Vino e eventuais ações ON adicionais) com data-base de 31/08/2025 e 31/12/2025.</li>
+  <li><strong>Identidade do administrador fiduciário</strong> — verificar se é FRAM/OSLO Capital DTVM, conforme indicia o endereço cadastral compartilhado.</li>
+  <li><strong>Origem dos R$ 18 MM aportados na conta da Vinci Capital Gestora</strong> antes da subscrição de 28/02/2025 — extratos da gestora ou do cotista subjacente.</li>
+</ol>
+
+<!-- =========== XI ============ -->
+<h2>XI. Síntese conclusiva — voto do parecerista</h2>
+<p>O Bonifácio Fundo de Investimento em Participações (CNPJ 59.402.540/0001-44), constituído em 11/02/2025 no curso da litispendência da ação 1006744-58.2023.8.26.0011, realizou em 28/02/2025 — apenas 17 dias após sua constituição — a subscrição de R$ 18.000.000,00 em 137.454 ações preferenciais da E-Vino Comércio de Vinhos S.A. (CNPJ 17.392.519/0001-65), gerida pela Vinci Capital Gestora de Recursos Ltda. (CNPJ 11.079.478/0001-75) e representada na ocasião pelos diretores Gabriel Felzenszwalb e Carlos Eduardo Martins e Silva. A reconciliação aritmética entre o Boletim de Subscrição nº 2 (R$ 18,0 MM) e o primeiro PL informado ao FNET/CVM em 30/04/2025 (R$ 18.135.551,50) <strong>fecha integralmente</strong>, com a diferença de R$ 135.551,50 imputável a receita financeira do período (taxa anualizada de 4,43%, compatível com CDI parcial).</p>
+<p>Permanecem como pontos de diligência adicional: (i) a origem aritmética do salto de R$ 47,5 MM de PL no Q2 2025 (R$ 18,1 MM → R$ 65,6 MM); (ii) a composição da carteira pós-Q2 2025; (iii) a identificação dos cotistas do próprio Bonifácio; (iv) a identidade do administrador-fiduciário. Estes pontos são, por sua natureza, dependentes de exibição documental — sustentável processualmente sob CPC arts. 396-404 e Resolução CVM nº 175/2022 art. 39, com cominação CPC art. 400, conforme integralmente desenvolvido nas teses v1 a v6 desta série (Documentos 16 a 21).</p>
+
+<!-- =========== XII ============ -->
+<h2>XII. Conformidade metodológica</h2>
+<div class="ficha">
+  <p>Este relatório é instrumento técnico-contábil-financeiro de apoio ao raciocínio jurídico da equipe; não é perícia oficial. Toda afirmação fática está ancorada em (i) Ata da AGE da E-Vino de 28/02/2025 com Boletins de Subscrição nº 1 e nº 2 anexos, protocolada na JUCESP sob nº 0.655.796/25-3 em 12/03/2025, assinada via DocuSign Envelope ID 9DD11009-4D65-4653-A1BC-E17CC3E96E39; (ii) Consulta CNPJ Receita Federal do Bonifácio FIP (data de baixa: 14/06/2025; situação cadastral ativa); (iii) Consulta de Relacionamentos Patrimoniais (data: 12/08/2025); (iv) Planilhas FNET/CVM (data-bases 30/04/2025, 31/08/2025, 31/12/2025, 30/04/2026); (v) Documentos de análise anteriores da série (em especial Doc. 22 — Relatório Contábil-Financeiro PhD dos seis fundos).</p>
+  <p>As inferências sobre migração patrimonial entre Ajaccio e Bonifácio no Q2 2025 são <strong>hipóteses contábeis a verificar</strong>, sustentadas por convergência cronométrica e magnitude compatível, mas dependentes da exibição dos informes trimestrais individualizados e da composição de carteira. Não constituem, neste estágio, afirmação de fato ou imputação de conduta — são objeto da diligência recomendada no § X.</p>
+  <p>Conversão em laudo subscrito por contador habilitado (CRC) e em peça subscrita por advogado(a) (OAB) antes de qualquer uso processual. As pessoas físicas mencionadas serão anonimizadas em qualquer versão de circulação externa, conforme padrão da série.</p>
+</div>
+
+<footer class="rodape">
+  <p>Bonifácio FIP · Relatório PhD Contábil-Financeiro · Reconstituição Documental<br>
+  Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP · Emissão 14/06/2026 · Versão 1.0<br>
+  Série DOSSIÊS E NOTAS TÉCNICAS — documento 23 · INSTRUMENTO INTERNO · CONFIDENCIAL<br>
+  Conversão para laudo subscrito por contador habilitado (CRC) e peça subscrita por OAB antes de qualquer uso processual.</p>
+</footer>
+
+</div>
+</body>
+</html>

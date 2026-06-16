@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parecer Forense Final · Operação Limoncello · versão integrada de referência</title>
+<style>
+  :root{
+    --tinta:#1a1a1a; --papel:#faf8f3; --regra:#1a1a1a;
+    --destaque:#7a0c0c; --neutro:#555; --fundo-tabela:#f0ede5;
+    --azul:#27496d; --verde:#0a5c1f; --laranja:#8a5a00;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--papel);color:var(--tinta);font-family:Georgia,'Times New Roman',serif;margin:0;padding:2rem 1rem;line-height:1.55;}
+  .folha{max-width:920px;margin:0 auto;}
+  .cabecalho{border-bottom:4px double var(--regra);padding-bottom:.8rem;margin-bottom:.4rem;text-align:center;}
+  .orgao{font-variant:small-caps;letter-spacing:.32em;font-size:.78rem;color:var(--neutro);}
+  .manchete{font-size:2.0rem;line-height:1.18;font-weight:bold;margin:.5rem 0 .3rem;}
+  .sublinha{font-style:italic;font-size:1.02rem;color:var(--neutro);margin:0;}
+  .datilho{display:flex;justify-content:space-between;font-size:.74rem;border-top:1px solid var(--regra);border-bottom:1px solid var(--regra);padding:.3rem .2rem;margin:.6rem 0 1.4rem;font-family:Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;}
+  h2{font-size:1.22rem;border-bottom:2px solid var(--regra);padding-bottom:.25rem;margin-top:2.2rem;font-variant:small-caps;letter-spacing:.05em;}
+  h3{font-size:1.02rem;margin-top:1.4rem;color:var(--destaque);}
+  p{margin:.7rem 0;text-align:justify;}
+  .lide{font-size:1.06rem;font-weight:bold;}
+  .lide::first-letter{font-size:2.8rem;float:left;line-height:.85;padding-right:.35rem;color:var(--destaque);}
+  table{width:100%;border-collapse:collapse;font-size:.82rem;margin:1rem 0;font-family:Helvetica,Arial,sans-serif;}
+  th{background:var(--tinta);color:var(--papel);padding:.4rem .5rem;text-align:left;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;}
+  td{border-bottom:1px solid #c9c4b4;padding:.4rem .5rem;vertical-align:top;background:var(--fundo-tabela);}
+  tr:nth-child(even) td{background:#f7f4ec;}
+  .caixa{border:1.5px solid var(--regra);padding:1rem 1.2rem;margin:1.2rem 0;background:#f3f0e7;}
+  .caixa .titulo{font-variant:small-caps;font-weight:bold;letter-spacing:.08em;border-bottom:1px solid var(--regra);padding-bottom:.2rem;margin-bottom:.5rem;}
+  .ancora{border-left:5px solid var(--destaque);background:#f7eded;padding:1rem 1.2rem;margin:1.2rem 0;}
+  .ancora .titulo{font-variant:small-caps;font-weight:bold;color:var(--destaque);letter-spacing:.08em;margin-bottom:.4rem;}
+  .citacao{margin:.6rem 0;padding:.4rem .8rem;border-left:3px solid var(--destaque);font-style:italic;color:#333;}
+  ol.fases{counter-reset:fase;list-style:none;padding-left:0;}
+  ol.fases>li{counter-increment:fase;margin:.9rem 0;padding-left:3rem;position:relative;}
+  ol.fases>li::before{content:"F" counter(fase, decimal-leading-zero);position:absolute;left:0;top:.1rem;width:2.4rem;font-family:Helvetica,Arial,sans-serif;font-weight:bold;color:var(--destaque);font-size:.95rem;}
+  .rodape{margin-top:3rem;border-top:4px double var(--regra);padding-top:.8rem;font-size:.78rem;color:var(--neutro);text-align:center;}
+  .nota{font-size:.82rem;color:var(--neutro);font-style:italic;margin:.6rem 0;}
+  .ref{font-family:Helvetica,Arial,sans-serif;font-size:.7rem;color:var(--neutro);}
+  .vetor{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;}
+  .vetor>div{flex:1 1 360px;border:1px solid #b9b29c;padding:.9rem 1rem;background:#f7f4ec;}
+  .vetor .rotulo{font-family:Helvetica,Arial,sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;font-weight:bold;margin-bottom:.4rem;color:var(--azul);}
+  .grafo{font-family:'Courier New',monospace;font-size:.78rem;background:#f3f0e7;padding:1rem;border:1px solid #b9b29c;white-space:pre;line-height:1.45;overflow-x:auto;}
+  @media print{body{padding:0;} .folha{max-width:100%;}}
+</style>
+</head>
+<body>
+<div class="folha">
+
+<!-- ====================== CAPA ====================== -->
+<header class="cabecalho">
+  <div class="orgao">Parecer Técnico-Forense Final · Versão Integrada de Referência</div>
+  <div class="manchete">Da blindagem mapeada à meação efetivada: a rota técnica de execução do que foi confessado nos autos</div>
+  <p class="sublinha">Operação Limoncello · Parecer Forense Definitivo — Cadeia patrimonial confirmada, arquitetura master-feeder-offshore mapeada, tese sanatória fechada e plano de efetivação por fases. Documento de trabalho da equipe, instrumento interno; conversão para peça subscrita ou laudo habilitado antes de qualquer uso processual.</p>
+</header>
+<div class="datilho">
+  <span>Autos nº 1006744-58.2023.8.26.0011 · 1ª Vara da Família e Sucessões — Pinheiros/SP</span>
+  <span>Data-base 30/05/2023 · Emissão 12/06/2026 · Versão final 1.0</span>
+  <span>CPC art. 472 · CF art. 5º LVII · CONFIDENCIAL</span>
+</div>
+
+<!-- ====================== I. SÍNTESE ====================== -->
+<h2>I. Síntese executiva</h2>
+<p class="lide">O patrimônio comum constituído na constância do casamento foi reorganizado, na pendência do litígio, em arquitetura de fundos, holding-veículo, pessoa jurídica pass-through e camada offshore. O Requerido confessou nos autos, às fls. 572 e 575, o vínculo econômico instrumental do veículo e a não-oposição ao bloqueio das cotas. A controvérsia central deixou de ser a comunicabilidade — fato confessado — e passa a ser a rota técnica de efetivação da meação sobre patrimônio já localizado pelo SISBAJUD em maio de 2023.</p>
+<p>A posição financeira identificada em <strong>16/05/2023</strong> foi de <strong>R$ 84.856.714,65</strong> em nome do Requerido (fls. 188), composta de R$ 77.640.365,33 em cotas custodiadas na FRAM Capital DTVM (agência 0001, conta 110486) e R$ 3.051.946,65 no BTG Pactual, com saldos menores em outras instituições. A ordem de constrição de <strong>23/05/2023</strong> recaiu sobre <strong>R$ 42.428.357,32</strong> (fls. 186), correspondentes a metade do localizado. O bloqueio total certificado posteriormente nos autos atingiu <strong>R$ 52.932.655,22</strong> (fls. 190). A funcionalidade técnica do sistema SISBAJUD foi reconfirmada por ordem de <strong>31/03/2026</strong> em processo desdobrado, com cumprimento integral pelo BTG Pactual no valor de R$ 27.799,79 em depósito a prazo (fls. 123 do conexo).</p>
+<p>Decorridos mais de mil dias da constrição original, sem decisão de saneamento (CPC art. 357) e sem exibição da documentação estrutural dos veículos, o objeto deste parecer é converter o conjunto verificado em <strong>plano de efetivação por fases</strong> — adesão ao saneamento, exibição com cominação, julgamento parcial do incontroverso, tutela de evidência sobre a fração líquida e, ao fim, adjudicação ou apuração de haveres sobre a posição em custódia.</p>
+
+<!-- ====================== II. ANCORA CONFESSÓRIA ====================== -->
+<h2>II. Âncora confessória (fls. 572 e fls. 575)</h2>
+<div class="ancora">
+  <div class="titulo">Fato incontroverso — confissão expressa do Requerido</div>
+  <div class="citacao">"[o FIP] nada mais é do que o veículo por meio do qual Ari detém sua participação na Evino" <span class="ref">— fls. 572</span></div>
+  <div class="citacao">"não se opõe ao bloqueio de suas cotas mantidas junto à FRAM" <span class="ref">— fls. 575</span></div>
+  <p>Estes dois trechos integram o eixo confessório do feito. O primeiro reconhece a natureza instrumental do FIP Ajaccio em relação à participação na E-Vino — fato que sustenta, por si, a comunicabilidade pela origem (Código Civil art. 1.660) e a sub-rogação real, sem necessidade de produção de prova adicional pela Requerente. O segundo afasta, em definitivo, qualquer alegação futura de iliquidez como impedimento à constrição.</p>
+  <p>Fundamento legal: Código Civil art. 212 (confissão como meio de prova) e Código de Processo Civil art. 374, II (independem de prova os fatos confessados). A confissão fixa o quadro probatório e elimina a controvérsia sobre <em>se</em> as cotas e os valores comunicam — restando, apenas, definir <em>como</em> a meação se efetiva.</p>
+</div>
+
+<!-- ====================== III. CRONOLOGIA OFICIAL ====================== -->
+<h2>III. Cronologia oficial dos autos</h2>
+<table>
+  <tr><th>Data</th><th>Evento</th><th>Referência documental</th></tr>
+  <tr><td>11/08/2012</td><td>Casamento sob regime de comunhão parcial de bens</td><td>Matrícula civil 122044</td></tr>
+  <tr><td>18/12/2012</td><td>Constituição da E-Vino Comércio de Vinhos S.A.</td><td>JUCESP / CNPJ 17.392.519/0001-65</td></tr>
+  <tr><td>03/04/2013</td><td>Constituição da Ari Gorenstein Apoio Administrativo Ltda. (capital R$ 1.000,00)</td><td>JUCESP / CNPJ 17.867.118/0001-14</td></tr>
+  <tr><td>03/06/2020</td><td>Constituição do FIP Ajaccio Multiestratégia e do FRAM Capital XIV FIP no mesmo dia</td><td>CVM / CNPJs 37.381.595/0001-82 e 37.388.102/0001-36</td></tr>
+  <tr><td>10/12/2021</td><td>Constituição da RT 127 Empreendimentos Ltda. (capital R$ 100,00, sociedade de prateleira)</td><td>JUCESP / CNPJ 44.548.365/0001-20</td></tr>
+  <tr><td>31/12/2021</td><td>AGE de cisão parcial da E-Vino — R$ 57.181.067,46 vertidos à RT 127. Ata registra o Requerido como Secretário em São Paulo às 12h00; documentação migratória o coloca em Miami às 14h56 do mesmo dia.</td><td>Ata AGE 31/12/2021 / JUCESP protocolo 16/02/2022 / arquivamento 04/03/2022</td></tr>
+  <tr><td>25/05/2022</td><td>Acordo de Cotistas do Ajaccio FIP (15 cotistas identificados)</td><td>CVM / Acordo de Cotistas</td></tr>
+  <tr><td>07/06/2022</td><td>Alienação de ações ON da E-Vino ao Ajaccio FIP (16.016 ON por R$ 1.685.374,14; custo declarado R$ 0,01 por ação)</td><td>DIRPF AC 2022, fls. 815-820 e 948-951</td></tr>
+  <tr><td>02/05/2023</td><td>Ordem SISBAJUD inicial — bloqueio sobre depósito a prazo no CPF do Requerido (Camada L2)</td><td>fls. 418</td></tr>
+  <tr><td>16/05/2023</td><td>Reiteração SISBAJUD — saldo consolidado de R$ 84.856.714,65; BTG R$ 3.051.946,65; FRAM Capital DTVM R$ 77.640.365,33 (Ag. 0001, Cta. 110486)</td><td>fls. 188</td></tr>
+  <tr><td>23/05/2023</td><td>Ordem de bloqueio — R$ 42.428.357,32 (metade do localizado); bloqueio efetivo imediato + reiterações R$ 10.503.164,01</td><td>fls. 186</td></tr>
+  <tr><td>30/05/2023</td><td>Separação de fato — data-base da apuração patrimonial</td><td>autos / petição inicial</td></tr>
+  <tr><td>31/05/2023</td><td>Determinação de bloqueio de 50% — R$ 42,43 MM; composição inclui R$ 77,64 MM em cotas FRAM</td><td>fls. 1013 e AI 2157767-67</td></tr>
+  <tr><td>13/06/2023</td><td>Intimação e peticionamento do Requerido — ciência inequívoca da constrição</td><td>autos</td></tr>
+  <tr><td>05/09/2023</td><td>Distrato da RT 127 — sociedade cancelada; acervo distribuído (Ricardo Costa R$ 35,17 MM; JP2R PTE LTD R$ 9,17 MM; Ari Gorenstein R$ 4.296.100,43; Jerson Prochnow R$ 0,37 MM; Marcos Leal R$ 8,18 MM)</td><td>JUCESP doc. 361.506/23-5</td></tr>
+  <tr><td>(data nos autos)</td><td>Certificação posterior — bloqueio total certificado: R$ 52.932.655,22</td><td>fls. 190</td></tr>
+  <tr><td>11/02/2025</td><td>Constituição do Bonifácio FIP — mesmo endereço e mesma administradora do Ajaccio; participação E-Vino marcada a R$ 0,00; PL ≈ R$ 61.300,00; não declarado nos autos</td><td>CVM / CNPJ 59.402.540/0001-44</td></tr>
+  <tr><td>26/05/2025</td><td>Reestruturação do Ajaccio FIP em nove subclasses sob RCVM 175/2022</td><td>CVM / FNET</td></tr>
+  <tr><td>28/05/2024</td><td>Rebrand da OSLO Capital DTVM (CNPJ 13.673.855/0001-25) para FRAM Capital DTVM</td><td>DOU Seção 3 nº 102, Proc. CVM 269400</td></tr>
+  <tr><td>Ago/2025</td><td>Carta de Intenções (LOI) — confissão de patrimônio superior a R$ 108.000.000,00</td><td>autos</td></tr>
+  <tr><td>31/03/2026</td><td>Nova ordem SISBAJUD em processo desdobrado — BTG cumpre R$ 27.799,79 em depósito a prazo (código 12)</td><td>fls. 123 do processo conexo</td></tr>
+  <tr><td>05/05/2026</td><td>Atestado psiquiátrico — Dr. Ivan dos Santos Rodrigues (CRM-SP 162488 / RQE 87014); CID-10 F33 + F90 + M51.1 + S83.5; nexo causal com privação financeira sistemática</td><td>atestado anexo</td></tr>
+  <tr><td>07/05/2026</td><td>Manifestação adversa de fls. 2880-2892 — impugnação de documentos, pedido de quebra de sigilo da autora</td><td>fls. 2880-2892</td></tr>
+  <tr><td>19/05/2026</td><td>Manifestação e impugnação da Requerente (Onesti Advogados) — resposta à petição adversa</td><td>autos</td></tr>
+</table>
+
+<!-- ====================== IV. CADEIA PATRIMONIAL ====================== -->
+<h2>IV. Cadeia patrimonial confirmada — origem das cotas FRAM/Ajaccio</h2>
+<table>
+  <tr><th>Elo</th><th>Fato verificado</th><th>Fonte</th></tr>
+  <tr><td>1</td><td>Ações ON da E-Vino, custo R$ 0,01 por ação, alienadas ao Ajaccio FIP em 07/06/2022 — origem das cotas em custódia</td><td>DIRPF AC 2022, fls. 815-820 e 948-951</td></tr>
+  <tr><td>2</td><td>Salto patrimonial declarado pelo Requerido: total R$ 8,47 MM em 31/12/2021 para R$ 32,23 MM em 31/12/2022 — incluindo Classe F Ajaccio R$ 9,53 MM e FRAM XIV R$ 3,88 MM</td><td>DIRPF AC 2022</td></tr>
+  <tr><td>3</td><td>Cisão parcial E-Vino de R$ 57.181.067,46 vertida à RT 127 (ata de 31/12/2021; protocolo JUCESP 16/02/2022; arquivamento 04/03/2022)</td><td>JUCESP</td></tr>
+  <tr><td>4</td><td>RT 127 circulou em cadeia Ajaccio → FRAM XIV → pessoa física + offshore</td><td>autos / acórdão AI 2157767-67</td></tr>
+  <tr><td>5</td><td>Distrato da RT 127 em 05/09/2023, posterior à constrição de 31/05/2023 e à intimação do Requerido em 13/06/2023 — sociedade cancelada</td><td>JUCESP doc. 361.506/23-5</td></tr>
+  <tr><td>6</td><td>Confissão expressa do vínculo instrumental do FIP Ajaccio com a participação na E-Vino e da não-oposição ao bloqueio das cotas</td><td>autos, fls. 572 e 575</td></tr>
+</table>
+<p class="nota">O conjunto dos elos 1 a 6 demonstra que a posição em custódia hoje bloqueada origina-se de ativos formados durante a constância do casamento, valorizados a partir de custo simbólico, e que o veículo de detenção foi reconhecido pelo próprio Requerido como instrumento da participação operacional na E-Vino. A cadeia documental é suficiente; o que falta — boletins de subscrição, regulamento consolidado, laudo de avaliação, extratos individualizados — é objeto de exibição (CPC arts. 396-404), não lacuna da tese.</p>
+
+<!-- ====================== V. ARQUITETURA ====================== -->
+<h2>V. Arquitetura mapeada — cinco camadas</h2>
+<div class="grafo">L5  REPATRIAÇÃO / OFFSHORE ........ JP2R PTE LTD (Singapura, UEN 201840728Z)
+                                  Anacapri / Brescia / Cetara LLC (Delaware, fev/2025)
+                                  Wine in Black GmbH (Munique)
+                                  Lei 7.492/86  ·  ACRA s.196A  ·  CTA 2024 / FinCEN BOI
+                       ▲
+L4  CASH-OUT / FUNDOS-CASCA ...... Bonifácio FIP (CNPJ 59.402.540/0001-44, 11/02/2025)
+                                  VOLIMO FIP (em liquidação)  ·  FRAM Capital XIV (cancelado)
+                                  CC art. 167  ·  CPC art. 792  ·  CPC art. 301
+                       ▲
+L3  MASTER HUB ................... Ajaccio FIP (CNPJ 37.381.595/0001-82; PL ≈ R$ 1,41 bi; caixa ≈ R$ 5.812,88)
+                                  FRAM Capital DTVM (ex-OSLO, CNPJ 13.673.855/0001-25)
+                                  Vinci Capital  ·  NANSEN II FIDC-NP
+                                  RCVM 175/2022  ·  CP art. 299
+                       ▲
+L2  LAYERING ..................... Ari Gorenstein Apoio Adm. (pass-through R$ 5,4 MM/ano)
+                                  RT 127 Empreendimentos (cisão R$ 57,18 MM, distratada)
+                                  Interbeverages (parking)
+                                  Lei 8.137/90  ·  CTN art. 116, p.u.  ·  Lei 9.613/98
+                       ▲
+L1  OPERACIONAL (FEEDERS) ........ E-Vino S.A.  +  Grand Cru  +  Víssimo Franquias
+                                  Interbeverages  +  Agro Syrah  ·  capital social agregado ≈ R$ 784,5 MM
+                                  Estoppel bancário: R$ 133+ MM de crédito aprovado por 5 instituições (2023-2025)
+                                  CC art. 50 §2º (cluster Bela Cintra 986)</div>
+<p>O mapa é lido ao reverso — do topo offshore à base operacional — porque cada camada cumpre função de afastamento jurídico entre o valor (L1) e o beneficiário final (L5). A reconstrução do caminho integral (whole money trail) sustenta o universo sistêmico do caso e instrui notícia-crime autônoma; <strong>não</strong> serve de base de pedido de meação mobiliária, sob pena de entrega ao Requerido da réplica de mark-to-model.</p>
+
+<h3>Coocorrência endereços-CNPJ-pessoas — confusão patrimonial (CC art. 50, §2º)</h3>
+<table>
+  <tr><th>Cluster</th><th>Endereço</th><th>Entidades coabitantes</th></tr>
+  <tr><td>C1 — Primário</td><td>Rua Bela Cintra, 986, andares 8 e 15 — Consolação/SP</td><td>E-Vino S.A. · Agro Syrah Participações · Grand Cru Distribuidora · Interbeverages — telefone e e-mail institucionais compartilhados; Agro Syrah utiliza domínio @grandcru.com.br</td></tr>
+  <tr><td>C2 — Custódia</td><td>Rua Dr. Eduardo de Souza Aranha, 153, 4º andar — Vila Nova Conceição/SP</td><td>FRAM Capital DTVM (administradora) · Ajaccio FIP · Bonifácio FIP · FRAM XIV (cancelado) · FRAM Kristian · FRAM Participações</td></tr>
+  <tr><td>C3 — Veículo</td><td>Alameda Santos, 1293, 4º andar — SP</td><td>RT 127 Empreendimentos (sede de prateleira)</td></tr>
+  <tr><td>L5 — Offshore</td><td>Robinson Road — Singapura</td><td>JP2R PTE LTD (UEN 201840728Z)</td></tr>
+</table>
+
+<!-- ====================== VI. TESE SANATÓRIA ====================== -->
+<h2>VI. Tese sanatória — cinco proposições autônomas</h2>
+<p>Cada proposição sobrevive sem as demais. Em conjunto, organizam a rota de efetivação.</p>
+<div class="caixa">
+  <div class="titulo">P1 — Comunicabilidade pela origem</div>
+  <p>Ações de custo simbólico (R$ 0,01) valorizadas durante a constância do casamento integram os aquestos (Código Civil art. 1.660, I). A origem está confirmada pela DIRPF AC 2022 (fls. 815-820) e pela confissão do Requerido às fls. 572 e 575. A iliquidez do veículo não toca a origem comum do valor.</p>
+</div>
+<div class="caixa">
+  <div class="titulo">P2 — Sub-rogação real e indiferença do veículo</div>
+  <p>Fundo, holding ou sociedade de propósito específico não descomunicam. A meação adere ao produto da alienação pela sub-rogação real. A iliquidez posterga a entrega, não o direito. O acórdão proferido no AI 2157767-67 preservou a constrição. Para a partilha, importa o valor da participação (camada L1); a negociabilidade da cota (camada L2) afeta o quando e o como, não o se e o quanto.</p>
+</div>
+<div class="caixa">
+  <div class="titulo">P3 — Ineficácia dos atos de esvaziamento</div>
+  <p>A cisão da E-Vino em 31/12/2021, o distrato da RT 127 em 05/09/2023 — na pendência da constrição de 31/05/2023 e após a intimação do Requerido em 13/06/2023 — e a constituição do Bonifácio FIP em 11/02/2025, durante o litígio, são atos cuja descrição factual atende, em tese, aos elementos da fraude à execução em sentido lato (CPC art. 792, V e §1º), com má-fé presumida por posterioridade à constrição conhecida. O equivalente reingressa no monte. Subsidiariamente, indenização por dilapidação (Código Civil arts. 186 e 927).</p>
+</div>
+<div class="caixa">
+  <div class="titulo">P4 — Dever de informação e exibição</div>
+  <p>Quem administrou sozinho exibe tudo (CPC arts. 396 a 404; boa-fé processual, CPC art. 5º). Recusa configura presunção de veracidade dos fatos que se pretendia provar (CPC art. 400) — instrumento mais econômico e célere que a quebra de sigilo. Decorridos mais de mil dias da constrição, a presunção já é exigível. A distribuição dinâmica do ônus (CPC art. 373, §1º), informada pela Resolução CNJ nº 492/2023, transfere ao Requerido a comprovação do que ele detém em exclusivo.</p>
+</div>
+<div class="caixa">
+  <div class="titulo">P5 — Efetivação faseada</div>
+  <p>A entrega rápida combina-se com o desenho da entrega plena. No plano imediato, julgamento parcial do incontroverso (CPC art. 356, I) acoplado a tutela de evidência (CPC art. 311, II) sobre a fração líquida. No plano curto, perícia de valuation com quesitos de reconciliação (DIRPF × SISBAJUD × preço do round × patrimônio líquido CVM). No plano médio, adjudicação de cinquenta por cento das cotas em titularidade própria, alienação judicial, ou dissolução parcial com apuração de haveres. Como válvula, ofício permanente à FRAM/CVM exigindo comunicação prévia de qualquer evento de liquidez, sob multa diária (CPC arts. 297 e 537).</p>
+</div>
+
+<!-- ====================== VII. QUANTUM ====================== -->
+<h2>VII. Quantum localizado e cenários</h2>
+<h3>Coluna 1 — Ativos localizados (base de pedido)</h3>
+<table>
+  <tr><th>Item</th><th>Valor</th><th>Referência</th><th>Camada</th></tr>
+  <tr><td>SISBAJUD posição consolidada</td><td>R$ 84.856.714,65</td><td>fls. 188 (16/05/2023)</td><td>fotografia-base</td></tr>
+  <tr><td>FRAM Capital DTVM — cotas Ajaccio</td><td>R$ 77.640.365,33</td><td>fls. 188 (Ag. 0001, Cta. 110486)</td><td>L1 — averbação permanente</td></tr>
+  <tr><td>BTG Pactual — posição pessoa física</td><td>R$ 3.051.946,65</td><td>fls. 188</td><td>L2 — liberação executiva</td></tr>
+  <tr><td>Ordem de bloqueio (23/05/2023)</td><td>R$ 42.428.357,32</td><td>fls. 186</td><td>50% do localizado</td></tr>
+  <tr><td>Bloqueio efetivo + reiterações imediatas</td><td>R$ 10.503.164,01</td><td>fls. 186</td><td>L2 imediato</td></tr>
+  <tr><td>Bloqueio total certificado nos autos</td><td>R$ 52.932.655,22</td><td>fls. 190</td><td>retrato executivo</td></tr>
+  <tr><td>SISBAJUD 31/03/2026 — BTG código 12</td><td>R$ 27.799,79</td><td>fls. 123 do conexo</td><td>L2 — confirmação técnica</td></tr>
+  <tr><td>Fração do Requerido na RT 127 (acervo do distrato a recompor)</td><td>R$ 4.296.100,43 + frutos</td><td>JUCESP doc. 361.506/23-5</td><td>P3 — reingresso no monte</td></tr>
+  <tr><td>LOI ago/2025 (patrimônio confessado)</td><td>&gt; R$ 108.000.000,00</td><td>autos</td><td>contradiz iliquidez</td></tr>
+</table>
+<p class="nota">Meação sobre as cotas FRAM/Ajaccio: teto de curto prazo de R$ 77,64 MM (≈ R$ 38,82 MM de meação); piso artificial da DIRPF 2022 de R$ 15,1 MM (≈ R$ 7,55 MM de meação). Número defensável: valor de mercado por perícia independente, com quesitos de reconciliação. O patrimônio líquido bilionário do Ajaccio (marcação a modelo) é memorial estratégico; <strong>não</strong> é base de pedido.</p>
+
+<h3>Coluna 2 — Cenários sobre a coluna 1</h3>
+<table>
+  <tr><th>Cenário</th><th>Faixa</th><th>Horizonte</th><th>Condicionantes</th></tr>
+  <tr><td>Melhor</td><td>R$ 40 a 45 MM+ em cotas + RT 127 + frutos</td><td>12 a 20 meses</td><td>Recusa de exibição → presunção CPC art. 400; tutela de evidência deferida; adjudicação antes da liquidez</td></tr>
+  <tr><td>Provável</td><td>R$ 20 a 38 MM em cotas</td><td>24 a 36 meses</td><td>Efetivação condicionada a evento de liquidez + ofício permanente FRAM/CVM; timing negocial como alavanca</td></tr>
+  <tr><td>Risco</td><td>R$ 7 a 15 MM</td><td>variável</td><td>Desconto agressivo de iliquidez; eventual deferimento de quebra de sigilo da Requerente. Mitigador: substituição de qualquer prova viciada por material subscrito (OAB/CRC)</td></tr>
+</table>
+
+<!-- ====================== VIII. ENQUADRAMENTO ====================== -->
+<h2>VIII. Enquadramento jurídico por esfera — limites de competência</h2>
+<p>O cabimento de cada tipo descrito segue a esfera própria, em estrita observância à presunção de inocência (CF art. 5º, LVII). Não se postula sobreposição de competências: a vara de família julga partilha e alimentos; o Juizado de Violência Doméstica e Familiar contra a Mulher, medidas protetivas; a esfera criminal, os tipos penais. Para a vara cível, importa-se padrão hermenêutico, jamais executoriedade de outra esfera.</p>
+<h3>VIII.1 Núcleo civil-processual (vara de família)</h3>
+<table>
+  <tr><th>Enquadramento</th><th>Fundamento</th></tr>
+  <tr><td>Ineficácia relativa perante a meeira + sub-rogação real</td><td>Construção do STJ sobre alienações entre separação de fato e partilha</td></tr>
+  <tr><td>Fraude à execução em sentido lato</td><td>CPC art. 792, V e §1º — distrato RT 127 posterior à constrição</td></tr>
+  <tr><td>Ato atentatório à dignidade da justiça</td><td>CPC art. 77, IV e VI, §§1º e 2º — multa até 20% do valor da causa</td></tr>
+  <tr><td>Desconsideração da personalidade jurídica (inclusive inversa)</td><td>Código Civil art. 50, §2º, I e II — base fática nos clusters de coocorrência (C1/C2/C3)</td></tr>
+  <tr><td>Fraude contra credores e simulação relativa</td><td>Código Civil arts. 158-159 e 167 — Bonifácio FIP constituído durante o litígio com participação E-Vino marcada a R$ 0,00</td></tr>
+  <tr><td>Distribuição dinâmica do ônus</td><td>CPC art. 373, §1º + Resolução CNJ nº 492/2023</td></tr>
+  <tr><td>Exibição com cominação</td><td>CPC arts. 396 a 404 + presunção CPC art. 400 + astreintes CPC art. 537</td></tr>
+</table>
+<h3>VIII.2 Núcleo penal (sede própria — notícia-crime autônoma instruída)</h3>
+<table>
+  <tr><th>Tipo</th><th>Fundamento</th><th>Base fática</th></tr>
+  <tr><td>Estelionato judiciário</td><td>CP art. 171</td><td>Indução do juízo em erro por simulação de iliquidez e não-resposta SISBAJUD (código 98)</td></tr>
+  <tr><td>Falsidade ideológica em documento societário</td><td>CP art. 299</td><td>Ata AGE 31/12/2021 com presença incompatível com documentação migratória</td></tr>
+  <tr><td>Fraude processual</td><td>CP art. 347</td><td>Inovação artificiosa no estado da coisa litigiosa — reestruturação do Ajaccio em subclasses sob RCVM 175/2022 em 26/05/2025</td></tr>
+  <tr><td>Lavagem de dinheiro</td><td>Lei 9.613/1998 art. 1º (com redação da Lei 12.683/2012)</td><td>Placement → layering → integration via fundo-casca (Bonifácio) e offshore (JP2R)</td></tr>
+  <tr><td>Crimes contra o Sistema Financeiro Nacional</td><td>Lei 7.492/1986 art. 22</td><td>Beneficiário final não declarado em offshore (JP2R PTE LTD em Singapura)</td></tr>
+</table>
+<h3>VIII.3 Núcleo protetivo (vetor hermenêutico)</h3>
+<table>
+  <tr><th>Enquadramento</th><th>Fundamento</th></tr>
+  <tr><td>Violência patrimonial</td><td>Lei 11.340/2006, art. 7º, IV — leitura rigorosa da ocultação; nexo causal documentado em atestado psiquiátrico de 05/05/2026</td></tr>
+  <tr><td>Convenção de Belém do Pará</td><td>art. 7º + perspectiva de gênero (Res. CNJ nº 492/2023)</td></tr>
+  <tr><td>Apropriação indébita</td><td>CP art. 168 — retenção de frutos e valores comuns pelo administrador</td></tr>
+</table>
+<h3>VIII.4 Núcleo regulatório (mercado de capitais)</h3>
+<table>
+  <tr><th>Enquadramento</th><th>Fundamento</th></tr>
+  <tr><td>Irregularidade de FIP / regulamento</td><td>Resolução CVM nº 175/2022, art. 39 — representação à CVM e à ANBIMA; nove versões do regulamento Ajaccio com hashes distintos</td></tr>
+</table>
+
+<!-- ====================== IX. PLANO DE EFETIVAÇÃO ====================== -->
+<h2>IX. Plano de efetivação por fases</h2>
+<ol class="fases">
+  <li><strong>Fase 0 — dias.</strong> Peça única subscrita por advogado(a) com inscrição na OAB: anuência ao desentranhamento de material questionado e substituição por prova subscrita; adesão ao saneamento com rol próprio; oposição proporcional à quebra de sigilo (LC 105/2001); resposta documentada ao tema alimentar. Contratação de perito habilitado (CRC/CORECON) para laudo subscrito. Certidões urgentes: JUCESP (RT 127 + instrumento do distrato doc. 361.506/23-5); ficha cadastral da E-Vino + laudo art. 226 da LSA; certidão CVM do Ajaccio FIP e do Bonifácio FIP. Requerimento de liberação executiva da Camada L2 (saldos líquidos já capturados), com imputação no acerto final da partilha.</li>
+  <li><strong>Fase 1 — semanas.</strong> Exibição documental sob cominação (CPC art. 400) + astreintes diárias (CPC art. 537); distribuição dinâmica do ônus (CPC art. 373, §1º); quesitos periciais de reconciliação (DIRPF × SISBAJUD × preço do round Vinci × PL CVM); ofício permanente à FRAM Capital DTVM e à CVM exigindo comunicação prévia de qualquer evento de liquidez sobre as cotas, sob multa.</li>
+  <li><strong>Fase 2 — meses.</strong> Julgamento parcial do mérito sobre o incontroverso (CPC art. 356, I) — comunicabilidade das cotas (confissão) + fração RT 127; incidente de ineficácia do distrato; tutela de evidência (CPC art. 311, II) para transferência de titularidade da fração incontroversa.</li>
+  <li><strong>Fase 3 — evento-dependente.</strong> Monitoramento de evento de exit ou venda secundária; reserva judicial do produto; negociação estruturada (alternativa ao adversarial = manter o bloqueio + título parcial + perícia em curso — o tempo corre contra o Requerido, com patrimônio travado).</li>
+</ol>
+
+<!-- ====================== X. PROVOCAÇÃO INSTITUCIONAL ====================== -->
+<h2>X. Provocação institucional — vetor × órgão × instrumento × janela</h2>
+<table>
+  <tr><th>Vetor</th><th>Órgão competente</th><th>Instrumento</th><th>Janela</th></tr>
+  <tr><td>Exibição documental com presunção</td><td>1ª VF Pinheiros</td><td>Requerimento CPC arts. 396-404 + cominação art. 400</td><td>imediata</td></tr>
+  <tr><td>Ineficácia do distrato RT 127</td><td>1ª VF Pinheiros</td><td>Incidente de ineficácia / fraude à execução (CPC art. 792)</td><td>imediata</td></tr>
+  <tr><td>Evento de liquidez do FIP</td><td>FRAM Capital DTVM / CVM</td><td>Ofício permanente sob multa (tutela inibitória, CPC arts. 297 e 537)</td><td>dias</td></tr>
+  <tr><td>Irregularidade de FIP e fundo-casca</td><td>CVM / ANBIMA</td><td>Representação (RCVM 175/2022)</td><td>semanas</td></tr>
+  <tr><td>Lavagem, offshore, beneficiário final não declarado</td><td>Ministério Público / COAF / BACEN</td><td>Notícia-crime autônoma instruída (Lei 9.613/98; Lei 7.492/86)</td><td>semanas</td></tr>
+  <tr><td>Situação fiscal (Apoio Adm. e offshore)</td><td>Receita Federal</td><td>Ofício (FBAR/CRS, DCBE, ECF)</td><td>semanas</td></tr>
+</table>
+<p>A lógica é a da assimetria institucional: o Requerido pode operar por opacidade, mas instituições reguladas (CVM, BACEN, COAF) não — cada uma tem dever legal de diligência, e a simples instauração de procedimento gera obrigação de resposta. A multiplicação de jurisdições recompõe o equilíbrio temporal hoje favorável à dilação.</p>
+
+<!-- ====================== XI. CONFORMIDADE ====================== -->
+<h2>XI. Conformidade metodológica</h2>
+<div class="caixa">
+  <div class="titulo">CPC art. 472 — Disciplina probatória</div>
+  <p>Este documento é parecer técnico-forense de apoio ao raciocínio jurídico da equipe; não é perícia oficial. Toda afirmação fática está ancorada em folhas dos autos, registro público (JUCESP, CVM, FNET, Receita Federal, BACEN), norma vigente ou fonte indicada. As tipificações são descritas em tese, em observância à presunção de inocência (CF art. 5º, LVII). A quantificação da meação apoia-se exclusivamente nos ativos localizados; a narrativa do universo sistêmico é memorial estratégico e instrução de notícia-crime autônoma, jamais base de pedido cível.</p>
+  <p>O conteúdo deve ser convertido, no que couber, em peça subscrita por advogado(a) (OAB) e em laudo subscrito por perito habilitado (CRC/CORECON) antes de qualquer uso processual. Pessoas físicas serão anonimizadas em qualquer versão de circulação externa.</p>
+</div>
+
+<h2>Referências documentais oficiais</h2>
+<table>
+  <tr><th>Categoria</th><th>Referências utilizadas neste parecer</th></tr>
+  <tr><td>Folhas dos autos</td><td>fls. 186 · 188 · 190 · 418 · 572 · 575 · 815-820 · 948-951 · 1013 · 2880-2892 · fls. 123 do processo conexo</td></tr>
+  <tr><td>Acórdãos / decisões</td><td>AI 2157767-67 (TJSP — preservação da constrição sobre as cotas FRAM)</td></tr>
+  <tr><td>Registros JUCESP</td><td>Doc. 361.506/23-5 (distrato RT 127); protocolo de cisão da E-Vino 16/02/2022; arquivamento 04/03/2022</td></tr>
+  <tr><td>Registros CVM / FNET</td><td>CNPJs dos fundos (Ajaccio, Bonifácio, FRAM XIV, VOLIMO, NANSEN II, VCP III); regulamento Ajaccio (9 versões com hashes distintos); reestruturação RCVM 175/2022 em 26/05/2025</td></tr>
+  <tr><td>Receita Federal</td><td>DIRPF AC 2022 do Requerido; CNPJs do cadastro mestre</td></tr>
+  <tr><td>DOU</td><td>Seção 3 nº 102 de 28/05/2024 — rebrand OSLO → FRAM Capital DTVM</td></tr>
+  <tr><td>Normas aplicadas</td><td>CF art. 5º, LVII e LXXVIII; CC arts. 158-159, 167, 186, 212, 422, 927, 1.660; CPC arts. 5º, 6º, 77, 80, 81, 139 IX, 277, 297, 311, 356, 357, 373 §1º, 374, 396-404, 472, 537, 792 V e §1º; Lei 11.340/2006 art. 7º IV; Lei 9.613/1998 art. 1º (com Lei 12.683/2012); Lei 7.492/1986 art. 22; LC 105/2001; CP arts. 168, 171, 299, 347; Resolução CNJ nº 232/2016 (SISBAJUD); Resolução CNJ nº 492/2023 (julgamento com perspectiva de gênero); Resolução CVM nº 175/2022 art. 39; Convenção de Belém do Pará art. 7º</td></tr>
+</table>
+
+<h2>Anexo — Cadastro Mestre dos veículos (CNPJs verificados)</h2>
+<table>
+  <tr><th>Entidade</th><th>CNPJ</th><th>Capital social / PL</th><th>Função sistêmica</th></tr>
+  <tr><td>E-Vino Comércio de Vinhos S.A.</td><td>17.392.519/0001-65</td><td>R$ 538.725.437,56</td><td>Operacional central — origem da cadeia</td></tr>
+  <tr><td>Agro Syrah Participações S.A.</td><td>23.699.696/0001-91</td><td>R$ 74.419.700,74</td><td>Holding intermediária</td></tr>
+  <tr><td>Grand Cru Importadora Ltda.</td><td>05.089.637/0001-10</td><td>R$ 58.383.737,14</td><td>Operacional — importação/distribuição</td></tr>
+  <tr><td>RT 127 Empreendimentos Ltda.</td><td>44.548.365/0001-20</td><td>R$ 57.181.067,46</td><td>Veículo de cisão — distratada em 05/09/2023</td></tr>
+  <tr><td>Interbeverages Com. de Alim. e Bebidas Ltda.</td><td>25.383.665/0001-52</td><td>R$ 36.250.295,00</td><td>Parking patrimonial</td></tr>
+  <tr><td>GC Distribuidora Ltda.</td><td>13.728.375/0001-14</td><td>R$ 13.615.590,00</td><td>Distribuição</td></tr>
+  <tr><td>Víssimo Franquias e Licenças Ltda.</td><td>12.584.840/0001-28</td><td>R$ 5.922.970,00</td><td>Detentora da marca Grand Cru</td></tr>
+  <tr><td>Ari Gorenstein Apoio Administrativo Ltda.</td><td>17.867.118/0001-14</td><td>R$ 1.000,00</td><td>Pass-through — pessoa jurídica pessoal</td></tr>
+  <tr><td>FIP Ajaccio Multiestratégia</td><td>37.381.595/0001-82</td><td>PL ≈ R$ 1,41 bi</td><td>Master Hub — único ativo E-Vino</td></tr>
+  <tr><td>FRAM Capital DTVM (ex-OSLO)</td><td>13.673.855/0001-25</td><td>R$ 12.150.000,00</td><td>Administradora — ponto único de custódia</td></tr>
+  <tr><td>Bonifácio FIP</td><td>59.402.540/0001-44</td><td>PL ≈ R$ 61.300,00</td><td>Fundo-casca constituído 11/02/2025</td></tr>
+  <tr><td>FRAM Capital XIV FIP</td><td>37.388.102/0001-36</td><td>cancelado</td><td>Feeder histórico</td></tr>
+  <tr><td>JP2R PTE LTD (Singapura)</td><td>UEN 201840728Z</td><td>—</td><td>Camada offshore — UBO não declarado</td></tr>
+</table>
+
+<footer class="rodape">
+  <p>Parecer Técnico-Forense Final · Versão Integrada de Referência · Operação Limoncello<br>
+  Autos nº 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP · Data-base 30/05/2023 · Emissão 12/06/2026<br>
+  Série DOSSIÊS E NOTAS TÉCNICAS — documento 15 · Versão final 1.0 · INSTRUMENTO INTERNO · CONFIDENCIAL<br>
+  Conversão para peça subscrita por OAB e/ou laudo CRC/CORECON antes de qualquer uso processual.</p>
+</footer>
+
+</div>
+</body>
+</html>

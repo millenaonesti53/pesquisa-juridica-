@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parecer-Relator · Validação cruzada do Acervo War Room v1.0 (cartas Ajaccio + Mestre Integrado + Caderno + Organogramas)</title>
+<style>
+  :root{
+    --tinta:#1a1a1a; --papel:#faf8f3; --regra:#1a1a1a;
+    --destaque:#7a0c0c; --neutro:#555; --fundo-tabela:#f0ede5;
+    --azul:#27496d; --verde:#0a5c1f; --laranja:#8a5a00;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--papel);color:var(--tinta);font-family:Georgia,'Times New Roman',serif;margin:0;padding:2rem 1rem;line-height:1.55;}
+  .folha{max-width:920px;margin:0 auto;}
+  .cabecalho{border-bottom:4px double var(--regra);padding-bottom:.8rem;margin-bottom:.4rem;text-align:center;}
+  .orgao{font-variant:small-caps;letter-spacing:.32em;font-size:.78rem;color:var(--neutro);}
+  .manchete{font-size:1.95rem;line-height:1.15;font-weight:bold;margin:.5rem 0 .3rem;}
+  .sublinha{font-style:italic;font-size:1.0rem;color:var(--neutro);margin:0;}
+  .datilho{display:flex;justify-content:space-between;font-size:.74rem;border-top:1px solid var(--regra);border-bottom:1px solid var(--regra);padding:.3rem .2rem;margin:.6rem 0 1.4rem;font-family:Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;}
+  h2{font-size:1.22rem;border-bottom:2px solid var(--regra);padding-bottom:.25rem;margin-top:2.2rem;font-variant:small-caps;letter-spacing:.05em;}
+  h3{font-size:1.0rem;margin-top:1.3rem;color:var(--destaque);}
+  p{margin:.7rem 0;text-align:justify;}
+  .lide{font-size:1.05rem;font-weight:bold;}
+  .lide::first-letter{font-size:2.6rem;float:left;line-height:.85;padding-right:.35rem;color:var(--destaque);}
+  table{width:100%;border-collapse:collapse;font-size:.82rem;margin:1rem 0;font-family:Helvetica,Arial,sans-serif;}
+  th{background:var(--tinta);color:var(--papel);padding:.4rem .5rem;text-align:left;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;}
+  td{border-bottom:1px solid #c9c4b4;padding:.4rem .5rem;vertical-align:top;background:var(--fundo-tabela);}
+  tr:nth-child(even) td{background:#f7f4ec;}
+  .selo{display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:.66rem;padding:.08rem .4rem;border:1px solid;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;}
+  .selo.ok{color:var(--verde);border-color:var(--verde);}
+  .selo.atencao{color:var(--laranja);border-color:var(--laranja);}
+  .selo.critico{color:var(--destaque);border-color:var(--destaque);font-weight:bold;}
+  .selo.e1{color:var(--verde);border-color:var(--verde);}
+  .selo.e2{color:var(--laranja);border-color:var(--laranja);}
+  .selo.e3{color:var(--destaque);border-color:var(--destaque);}
+  .selo.e4{color:#3b0a3b;border-color:#3b0a3b;}
+  .caixa{border:1.5px solid var(--regra);padding:.9rem 1.1rem;margin:1.2rem 0;background:#f3f0e7;}
+  .caixa.alerta{border-color:var(--destaque);background:#f7eded;}
+  .caixa.confirma{border-color:var(--verde);background:#eef5ef;}
+  .caixa .titulo{font-variant:small-caps;font-weight:bold;letter-spacing:.08em;border-bottom:1px solid var(--regra);padding-bottom:.2rem;margin-bottom:.5rem;}
+  .caixa.alerta .titulo{border-color:var(--destaque);color:var(--destaque);}
+  .caixa.confirma .titulo{border-color:var(--verde);color:var(--verde);}
+  .vetor{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;}
+  .vetor>div{flex:1 1 360px;border:1px solid #b9b29c;padding:.8rem 1rem;background:#f7f4ec;}
+  .vetor .rotulo{font-family:Helvetica,Arial,sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;font-weight:bold;margin-bottom:.4rem;}
+  .funcionamento .rotulo{color:var(--azul);} .recuperacao .rotulo{color:var(--verde);}
+  ol.roteiro{counter-reset:passo;list-style:none;padding-left:0;}
+  ol.roteiro>li{counter-increment:passo;margin:.7rem 0;padding-left:2.6rem;position:relative;}
+  ol.roteiro>li::before{content:counter(passo);position:absolute;left:0;top:.05rem;width:1.8rem;height:1.8rem;border:2px solid var(--tinta);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-family:Helvetica,Arial,sans-serif;font-size:.9rem;background:var(--papel);}
+  .rodape{margin-top:3rem;border-top:4px double var(--regra);padding-top:.8rem;font-size:.78rem;color:var(--neutro);text-align:center;}
+  .nota{font-size:.8rem;color:var(--neutro);font-style:italic;}
+  .citacao{margin:1rem 1.5rem;padding:.5rem 1rem;border-left:3px solid var(--destaque);font-style:italic;color:#333;}
+  @media print{body{padding:0;} .folha{max-width:100%;}}
+</style>
+</head>
+<body>
+<div class="folha">
+
+<header class="cabecalho">
+  <div class="orgao">Parecer-Relator · Validação Cruzada · Acervo War Room v1.0</div>
+  <div class="manchete">A confissão de fls. 572/575 fecha o caso pelo eixo certo: e o acervo War Room já desenhou a rota</div>
+  <p class="sublinha">Validação cruzada do dossiê War Room "A Casa de Cartas de Souza Aranha 153" (PDF 23pp, 11/06/2026) confrontado com o Relatório Mestre Integrado v1.0 (HTML), o Caderno de Observações do Relator e a Rotina PhD-Parecerista — com integração dos três organogramas (Cadeia de Controle, Teia Societária e Fluxos Financeiros AML)</p>
+</header>
+<div class="datilho">
+  <span>Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP</span>
+  <span>Data-base 30/05/2023 · Emissão 12/06/2026</span>
+  <span>Instrumento interno · CONFIDENCIAL · uso restrito da equipe</span>
+</div>
+
+<!-- ====================== 1. SÍNTESE ====================== -->
+<h2>1. Síntese executiva — voto do relator</h2>
+<p class="lide">O acervo War Room v1.0 é tecnicamente consistente, internamente coerente, e — esta é a novidade decisiva — <strong>já não precisa que a comunicabilidade seja demonstrada</strong>: ela está fechada por confissão expressa do Requerido nos próprios autos, às fls. 572 e 575. O que o relator anterior (Documento 13) tratou como "tese a sustentar com o money trail" passa agora ao patamar de <em>fato confessado</em>, e a estratégia inteira se simplifica.</p>
+<p>O War Room executou exatamente o pivô correto: <strong>parou de discutir se as cotas são comunicáveis</strong> (questão fechada) e <strong>passou a desenhar a rota de efetivação da meação</strong> sobre o que já está localizado — R$ 84,86 MM em posição SISBAJUD de mai/2023 (R$ 77,64 MM em cotas FRAM + ≈ R$ 10,5 MM bancários), com R$ 42,43 MM efetivamente bloqueados e R$ 52,93 MM certificados posteriormente. A camada offshore-feeder-master (5 níveis) é memorial estratégico e instrução de notícia-crime; <strong>não é base de pedido cível</strong>.</p>
+<p>O voto do relator é pela <strong>validação integral do acervo</strong>, com três notas de reconciliação numérica (Seção 4) e duas correções vinculantes que importam ao Documento 13 anterior desta série (Seção 6).</p>
+
+<!-- ====================== 2. INVENTÁRIO ====================== -->
+<h2>2. Inventário documental do acervo War Room v1.0</h2>
+<table>
+  <tr><th>#</th><th>Documento</th><th>Natureza</th><th>Função no acervo</th><th>Veredito</th></tr>
+  <tr><td>A1</td><td>"A Casa de Cartas de Souza Aranha 153" — Dossiê Integrado v1.0 (PDF 23pp, 11/06/2026)</td><td>War Room — versão visual de jornal</td><td>Núcleo de comando + diagnóstico + cronologia + cadeia + grafo + smoking guns + money trail + SISBAJUD + quantum + cenários + tese sanatória + enquadramento + síntese institucional</td><td><span class="selo ok">validado E1</span></td></tr>
+  <tr><td>A2</td><td>Relatório Mestre Integrado v1.0 — HTML (10/06/2026)</td><td>War Room — versão expandida em 19 módulos (M1–M19)</td><td>Expansão narrativa do mesmo conteúdo de A1, com Quadro Processual (M3) detalhado, Cadeia Patrimonial elo a elo (M4), Cadastro Mestre (M5), e a <strong>confissão fls. 572/575</strong> nominalmente citada</td><td><span class="selo ok">validado E1 — peça-mãe</span></td></tr>
+  <tr><td>A3</td><td>Caderno de Observações do Relator (DOCX, 4 boxes)</td><td>Nota de relatoria com calibragem fato/inferência/hipótese</td><td>Box 1 SISBAJUD 2023 (valores exatos com folhas) · Box 2 mapa societário · Box 3 imóveis/classes · Box 4 trilha de ofícios/perícias</td><td><span class="selo ok">validado E1 — disciplina probatória</span></td></tr>
+  <tr><td>A4</td><td>"Atue como PhD parecerista/relator" (DOCX)</td><td>Rotina metodológica</td><td>Framework L1–L3 (verificação) × E1–E4 (selo de evidência) × 5 eixos jurídicos (CPC 792, CC 158-167, CC 884, LMP 7º IV, CC 402/944)</td><td><span class="selo atencao">validado com ressalva — fontes web a confirmar</span></td></tr>
+  <tr><td>A5</td><td>Organogramas I, II e III (PNG)</td><td>Material visual de apoio</td><td>I: Estrutura de Controle Grupo Ajaccio/E-Vino · II: Teia Societária (Veículos, Gestão, Operação) · III: Fluxos Financeiros Suspeitos — Análise AML (5 rotas)</td><td><span class="selo ok">validado — coerente com A1/A2</span></td></tr>
+</table>
+<p class="nota">Observação cadastral do relator: os dois arquivos <code>caderno_observacoes_relator.docx</code> (hashes <code>689feaa0</code> e <code>cb349f98</code>) têm MD5 idênticos — é o mesmo documento submetido duas vezes. Tratamento: um único item (A3).</p>
+
+<!-- ====================== 3. CONVERGÊNCIA ====================== -->
+<h2>3. Convergência cruzada — A1 = A2, com A3/A4/A5 calibrando</h2>
+<p>A primeira leitura estabelece um fato editorial: <strong>A1 (PDF Cartas) e A2 (HTML Mestre) são o mesmo documento</strong> em duas materializações. A1 é a versão jornal visual com manchetes; A2 é a expansão em 19 módulos com tabelas detalhadas e folhas dos autos citadas. Mesmo autor, mesma data-base (10–11/06/2026), mesmas teses-âncora, mesmos números, mesma cláusula CPC 472. A3 (Caderno) e A4 (PhD-parecerista) atuam como <em>calibradores</em>: A3 traz os números SISBAJUD com identificação de folhas; A4 traz a régua metodológica L1–L3/E1–E4. A5 (organogramas) visualiza o que A1/A2 narram.</p>
+<table>
+  <tr><th>Eixo</th><th>A1 PDF</th><th>A2 HTML</th><th>A3 Caderno</th><th>A4 PhD</th><th>A5 Organog.</th><th>Resultado</th></tr>
+  <tr><td>Pirâmide L1–L5 (master-feeder-offshore)</td><td>✔ "As cinco camadas"</td><td>✔ M6 detalhado</td><td>✔ Box 2 mapa</td><td>✔ §4 tipologia</td><td>✔ Org. II + III</td><td><span class="selo ok">unânime</span></td></tr>
+  <tr><td>Bonifácio FIP como casca real (11/02/2025)</td><td>✔ Smoking Gun 1</td><td>✔ M5 + M9 ⚠</td><td>—</td><td>—</td><td>✔ Org. II (red flag)</td><td><span class="selo ok">unânime</span></td></tr>
+  <tr><td>SISBAJUD 31/03/2026 (BTG R$ 27.799,79) confirmando L2</td><td>✔ Smoking Gun 2</td><td>✔ M3 + M11</td><td>—</td><td>—</td><td>—</td><td><span class="selo ok">unânime</span></td></tr>
+  <tr><td>AGE 31/12/2021 — antinomia Miami/SP</td><td>✔ Smoking Gun 3</td><td>✔ M8</td><td>—</td><td>—</td><td>—</td><td><span class="selo ok">unânime</span></td></tr>
+  <tr><td>Atestado psiquiátrico 05/05/2026 (Dr. Ivan Rodrigues)</td><td>✔ Smoking Gun 4</td><td>✔ M14 vetor</td><td>—</td><td>—</td><td>—</td><td><span class="selo ok">unânime</span></td></tr>
+  <tr><td>Confissão fls. 572/575 (FIP "veículo da Evino" + não-oposição ao bloqueio)</td><td>✔ Correção de premissa decisiva</td><td>✔ M2 + M4 + M9 (âncora)</td><td>parcial — cita FRAM 77,64</td><td>—</td><td>—</td><td><span class="selo critico">peça-âncora</span></td></tr>
+  <tr><td>Cluster Souza Aranha 153 (Ajaccio + Bonifácio + OSLO/FRAM)</td><td>✔ Grafo de coocorrência</td><td>✔ M7 Cluster C2</td><td>—</td><td>—</td><td>✔ Org. II</td><td><span class="selo ok">CC 50 §2º sustentável</span></td></tr>
+  <tr><td>RT 127 — cisão 31/12/2021 + distrato 05/09/2023</td><td>✔ Cronologia</td><td>✔ M4 elo 5 + M8 + M9</td><td>—</td><td>✔ Eixo I</td><td>—</td><td><span class="selo ok">CPC 792 sustentável</span></td></tr>
+  <tr><td>JP2R PTE LTD (Singapura, UEN 201840728Z)</td><td>✔ L5 + grafo</td><td>✔ L5 + cluster</td><td>parcial — UBO opaco</td><td>✔ feeder offshore</td><td>✔ Org. I, II, III</td><td><span class="selo ok">offshore-âncora</span></td></tr>
+  <tr><td>Tese sanatória P1–P5</td><td>✔ M15 expandido</td><td>✔ módulo M15</td><td>parcial — diagnóstico</td><td>—</td><td>—</td><td><span class="selo ok">unânime</span></td></tr>
+</table>
+
+<!-- ====================== 4. RECONCILIAÇÕES ====================== -->
+<h2>4. Três reconciliações numéricas — antes do uso em peça</h2>
+<p>Três valores SISBAJUD precisam ser reconciliados entre os documentos. Nenhum compromete a tese; todos devem ser unificados para evitar arguição adversa de "imprecisão da peça". O relator propõe usar sempre os valores do Caderno (A3) como referência, por serem os únicos com identificação expressa de folhas.</p>
+<table>
+  <tr><th>#</th><th>Item</th><th>A1/A2 (War Room)</th><th>A3 (Caderno)</th><th>Doc 13 anterior</th><th>Decisão do relator</th></tr>
+  <tr><td>R1</td><td>Posição SISBAJUD consolidada (16/05/2023)</td><td>R$ 84,86 MM (M3, M12)</td><td><strong>R$ 84.856.714,65</strong> (fls. 188)</td><td>R$ 84,82 MM — incorreto</td><td>Adotar <strong>R$ 84.856.714,65</strong> (Caderno, fls. 188)</td></tr>
+  <tr><td>R2</td><td>Ordem de bloqueio (23/05/2023)</td><td>R$ 42,43 MM (M3, M8)</td><td><strong>R$ 42.428.357,32</strong> (fls. 186)</td><td>R$ 42.413.085,28 — divergência</td><td>Adotar <strong>R$ 42.428.357,32</strong> (Caderno, fls. 186)</td></tr>
+  <tr><td>R3</td><td>Bloqueio efetivo + reiterações imediatas</td><td>≈ R$ 10,5 MM (bancários, M12)</td><td><strong>R$ 10.503.164,01</strong> (fls. 186)</td><td>não consolidado</td><td>Adotar <strong>R$ 10.503.164,01</strong> (Caderno)</td></tr>
+  <tr><td>R4</td><td>Certificação posterior (bloqueio total nos autos)</td><td>não consolidado</td><td><strong>R$ 52.932.655,22</strong> (fls. 190)</td><td>não citado</td><td>Adotar <strong>R$ 52.932.655,22</strong> como retrato executivo certificado</td></tr>
+  <tr><td>R5</td><td>FRAM CAPITAL DTVM (cotas após reiteração)</td><td>R$ 77,64 MM</td><td><strong>R$ 77.640.365,33</strong> (fls. 188 — Ag. 0001, Cta. 110486)</td><td>R$ 77,64 MM</td><td>Adotar <strong>R$ 77.640.365,33</strong> com identificação da agência/conta</td></tr>
+  <tr><td>R6</td><td>BTG Pactual (posição PF)</td><td>R$ 3,05 MM (M3 cita) / R$ 10,5 MM agregado</td><td><strong>R$ 3.051.946,65</strong> (fls. 188)</td><td>R$ 27.799,79 (Oslo 31/03/2026)</td><td>Distinguir: <strong>R$ 3.051.946,65</strong> = posição 16/05/2023; R$ 27.799,79 = nova ordem 31/03/2026 (proc. conexo)</td></tr>
+</table>
+
+<!-- ====================== 5. ACHADO NOVO ====================== -->
+<h2>5. Achado novo decisivo — a confissão de fls. 572/575</h2>
+<div class="caixa confirma">
+  <div class="titulo">A peça-âncora — comunicabilidade fechada por confissão</div>
+  <p>Os documentos A1 e A2 trazem, expressamente, dois trechos confessórios do Requerido que não constavam do meu Documento 13 anterior e que <strong>alteram materialmente a estrutura argumentativa</strong> do caso:</p>
+  <p><strong>fls. 572:</strong> o FIP "nada mais é do que o veículo por meio do qual Ari detém sua participação na Evino".</p>
+  <p><strong>fls. 575:</strong> "não se opõe ao bloqueio de suas cotas mantidas junto à FRAM".</p>
+  <p>Consequência jurídica: a comunicabilidade pela origem (P1 da tese sanatória) e a sub-rogação real (P2) deixam de depender de produção de prova pela autora — estão <strong>fechadas por confissão</strong> (CC art. 212; CPC art. 374, II). O réu confessou o vínculo econômico do veículo (FIP é apenas instrumental) e o cabimento da constrição (não-oposição ao bloqueio). O que falta é documento estrutural (regulamento, boletins, laudo), e isso é alvo de exibição (CPC 396-404) — <em>não buraco na tese</em>.</p>
+</div>
+<p>Este é o achado de maior impacto desta sessão. Ele <strong>simplifica</strong> radicalmente a estratégia: deixa de ser necessário sustentar todo o money trail (L1–L5) <em>como prova de comunicabilidade</em>; o money trail passa a sustentar apenas <em>a magnitude</em> (memorial estratégico) e <em>a ineficácia dos atos de esvaziamento</em> (P3 da tese sanatória — CPC 792 + CC 158/167).</p>
+
+<!-- ====================== 6. CORREÇÕES AO DOC 13 ====================== -->
+<h2>6. Correções vinculantes ao Documento 13 (entregue em 11/06/2026)</h2>
+<p>O War Room v1.0 traz <strong>duas correções importantes</strong> ao parecer-relator anterior. O relator as ratifica e incorpora.</p>
+<div class="caixa alerta">
+  <div class="titulo">Correção 1 — "Não se trata de liberar o bloqueio"</div>
+  <p>O Doc 13 Seção 5.3 enunciou três planos: <em>L2 liberação + L1 averbação + L1.b indisponibilidade Bonifácio</em>. O War Room (A1 p.13, A2 M15.3) refina <strong>a semântica</strong>: o bloqueio das cotas L1 é a <strong>única garantia real da meação</strong> — quem quer liberá-lo é o réu. O objetivo não é liberar; é <strong>converter garantia em partilha efetiva</strong> (adjudicação, alienação judicial, ou apuração de haveres). Apenas a <strong>Camada L2</strong> (saldos líquidos já capturados — depósitos a prazo, saldos bancários) cabe liberação executiva imediata em favor da autora, com imputação no acerto final. Sobre <strong>L1</strong> (cotas em custódia), averbação preventiva permanente <em>como garantia</em> — não como ato preparatório de liberação.</p>
+</div>
+<div class="caixa alerta">
+  <div class="titulo">Correção 2 — Quantum L2 a liberar não é "R$ 31,9 MM"</div>
+  <p>O Doc 13 (Seção 5.2 e Anexo B) registrou R$ 31,9 MM como saldo BTG retido. O War Room (A1 cenários, A2 M12) e o Caderno (A3 Box 1) trazem um número mais preciso: a posição imediatamente líquida — Camada L2 — alcança o teto de <strong>R$ 10.503.164,01</strong> (bloqueio efetivo + reiterações, fls. 186) e o piso certificado de <strong>R$ 52.932.655,22</strong> (bloqueio total certificado nos autos, fls. 190). O número <strong>R$ 37,1 MM</strong> que aparece como teto provável dos cenários do War Room corresponde a uma reconciliação posterior entre cotas FRAM × bancários × ato sancionatório — não é saldo L2 puro. Adotar daqui em diante a <strong>distinção clara</strong>:</p>
+  <ul>
+    <li><strong>L2 puro (saldo bancário/depósito a prazo já capturado):</strong> R$ 10,5 MM (mai/2023) → reconfirmar valor atualizado e SELIC.</li>
+    <li><strong>L1 cotas FRAM (Ajaccio):</strong> R$ 77.640.365,33 — averbação permanente como garantia (não liberar).</li>
+    <li><strong>Bloqueio agregado certificado:</strong> R$ 52.932.655,22 — retrato executivo.</li>
+  </ul>
+</div>
+
+<!-- ====================== 7. ENQUADRAMENTO METODOLÓGICO ====================== -->
+<h2>7. Adoção da régua L1–L3 / E1–E4 da Rotina PhD-Parecerista (A4)</h2>
+<p>O documento A4 ("Atue como PhD parecerista") propõe um framework metodológico de calibragem probatória que o relator <strong>adota integralmente</strong> para uso prospectivo da equipe — com as ressalvas indicadas. A régua combina dois eixos ortogonais:</p>
+<div class="vetor">
+  <div class="funcionamento">
+    <div class="rotulo">■ Eixo de verificação L1–L3</div>
+    <p><strong>L1</strong> — alegação documental pura (relatório interno). <strong>L2</strong> — corroborado por 1 fonte independente (CVM, RFB, JUCESP). <strong>L3</strong> — triangulação plena (interno + base pública + peça/decisão judicial). Apenas L3 sustenta pedidos gravosos (bloqueio, IDPJ, busca/apreensão).</p>
+  </div>
+  <div class="recuperacao">
+    <div class="rotulo">■ Eixo de selo de evidência E1–E4</div>
+    <p><strong>E1</strong> — indício fraco (valor pequeno, sem conexão). <strong>E2</strong> — indício relevante (valor + timing). <strong>E3</strong> — evidência forte (valor + timing + rota opaca). <strong>E4</strong> — smoking gun (documento que sustenta tese sozinho).</p>
+  </div>
+</div>
+<p>Os cinco eixos jurídicos do A4 — (I) fraude à execução CPC 792 §1º; (II) fraude patrimonial/fundos-casca CC 158-159/167; (III) enriquecimento ilícito CC 884-886; (IV) violência patrimonial LMP art. 7º IV; (V) trabalho não remunerado/perda de chance CC 402/944 — são <strong>adotáveis</strong> e convergem com o enquadramento M14 do A2.</p>
+<p class="nota">Ressalva: as quinze fontes web listadas no A4 (maisretorno, veja.abril, gov.br, brltrust, etc.) não foram verificadas nesta data e devem ser checadas pela equipe antes de uso em peça subscrita. Padrão CPC 472 mantido.</p>
+
+<!-- ====================== 8. ORGANOGRAMAS ====================== -->
+<h2>8. Os três organogramas — validação visual da arquitetura</h2>
+<table>
+  <tr><th>Organog.</th><th>Conteúdo</th><th>Convergência com A1/A2</th><th>Veredito</th></tr>
+  <tr><td><strong>I</strong> — Estrutura de Controle (Grupo Ajaccio/E-Vino)</td><td>Camada offshore (JP2R Singapura) ↓ associação direta ↓ FRAM Capital DTVM (CNPJ 13.673.855/0001-25, ex-OSLO, rebrand DOU 28/05/2024, GIIN 0W2JW5.99999.SL.076) ↓ administra ↓ FIP Ajaccio (CNPJ 37.381.595/0001-82, PL R$ 1.532.659.766,33) ↓ cotista rastreado [BLOQ] R$ 42,4 MM ↓ Ari Gorenstein ↓ E-Vino/Víssimo + SPE Abecker (cap. R$ 7.180.440,00, juntada 31/03/2026 — 3 dias antes da revisional)</td><td>Convergente integral com A2 M5 e A1 cadastro mestre. Detalhe novo: <strong>SPE Abecker juntada 3 dias antes da revisional</strong> — indício temporal forte (E3).</td><td><span class="selo ok">validado</span></td></tr>
+  <tr><td><strong>II</strong> — Teia Societária (Veículos, Gestão e Operação)</td><td>FRAM/OSLO + Administrador + Auditoria Externa convergem para FIP Ajaccio (universo patrimonial R$ 84.843.000,00; [BLOQ] R$ 42.428.357,32). Camada offshore JP2R (sem QSA Brasil) como cotista de opacidade. PF: Ari, Millena Onesti (tríplice posição: ofendida/repr./genitora — filhos Caio e Maia), Mafalda Gorenstein (rede de terceiros, ABA XI). Operacional: E-Vino S.A., Víssimo, SPE Abecker.</td><td>Convergente com A1/A2. Detalhe novo: a <strong>tríplice posição processual da Requerente</strong> (ofendida + representante + genitora) é vetor hermenêutico para Res. CNJ 492/2023.</td><td><span class="selo ok">validado</span></td></tr>
+  <tr><td><strong>III</strong> — Fluxos Financeiros Suspeitos (Análise AML)</td><td>5 rotas: <strong>R1</strong> TED sem lastro Ajaccio→Ari PF (crédito ao titular, BTG Conta 0208/393729-6); <strong>R2</strong> extração via "non-compete"/serviços E-Vino→Apoio Adm. MEI (R$ 1.000 capital, saldo R$ 30, pass-through 24-48h, R$ 680.000 em 3 TEDs); <strong>R3</strong> associação direta FRAM↔JP2R (circularidade offshore); <strong>R4</strong> imobilização patrimonial timing revisional → SPE Abecker (juntada 31/03/2026); <strong>R5</strong> retorno de valor FRAM→E-Vino (circularidade). Consolidação: 29/01/2025 R$ 749.183,38 → 3 TEDs 24h = R$ 680 mil; recorrente R$ 450k × 22 ≈ R$ 10,65 MM.</td><td>Convergente com A1 5 rotas AML e A2 M10. Detalhe novo: <strong>R4 imobilização patrimonial via SPE Abecker 3 dias antes da revisional</strong> — convergência forte com Org. I.</td><td><span class="selo ok">validado — R4 é achado próprio</span></td></tr>
+</table>
+
+<!-- ====================== 9. ESTRATÉGIA ====================== -->
+<h2>9. Estratégia integrada — janela tática da decisão saneadora</h2>
+<p>O ponto de inflexão real do feito, conforme A2 M15.1, é a <strong>decisão saneadora iminente</strong> (CPC 357) — ausente há aproximadamente 3 anos. O War Room desenha a sequência correta:</p>
+<div class="caixa">
+  <div class="titulo">Quatro movimentos coordenados — Fase 0 (dias)</div>
+  <p><strong>M1.</strong> Peça única de Fase 0 (subscrita por OAB): resposta ao incidente de IA com retirada espontânea + substituição por prova subscrita; adesão ao saneamento com rol próprio; oposição proporcional à quebra de sigilo (LC 105/2001); resposta documentada ao tema alimentar.</p>
+  <p><strong>M2.</strong> Contratação de perito CRC/CORECON para laudo subscrito — substituir qualquer material gerado por IA.</p>
+  <p><strong>M3.</strong> Certidões urgentes: JUCESP (RT 127 + instrumento de distrato doc. 361.506/23-5); ficha E-Vino + laudo art. 226 LSA; <strong>certidão CVM do Ajaccio FIP e do Bonifácio FIP</strong> (este último é o nó crítico de exibição).</p>
+  <p><strong>M4.</strong> Requerimento de liberação executiva da Camada L2 (saldos líquidos já capturados) com imputação no acerto final — sem confundir com a averbação permanente das cotas L1 (que <em>não</em> se libera).</p>
+</div>
+<div class="caixa">
+  <div class="titulo">Sequência institucional — Fases 1 a 3</div>
+  <p><strong>Fase 1 (semanas):</strong> exibição CPC 400 + astreintes; distribuição dinâmica do ônus (CPC 373, §1º + Res. CNJ 492/2023); quesitos periciais de reconciliação (DIRPF × SISBAJUD × preço do round × PL CVM); ofício permanente FRAM/CVM.</p>
+  <p><strong>Fase 2 (meses):</strong> julgamento parcial do incontroverso (CPC 356, I) + tutela de evidência (CPC 311, II); incidente de ineficácia do distrato RT 127.</p>
+  <p><strong>Fase 3 (evento-dependente):</strong> monitoramento de exit/venda secundária; reserva judicial do produto; adjudicação de 50% das cotas em titularidade própria, alienação judicial, ou dissolução parcial com apuração de haveres.</p>
+</div>
+
+<!-- ====================== 10. LIMITES E VEDAÇÕES ====================== -->
+<h2>10. Lista vinculante — limites e vedações do acervo</h2>
+<p>O War Room traz uma <strong>lista do "que NÃO fazer"</strong> que o relator ratifica e eleva à condição de regra de conformidade interna:</p>
+<ul>
+  <li>Não protocolar material gerado por IA sem subscrição/revisão humana habilitada (OAB / CRC / CORECON).</li>
+  <li>Não ancorar pedido de meação no PL bilionário do Ajaccio (mark-to-model indefensável — entrega ao réu a réplica pronta).</li>
+  <li>Não acusar fraude penal/AML em peça cível sem lastro documental direto (sede própria: notícia-crime autônoma instruída).</li>
+  <li>Não resistir genericamente à instrução — quem precisa do valuation e da RT 127 é a autora.</li>
+  <li>Não postular sobreposição de competências (vara de família ≠ JVDFM ≠ esfera criminal). Importar standard hermenêutico, não executoriedade.</li>
+  <li>Não confundir L1 com L2: cotas L1 averbar como garantia (não liberar); saldos L2 liberar executivamente.</li>
+</ul>
+
+<!-- ====================== 11. AÇÃO ====================== -->
+<h2>11. Roteiro de ação do relator</h2>
+<ol class="roteiro">
+  <li>Atualizar o Documento 13 desta série incorporando: (a) confissão fls. 572/575 como peça-âncora; (b) números refinados R1–R6 (Seção 4); (c) correção semântica "não se trata de liberar o bloqueio"; (d) distinção L1 averbação × L2 liberação executiva.</li>
+  <li>Protocolo da Peça Única Fase 0 — subscrita por OAB, com perito CRC/CORECON identificado, dentro de dias.</li>
+  <li>Certidões urgentes: JUCESP RT 127 (+ distrato 361.506/23-5); CVM Ajaccio e Bonifácio; E-Vino ficha + laudo art. 226 LSA.</li>
+  <li>Diário de provas com hash — governança documental cumulativa para todos os achados do War Room.</li>
+  <li>Acompanhamento da decisão saneadora — janela tática real do feito.</li>
+  <li>Notícia-crime autônoma instruída em sede própria (MP-SP / GAECO / COAF / BACEN / CVM) — não em peça cível.</li>
+</ol>
+
+<!-- ====================== 12. CONCLUSÃO ====================== -->
+<h2>12. Conclusão — voto integrado do relator</h2>
+<p>Acervo War Room v1.0 <strong>validado em todos os eixos</strong>, com as três reconciliações numéricas (Seção 4) e as duas correções vinculantes (Seção 6) registradas. A confissão de fls. 572/575 <strong>fecha a comunicabilidade por via confessória</strong> — fato decisivo que simplifica radicalmente a estratégia: deixa de ser necessário sustentar todo o money trail como prova de comunicabilidade; o money trail passa a sustentar magnitude (memorial estratégico) e ineficácia dos esvaziamentos (P3 da tese sanatória).</p>
+<p>O dossiê passa do registro "tese a sustentar" para o registro "rota a executar". A janela tática real é a <strong>decisão saneadora iminente</strong>. O voto do relator é pela <strong>execução imediata da Fase 0</strong>, com a Peça Única subscrita por OAB nos próximos dias, perito CRC/CORECON contratado, e certidões urgentes em paralelo.</p>
+
+<!-- ====================== ANEXOS ====================== -->
+<h2>Anexo A — Cinco proposições da tese sanatória (autônomas)</h2>
+<table>
+  <tr><th>P</th><th>Proposição</th><th>Selo</th><th>Fundamento</th></tr>
+  <tr><td>P1</td><td>Comunicabilidade pela origem — ações E-Vino custo R$ 0,01 aportadas ao Ajaccio em 07/06/2022 + confissão fls. 572/575</td><td><span class="selo e1">E1</span></td><td>CC art. 1.660; CC art. 212; CPC 374, II</td></tr>
+  <tr><td>P2</td><td>Sub-rogação real / indiferença do veículo — fundo/holding/SPE não descomunica; iliquidez posterga entrega, não direito</td><td><span class="selo e1">E1</span></td><td>Construção do STJ; teorema L1/L2</td></tr>
+  <tr><td>P3</td><td>Ineficácia dos atos de esvaziamento — cisão E-Vino→RT 127, distrato em 05/09/2023, Bonifácio 11/02/2025 são ineficazes perante a meeira</td><td><span class="selo e2">E2/E3</span></td><td>CPC 792 V §1º; CC 158-159, 167; subsidiária CC 186 + 927</td></tr>
+  <tr><td>P4</td><td>Dever de informação e exibição — 1.095+ dias sem exibição → presunção de veracidade já exigível</td><td><span class="selo e2">E2</span></td><td>CPC 396-404; CPC 400; CPC 5º; Res. CNJ 492/2023</td></tr>
+  <tr><td>P5</td><td>Efetivação faseada — julgamento parcial CPC 356, I + tutela de evidência CPC 311, II; perícia valuation; adjudicação/alienação/haveres; ofício permanente FRAM/CVM sob multa</td><td>estratégia</td><td>CPC 297/537 tutela inibitória</td></tr>
+</table>
+
+<h2>Anexo B — Quantum L1 documentado (calibragem final)</h2>
+<table>
+  <tr><th>Item</th><th>Valor</th><th>Fonte</th><th>Tratamento processual</th></tr>
+  <tr><td>SISBAJUD posição consolidada (16/05/2023)</td><td><strong>R$ 84.856.714,65</strong></td><td>fls. 188</td><td>Fotografia-base</td></tr>
+  <tr><td>FRAM CAPITAL DTVM (cotas Ajaccio — após reiteração)</td><td><strong>R$ 77.640.365,33</strong></td><td>fls. 188 (Ag. 0001, Cta. 110486)</td><td>L1 — averbação permanente como garantia</td></tr>
+  <tr><td>BTG Pactual (posição PF, 16/05/2023)</td><td><strong>R$ 3.051.946,65</strong></td><td>fls. 188</td><td>L2 — liberar executivamente</td></tr>
+  <tr><td>Ordem de bloqueio (23/05/2023)</td><td><strong>R$ 42.428.357,32</strong></td><td>fls. 186</td><td>50% do localizado mai/2023</td></tr>
+  <tr><td>Bloqueio efetivo + reiterações imediatas</td><td><strong>R$ 10.503.164,01</strong></td><td>fls. 186</td><td>L2 imediato</td></tr>
+  <tr><td>Certificação posterior nos autos</td><td><strong>R$ 52.932.655,22</strong></td><td>fls. 190</td><td>Retrato executivo certificado</td></tr>
+  <tr><td>SISBAJUD 31/03/2026 (proc. conexo) — BTG cód. 12</td><td><strong>R$ 27.799,79</strong></td><td>fls. 123 do conexo</td><td>L2 — confirmação empírica de funcionalidade</td></tr>
+  <tr><td>Fração RT 127 (Ari, do distrato)</td><td><strong>R$ 4.296.100,43</strong> + frutos</td><td>JUCESP doc. 361.506/23-5</td><td>P3 — ineficácia + reingresso no monte</td></tr>
+  <tr><td>LOI ago/2025 (confissão de patrimônio)</td><td><strong>&gt; R$ 108.000.000,00</strong></td><td>autos</td><td>contradiz alegação de iliquidez/insolvência</td></tr>
+</table>
+
+<h2>Anexo C — A âncora confessória (literal)</h2>
+<div class="citacao">
+  <p><strong>fls. 572:</strong> "[o FIP] nada mais é do que o veículo por meio do qual Ari detém sua participação na Evino"</p>
+  <p><strong>fls. 575:</strong> "não se opõe ao bloqueio de suas cotas mantidas junto à FRAM"</p>
+</div>
+<p>Estes dois trechos são o eixo confessório do caso. Fundamento: CC art. 212 (confissão como meio de prova) e CPC art. 374, II (independem de prova os fatos confessados). A confissão fecha simultaneamente a comunicabilidade pela origem (P1) e a sub-rogação real (P2), e neutraliza preventivamente qualquer alegação adversa futura de iliquidez como impedimento à constrição.</p>
+
+<footer class="rodape">
+  <p>Parecer-Relator · Validação Cruzada do Acervo War Room v1.0 · Autos 1006744-58.2023.8.26.0011<br>
+  Confronto cruzado de A1 (PDF Cartas Ajaccio) + A2 (HTML Mestre Integrado) + A3 (Caderno do Relator) + A4 (Rotina PhD-Parecerista) + A5 (Três Organogramas) — com correções vinculantes ao Documento 13 anterior<br>
+  Série DOSSIÊS E NOTAS TÉCNICAS — documento 14 · 12/06/2026 · INSTRUMENTO INTERNO · CONFIDENCIAL — uso restrito da equipe</p>
+</footer>
+
+</div>
+</body>
+</html>

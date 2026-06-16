@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório Contábil-Financeiro PhD · Seis fundos da arquitetura</title>
+<style>
+  :root{
+    --tinta:#1a1a1a; --papel:#faf8f3; --regra:#1a1a1a;
+    --destaque:#7a0c0c; --neutro:#555; --fundo-tabela:#f0ede5;
+    --azul:#27496d; --verde:#0a5c1f; --laranja:#8a5a00;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--papel);color:var(--tinta);font-family:Georgia,'Times New Roman',serif;margin:0;padding:2rem 1rem;line-height:1.55;}
+  .folha{max-width:920px;margin:0 auto;}
+  .cabecalho{border-bottom:4px double var(--regra);padding-bottom:.8rem;margin-bottom:.4rem;text-align:center;}
+  .orgao{font-variant:small-caps;letter-spacing:.32em;font-size:.78rem;color:var(--neutro);}
+  .manchete{font-size:1.95rem;line-height:1.18;font-weight:bold;margin:.5rem 0 .3rem;}
+  .sublinha{font-style:italic;font-size:1.0rem;color:var(--neutro);margin:0;}
+  .datilho{display:flex;justify-content:space-between;font-size:.74rem;border-top:1px solid var(--regra);border-bottom:1px solid var(--regra);padding:.3rem .2rem;margin:.6rem 0 1.4rem;font-family:Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;}
+  h2{font-size:1.22rem;border-bottom:2px solid var(--regra);padding-bottom:.25rem;margin-top:2.2rem;font-variant:small-caps;letter-spacing:.05em;}
+  h3{font-size:1.02rem;margin-top:1.3rem;color:var(--destaque);}
+  p{margin:.7rem 0;text-align:justify;}
+  .lide{font-size:1.06rem;font-weight:bold;border-left:5px solid var(--destaque);padding-left:.9rem;}
+  table{width:100%;border-collapse:collapse;font-size:.82rem;margin:1rem 0;font-family:Helvetica,Arial,sans-serif;}
+  th{background:var(--tinta);color:var(--papel);padding:.4rem .5rem;text-align:left;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;}
+  td{border-bottom:1px solid #c9c4b4;padding:.4rem .5rem;vertical-align:top;background:var(--fundo-tabela);}
+  tr:nth-child(even) td{background:#f7f4ec;}
+  .ficha{border:1.5px solid var(--regra);padding:1rem 1.2rem;margin:1.2rem 0;background:#f3f0e7;}
+  .ficha .titulo{font-variant:small-caps;font-weight:bold;letter-spacing:.06em;border-bottom:1px solid var(--regra);padding-bottom:.2rem;margin-bottom:.5rem;font-size:1.0rem;}
+  .alerta{border-left:6px solid var(--destaque);background:#f7eded;padding:1rem 1.2rem;margin:1.2rem 0;}
+  .alerta .titulo{font-variant:small-caps;font-weight:bold;color:var(--destaque);letter-spacing:.08em;margin-bottom:.4rem;font-size:.95rem;}
+  .nota{font-size:.82rem;color:var(--neutro);font-style:italic;margin:.6rem 0;}
+  .selo{display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:.66rem;padding:.08rem .4rem;border:1px solid;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;}
+  .selo.ok{color:var(--verde);border-color:var(--verde);}
+  .selo.atencao{color:var(--laranja);border-color:var(--laranja);}
+  .selo.critico{color:var(--destaque);border-color:var(--destaque);font-weight:bold;}
+  .pos{color:var(--verde);font-weight:bold;} .neg{color:var(--destaque);font-weight:bold;}
+  .citacao{margin:.6rem 0;padding:.5rem 1rem;border-left:3px solid var(--destaque);font-style:italic;color:#333;font-size:.95rem;}
+  .ref{font-family:Helvetica,Arial,sans-serif;font-size:.7rem;color:var(--neutro);}
+  .rodape{margin-top:3rem;border-top:4px double var(--regra);padding-top:.8rem;font-size:.78rem;color:var(--neutro);text-align:center;}
+  @media print{body{padding:0;} .folha{max-width:100%;}}
+</style>
+</head>
+<body>
+<div class="folha">
+
+<header class="cabecalho">
+  <div class="orgao">Relatório Contábil-Financeiro · Análise PhD de Seis Fundos da Arquitetura</div>
+  <div class="manchete">A deflação seletiva do Ajaccio e a inflação do Bonifácio: o padrão que os dados oficiais da CVM revelam</div>
+  <p class="sublinha">Análise contábil-financeira dos seis fundos identificados nas planilhas de Consulta de Registro CVM e FNET: Vinci Capital Partners III K, Volimo, Ajaccio, FRAM Capital Kristian, Oslo FIP e Bonifácio. PL e cotistas por competência, datas de abertura, composição de carteira e ressalvas de auditoria. Cobertura: abril/2025 a abril/2026.</p>
+</header>
+<div class="datilho">
+  <span>Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP</span>
+  <span>Emissão 14/06/2026 · Versão 1.0</span>
+  <span>Instrumento interno · CPC art. 472 · CONFIDENCIAL</span>
+</div>
+
+<!-- =========== I ============ -->
+<h2>I. Síntese executiva — quatro achados de auditoria documental</h2>
+<p class="lide">A leitura cruzada das duas planilhas FNET/CVM (data-base de 30/04/2025 a 30/04/2026), da Consulta de Registro de Fundo do VCP III K, e do dossiê documental do Ajaccio (incluindo demonstrações contábeis auditadas pela Grant Thornton em 2022 e pela KPMG em 2023, e laminas e formulários CVM de 2021 a 2025) produz quatro achados convergentes e mensuráveis. Os achados não são alegações — são fatos extraídos de fontes oficiais e demonstrações contábeis subscritas por auditores independentes.</p>
+<table>
+  <tr><th>#</th><th>Achado</th><th>Evidência primária</th></tr>
+  <tr><td>1</td><td><strong>Deflação seletiva do Ajaccio FIP de R$ 162,7 milhões (-10,4%)</strong> entre abril/2025 e abril/2026, em paralelo a <strong>inflação seletiva de R$ 43,1 MM (+237,7%) no Bonifácio FIP</strong> e R$ 674,8 MM (+40,3%) no FRAM Capital Kristian FIP</td><td>Planilhas CVM-FNET (data-bases 30/04/2025, 31/08/2025, 31/12/2025, 30/04/2026)</td></tr>
+  <tr><td>2</td><td><strong>Bonifácio FIP constituído com PL de R$ 18,1 MM em 30/04/2025</strong>, durante o litígio, com salto para R$ 65,6 MM em 31/08/2025 (+261%) — sugere injeção de capital ou transferência de ativos no segundo semestre de 2025</td><td>Planilhas CVM-FNET (32 ocorrências de Bonifácio FIP do registro original; saltos discretos)</td></tr>
+  <tr><td>3</td><td><strong>Auditoria do Ajaccio com opinião adversa (Grant Thornton, exercício 2022) e opinião com ressalva (KPMG, exercício 2023)</strong> — subavaliação documentada de R$ 863.938 mil = 440,86% do PL em 28/02/2022; reemissão posterior do parecer para opinião adversa</td><td>Relatórios de auditoria 28/02/2022 (Grant Thornton, parecer 227QP-015-PB) e 30/11/2023 (KPMG, parecer KPDS 1302836)</td></tr>
+  <tr><td>4</td><td><strong>Anomalia contábil do Oslo FIP</strong>: PL cai de R$ 11.270.157,02 (30/04/2025) para R$ 778,62 (31/08/2025) e retorna a R$ 11.270.157,02 (31/12/2025) — variação de -99,99% e retorno integral em 4 meses</td><td>Planilhas CVM-FNET, três datas-base consecutivas</td></tr>
+</table>
+
+<!-- =========== II ============ -->
+<h2>II. Inventário dos seis fundos</h2>
+<table>
+  <tr><th>#</th><th>Denominação</th><th>CNPJ</th><th>Registro CVM</th><th>Administradora</th><th>Função sistêmica</th></tr>
+  <tr><td>F1</td><td>Vinci Capital Partners III K FIP Multiestratégia</td><td>44.179.309/0001-66</td><td>Cód. CVM 0121328 — 01/12/2021</td><td>BEM DTVM (Bradesco)</td><td>Veículo Vinci pré-deal — registrado 3 meses antes do aporte de R$ 650 MM na E-Vino</td></tr>
+  <tr><td>F2</td><td>Volimo FIP Multiestratégia</td><td>36.642.430/0001-54</td><td>—</td><td>—</td><td>Feeder Vinci — recebeu mútuo conversível para a E-Vino</td></tr>
+  <tr><td>F3</td><td>Ajaccio FIP Multiestratégia</td><td>37.381.595/0001-82</td><td>03/06/2020 — atividade desde 18/06/2021</td><td>FRAM Capital DTVM (ex-OSLO/agora OSLO Capital DTVM)</td><td>Master Hub — 100% E-Vino S.A. — núcleo da disputa</td></tr>
+  <tr><td>F4</td><td>FRAM Capital Kristian FIP</td><td>41.011.720/0001-30</td><td>—</td><td>FRAM Capital DTVM</td><td>Novo nó — em forte inflação no período</td></tr>
+  <tr><td>F5</td><td>Oslo FIP Multiestratégia</td><td>56.393.559/0001-83</td><td>—</td><td>(FRAM/Oslo)</td><td>Novo fundo homônimo da administradora — PL volátil</td></tr>
+  <tr><td>F6</td><td>Bonifácio FIP — Classe Única Mult. Resp. Limitada</td><td>59.402.540/0001-44</td><td>11/02/2025</td><td>(mesmo endereço da OSLO)</td><td>Fundo-casca em forte inflação durante o litígio</td></tr>
+</table>
+
+<!-- =========== III ============ -->
+<h2>III. Evolução do PL — quatro datas-base oficiais</h2>
+<table>
+  <tr><th>Fundo (CNPJ)</th><th>30/04/2025</th><th>31/08/2025</th><th>31/12/2025</th><th>30/04/2026</th><th>Δ 12 meses</th></tr>
+  <tr><td>Volimo (36.642.430)</td><td>R$ 237.451.050,84</td><td>R$ 228.895.755,67</td><td>R$ 214.062.104,35</td><td>R$ 214.242.062,05</td><td class="neg">−9,77% (−R$ 23,2 MM)</td></tr>
+  <tr><td>Ajaccio (37.381.595)</td><td>R$ 1.568.888.762,53</td><td>R$ 1.509.181.538,03</td><td>R$ 1.406.613.955,29</td><td>R$ 1.406.148.264,67</td><td class="neg">−10,38% (−R$ 162,7 MM)</td></tr>
+  <tr><td>FRAM Kristian (41.011.720)</td><td>R$ 1.676.353.568,15</td><td>R$ 1.543.987.271,55</td><td>R$ 1.661.214.296,46</td><td>R$ 2.351.193.892,33</td><td class="pos">+40,26% (+R$ 674,8 MM)</td></tr>
+  <tr><td>Oslo FIP (56.393.559)</td><td>R$ 11.270.157,02</td><td><strong>R$ 778,62</strong></td><td>R$ 11.270.157,02</td><td>(não informado)</td><td><span class="selo critico">anomalia</span></td></tr>
+  <tr><td>Bonifácio (59.402.540)</td><td>R$ 18.135.551,50</td><td>R$ 65.625.393,69</td><td>R$ 61.280.392,87</td><td>R$ 61.194.108,98</td><td class="pos">+237,69% (+R$ 43,1 MM)</td></tr>
+</table>
+<p class="nota">Universo de PL agregado dos cinco fundos com séries completas em 30/04/2026: <strong>R$ 4.032.778.327,03</strong> — quatro bilhões e trinta e dois milhões. O Ajaccio responde por 34,87% deste agregado; o Kristian, por 58,30%. Apenas Ajaccio e Volimo registram deflação no período; Kristian e Bonifácio, inflação.</p>
+
+<!-- =========== IV ============ -->
+<h2>IV. Fichas técnicas dos fundos</h2>
+
+<h3>F1 — Vinci Capital Partners III K FIP Multiestratégia</h3>
+<div class="ficha">
+  <div class="titulo">Vinci Capital Partners III K · CNPJ 44.179.309/0001-66</div>
+  <table>
+    <tr><th>Tipo</th><td>FIP Multi</td></tr>
+    <tr><th>Código CVM</th><td>0121328</td></tr>
+    <tr><th>Data de registro CVM</th><td>01/12/2021</td></tr>
+    <tr><th>Administradora</th><td>BEM Distribuidora de Títulos e Valores Mobiliários Ltda. (Bradesco)</td></tr>
+    <tr><th>Situação</th><td>Em Funcionamento Normal</td></tr>
+    <tr><th>Achado</th><td>Registro CVM em 01/12/2021 — três meses antes do aporte da Vinci de R$ 650 MM na E-Vino (mar/2022); cronologia compatível com engenharia pré-deal</td></tr>
+  </table>
+</div>
+
+<h3>F2 — Volimo FIP Multiestratégia</h3>
+<div class="ficha">
+  <div class="titulo">Volimo FIP · CNPJ 36.642.430/0001-54</div>
+  <table>
+    <tr><th>Classe de cotas</th><td>Classe 1 — única série</td></tr>
+    <tr><th>PL 30/04/2025</th><td>R$ 237.451.050,84</td></tr>
+    <tr><th>PL 30/04/2026</th><td>R$ 214.242.062,05</td></tr>
+    <tr><th>Variação 12 meses</th><td class="neg">−9,77%</td></tr>
+    <tr><th>Função</th><td>Feeder histórico do BTG — mútuo conversível R$ 200 MM à E-Vino convertido em cotas</td></tr>
+    <tr><th>Achado</th><td>Deflação consistente trimestre a trimestre (−3,6% → −6,5% → estabilização). Padrão coerente com fundo em fase de saída/amortização</td></tr>
+  </table>
+</div>
+
+<h3>F3 — Ajaccio FIP Multiestratégia</h3>
+<div class="ficha">
+  <div class="titulo">Ajaccio FIP · CNPJ 37.381.595/0001-82</div>
+  <table>
+    <tr><th>Constituição</th><td>03/06/2020 (registro CVM); início efetivo de atividades 18/06/2021</td></tr>
+    <tr><th>Administradora</th><td>FRAM Capital DTVM S.A. (CNPJ 13.673.855/0001-25) — hoje OSLO Capital DTVM, mesmo CNPJ (rebrand DOU 28/05/2024)</td></tr>
+    <tr><th>Carteira (30/11/2023, auditada)</th><td><strong>100,00% do PL em ações de companhia fechada</strong> — Evino Comércio de Vinhos S.A. (CNPJ 17.392.519/0001-65), 11.935.645 ações ON</td></tr>
+    <tr><th>Caixa em 30/11/2023</th><td>R$ 9.000,00 — nove mil reais, em fundo com PL de R$ 1,53 bilhão</td></tr>
+    <tr><th>PL 30/04/2025</th><td>R$ 1.568.888.762,53 — classe ÚNICA</td></tr>
+    <tr><th>PL 31/08/2025</th><td>R$ 1.509.181.538,03 — <strong>9 subclasses (1, 2, 3, 4, 5, 6, 7, 8, 9)</strong> — reestruturação CVM 175/2022</td></tr>
+    <tr><th>PL 30/04/2026</th><td>R$ 1.406.148.264,67 — manutenção das 9 subclasses</td></tr>
+    <tr><th>Variação 12 meses</th><td class="neg">−10,38% (deflação de R$ 162,7 MM)</td></tr>
+    <tr><th>Resultado do exercício 2023</th><td class="neg">R$ −8.357 mil (prejuízo)</td></tr>
+    <tr><th>Resultado do exercício 2022</th><td>R$ +932.838 mil (quase totalmente decorrente de ajuste a valor justo da E-Vino)</td></tr>
+  </table>
+</div>
+
+<div class="alerta">
+  <div class="titulo">Ressalva de auditoria — Grant Thornton 2022 — OPINIÃO ADVERSA</div>
+  <p>O parecer 227QP-015-PB da Grant Thornton, datado de 29/07/2022 (originalmente com <em>abstenção</em> de opinião) e reemitido posteriormente como <strong>opinião adversa</strong>, registra textualmente:</p>
+  <div class="citacao">"Em 28 de fevereiro de 2022, o Fundo possuía investimento na companhia de capital fechado Evino Comércio de Vinhos S.A. (...) no montante de R$ 194.821 mil, o equivalente a 99,42% de seu Patrimônio Líquido para os quais o Fundo não efetuou o reconhecimento do valor justo dos ativos nesta data, conforme determinado pela Instrução CVM nº 579/16. A mensuração a valor justo na Companhia Investida foi efetuada subsequentemente a data-base de 28 de fevereiro de 2022, no montante de R$ 1.058.759 mil (...). A ausência da atualização a valor justo dos investimentos em ações para a data base do Fundo, gerou uma diferença de R$ 863.938 mil, o equivalente a 440,86% de seu patrimônio líquido, consequentemente, em 28 de fevereiro de 2022, o ativo, resultado e patrimônio líquido do Fundo estão <strong>subavaliados nesse mesmo montante</strong>." <span class="ref">— Grant Thornton, base para opinião adversa</span></div>
+  <p>Conclusão técnica: o PL real do Ajaccio em 28/02/2022, na data-base de fechamento contábil, era de aproximadamente R$ 1,058 bilhão — não os R$ 194,8 milhões originalmente registrados. A subavaliação de 440,86% é fato auditado.</p>
+</div>
+
+<div class="alerta">
+  <div class="titulo">Ressalva de auditoria — KPMG 2023 — OPINIÃO COM RESSALVA</div>
+  <p>O parecer KPDS 1302836 da KPMG, datado de 22/04/2024, registra opinião <strong>com ressalva</strong> em relação aos valores correspondentes do exercício de 2022 (R$ 863.938 mil de ajuste fora do exercício), e como Principal Assunto de Auditoria 2023:</p>
+  <div class="citacao">"Em 30 de novembro de 2023, o Fundo possuía 100,00% de seu patrimônio líquido representado por participações em companhia fechada, sem cotação em bolsa ou mercado ativo, mensuradas pelo valor justo determinado com base em laudo de avaliação econômico financeira, elaborados por avaliador terceiro independente, que utiliza, dentre outros, dados e premissas não observáveis, tais como taxa de desconto e período projetivo." <span class="ref">— KPMG, Principais assuntos de auditoria</span></div>
+  <p>Conclusão técnica: a precificação de R$ 1,533 bilhão em 30/11/2023 é marcação a modelo (mark-to-model), sem mercado ativo de referência, com premissas e dados não observáveis. A KPMG considera "aceitável" no contexto, mas registra o risco de distorção relevante decorrente das estimativas.</p>
+</div>
+
+<h3>F4 — FRAM Capital Kristian FIP</h3>
+<div class="ficha">
+  <div class="titulo">FRAM Capital Kristian FIP · CNPJ 41.011.720/0001-30</div>
+  <table>
+    <tr><th>Administradora</th><td>FRAM Capital DTVM (mesmo CNPJ 13.673.855/0001-25 da OSLO)</td></tr>
+    <tr><th>Classes 30/04/2025</th><td>Classes A e B</td></tr>
+    <tr><th>Classes 31/08/2025</th><td>Classes 1 e 2 (reestruturação no Q3/2025)</td></tr>
+    <tr><th>PL 30/04/2025</th><td>R$ 1.676.353.568,15</td></tr>
+    <tr><th>PL 31/08/2025</th><td>R$ 1.543.987.271,55 (−7,9% no Q2)</td></tr>
+    <tr><th>PL 31/12/2025</th><td>R$ 1.661.214.296,46 (+7,6%)</td></tr>
+    <tr><th>PL 30/04/2026</th><td><strong>R$ 2.351.193.892,33 (+41,5% em 4 meses)</strong></td></tr>
+    <tr><th>Variação 12 meses</th><td class="pos">+40,26% (inflação de R$ 674,8 MM)</td></tr>
+    <tr><th>Achado</th><td>Salto de R$ 690 MM no primeiro quadrimestre de 2026, em paralelo à deflação do Ajaccio. <strong>Hipótese de migração de ativo</strong> — a confirmar via informe trimestral CVM (carteira)</td></tr>
+  </table>
+</div>
+
+<h3>F5 — Oslo FIP Multiestratégia</h3>
+<div class="ficha">
+  <div class="titulo">Oslo FIP · CNPJ 56.393.559/0001-83</div>
+  <table>
+    <tr><th>Classes 30/04/2025</th><td>Classes 1 e ÚNICA</td></tr>
+    <tr><th>PL 30/04/2025</th><td>R$ 11.270.157,02</td></tr>
+    <tr><th>PL 31/08/2025</th><td><strong>R$ 778,62</strong> — caiu R$ 11.269.378,40 (−99,99%)</td></tr>
+    <tr><th>PL 31/12/2025</th><td>R$ 11.270.157,02 — retornou ao valor original (em centavos)</td></tr>
+    <tr><th>Achado</th><td><span class="selo critico">anomalia contábil grave</span> Variação de menos noventa e nove vírgula noventa e nove por cento em quatro meses, com retorno integral subsequente, em valores idênticos centavo a centavo. Hipóteses: (a) reclassificação contábil temporária; (b) saída e retorno de cotista único; (c) erro de informe FNET. <strong>Exige requisição de informes trimestrais individualizados.</strong></td></tr>
+  </table>
+</div>
+
+<h3>F6 — Bonifácio FIP — Classe Única Mult. Resp. Limitada</h3>
+<div class="ficha">
+  <div class="titulo">Bonifácio FIP · CNPJ 59.402.540/0001-44</div>
+  <table>
+    <tr><th>Constituição</th><td>11/02/2025 — durante a litispendência da ação 1006744-58.2023</td></tr>
+    <tr><th>Denominação completa</th><td>"Classe Única Mult. Responsabilidade Limitada do Bonifácio Fu[ndo]"</td></tr>
+    <tr><th>Endereço cadastral</th><td>Rua Dr. Eduardo de Souza Aranha, 153, 4º andar — mesmo endereço de OSLO/FRAM/Ajaccio</td></tr>
+    <tr><th>PL 30/04/2025</th><td>R$ 18.135.551,50 (≈ 2 meses após a constituição)</td></tr>
+    <tr><th>PL 31/08/2025</th><td><strong>R$ 65.625.393,69 (+261,8% em 4 meses)</strong></td></tr>
+    <tr><th>PL 31/12/2025</th><td>R$ 61.280.392,87 (estabilização)</td></tr>
+    <tr><th>PL 30/04/2026</th><td>R$ 61.194.108,98 (manutenção)</td></tr>
+    <tr><th>Variação 12 meses</th><td class="pos">+237,69% (+R$ 43,1 MM)</td></tr>
+    <tr><th>Achado</th><td>Fundo constituído durante o litígio, com inflação patrimonial de R$ 47,5 MM no segundo trimestre de 2025, estabilizando em R$ 61 MM. <strong>Hipótese de receptor pós-constrição</strong> — natureza dos aportes a apurar via informes trimestrais CVM</td></tr>
+  </table>
+</div>
+
+<!-- =========== V ============ -->
+<h2>V. Padrão de fluxos — convergência cronométrica</h2>
+<p>A tabela abaixo sobrepõe as variações trimestrais e produz a leitura comparativa que justifica a hipótese de migração patrimonial entre os veículos administrados pelo mesmo CNPJ de administradora.</p>
+<table>
+  <tr><th>Período</th><th>Ajaccio (Δ R$ MM)</th><th>Kristian (Δ R$ MM)</th><th>Bonifácio (Δ R$ MM)</th><th>Volimo (Δ R$ MM)</th><th>Padrão</th></tr>
+  <tr><td>Q2 2025 (abril → agosto)</td><td class="neg">−59,7</td><td class="neg">−132,4</td><td class="pos">+47,5</td><td class="neg">−8,6</td><td>Bonifácio +47 enquanto Ajaccio −60</td></tr>
+  <tr><td>Q3 2025 (agosto → dezembro)</td><td class="neg">−102,6</td><td class="pos">+117,2</td><td class="neg">−4,3</td><td class="neg">−14,8</td><td>Kristian +117 enquanto Ajaccio −103</td></tr>
+  <tr><td>Q1 2026 (dezembro → abril)</td><td class="neg">−0,5</td><td class="pos">+690,0</td><td class="neg">−0,1</td><td class="pos">+0,2</td><td>Kristian +690 (sem contraparte clara nesta tabela)</td></tr>
+</table>
+<p>Observação contábil-forense: a inflação de R$ 690 MM no Kristian no primeiro quadrimestre de 2026 não tem contraparte aritmética nos demais fundos desta planilha (a soma das deflações de Ajaccio e Volimo no mesmo período é apenas −R$ 0,3 MM). Isto significa que o crescimento do Kristian neste período <strong>provém de fonte fora dos cinco fundos analisados</strong> — possivelmente do conjunto de 74 fundos sob administração da FRAM/OSLO, ou de aporte de novo cotista, ou de reavaliação de ativo subjacente. Exige verificação por informe trimestral CVM e composição de carteira.</p>
+
+<!-- =========== VI ============ -->
+<h2>VI. Cotistas — limitações de divulgação e providências necessárias</h2>
+<p>As planilhas FNET fornecem o campo "cotistas" como dado <strong>vazio</strong> em todas as ocorrências dos cinco fundos. A não-divulgação do número de cotistas e da identidade nos relatórios públicos da CVM é regra para os FIP fechados sob a RCVM 175/2022, que classifica essa informação como restrita aos próprios cotistas, administrador, auditor e órgãos reguladores. Para obter a informação:</p>
+<table>
+  <tr><th>Via</th><th>Instrumento</th><th>Janela</th></tr>
+  <tr><td>1ª VF Pinheiros</td><td>Ofício à administradora FRAM/OSLO Capital DTVM, em concomitância com requisição CPC arts. 396-404 (já formulada nas teses v1-v6), exigindo: regulamento consolidado, livro de cotistas, boletins de subscrição, acordo de cotistas, demonstrações financeiras auditadas</td><td>Imediata</td></tr>
+  <tr><td>CVM</td><td>Ofício à Superintendência de Supervisão de Investidores Institucionais (SIN) requisitando informes trimestrais individualizados de cotistas dos cinco fundos analisados</td><td>Semanas</td></tr>
+  <tr><td>BTG / Itaú / Bradesco / Vinci / outros distribuidores</td><td>Ofícios diretos aos distribuidores potenciais, requisitando relacionamentos de custódia em nome do Requerido</td><td>Semanas</td></tr>
+</table>
+
+<!-- =========== VII ============ -->
+<h2>VII. Anomalias contábeis e ressalvas de auditoria — síntese</h2>
+<table>
+  <tr><th>#</th><th>Anomalia</th><th>Fonte</th><th>Risco</th></tr>
+  <tr><td>A1</td><td>Subavaliação documentada de R$ 863.938 mil (440,86% do PL) do Ajaccio em 28/02/2022</td><td>Grant Thornton — opinião adversa</td><td><span class="selo critico">crítico</span></td></tr>
+  <tr><td>A2</td><td>Carteira do Ajaccio 100% concentrada em ativo único (E-Vino S.A.) sem mercado ativo de referência</td><td>KPMG — opinião com ressalva</td><td><span class="selo atencao">alto</span></td></tr>
+  <tr><td>A3</td><td>Caixa do Ajaccio em R$ 9 mil em 30/11/2023 (sobre PL de R$ 1,53 bi) — iliquidez operacional confirmada por demonstração contábil</td><td>Demonstração da posição financeira — KPMG</td><td><span class="selo atencao">alto</span></td></tr>
+  <tr><td>A4</td><td>Reestruturação do Ajaccio em 9 subclasses entre 30/04/2025 e 31/08/2025 — durante a litispendência</td><td>Planilha FNET CVM</td><td><span class="selo atencao">alto</span></td></tr>
+  <tr><td>A5</td><td>Inflação de R$ 47,5 MM no Bonifácio em Q2 2025, em paralelo a deflação de R$ 59,7 MM no Ajaccio — possível migração</td><td>Planilha FNET CVM</td><td><span class="selo critico">crítico</span></td></tr>
+  <tr><td>A6</td><td>Salto de R$ 690 MM no Kristian em Q1 2026, sem contraparte clara nos demais fundos analisados</td><td>Planilha FNET CVM</td><td><span class="selo atencao">alto — investigar</span></td></tr>
+  <tr><td>A7</td><td>Variação de −99,99% no Oslo FIP em 4 meses com retorno integral — exige auditoria</td><td>Planilha FNET CVM</td><td><span class="selo atencao">alto — investigar</span></td></tr>
+  <tr><td>A8</td><td>Bonifácio constituído em 11/02/2025 (durante litígio) no mesmo endereço da OSLO/FRAM (Souza Aranha 153, 4º)</td><td>CNPJ Receita Federal + relatórios cadastrais</td><td><span class="selo critico">crítico</span></td></tr>
+</table>
+
+<!-- =========== VIII ============ -->
+<h2>VIII. Recomendações de diligência adicional</h2>
+<ol>
+  <li><strong>Demonstrações contábeis 2024-2025 do Ajaccio FIP</strong> — exibição pela administradora; verificar continuidade da concentração 100% em E-Vino e evolução do laudo de marcação a valor justo.</li>
+  <li><strong>Composição da carteira de todos os fundos no informe trimestral CVM</strong> — em especial Kristian (para identificar a origem do salto de R$ 690 MM no Q1 2026) e Bonifácio (para identificar o ativo subjacente).</li>
+  <li><strong>Histórico de cotistas dos seis fundos</strong> — via ofício à administradora (FRAM/OSLO Capital DTVM, CNPJ 13.673.855/0001-25), com cobertura do período 01/01/2021 a 30/04/2026.</li>
+  <li><strong>Movimentações no Oslo FIP</strong> — apurar a variação de −99,99% e o retorno integral; possível reclassificação contábil ou erro de informe.</li>
+  <li><strong>Ata de constituição e regulamento do Bonifácio FIP</strong> — certidão CVM; verificar quem são os cotistas iniciais, quem realizou os aportes de R$ 47 MM em Q2 2025, e qual a carteira atual.</li>
+  <li><strong>Reestruturação do Ajaccio em 9 subclasses entre 30/04/2025 e 31/08/2025</strong> — exibição da ata de assembleia, regulamento aditado, parecer do administrador (RCVM 175/2022 art. 39); verificar se a reestruturação afeta a posição econômica do Requerido e se foi precedida de comunicação aos demais cotistas.</li>
+  <li><strong>Auditor 2024-2025 do Ajaccio</strong> — verificar continuidade da KPMG ou nova auditoria; obter parecer e relatório dos auditores.</li>
+</ol>
+
+<!-- =========== IX ============ -->
+<h2>IX. Síntese executiva final</h2>
+<p>O conjunto de fundos analisado opera, na data-base de 30/04/2026, um PL agregado de aproximadamente <strong>R$ 4,03 bilhões</strong> — magnitude que confirma a centralidade do ecossistema FRAM/OSLO Capital DTVM no caso. No período de 12 meses analisado, observam-se simultaneamente: (i) deflação significativa do Ajaccio (−R$ 162,7 MM, −10,4%); (ii) inflação significativa do Kristian (+R$ 674,8 MM, +40,3%); (iii) inflação proporcionalmente extrema do Bonifácio (+R$ 43,1 MM, +237,7%) — em fundo constituído em 11/02/2025, no curso do litígio. Esse padrão, somado às duas ressalvas de auditoria do Ajaccio (opinião adversa Grant Thornton 2022; opinião com ressalva KPMG 2023), à concentração 100% do PL do Ajaccio em ativo único de companhia fechada (E-Vino), e ao caixa operacional de R$ 9 mil em PL de R$ 1,53 bi, configura quadro contábil-financeiro que <strong>exige</strong> as diligências adicionais do § VIII.</p>
+
+<!-- =========== X ============ -->
+<h2>X. Conformidade metodológica</h2>
+<div class="ficha">
+  <p>Este relatório é instrumento técnico-contábil-financeiro de apoio ao raciocínio jurídico da equipe; não é perícia oficial. Toda afirmação fática está ancorada em (i) planilhas FNET/CVM oficiais (data-bases 30/04/2025, 31/08/2025, 31/12/2025, 30/04/2026); (ii) Consulta de Registro de Fundo CVM (Código CVM 0121328 para o VCP III K); (iii) parecer dos auditores Grant Thornton (227QP-015-PB, 28/02/2022, opinião adversa) e KPMG (KPDS 1302836, 30/11/2023, opinião com ressalva); (iv) demonstrações contábeis publicadas conforme exigência da Resolução CVM nº 175/2022.</p>
+  <p>As inferências sobre migração patrimonial entre fundos (A5, A6) são <strong>hipóteses contábeis a verificar</strong>, sustentadas por convergência cronométrica e magnitude compatível, mas dependentes da exibição dos informes trimestrais individualizados e da composição de carteira. Não constituem, neste estágio, afirmação de fato ou imputação de conduta — são objeto da diligência recomendada no § VIII.</p>
+  <p>Conversão em laudo subscrito por contador habilitado (CRC) e em peça subscrita por advogado(a) (OAB) antes de qualquer uso processual.</p>
+</div>
+
+<footer class="rodape">
+  <p>Relatório Contábil-Financeiro PhD · Análise de seis fundos da arquitetura · Operação Limoncello<br>
+  Autos 1006744-58.2023.8.26.0011 · 1ª VF Pinheiros/SP · Emissão 14/06/2026 · Versão 1.0<br>
+  Série DOSSIÊS E NOTAS TÉCNICAS — documento 22 · INSTRUMENTO INTERNO · CONFIDENCIAL<br>
+  Conversão para laudo subscrito por contador habilitado (CRC) e peça subscrita por OAB antes de qualquer uso processual.</p>
+</footer>
+
+</div>
+</body>
+</html>
