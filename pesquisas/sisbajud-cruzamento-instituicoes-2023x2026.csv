@@ -1,0 +1,23 @@
+instituicao,codigo_2023,valor_2023,codigo_2026,valor_2026,leitura_tecnica,prioridade_investigativa
+"FRAM Capital DTVM","98 → 32 → 26","R$ 77,6 Mi (32) / R$ 31,9 Mi (26 baixa liquidez)","AUSENTE da remessa",—,"Não foi reincluída em 2026 — maior lacuna probatória",CRÍTICA
+"OSLO Capital DTVM","AUSENTE",—,"25","R$ 27,7 mil (escriturado, depois desbloqueado)","Surge no lugar da FRAM — indício de migração patrimonial",ALTA
+"BTG Pactual","32 / 26","R$ 3,05 Mi (32)","12","R$ 27,7 mil (depósito a prazo)","Relacionamento persiste; valor caiu drasticamente",ALTA
+"Itaú Unibanco","32 / 13","R$ 4,16 Mi (32) / R$ 7,44 Mi (13 VM)","12","R$ 27,7 mil","Continua com ativo mas muito reduzido — investigar movimentação 2023-2026",ALTA
+"C6 Bank","32 / 03","R$ 20,90","02",—,"Era cliente com migalha — zerou. Conta ainda existe",MÉDIA
+"Nu Pagamentos","32 / 03","R$ 72,22","03","R$ 340,23","Persistente; valor ínfimo",BAIXA
+"MercadoPago","32 / 13","R$ 218,00","13","R$ 0,27","Persistente; valor irrisório",BAIXA
+"Banco do Brasil","35 / 00",—,"00",—,"Sem relacionamento nas duas datas — coerente",NENHUMA
+"Caixa Econômica","32 / 02",—,"AUSENTE",—,"Pode não ter sido reincluída — verificar lista",MÉDIA
+"N26","98 (2x — Não-Resposta)",—,"AUSENTE",—,"Silêncio em 2023; ausente em 2026 — canal de coinvestimento suspeito",CRÍTICA
+"XP Investimentos","00 / 02",—,"00 / 02",—,"Sem saldo nas duas datas",NENHUMA
+"Bradesco","00 / 02",—,"00 / 02",—,"Sem saldo nas duas datas",NENHUMA
+"Santander","00 / 02",—,"00 / 02",—,"Sem saldo nas duas datas",NENHUMA
+"ABC Brasil","30",—,"00",—,"Sem dado em 2023; sem relacionamento em 2026",NENHUMA
+"Daycoval","00",—,"00",—,"Sem relacionamento — coerente",NENHUMA
+"Ourinvest","00",—,"00",—,"Sem relacionamento — coerente",NENHUMA
+"RecargaPay","INEXISTENTE na remessa",—,"00 / 02 / 03",—,"Instituição nova no rol de 2026",MÉDIA
+"99Pay","INEXISTENTE na remessa",—,"00 / 02 / 03",—,"Instituição nova",MÉDIA
+"Shopee","INEXISTENTE na remessa",—,"00 / 02",—,"Instituição nova",BAIXA
+"PicPay","INEXISTENTE na remessa",—,"02 / 03",—,"Instituição nova",BAIXA
+"Revolut","INEXISTENTE na remessa",—,"00",—,"Instituição nova",MÉDIA
+"Magalu Pagamentos","INEXISTENTE na remessa",—,"02",—,"Instituição nova",BAIXA
