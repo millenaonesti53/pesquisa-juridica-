@@ -1,23 +1,19 @@
-instituicao,codigo_2023,valor_2023,codigo_2026,valor_2026,leitura_tecnica,prioridade_investigativa
-"FRAM Capital DTVM","98 → 32 → 26","R$ 77,6 Mi (32) / R$ 31,9 Mi (26 baixa liquidez)","AUSENTE da remessa",—,"Não foi reincluída em 2026 — maior lacuna probatória",CRÍTICA
-"OSLO Capital DTVM","AUSENTE",—,"25","R$ 27,7 mil (escriturado, depois desbloqueado)","Surge no lugar da FRAM — indício de migração patrimonial",ALTA
-"BTG Pactual","32 / 26","R$ 3,05 Mi (32)","12","R$ 27,7 mil (depósito a prazo)","Relacionamento persiste; valor caiu drasticamente",ALTA
-"Itaú Unibanco","32 / 13","R$ 4,16 Mi (32) / R$ 7,44 Mi (13 VM)","12","R$ 27,7 mil","Continua com ativo mas muito reduzido — investigar movimentação 2023-2026",ALTA
-"C6 Bank","32 / 03","R$ 20,90","02",—,"Era cliente com migalha — zerou. Conta ainda existe",MÉDIA
-"Nu Pagamentos","32 / 03","R$ 72,22","03","R$ 340,23","Persistente; valor ínfimo",BAIXA
-"MercadoPago","32 / 13","R$ 218,00","13","R$ 0,27","Persistente; valor irrisório",BAIXA
-"Banco do Brasil","35 / 00",—,"00",—,"Sem relacionamento nas duas datas — coerente",NENHUMA
-"Caixa Econômica","32 / 02",—,"AUSENTE",—,"Pode não ter sido reincluída — verificar lista",MÉDIA
-"N26","98 (2x — Não-Resposta)",—,"AUSENTE",—,"Silêncio em 2023; ausente em 2026 — canal de coinvestimento suspeito",CRÍTICA
-"XP Investimentos","00 / 02",—,"00 / 02",—,"Sem saldo nas duas datas",NENHUMA
-"Bradesco","00 / 02",—,"00 / 02",—,"Sem saldo nas duas datas",NENHUMA
-"Santander","00 / 02",—,"00 / 02",—,"Sem saldo nas duas datas",NENHUMA
-"ABC Brasil","30",—,"00",—,"Sem dado em 2023; sem relacionamento em 2026",NENHUMA
-"Daycoval","00",—,"00",—,"Sem relacionamento — coerente",NENHUMA
-"Ourinvest","00",—,"00",—,"Sem relacionamento — coerente",NENHUMA
-"RecargaPay","INEXISTENTE na remessa",—,"00 / 02 / 03",—,"Instituição nova no rol de 2026",MÉDIA
-"99Pay","INEXISTENTE na remessa",—,"00 / 02 / 03",—,"Instituição nova",MÉDIA
-"Shopee","INEXISTENTE na remessa",—,"00 / 02",—,"Instituição nova",BAIXA
-"PicPay","INEXISTENTE na remessa",—,"02 / 03",—,"Instituição nova",BAIXA
-"Revolut","INEXISTENTE na remessa",—,"00",—,"Instituição nova",MÉDIA
-"Magalu Pagamentos","INEXISTENTE na remessa",—,"02",—,"Instituição nova",BAIXA
+instituicao,2023_requisicao_fls418,2023_bloqueio_fls490_500,2026_bloqueio_fls123_131,leitura_tecnica,prioridade_investigativa
+"FRAM Capital DTVM","(98) → (32) R$ 77.640.365,33","(98) Não-Resposta; reiteração 'Não enviada'","AUSENTE da remessa","Revelou ativo de R$ 77,6 mi na PESQUISA (não no bloqueio); silenciou no bloqueio 2023; em 2026 não foi reincluída. MAIOR LACUNA PROBATÓRIA.",CRÍTICA
+"OSLO Capital DTVM","AUSENTE","AUSENTE","(25) R$ 27.799,79 escriturado → desbloq. 15/04","Surge em 2026 como custodiante; (25) confirma ativo escriturado. Indício de MIGRAÇÃO FRAM→OSLO.",CRÍTICA
+"BCO BTG Pactual","(32) saldo ~R$ 3,05 mi (carta)","(26) R$ 42.428.357,32 → remanescente R$ 3.058.369,42 (baixa liquidez)","(12) R$ 27.799,79 (depósito a prazo) → desbloq. 15/04","Rota persistente. O (26) foi do BTG (NÃO da FRAM, conforme fls. 492). Carta BTG: 'venda e liquidação'.",ALTA
+"BTG Pactual Asset DTVM","(32) R$ 0,00","(02) sem saldo positivo","—","Sem saldo nas duas datas — coerente.",BAIXA
+"Itaú Unibanco","[não destacado em fls.418]","(13) VM — transf. R$ 7.444.483,08 (carta fls.508/558)","(12) R$ 27.799,79 → desbloq. 15/04","Tinha MILHÕES em VM (2023); em 2026 reduzido a milhares. Investigar movimentações 2023-2026.",ALTA
+"BCO C6","(32) R$ 20,90","—","(02) sem saldo positivo","Saldo ínfimo em 2023; zerado em 2026.",BAIXA
+"NU Pagamentos","(32) R$ 72,22","—","(03) parcial R$ 340,23 → desbloq. 15/04","Cliente com saldo ínfimo nas duas datas.",BAIXA
+"MercadoPago","(32) R$ 218,02","—","(13) R$ 0,27 → desbloq. 15/04","Persistente, valor irrisório.",BAIXA
+"99Pay","inexistente na remessa","—","(03) parcial R$ 12,55 → desbloq. 15/04","Instituição nova em 2026.",BAIXA
+"Banco do Brasil","(35) inativo/não cliente","—","—","Sem relacionamento ativo. Coerente.",BAIXA
+"N26 SCD","(98) Não-Resposta (2x)","(98) Não-Resposta","AUSENTE","Silêncio nas duas ordens de 2023; ausente em 2026. Investigar — canal de coinvestimento.",CRÍTICA
+"BEXS Câmbio","(98) Não-Resposta (2x)","—","AUSENTE","Silêncio em 2023; ausente em 2026.",ALTA
+"PagSeguro","(30) negativa","(00) negativa","(00) negativa","Sem relacionamento. Coerente nas três.",BAIXA
+"Santander","(32) R$ 0,00","—","(02) sem saldo positivo","Cliente sem saldo nas duas datas.",BAIXA
+"XP Investimentos / Banco XP","(32) R$ 0,00 / (30)","—","(02) sem saldo positivo","Sem saldo nas duas datas.",BAIXA
+"Bradesco / ABC / Daycoval / Ourinvest","(30) / (32) R$ 0,00","—","(00) / (02)","Sem ativo nas duas datas — coerente.",BAIXA
+"RecargaPay / Shopee / Revolut / Magalu / PicPay / Cielo / Wise / Travelex / FXC","inexistentes / não incluídas","—","(00) / (02)","Instituições novas ou não reincluídas — base de comparação distinta.",MÉDIA
+"TOTAIS CONSOLIDADOS","Saldo informado 2023: R$ 84.856.714,65","Bloqueado 2023: R$ 52.932.655,22","Bloqueado 2026: R$ 83.752,42 (−99,8%)","Queda brutal entre 2023 e 2026 — núcleo da tese de esvaziamento patrimonial.","—"

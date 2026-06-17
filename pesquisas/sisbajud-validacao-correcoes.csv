@@ -1,0 +1,9 @@
+status,item,achado,fonte
+ERRO CORRIGIDO,"Atribuição do código (26)","O (26) 'ativo de baixa liquidez' no bloqueio de 2023 foi do BANCO BTG PACTUAL (R$ 42.428.357,32 → remanescente R$ 3.058.369,42), NÃO da FRAM.","fls. 492"
+ERRO CORRIGIDO,"Resposta da FRAM no bloqueio 2023","A FRAM, no BLOQUEIO, respondeu (98) Não-Resposta — não (26). O valor de R$ 77,6 mi da FRAM veio da REQUISIÇÃO (32), instrumento diferente.","fls. 419 e 493"
+ERRO CORRIGIDO,"Valor 'R$ 31,9 Mi baixa liquidez' atribuído à FRAM","Esse valor NÃO aparece em nenhum dos documentos validados. Foi alucinação da versão anterior — REMOVIDO.","n/a"
+CONFIRMADO,"N26 e BEXS","(98) Não-Resposta nas duas ordens de 2023.","fls. 418, 490, 500"
+CONFIRMADO,"Saldos ínfimos 2023","C6: R$ 20,90 | NU: R$ 72,22 | MercadoPago: R$ 218,02 — todos código (32).","fls. 418"
+CONFIRMADO,"Total bloqueado 2023","R$ 52.932.655,22.","fls. 500"
+CONFIRMADO,"Total bloqueado 2026","R$ 83.752,42 — queda de −99,8% em relação a 2023.","fls. 123"
+METODOLOGIA,"Requisição × Bloqueio","Comparar código de REQUISIÇÃO (30/32/35) com BLOQUEIO (00/02/03/12/13/25/26) é incorreto — são instrumentos com propósitos distintos.","Manual SISBAJUD / CNJ"
