@@ -1,7 +1,9 @@
-# Pipeline Cognitivo Corporativo — Arquitetura Técnica
+# Pipeline Cognitivo Corporativo — Diagrama Técnico (PhD TI)
 
-**Versão:** 1.0  
-**Data:** 2026-06-15  
+**Integração entre Tecnologia, Governança Jurídica e Investigação Patrimonial**
+
+**Versão:** 1.1  
+**Data:** 2026-06-18  
 **Classificação:** Uso Interno — Governança Jurídica
 
 ---
@@ -104,6 +106,27 @@ Os ativos e movimentações identificados pelo pipeline são analisados sob os s
 
 ---
 
+## Conclusão — Capacidades do Sistema
+
+Cada módulo alimenta o próximo de forma encadeada:
+
+| Estágio | Módulo | Função no encadeamento |
+|---------|--------|------------------------|
+| 1 | Briefing | Contexto humano + síntese jurídica |
+| 2 | Health Check | Estabilidade técnica + detecção de fraude |
+| 3 | Dependency Check | Atualização de dados + inconsistências estruturais |
+| 4 | Flaky Tracker | Validação estatística + padrões de ocultação |
+| 5 | PR Digest | Governança jurídica + produção de documentos |
+
+O resultado é um sistema de investigação patrimonial automatizado, capaz de:
+
+- Detectar fraude e mapear ocultação patrimonial
+- Identificar ativos penhoráveis e desmontar alegações de impenhorabilidade
+- Reconstruir o *whole money trail* — rastreamento completo dos recursos
+- Produzir relatórios jurídicos de alto impacto (CLO, IDPJ, COAF, MPF)
+
+---
+
 ## Referências aos Módulos Detalhados
 
 - [`01-briefing.md`](01-briefing.md)
@@ -111,3 +134,11 @@ Os ativos e movimentações identificados pelo pipeline são analisados sob os s
 - [`03-dependency-update.md`](03-dependency-update.md)
 - [`04-flaky-tracker.md`](04-flaky-tracker.md)
 - [`05-pr-review-digest.md`](05-pr-review-digest.md)
+
+---
+
+## Execuções do Pipeline
+
+| Data | Briefing | Observações |
+|------|----------|-------------|
+| 2026-06-18 | [`notas/briefing-2026-06-18.md`](../notas/briefing-2026-06-18.md) | 5 alertas ativos — 4 ações urgentes |

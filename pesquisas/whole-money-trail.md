@@ -2,7 +2,7 @@
 
 **Classificação:** Confidencial — uso interno  
 **Status:** Em construção  
-**Última atualização:** 2026-06-15
+**Última atualização:** 2026-06-18
 
 ---
 
