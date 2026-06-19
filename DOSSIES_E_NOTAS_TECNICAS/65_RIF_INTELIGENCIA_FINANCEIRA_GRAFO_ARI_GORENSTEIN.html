@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>65 — Relatório de Inteligência Financeira (RIF) · Análise de Grafo · Ari Gorenstein</title>
+<style>
+  @page { size: A4; margin: 22mm 18mm 22mm 18mm; }
+  body { font-family: "Times New Roman", Georgia, serif; font-size: 10.5pt; line-height: 1.46; color: #15212e; margin: 0; text-align: justify; }
+  h1 { font-size: 17pt; color: #1b3a5b; margin: 0 0 4pt 0; text-align: center; letter-spacing: .5pt; }
+  h2 { font-size: 12.5pt; color: #1b3a5b; margin: 16pt 0 6pt 0; border-bottom: 2px solid #1b3a5b; padding-bottom: 3pt; text-transform: uppercase; letter-spacing: .6pt; font-family: "Times New Roman"; }
+  h3 { font-size: 11pt; color: #b00020; margin: 12pt 0 5pt 0; font-style: italic; font-family: "Times New Roman"; }
+  h4 { font-size: 10.5pt; color: #1b3a5b; margin: 10pt 0 4pt 0; font-weight: 700; font-family: "Times New Roman"; }
+  .capa { border-top: 4px double #1b3a5b; border-bottom: 4px double #1b3a5b; padding: 14pt 0; margin-bottom: 14pt; text-align: center; }
+  .capa .court { font-family: "Times New Roman"; font-size: 11pt; letter-spacing: 4pt; color: #1b3a5b; font-weight: bold; }
+  .capa .sub { font-size: 10pt; font-style: italic; color: #444; margin-top: 8pt; }
+  .folha { border: 1.5px solid #1b3a5b; padding: 10pt 14pt; margin: 8pt 0 12pt 0; background: #f5f8fc; }
+  .folha .label { font-family: "Times New Roman"; font-size: 9pt; letter-spacing: 2.5pt; color: #b00020; text-transform: uppercase; font-weight: bold; margin-bottom: 5pt; text-align: center; }
+  .folha p { margin: 3pt 0; font-size: 10pt; text-indent: 0; }
+  p { margin: 0 0 7pt 0; text-indent: 18pt; }
+  blockquote { margin: 7pt 22pt; padding: 5pt 10pt; border-left: 2.5px solid #b00020; font-style: italic; font-size: 10pt; background: #fafafa; }
+  blockquote .src { display: block; margin-top: 4pt; font-size: 9pt; font-style: normal; color: #555; text-align: right; }
+  table { width: 100%; border-collapse: collapse; margin: 5pt 0; font-size: 9.5pt; }
+  th, td { border: 0.5px solid #1b3a5b; padding: 4pt 6pt; vertical-align: top; text-align: left; }
+  th { background: #1b3a5b; color: #fff; font-weight: 600; font-family: "Times New Roman"; font-size: 9pt; text-transform: uppercase; letter-spacing: .4pt; }
+  td p { text-indent: 0; margin: 0; }
+  .figure { border: 1.5px solid #1b3a5b; padding: 8pt; margin: 8pt 0; background: #fff; break-inside: avoid; }
+  .figlabel { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 8pt; font-weight: 700; letter-spacing: 1.5pt; color: #b00020; text-transform: uppercase; margin-bottom: 4pt; }
+  .caption { font-size: 8pt; font-style: italic; color: #444; margin-top: 4pt; text-align: justify; }
+  .tipologia { background: #fdecef; border-left: 4px solid #b00020; padding: 6pt 10pt; margin: 5pt 0; }
+  .tipologia .num { font-family: "Times New Roman"; font-size: 9pt; font-weight: 900; letter-spacing: 1.5pt; color: #b00020; text-transform: uppercase; }
+  .tipologia p { text-indent: 0; margin: 2pt 0; font-size: 9.5pt; }
+  .indicador { background: #fff8e1; border-left: 4px solid #c89000; padding: 6pt 10pt; margin: 5pt 0; }
+  .indicador .label { font-family: "Times New Roman"; font-size: 9pt; font-weight: 900; letter-spacing: 1.5pt; color: #c89000; text-transform: uppercase; }
+  .indicador p { text-indent: 0; margin: 2pt 0; font-size: 9.5pt; }
+  .risco-alto { background: #b00020; color: #fff; font-weight: bold; padding: 1pt 5pt; font-size: 8pt; letter-spacing: 1pt; text-transform: uppercase; }
+  .risco-medio { background: #c89000; color: #fff; font-weight: bold; padding: 1pt 5pt; font-size: 8pt; letter-spacing: 1pt; text-transform: uppercase; }
+  .risco-baixo { background: #0a5f2e; color: #fff; font-weight: bold; padding: 1pt 5pt; font-size: 8pt; letter-spacing: 1pt; text-transform: uppercase; }
+  .reserva { background: #f3f3f3; border-left: 3px solid #555; padding: 6pt 10pt; margin: 8pt 0; font-size: 9pt; font-style: italic; color: #444; }
+  .dispositivo { border: 2px solid #1b3a5b; padding: 12pt 16pt; margin: 12pt 0; background: #fafbfd; }
+  .dispositivo .titulo { font-family: "Times New Roman"; font-size: 12pt; font-weight: 900; letter-spacing: 2.5pt; color: #1b3a5b; text-transform: uppercase; text-align: center; margin-bottom: 6pt; }
+  ul, ol { margin: 3pt 0 3pt 18pt; padding: 0; }
+  li { margin-bottom: 2pt; }
+</style>
+</head>
+<body>
+
+<div class="capa">
+  <div class="court">RELATÓRIO DE INTELIGÊNCIA FINANCEIRA</div>
+  <div class="court" style="font-size: 9pt; letter-spacing: 6pt; margin-top: 8pt;">RIF · ANÁLISE DE GRAFO · TIPOLOGIAS COAF/FATF</div>
+  <h1 style="margin-top: 12pt;">Núcleo Ari Gorenstein · Fundos · Empresas · Fluxos</h1>
+  <div class="sub">Doc 65 · Instrumento técnico de inteligência financeira em formato análogo ao COAF/UIF · acervo 00–64</div>
+  <div class="sub" style="margin-top: 4pt;">Análise integrada · sociograma da arquitetura · cinco camadas · tipologias detectadas · indicadores de risco · magnitudes consolidadas</div>
+</div>
+
+<div class="folha">
+  <div class="label">Folha de Rosto</div>
+  <p><b>Investigado principal.</b> Ari Gorenstein · CPF 136.447.108-64 · brasileiro · empresário do setor de vinhos</p>
+  <p><b>Tipo de relatório.</b> Análise de Inteligência Financeira (RIF interno) · análise de grafo · tipologias COAF/UIF</p>
+  <p><b>Constituinte.</b> Sra. Millena Onesti Gorenstein · CPF 006.064.549-00 · mulher PCD em substituição de patrocínio (CPC art. 112)</p>
+  <p><b>Base normativa.</b> Lei 9.613/98 (PLD/FT) · Lei 12.683/2012 · Decreto 9.663/2019 · COAF · FATF Recommendations (2012, rev. 2022) · RCVM 175/2022 · Res. BACEN 244/2022 · LC 105/2001 · CC arts. 50 e 1.658-1.660 · CPC art. 792, IV</p>
+  <p><b>Magnitude estimada do ecossistema.</b> <b>≈ R$ 4,1 bilhões</b> (PL Ajaccio R$ 1,41 bi + feeders R$ 1,46 bi + offshore não-quantificável + ativos operacionais Víssimo)</p>
+  <p><b>Data e versão.</b> Doc 65 · junho/2026 · sucede o Doc 64</p>
+  <p><b>Natureza.</b> Instrumento <i>interno</i> de apoio à decisão · não constitui RIF oficial do COAF · subsídio à medida judicial de quebra de sigilo</p>
+</div>
+
+<h2>I — Sumário executivo</h2>
+
+<p>O presente Relatório de Inteligência Financeira consolida o quadro patrimonial do investigado a partir de análise de grafo das relações documentadas no acervo 00-64. A arquitetura mapeia <b>5 camadas funcionais</b> — Pessoa Física (núcleo) · Sociedades Operacionais (Brasil) · Veículos Master/Feeder (FIPs) · Estruturas Offshore (Delaware · Singapura · Berlim) · Cadeia Institucional (administradoras · gestoras · custodiantes · cluster fintech) — e identifica <b>10 tipologias COAF/FATF</b> com aplicação direta ao caso, <b>8 indicadores de risco</b> de gradação alta, e fluxos consolidados que totalizam, em magnitude potencial, <b>≈ R$ 4,1 bilhões</b>.</p>
+
+<p>O resultado da análise sustenta a tese central do acervo: a alegada iliquidez é <b>aparente, não real</b>; a arquitetura é, em tese, vetor coordenado de ocultação, dilapidação e fraude estruturada em vigência de bloqueio judicial.</p>
+
+<h2>II — Identificação dos atores (nós do grafo)</h2>
+
+<h4>II.1 · Pessoas físicas — núcleo decisório</h4>
+
+<table>
+  <tr><th>Ator</th><th>Papel funcional</th><th>Centralidade no grafo</th></tr>
+  <tr><td><b>Ari Gorenstein</b> · CPF 136.447.108-64</td><td>Núcleo decisório · cotista FIP Ajaccio (~7,7% veto right) · Founder &amp; CEO The Vine · CEO Vila Porto · ex-co-CEO Víssimo · acionista Víssimo</td><td>HUB CENTRAL · alta intermediação · ponte entre subgrafo patrimonial e subgrafo operacional</td></tr>
+  <tr><td><b>Marcos Leonel Leal</b></td><td>Diretor-Presidente da E-Vino (mandato até 25/05/2026, posse 14/01/2025) · operador formal</td><td>Ponte funcional do shadow director (LSA 153-158 + UK CA 2006 s.251)</td></tr>
+  <tr><td><b>Ricardo Costa</b> · Portugal/Espanha</td><td>Cessionário de 13.336.651 cotas (~4,42%) do Ajaccio · qualificado como "residente no exterior" no Acordo de Cotistas (DocuSign 5898D98A)</td><td>Vetor de saída cross-border</td></tr>
+  <tr><td>"Mentor" identificado em organograma GAECO</td><td>Articulador (Doc 39 do acervo) · figura a apurar</td><td>Indefinido</td></tr>
+  <tr><td><b>Genitora paterna</b> (avoenga)</td><td>Autora da Ação Avoenga 1050640-10.2025 · vetor de lawfare familiar</td><td>Periferia · ligação institucional ao subgrafo do litígio</td></tr>
+</table>
+
+<h4>II.2 · Pessoas jurídicas — Brasil (operacionais)</h4>
+
+<table>
+  <tr><th>Entidade</th><th>CNPJ</th><th>Papel</th></tr>
+  <tr><td>E-Vino S.A.</td><td>17.392.519/0001-65</td><td>Ativo principal · receita 2024 ≈ R$ 288 MM · 99,97% do PL Ajaccio</td></tr>
+  <tr><td>Vissimo Group (holding)</td><td>a confirmar</td><td>Holding Evino + Grand Cru · constituída jan/2022 · R$ 800 MM</td></tr>
+  <tr><td>Grand Cru</td><td>05.089.637/0001-10</td><td>Adquirida pela E-Vino em out/2021</td></tr>
+  <tr><td>GC Distribuidora</td><td>13.728.375/0001-14</td><td>Distribuidora</td></tr>
+  <tr><td>Vissimo Franquias</td><td>12.584.840/0001-28</td><td>Franquia / licenciamento</td></tr>
+  <tr><td>Agro Syrah Participações</td><td>23.699.696/0001-91</td><td>Coligada operacional</td></tr>
+  <tr><td>Interbeverages</td><td>25.383.665 (a verificar)</td><td>Parceira logística</td></tr>
+  <tr><td><b>Ari Gorenstein Apoio Administrativo Ltda.</b></td><td><b>17.867.118/0001-14</b></td><td><b>Veículo de remuneração oculta</b> · 22 transferências mensais R$ 30-127k · pagamento R$ 749.183,38 em 24h</td></tr>
+  <tr><td><b>RT 127 Empreendimentos</b> (rescindida 05/09/2023)</td><td><b>44.548.365/0001-20</b></td><td><b>Veículo extinto durante litígio</b> · oculto há 1.080+ dias · créditos contra Wine in Black R$ 57,18 MM</td></tr>
+  <tr><td><b>The Vine</b> (novo)</td><td>a confirmar (JUCESP-SP)</td><td><b>Possível origination shadow pós-RT127</b> · Ari Founder &amp; CEO · ari@thevine.com.br · operação fev-mar/2025</td></tr>
+  <tr><td>Vila Porto Vinhos</td><td>a confirmar (ES)</td><td>Importadora capixaba · Ari CEO jun/2025</td></tr>
+  <tr><td>Wine Locals</td><td>32.603.492/0001-04</td><td>Ativo indireto do Víssimo (20% adquirido em 22-23/09/2022) · 4all/Hopf majoritária</td></tr>
+</table>
+
+<h4>II.3 · Veículos financeiros (FIPs — master e feeders)</h4>
+
+<table>
+  <tr><th>Veículo</th><th>CNPJ / dados</th><th>Magnitude</th></tr>
+  <tr><td><b>FIP Ajaccio Multiestratégia</b> (master)</td><td>37.381.595/0001-82 · constituído 03/06/2020</td><td><b>PL R$ 1,41 bi · capital integralizado R$ 784,8 MM</b> · mono-ativo (99,97% E-Vino)</td></tr>
+  <tr><td>Subclasse J do Ajaccio</td><td>criada 23/04/2025 (após bloqueio)</td><td>Rotação de veículo · fraude superveniente</td></tr>
+  <tr><td>Ávila FIP</td><td>feeder</td><td>R$ 1,01 bilhão</td></tr>
+  <tr><td>Volimo FIP</td><td>BTG · R$ 200 MM mútuo convertido em cotas</td><td>R$ 214 MM</td></tr>
+  <tr><td>XPA Trafalgar</td><td>feeder externo</td><td>R$ 84,9 MM</td></tr>
+  <tr><td>Oslo Soberano</td><td>fundo paralelo</td><td>R$ 152 MM (99,29% TPF D+0)</td></tr>
+  <tr><td>Sharp Long Biased Ajaccio</td><td>fundo</td><td>magnitude a apurar</td></tr>
+  <tr><td>Porto FIP</td><td>feeder auxiliar</td><td>a apurar</td></tr>
+  <tr><td><b>Bonifácio FIP</b> (constituído 11/02/2025 · em litigância)</td><td>59.402.540/0001-44</td><td>Marcação a zero · fraude superveniente</td></tr>
+</table>
+
+<h4>II.4 · Estruturas offshore</h4>
+
+<table>
+  <tr><th>Entidade</th><th>Jurisdição</th><th>Identificadores</th></tr>
+  <tr><td><b>JP2R PTE LTD</b></td><td>Singapura</td><td>UEN 201840728Z · constituída 03/12/2018</td></tr>
+  <tr><td>Anacapri LP</td><td>Delaware (EUA)</td><td>LP em fase de operacionalização</td></tr>
+  <tr><td>Brescia LP</td><td>Delaware (EUA)</td><td>LP em fase de operacionalização</td></tr>
+  <tr><td>Cetara LP</td><td>Delaware (EUA)</td><td>LP em fase de operacionalização</td></tr>
+  <tr><td><b>Wine in Black GmbH</b></td><td>Berlim (Alemanha)</td><td>Eixo 2013-2025 · dívida pessoal de Ari R$ 13.470.400,46 (IR 2024) + créditos RT 127 R$ 57,18 MM</td></tr>
+</table>
+
+<h4>II.5 · Cadeia institucional · facilitadores</h4>
+
+<table>
+  <tr><th>Instituição</th><th>Papel</th><th>Identificador-chave</th></tr>
+  <tr><td>FRAM/Oslo Capital DTVM</td><td>Administradora do Ajaccio</td><td>GIIN FATCA 0W2JW5.99999.SL.076</td></tr>
+  <tr><td>Vinci Capital Partners</td><td>Gestora do Ajaccio · aporte R$ 650 MM no Víssimo (mar/2022)</td><td>RCVM 21</td></tr>
+  <tr><td>BTG Pactual + BTG Asset DTVM</td><td>Custodiante · ag. 0001 cta. 110486 (R$ 31,9 MM ordem de transferência inerte por 33 meses)</td><td>fls. 538-539 (conflito honorários)</td></tr>
+  <tr><td>VORTX DTVM</td><td>Administradora alternativa</td><td>—</td></tr>
+  <tr><td>Banco Daycoval + Cayman Branch</td><td>Crédito multibancário</td><td>cross-border</td></tr>
+  <tr><td>Cluster fintech (SISBAJUD)</td><td>Rotas auxiliares · 9+ instituições com desaparição cadastral 2023→2026</td><td>N26 SCD (BACEN 42695 · silêncio a 4 ordens) · PAY2ALL · MercadoPago · Nu Pagamentos · C6 · Ewally · Divi SCD</td></tr>
+</table>
+
+<h2>III — Mapa de relações · sociograma da arquitetura</h2>
+
+<div class="figure">
+  <div class="figlabel">Sociograma · 5 camadas · 24 nós principais · arquitetura integrada do núcleo Gorenstein</div>
+<svg viewBox="0 0 1400 600" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect x="0" y="0" width="1400" height="600" fill="#fffdf7"/>
+
+  <!-- 5 camadas horizontais -->
+  <!-- Camada 1 - PF -->
+  <rect x="20" y="20" width="200" height="560" rx="6" fill="#fce0e3" stroke="#b00020" stroke-width="2"/>
+  <text x="120" y="42" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="11" font-weight="900" fill="#b00020">CAMADA 1 · PF</text>
+
+  <circle cx="120" cy="100" r="38" fill="#fff" stroke="#b00020" stroke-width="3"/>
+  <text x="120" y="98" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="11" font-weight="900" fill="#15212e">ARI</text>
+  <text x="120" y="112" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="8" fill="#555">núcleo</text>
+
+  <ellipse cx="120" cy="190" rx="65" ry="22" fill="#fff" stroke="#b00020"/>
+  <text x="120" y="194" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Marcos Leal</text>
+  <text x="120" y="206" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">Diretor-Pres. E-Vino</text>
+
+  <ellipse cx="120" cy="250" rx="70" ry="22" fill="#fff" stroke="#b00020"/>
+  <text x="120" y="254" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Ricardo Costa</text>
+  <text x="120" y="266" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">PT/ES · cessionário</text>
+
+  <ellipse cx="120" cy="310" rx="70" ry="22" fill="#fff" stroke="#b00020" stroke-dasharray="3,2"/>
+  <text x="120" y="314" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#555">Mentor</text>
+  <text x="120" y="326" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">a apurar</text>
+
+  <!-- Camada 2 - Operacionais BR -->
+  <rect x="240" y="20" width="280" height="560" rx="6" fill="#fde7c1" stroke="#c89000" stroke-width="2"/>
+  <text x="380" y="42" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="11" font-weight="900" fill="#c89000">CAMADA 2 · OPERACIONAIS · BR</text>
+
+  <rect x="260" y="70" width="110" height="32" fill="#fff" stroke="#c89000" stroke-width="1.5"/>
+  <text x="315" y="86" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">E-VINO S.A.</text>
+  <text x="315" y="96" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">17.392.519</text>
+
+  <rect x="390" y="70" width="110" height="32" fill="#fff" stroke="#c89000"/>
+  <text x="445" y="86" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Víssimo Group</text>
+  <text x="445" y="96" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">holding</text>
+
+  <rect x="260" y="115" width="110" height="32" fill="#fff" stroke="#c89000"/>
+  <text x="315" y="131" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Grand Cru</text>
+  <text x="315" y="141" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">05.089.637</text>
+
+  <rect x="390" y="115" width="110" height="32" fill="#fff" stroke="#c89000"/>
+  <text x="445" y="131" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">GC Distribuidora</text>
+  <text x="445" y="141" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">13.728.375</text>
+
+  <rect x="260" y="160" width="110" height="32" fill="#fff" stroke="#c89000"/>
+  <text x="315" y="176" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Vissimo Franquias</text>
+  <text x="315" y="186" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">12.584.840</text>
+
+  <rect x="390" y="160" width="110" height="32" fill="#fff" stroke="#c89000"/>
+  <text x="445" y="176" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Agro Syrah</text>
+  <text x="445" y="186" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">23.699.696</text>
+
+  <rect x="260" y="205" width="110" height="32" fill="#fff" stroke="#c89000"/>
+  <text x="315" y="221" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Interbeverages</text>
+  <text x="315" y="231" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">25.383.665</text>
+
+  <rect x="390" y="205" width="110" height="32" fill="#fff" stroke="#c89000"/>
+  <text x="445" y="221" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Wine Locals</text>
+  <text x="445" y="231" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">20% Víssimo</text>
+
+  <!-- Veículos suspeitos -->
+  <rect x="260" y="265" width="240" height="32" fill="#fff" stroke="#b00020" stroke-width="2"/>
+  <text x="380" y="281" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#b00020">Apoio Adm Ari · 17.867.118</text>
+  <text x="380" y="291" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">22 transfs. R$ 30-127k/mês · R$ 749k em 24h</text>
+
+  <rect x="260" y="310" width="240" height="32" fill="#fff" stroke="#b00020" stroke-width="2"/>
+  <text x="380" y="326" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#b00020">RT 127 (rescindida 05/09/2023)</text>
+  <text x="380" y="336" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">CNPJ 44.548.365 · oculta · créditos R$ 57,18 MM</text>
+
+  <rect x="260" y="355" width="240" height="32" fill="#fff" stroke="#b00020" stroke-width="2"/>
+  <text x="380" y="371" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#b00020">The Vine · operacao fev-mar/2025</text>
+  <text x="380" y="381" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">Founder &amp; CEO · ari@thevine.com.br</text>
+
+  <rect x="260" y="400" width="240" height="32" fill="#fff" stroke="#c89000"/>
+  <text x="380" y="416" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Vila Porto Vinhos · CEO jun/2025</text>
+  <text x="380" y="426" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">ES · meta triplicar 5 anos</text>
+
+  <!-- Camada 3 - Veículos -->
+  <rect x="540" y="20" width="280" height="560" rx="6" fill="#dbe7f4" stroke="#1b3a5b" stroke-width="2"/>
+  <text x="680" y="42" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="11" font-weight="900" fill="#1b3a5b">CAMADA 3 · FIPs · MASTER/FEEDER</text>
+
+  <rect x="560" y="70" width="240" height="44" fill="#fff" stroke="#1b3a5b" stroke-width="2"/>
+  <text x="680" y="90" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="11" font-weight="900" fill="#15212e">FIP AJACCIO (master)</text>
+  <text x="680" y="103" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="8" fill="#555">37.381.595 · PL R$ 1,41 bi · 99,97% E-Vino</text>
+
+  <rect x="560" y="125" width="240" height="32" fill="#fff" stroke="#b00020" stroke-width="2"/>
+  <text x="680" y="141" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#b00020">Subclasse J · 23/04/2025</text>
+  <text x="680" y="151" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">rotacao apos bloqueio</text>
+
+  <rect x="560" y="170" width="115" height="32" fill="#fff" stroke="#1b3a5b"/>
+  <text x="617" y="186" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Ávila FIP</text>
+  <text x="617" y="196" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">R$ 1,01 bi</text>
+
+  <rect x="685" y="170" width="115" height="32" fill="#fff" stroke="#1b3a5b"/>
+  <text x="742" y="186" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Volimo FIP (BTG)</text>
+  <text x="742" y="196" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">R$ 214 MM</text>
+
+  <rect x="560" y="215" width="115" height="32" fill="#fff" stroke="#1b3a5b"/>
+  <text x="617" y="231" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">XPA Trafalgar</text>
+  <text x="617" y="241" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">R$ 84,9 MM</text>
+
+  <rect x="685" y="215" width="115" height="32" fill="#fff" stroke="#1b3a5b"/>
+  <text x="742" y="231" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Oslo Soberano</text>
+  <text x="742" y="241" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">R$ 152 MM</text>
+
+  <rect x="560" y="260" width="240" height="32" fill="#fff" stroke="#1b3a5b"/>
+  <text x="680" y="276" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Sharp Long Biased Ajaccio · Porto FIP</text>
+
+  <rect x="560" y="305" width="240" height="40" fill="#fff" stroke="#b00020" stroke-width="2"/>
+  <text x="680" y="323" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="900" fill="#b00020">BONIFACIO FIP · 11/02/2025</text>
+  <text x="680" y="335" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">59.402.540 · constituido em litigancia · marcacao zero</text>
+
+  <!-- Camada 4 - Offshore -->
+  <rect x="840" y="20" width="280" height="560" rx="6" fill="#cad6e8" stroke="#1b3a5b" stroke-width="2"/>
+  <text x="980" y="42" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="11" font-weight="900" fill="#1b3a5b">CAMADA 4 · OFFSHORE · CROSS-BORDER</text>
+
+  <rect x="860" y="70" width="240" height="40" fill="#fff" stroke="#1b3a5b" stroke-width="2"/>
+  <text x="980" y="88" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="10" font-weight="900" fill="#15212e">JP2R PTE LTD</text>
+  <text x="980" y="100" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">Singapura · UEN 201840728Z · 03/12/2018</text>
+
+  <rect x="860" y="120" width="115" height="40" fill="#fff" stroke="#1b3a5b"/>
+  <text x="917" y="138" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Anacapri LP</text>
+  <text x="917" y="150" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">Delaware</text>
+
+  <rect x="985" y="120" width="115" height="40" fill="#fff" stroke="#1b3a5b"/>
+  <text x="1042" y="138" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Brescia LP</text>
+  <text x="1042" y="150" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">Delaware</text>
+
+  <rect x="860" y="170" width="115" height="40" fill="#fff" stroke="#1b3a5b"/>
+  <text x="917" y="188" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Cetara LP</text>
+  <text x="917" y="200" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">Delaware</text>
+
+  <rect x="985" y="170" width="115" height="40" fill="#fff" stroke="#1b3a5b"/>
+  <text x="1042" y="186" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">+ outras LPs</text>
+  <text x="1042" y="198" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">a apurar</text>
+
+  <rect x="860" y="225" width="240" height="50" fill="#fff" stroke="#b00020" stroke-width="2"/>
+  <text x="980" y="245" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="10" font-weight="900" fill="#b00020">WINE IN BLACK GmbH</text>
+  <text x="980" y="258" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">Berlim · eixo 2013-2025</text>
+  <text x="980" y="268" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#b00020">divida pessoal R$ 13,47 MM (IR 2024)</text>
+
+  <rect x="860" y="290" width="240" height="40" fill="#fff" stroke="#b00020" stroke-width="2"/>
+  <text x="980" y="308" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="900" fill="#b00020">N26 SCD · cluster fintech</text>
+  <text x="980" y="320" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">BACEN 42695 · silencio 4 SISBAJUD</text>
+
+  <!-- Camada 5 - Cadeia institucional -->
+  <rect x="1140" y="20" width="240" height="560" rx="6" fill="#dceee2" stroke="#0a5f2e" stroke-width="2"/>
+  <text x="1260" y="42" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="10" font-weight="900" fill="#0a5f2e">CAMADA 5 · CADEIA INSTITUCIONAL</text>
+
+  <rect x="1160" y="70" width="200" height="40" fill="#fff" stroke="#0a5f2e"/>
+  <text x="1260" y="88" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">FRAM/Oslo DTVM</text>
+  <text x="1260" y="100" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="6.5" fill="#b00020">GIIN 0W2JW5.99999.SL.076</text>
+
+  <rect x="1160" y="120" width="200" height="40" fill="#fff" stroke="#0a5f2e"/>
+  <text x="1260" y="138" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Vinci Capital Partners</text>
+  <text x="1260" y="150" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">gestora · R$ 650 MM aporte 2022</text>
+
+  <rect x="1160" y="170" width="200" height="40" fill="#fff" stroke="#0a5f2e"/>
+  <text x="1260" y="188" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">BTG Pactual + Asset</text>
+  <text x="1260" y="200" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">cust. · ag.0001 cta.110486</text>
+
+  <rect x="1160" y="220" width="200" height="32" fill="#fff" stroke="#0a5f2e"/>
+  <text x="1260" y="236" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">VORTX DTVM</text>
+
+  <rect x="1160" y="262" width="200" height="32" fill="#fff" stroke="#0a5f2e"/>
+  <text x="1260" y="278" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#15212e">Daycoval + Cayman</text>
+
+  <rect x="1160" y="305" width="200" height="60" fill="#fff" stroke="#b00020" stroke-width="2"/>
+  <text x="1260" y="320" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="900" fill="#b00020">CLUSTER FINTECH</text>
+  <text x="1260" y="332" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="6.5" fill="#555">N26 · PAY2ALL · MercadoPago</text>
+  <text x="1260" y="342" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="6.5" fill="#555">Nu · C6 · Ewally · Divi</text>
+  <text x="1260" y="355" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="6.5" fill="#b00020">9+ desapareceram 2023→2026</text>
+
+  <rect x="1160" y="375" width="200" height="40" fill="#fff" stroke="#b00020" stroke-width="2"/>
+  <text x="1260" y="393" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#b00020">Banca patrono adverso</text>
+  <text x="1260" y="405" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">fls. 538-539 · conflito honorários</text>
+
+  <!-- Arrows connecting layers -->
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#15212e"/>
+    </marker>
+    <marker id="arRed" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#b00020"/>
+    </marker>
+  </defs>
+
+  <!-- Ari -> Camada 2 -->
+  <line x1="160" y1="100" x2="260" y2="86" stroke="#15212e" stroke-width="1.3" marker-end="url(#ar)"/>
+  <text x="180" y="80" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">ativo</text>
+
+  <!-- Ari -> Camada 3 -->
+  <line x1="160" y1="100" x2="560" y2="90" stroke="#b00020" stroke-width="1.5" marker-end="url(#arRed)"/>
+  <text x="350" y="65" font-family="Helvetica Neue, Arial" font-size="7" fill="#b00020">cotista ~7,7% veto right</text>
+
+  <!-- Marcos Leal -> E-Vino -->
+  <line x1="185" y1="190" x2="260" y2="100" stroke="#15212e" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#ar)"/>
+  <text x="200" y="170" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">instr.</text>
+
+  <!-- Ricardo Costa -> Camada 4 -->
+  <line x1="190" y1="250" x2="860" y2="85" stroke="#15212e" stroke-width="1.2" stroke-dasharray="3,2" marker-end="url(#ar)"/>
+  <text x="500" y="200" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">cessao 4,42% cotas Ajaccio</text>
+
+  <!-- Camada 2 -> Camada 3 -->
+  <line x1="500" y1="280" x2="560" y2="280" stroke="#b00020" stroke-width="1.5" marker-end="url(#arRed)"/>
+  <text x="510" y="270" font-family="Helvetica Neue, Arial" font-size="7" fill="#b00020">remun. oculta</text>
+
+  <line x1="500" y1="370" x2="560" y2="320" stroke="#b00020" stroke-width="1.2" stroke-dasharray="3,2" marker-end="url(#arRed)"/>
+
+  <!-- Ajaccio -> Offshore (a apurar) -->
+  <line x1="800" y1="90" x2="860" y2="245" stroke="#15212e" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#ar)"/>
+  <text x="810" y="120" font-family="Helvetica Neue, Arial" font-size="7" fill="#555">offshore</text>
+
+  <!-- Camada 3 -> Camada 5 -->
+  <line x1="800" y1="92" x2="1160" y2="90" stroke="#0a5f2e" stroke-width="1.3" marker-end="url(#ar)"/>
+  <text x="900" y="80" font-family="Helvetica Neue, Arial" font-size="7" fill="#0a5f2e">administra · custodia · gere</text>
+
+  <!-- RT127 -> Wine in Black -->
+  <line x1="500" y1="325" x2="860" y2="245" stroke="#b00020" stroke-width="1.5" marker-end="url(#arRed)"/>
+  <text x="600" y="310" font-family="Helvetica Neue, Arial" font-size="7" fill="#b00020">creditos R$ 57 MM</text>
+
+  <!-- Caption -->
+  <text x="700" y="540" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-style="italic" fill="#555">
+    Linhas sólidas = relação documentada · Tracejado = relação a apurar · Vermelho = vetor de fraude/opacidade
+  </text>
+  <text x="700" y="560" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-weight="700" fill="#1b3a5b">
+    Centralidade: Ari = HUB CENTRAL · 4 conexões diretas em 4 camadas distintas
+  </text>
+  <text x="700" y="578" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="9" font-style="italic" fill="#555">
+    Pontos críticos: Subclasse J · Bonifácio · Wine in Black · Apoio Adm · RT127 · The Vine · cluster fintech
+  </text>
+</svg>
+  <div class="caption">Sociograma da arquitetura · 5 camadas funcionais · 24 nós principais. Ari Gorenstein é o <b>hub central</b> — único ator com conexão direta às 5 camadas. A reorganização do veículo via Subclasse J (23/04/2025) e o FIP Bonifácio (11/02/2025) ocorreram em vigência de bloqueio. O eixo cross-border Berlim (Wine in Black) registra dívida pessoal de R$ 13,47 MM no IR 2024 (entrada) + créditos da RT 127 R$ 57,18 MM (saída) — fluxo bidirecional não-rastreado.</div>
+</div>
+
+<h2>IV — Tipologias COAF/FATF detectadas</h2>
+
+<p>Aplicação direta das tipologias do <i>FATF Recommendations</i> (2012, rev. 2022) e dos Casos e Tipologias do COAF/UIF-Brasil, com adaptação ao caso. <b>Dez tipologias</b> identificadas:</p>
+
+<div class="tipologia">
+  <div class="num">T-COAF 1 · Estruturas master-feeder com beneficiário final opaco</div>
+  <p>FIP Ajaccio mono-ativo (99,97% E-Vino) + feeders Ávila/Volimo/XPA/Porto/Bonifácio + offshore Anacapri/Brescia/Cetara/JP2R/Wine in Black. Padrão clássico FATF Rec. 24 e 25 (transparência de beneficiários finais).</p>
+</div>
+
+<div class="tipologia">
+  <div class="num">T-COAF 2 · Rotação de veículo (layering)</div>
+  <p>Subclasse J do Ajaccio (23/04/2025) + FIP Bonifácio (11/02/2025) constituídos durante litispendência ativa. Tipologia clássica de <i>layering</i> sob FATF Methodology.</p>
+</div>
+
+<div class="tipologia">
+  <div class="num">T-COAF 3 · PEP-cessionário estrangeiro</div>
+  <p>Cessão de 13.336.651 cotas (~4,42%) do Ajaccio a Ricardo Costa (PT/ES), sem outorga uxória da meeira. FATF Rec. 12 (PEP) e Rec. 22 (DNFBPs).</p>
+</div>
+
+<div class="tipologia">
+  <div class="num">T-COAF 4 · Cluster fintech como rota auxiliar</div>
+  <p>Desaparição cadastral de 9+ instituições entre varreduras SISBAJUD 2023→2026 (N26, PAY2ALL, MercadoPago, Nu, C6, Ewally, Divi). N26 SCD especificamente silente a 4 ordens. Tipologia <i>digital payment processors</i> em fluxo de fraude (FATF Project 2018-2020).</p>
+</div>
+
+<div class="tipologia">
+  <div class="num">T-COAF 5 · Eixo cross-border Berlim</div>
+  <p>Wine in Black GmbH (Berlim) — dívida pessoal R$ 13.470.400,46 declarada no IR 2024 (fluxo de saída) + créditos RT 127 R$ 57,18 MM (fluxo de entrada). Padrão de <i>trade-based money laundering</i> via vetor europeu.</p>
+</div>
+
+<div class="tipologia">
+  <div class="num">T-COAF 6 · Veículo doméstico de remuneração oculta</div>
+  <p>Apoio Administrativa Ltda. (CNPJ 17.867.118/0001-14) recebe 22 transferências mensais da E-Vino (R$ 30-127k/mês). Pagamento de R$ 749.183,38 em 24h em 29/01/2025 sob rótulo de non-compete. Salário real R$ 62.432/mês × pró-labore declarado R$ 1.345 = <b>46×</b>. Tipologia clássica de <i>shell company personal vehicle</i>.</p>
+</div>
+
+<div class="tipologia">
+  <div class="num">T-COAF 7 · Origination shadow superveniente</div>
+  <p>RT 127 (rescindida 05/09/2023) → The Vine (operação documentada fev-mar/2025) — possível continuidade do vetor de remuneração paralela. Ari Founder &amp; CEO. Tipologia de <i>successor entity</i> em fluxo persistente.</p>
+</div>
+
+<div class="tipologia">
+  <div class="num">T-COAF 8 · Subdeclaração patrimonial em DIRPF</div>
+  <p>Discrepância DIRPF × magnitude documentada. Subdeclaração das estruturas offshore (FATCA · Decreto 8.506/2015). Possíveis omissões previdenciárias da ordem de R$ 67,6 MM.</p>
+</div>
+
+<div class="tipologia">
+  <div class="num">T-COAF 9 · Backdating de ato societário</div>
+  <p>AGE da E-Vino em 31/12/2021 registra presença física de Ari como secretário em SP — impossível materialmente (lastro institucional quádruplo Miami). Tipologia <i>document forgery in corporate restructuring</i>.</p>
+</div>
+
+<div class="tipologia">
+  <div class="num">T-COAF 10 · Frustração reiterada de ordem judicial (assimetria seletiva)</div>
+  <p>Paradoxo executório: R$ 31.925.193,31 não transferidos em 33 meses (M3) × R$ 27.799,79 transferidos em horas (M5). Assimetria temporal documentada — funciona para uns e não para outros no mesmo CPF.</p>
+</div>
+
+<h2>V — Indicadores de risco financeiro</h2>
+
+<table>
+  <tr><th>#</th><th>Indicador</th><th>Magnitude</th><th>Risco</th></tr>
+  <tr><td>IR-1</td><td>Magnitude do ecossistema potencialmente comunicável</td><td>≈ R$ 4,1 bi</td><td><span class="risco-alto">Crítico</span></td></tr>
+  <tr><td>IR-2</td><td>Fator de deflação alegado × real (PL Ajaccio)</td><td>R$ 108 MM × R$ 1,41 bi = 13×</td><td><span class="risco-alto">Crítico</span></td></tr>
+  <tr><td>IR-3</td><td>Discrepância remuneração declarada × efetiva</td><td>R$ 1.345 × R$ 62.432 = 46×</td><td><span class="risco-alto">Alto</span></td></tr>
+  <tr><td>IR-4</td><td>Bloqueio SISBAJUD inerte (M3)</td><td>R$ 31.925.193,31 em 33 meses</td><td><span class="risco-alto">Alto</span></td></tr>
+  <tr><td>IR-5</td><td>Cessão cross-border (Ricardo Costa)</td><td>13.336.651 cotas (~4,42%)</td><td><span class="risco-medio">Médio-Alto</span></td></tr>
+  <tr><td>IR-6</td><td>Veículos criados em litispendência</td><td>FIP Bonifácio (11/02/2025) + Subclasse J (23/04/2025)</td><td><span class="risco-alto">Crítico</span></td></tr>
+  <tr><td>IR-7</td><td>Silêncio do N26 SCD</td><td>4 ordens SISBAJUD não respondidas</td><td><span class="risco-alto">Alto</span></td></tr>
+  <tr><td>IR-8</td><td>Pagamento em 24h durante bloqueio</td><td>R$ 749.183,38 em 29/01/2025</td><td><span class="risco-alto">Alto</span></td></tr>
+  <tr><td>IR-9</td><td>Eixo Berlim (Wine in Black) fluxo bidirecional</td><td>R$ 13,47 MM saída + R$ 57,18 MM entrada</td><td><span class="risco-medio">Médio-Alto</span></td></tr>
+  <tr><td>IR-10</td><td>Litigância: 1.080+ dias sem partilha</td><td>Vetor de violência patrimonial estruturada</td><td><span class="risco-alto">Crítico</span></td></tr>
+</table>
+
+<h2>VI — Magnitudes consolidadas e fluxos documentados</h2>
+
+<h4>VI.1 · Magnitudes patrimoniais</h4>
+
+<table>
+  <tr><th>Item</th><th>Valor</th><th>Fonte</th></tr>
+  <tr><td>PL FIP Ajaccio (público CVM)</td><td><b>R$ 1,41 bilhão</b></td><td>CVM/Tradar</td></tr>
+  <tr><td>Capital integralizado Ajaccio</td><td>R$ 784,8 MM</td><td>CVM/Status Invest</td></tr>
+  <tr><td>Ávila FIP</td><td>R$ 1,01 bilhão</td><td>Doc 30</td></tr>
+  <tr><td>Volimo FIP (BTG)</td><td>R$ 214 MM</td><td>Doc 30</td></tr>
+  <tr><td>XPA Trafalgar</td><td>R$ 84,9 MM</td><td>Doc 30</td></tr>
+  <tr><td>Oslo Soberano</td><td>R$ 152 MM</td><td>Doc 22</td></tr>
+  <tr><td>Receita E-Vino 2024</td><td>R$ 288 MM</td><td>auditoria E&amp;Y</td></tr>
+  <tr><td>Rodada M&amp;A 2024 (valuation)</td><td>≈ R$ 650 MM</td><td>imprensa econômica</td></tr>
+  <tr><td>Aporte Vinci/JCR/XP no Víssimo (2022)</td><td>R$ 650 MM</td><td>Exame · NeoFeed</td></tr>
+  <tr><td><b>ECOSSISTEMA TOTAL ESTIMADO</b></td><td><b>≈ R$ 4,1 bilhões</b></td><td>consolidação Doc 30+64</td></tr>
+</table>
+
+<h4>VI.2 · Fluxos de remuneração e dívida documentados</h4>
+
+<table>
+  <tr><th>Fluxo</th><th>Valor</th><th>Data</th></tr>
+  <tr><td>Bloqueio SISBAJUD (cumprimento 0001112-97)</td><td>R$ 42.428.357,32</td><td>2023</td></tr>
+  <tr><td>Identificado SISBAJUD inicial</td><td>R$ 84.856.714,65</td><td>02/05/2023</td></tr>
+  <tr><td>Ordem de transferência BTG · cta 110486</td><td>R$ 31.925.193,31</td><td>26/05/2023 · inerte 33 meses</td></tr>
+  <tr><td>SISBAJUD Oslo Capital (M5)</td><td>R$ 27.799,79</td><td>31/03/2026 · em horas</td></tr>
+  <tr><td>E-Vino → Apoio Adm → Ari (non-compete)</td><td>R$ 749.183,38</td><td>29/01/2025 (em 24h)</td></tr>
+  <tr><td>22 transferências mensais E-Vino → Apoio Adm</td><td>R$ 30-127k/mês · médio R$ 62.432</td><td>contínuo</td></tr>
+  <tr><td>Dívida pessoal Ari à Wine in Black (IR 2024)</td><td>R$ 13.470.400,46</td><td>declarada 2024</td></tr>
+  <tr><td>Créditos RT 127 contra Wine in Black</td><td>R$ 57,18 MM</td><td>pré-extinção 05/09/2023</td></tr>
+  <tr><td>Pró-labore declarado de Ari</td><td>R$ 1.345/mês</td><td>autos</td></tr>
+  <tr><td>Renda admitida em revisional</td><td>R$ 40 mil/mês</td><td>1012537-07</td></tr>
+  <tr><td>Salário Vila Porto</td><td>R$ 50 mil/mês</td><td>autos</td></tr>
+</table>
+
+<h2>VII — Análise temporal · pontos críticos</h2>
+
+<table>
+  <tr><th>Data</th><th>Evento</th><th>Categoria</th></tr>
+  <tr><td>03/12/2018</td><td>Constituição JP2R PTE LTD (Singapura · UEN 201840728Z)</td><td>Estrutura cross-border</td></tr>
+  <tr><td>03/06/2020</td><td>Constituição FIP Ajaccio (na constância matrimonial)</td><td>Veículo patrimonial</td></tr>
+  <tr><td>out/2021</td><td>E-Vino adquire 100% da Grand Cru (aprovação CADE)</td><td>M&amp;A</td></tr>
+  <tr><td><b>31/12/2021</b></td><td>AGE E-Vino · presença impossível de Ari (Miami)</td><td><b>BACKDATING</b></td></tr>
+  <tr><td>jan/2022</td><td>Constituição Víssimo Group (Evino + Grand Cru · R$ 800 MM)</td><td>Holding</td></tr>
+  <tr><td>mar/2022</td><td>Aporte R$ 650 MM no Víssimo (Vinci + JCR + XP)</td><td>Investimento</td></tr>
+  <tr><td>25/05/2022</td><td>Acordo de Cotistas Ajaccio</td><td>Cláusula 9.7 mora 1.020+ dias</td></tr>
+  <tr><td>22-23/09/2022</td><td>Víssimo adquire 20% Wine Locals</td><td>M&amp;A indireto</td></tr>
+  <tr><td>10/01/2023</td><td>Ajuizamento do divórcio</td><td>Marco litigancial</td></tr>
+  <tr><td>02/05/2023</td><td>SISBAJUD identifica R$ 84,8 MM</td><td>Constrição</td></tr>
+  <tr><td>05/09/2023</td><td>Rescisão da RT 127 (durante litígio)</td><td>Veículo extinto</td></tr>
+  <tr><td>14/01/2025</td><td>Marcos Leonel Leal Diretor-Presidente da E-Vino</td><td>Shadow director</td></tr>
+  <tr><td>29/01/2025</td><td>Pagamento R$ 749.183,38 (E-Vino → Apoio Adm → Ari · 24h)</td><td>Fraude superveniente</td></tr>
+  <tr><td>11/02/2025</td><td>Constituição FIP Bonifácio (CNPJ 59.402.540/0001-44)</td><td>Veículo em litigancia</td></tr>
+  <tr><td>fev-mar/2025</td><td>The Vine documentada · Ari Founder &amp; CEO (anterior ao anúncio público)</td><td>Origination shadow</td></tr>
+  <tr><td><b>23/04/2025</b></td><td>Criação da Subclasse J do Ajaccio (após bloqueio)</td><td><b>ROTAÇÃO DE VEÍCULO</b></td></tr>
+  <tr><td>jun/2025</td><td>Anúncio público Ari CEO Vila Porto · sai do conselho Víssimo (mantém acionista)</td><td>Transição executiva</td></tr>
+  <tr><td>31/03/2026</td><td>SISBAJUD Oslo R$ 27.799,79 transferidos em horas (M5)</td><td>Assimetria seletiva</td></tr>
+</table>
+
+<h2>VIII — Cooperação internacional necessária</h2>
+
+<table>
+  <tr><th>Jurisdição</th><th>Alvos</th><th>Instrumento</th></tr>
+  <tr><td><b>Alemanha</b></td><td>Wine in Black GmbH (Berlim) · N26 (matriz)</td><td>BaFin · MLAT Brasil-Alemanha · DRCI/MJSP</td></tr>
+  <tr><td><b>Estados Unidos · Delaware</b></td><td>Anacapri LP · Brescia LP · Cetara LP</td><td>FATCA · MLAT Brasil-EUA · State of Delaware DOS</td></tr>
+  <tr><td><b>Singapura</b></td><td>JP2R PTE LTD (UEN 201840728Z)</td><td>MAS · MLAT Brasil-Singapura · ACRA</td></tr>
+  <tr><td>Portugal/Espanha</td><td>Ricardo Costa · cessão das cotas</td><td>SNIPER · DRCI · Eurojust se penal</td></tr>
+  <tr><td>Internacional geral</td><td>FATCA cross-reference</td><td>Decreto 8.506/2015 · IN RFB 1.571/2015 · CRS</td></tr>
+</table>
+
+<h2>IX — Conclusão e recomendações</h2>
+
+<div class="dispositivo">
+  <div class="titulo">Conclusão da análise de inteligência financeira</div>
+  <p>A análise consolidada das <b>10 tipologias COAF/FATF</b>, dos <b>10 indicadores de risco</b> (com 7 em categoria CRÍTICO/ALTO), dos <b>fluxos documentados</b> (≈ R$ 4,1 bi em magnitude potencial) e da <b>arquitetura em 5 camadas com 24 nós principais</b> sustenta, em formato de inteligência financeira, a justa causa para todas as medidas excepcionais postuladas no acervo 00–64 — em particular: <b>(i) quebra de sigilo bancário/fiscal</b> com fundamento em STJ REsp 2.126.879/SP; <b>(ii) cooperação internacional</b> com Alemanha, Delaware, Singapura e Portugal/Espanha; <b>(iii) representações regulatórias</b> ao COAF, BACEN, CVM, RFB e ANBIMA; <b>(iv) notícia-crime</b> ao MP-GAECO com as tipificações em tese consolidadas.</p>
+  <p>A centralidade de Ari Gorenstein no grafo — único ator com conexão direta às 5 camadas — confirma a tese do <b>shadow director</b> (NT1 Pack 41, probabilidade estimada 76-85%). A coincidência temporal entre os <b>3 eventos críticos</b> (FIP Bonifácio 11/02/2025 + Subclasse J 23/04/2025 + The Vine fev-mar/2025) em vigência de bloqueio configura, em tese, padrão coordenado de ocultação superveniente.</p>
+</div>
+
+<h2>X — Reserva técnica</h2>
+
+<div class="reserva">
+  <b>Reserva técnica final.</b> Instrumento técnico de apoio à decisão (CPC art. 472), em formato análogo a RIF do COAF/UIF — <b>não constitui</b> RIF oficial nem laudo de perícia contratada. Tipologias e indicadores apresentados em tese, sujeitos à valoração da autoridade competente (CF art. 5º, LVII). Magnitudes monetárias consolidadas a partir do acervo 00-64 e de fontes públicas (CVM/Tradar/Status Invest, Receita/Econodata, imprensa econômica), sem acesso a dados sob sigilo bancário/fiscal. A banca habilitada deve confirmar cada citação em fonte primária antes da incorporação a peça subscrita. Anexa-se ao acervo 00-64 como Doc 65 — sucede e atualiza o Doc 64.
+</div>
+
+<h2>Subscrição</h2>
+
+<p style="text-indent: 0;">São Paulo, junho de 2026.</p>
+<p style="text-indent: 0;">
+___________________________________________________<br>
+<b>Dra. MICHELE P. HILGENBERG</b> — OAB/SC 41.607<br>
+</p>
+<p style="text-indent: 0;">
+___________________________________________________<br>
+<b>Dr. LUIZ CARLOS GUIESELER JUNIOR</b> — OAB/PR 44.937<br>
+Patronos constituídos de Millena Onesti Gorenstein.<br>
+<i>Procuração matriz de 03/06/2026 (gov.br) · sociedades individuais CNPJ 50.470.567/0001-08 e 10.544.554/0001-03. Redação técnica em coautoria com a constituinte, em substituição de patrocínio nos termos do CPC art. 112.</i>
+</p>
+
+</body>
+</html>
