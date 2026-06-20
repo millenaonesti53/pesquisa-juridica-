@@ -1,0 +1,9 @@
+veiculo,jurisdicao,identificacao,natureza,vinculo_litigio,fontes_e_diligencias
+"JP2R PTE LTD","Singapura","UEN 201840728Z","Pte Ltd — sem QSA no Brasil","Camada 5 — Sink Layer / opacidade absoluta","ACRA Singapore (busca pública); MLAT BR-Singapura"
+"Brescia LLC","Delaware (EUA)","[CONFERIR número de incorporação]","LLC","Camada 5 — Holding blindagem participação na E-Vino","Delaware Division of Corporations (delaware.gov); IGA FATCA"
+"Cetara LLC","Delaware (EUA)","[CONFERIR]","LLC","Camada 5 — Holding blindagem","Delaware DivCorp; FATCA"
+"Anacapri LLC","Delaware (EUA)","[CONFERIR]","LLC","Camada 5 — Holding blindagem","Delaware DivCorp; FATCA"
+"Raffaello LLC","Delaware (EUA)","[CONFERIR]","LLC","Camada 5 — Holding blindagem","Delaware DivCorp; FATCA"
+"ACPE Advisors S.A.","Uruguai (Montevidéu)","[CONFERIR]","S.A.","Camada 5 — Cluster sul-americano","Auditoría Interna de la Nación Uruguay; MLAT BR-UY"
+"Wine in Black GmbH","Alemanha (Berlim)","[CONFERIR HRB]","GmbH","Camada 5 — Credora de Ari em €2.276.136 (R$ 13.470.400,46); recebeu cisão R$ 57,18 Mi via RT 127 em 2023","Handelsregister (Bundesanzeiger); convenções bilaterais BR-DE"
+"OSLO Capital DTVM (ex-FRAM Capital DTVM)","Brasil","CNPJ 13.673.855/0001-25 — GIIN 0W2JW5.99999.SL.076","DTVM autorizada CVM","Administradora do Ajaccio FIP; oculta bloqueio em demonstrações; opera iliquidez seletiva","CVM; KPMG; IRS FATCA (via GIIN)"
