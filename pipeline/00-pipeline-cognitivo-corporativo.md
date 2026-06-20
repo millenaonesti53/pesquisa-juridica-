@@ -1,8 +1,9 @@
 # Pipeline Cognitivo Corporativo — Arquitetura Técnica
 
-**Versão:** 1.0  
-**Data:** 2026-06-15  
-**Classificação:** Uso Interno — Governança Jurídica
+**Versão:** 3.0  
+**Data:** 2026-06-20  
+**Classificação:** Uso Interno — Governança Jurídica  
+**Nível técnico:** PhD TI — Integração Tecnologia + Governança Jurídica + Investigação Patrimonial
 
 ---
 
@@ -12,31 +13,31 @@ Sistema integrado de investigação patrimonial automatizada, combinando infraes
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                        BRIEFING                              │
+│                     🌅 BRIEFING                              │
 │  (Contexto humano + síntese jurídica + agenda investigativa) │
 └───────────────┬──────────────────────────────────────────────┘
                 │
                 ▼
 ┌──────────────────────────────────────────────────────────────┐
-│                 SYSTEM HEALTH CHECK                          │
+│                 🩺 SYSTEM HEALTH CHECK                        │
 │  (Infraestrutura, FIPs, APIs CVM, SISBAJUD, bancos)          │
 └───────────────┬──────────────────────────────────────────────┘
                 │
                 ▼
 ┌──────────────────────────────────────────────────────────────┐
-│             DEPENDENCY UPDATE CHECK                          │
+│             🔄 DEPENDENCY UPDATE CHECK                        │
 │  (Atualização de bases: CVM, IRPF, extratos, FATCA/CRS)      │
 └───────────────┬──────────────────────────────────────────────┘
                 │
                 ▼
 ┌──────────────────────────────────────────────────────────────┐
-│               FLAKY TEST TRACKER                             │
+│               🧪 FLAKY TEST TRACKER                           │
 │  (Testes de consistência: PLs, classes, códigos SISBAJUD)    │
 └───────────────┬──────────────────────────────────────────────┘
                 │
                 ▼
 ┌──────────────────────────────────────────────────────────────┐
-│               PR REVIEW DIGEST                               │
+│               🔍 PR REVIEW DIGEST                             │
 │  (Governança: decisões jurídicas, pareceres, relatórios)     │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -101,6 +102,89 @@ Os ativos e movimentações identificados pelo pipeline são analisados sob os s
 |--------|-------------|------|
 | 98 | Não respondeu | Gerar alerta automático; peticionar intimação |
 | 13 | Respondeu sem saldo | Cruzar com IRPF e extratos anteriores |
+
+---
+
+## Rotinas Integradas por Módulo
+
+### 🌅 1. Briefing — Rotina Técnica e Jurídica
+
+**Função tecnológica:** Agregar dados de múltiplas fontes (Google Calendar, Gmail, Slack, CVM, SISBAJUD) e gerar daily intelligence report.
+
+**Função jurídica:** Atualizar o CLO e o Núcleo de Governança sobre novos bloqueios, respostas bancárias, códigos SISBAJUD, movimentações suspeitas e atualizações de FIPs.
+
+**Rotina integrada:**
+- Carrega o Whole Money Trail do dia anterior
+- Atualiza o status das instituições: Código 98 (não respondeu) / Código 13 (respondeu sem saldo)
+- Gera alerta automático para FRAM/OSLO (não resposta) e BTG/Itaú (esvaziamento tático)
+
+---
+
+### 🩺 2. System Health Check — Rotina Técnica e Jurídica
+
+**Função tecnológica:** Monitorar APIs CVM, Datadog, Sentry, bancos e integradores SISBAJUD.
+
+**Função jurídica:** Verificar inconsistências de PL, divergências entre IRPF × CVM, ausência de resposta (cód. 98) e sinais de ocultação patrimonial.
+
+**Rotina integrada:**
+- Detecta: FRAM XIV FIP → R$ 3.877.255,47 | LIG Itaú → R$ 1.250.000,00 | CDB BTG → R$ 650.758,60
+- Marca como risco crítico: instituições que não respondem; contas com variação abrupta (Itaú: R$ 469.575 → R$ 5.491)
+
+---
+
+### 🔄 3. Dependency Update Check — Rotina Técnica e Jurídica
+
+**Função tecnológica:** Atualizar bases CVM, extratos, IRPF, logs FATCA/CRS e dados de FIPs.
+
+**Função jurídica:** Verificar criação retroativa de classes (ex.: Classe J), side-pockets, alterações de regulamento, cisões e SPVs novas.
+
+**Rotina integrada:**
+- Detecta: Bonifácio FIP criado pós-litígio; side-pocket no FRAM; inconsistência temporal no Ajaccio
+
+---
+
+### 🧪 4. Flaky Test Tracker — Rotina Técnica e Jurídica
+
+**Função tecnológica:** Identificar inconsistências estatísticas — PLs variando sem justificativa, respostas bancárias incoerentes, divergências entre fontes.
+
+**Função jurídica:** Testar se a alegação de iliquidez é consistente; se há padrão de esvaziamento pré-ordem; se há ocultação sistemática.
+
+**Rotina integrada:**
+- Marca como flaky: BTG → saldo zero repetido com movimentação prévia; Itaú → esvaziamento tático; FRAM/OSLO → ausência de resposta sistemática
+
+---
+
+### 🔍 5. PR Review Digest — Rotina Técnica e Jurídica
+
+**Função tecnológica:** Consolidar relatórios, pareceres, análises e decisões pendentes.
+
+**Função jurídica:** Revisar enquadramento penal (art. 171 CP), fraude à execução (CPC 792), ocultação patrimonial (CC 50) e lavagem (Lei 9.613/98).
+
+**Rotina integrada:**
+- Gera: relatório final para CLO; parecer para IDPJ; minuta para COAF/MPF; mapa de ativos penhoráveis
+
+---
+
+## Resultado Final do Pipeline
+
+O pipeline produz um sistema de investigação patrimonial automatizado capaz de:
+
+1. Detectar fraude patrimonial (padrões estatísticos + temporais)
+2. Mapear ocultação (FIPs, SPVs, contas offshore, FATCA/CRS)
+3. Identificar ativos penhoráveis (cotas, CDBs, LIGs, imóveis)
+4. Desmontar alegações de impenhorabilidade (iliquidez, FAPI, previdência)
+5. Reconstruir o Whole Money Trail (origem → veículos → beneficiários)
+6. Produzir relatórios jurídicos de alto impacto (CLO, COAF, MPF, IDPJ)
+
+---
+
+## Registro de Execuções
+
+| Data | Briefing | Alertas Críticos | Total Identificado | Branch |
+|------|----------|------------------|--------------------|--------|
+| 2026-06-20 | [briefing-2026-06-20.md](../notas/briefing-2026-06-20.md) | 5 | R$ 5.783.505,07 + a apurar | claude/friendly-goldberg-xeajez |
+| 2026-06-19 | briefing-2026-06-19.md | 5 | R$ 5.778.014,07 + a apurar | claude/friendly-goldberg-02mvd4 |
+| 2026-06-18 | briefing-2026-06-18.md | 5 | R$ 5.778.014,07 | claude/friendly-goldberg-gc3675 |
 
 ---
 
