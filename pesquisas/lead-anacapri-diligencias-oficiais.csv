@@ -1,0 +1,8 @@
+id,entidade_cnpj,objetivo_da_diligencia,fonte_oficial_url,via_processual,status_no_lead
+"L1","43.028.251/0001-97 (Anacapri Investments LLC — adm. J.P. Morgan S/A DTVM)","Confirmar existência registral e situação cadastral","https://www.receita.fazenda.gov.br/pessoajuridica/cnpj/cnpjreva/cnpjreva_solicitacao.asp","Consulta pública (sem necessidade de ordem)","ABRIR diligência"
+"L2","43.028.251/0001-97","Verificar se há fundo/classe/subclasse vinculada e o regulamento","https://www.rad.cvm.gov.br/ENET/frmConsultaExternaCVM.aspx","Consulta pública CVM","ABRIR diligência"
+"L3","43.028.251/0001-97","Identificar cotistas-PF residentes no Brasil (em especial CPF 136.447.108-64 já parte do processo)","CVM (dados não públicos)","OFÍCIO via juízo da partilha (1006744-58.2023.8.26.0011)","DEPENDE de deferimento judicial"
+"L4","J.P. Morgan S/A DTVM (CNPJ a confirmar)","Confirmar GIIN FATCA e comparar com GIIN OSLO Capital DTVM (0W2JW5.99999.SL.076)","https://www3.bcb.gov.br/ifdata/ — IRS FFI List (FATCA)","Consulta pública IF.data + IRS","ABRIR diligência"
+"L5","Anacapri (Delaware LLC, se confirmada)","Identificar agente registrado e data de incorporação","https://icis.corp.delaware.gov/Ecorp/EntitySearch/NameSearch.aspx","Consulta pública Delaware DivCorp","ABRIR diligência"
+"L6","17.392.519/0001-65 (E-Vino Comércio de Vinhos S.A.)","Atualizar QSA e atos societários (já no acervo do dossiê)","https://www.jucesponline.sp.gov.br","Consulta pública JUCESP","ATUALIZAR"
+"L7","17.867.118/0001-14 (MEI Apoio Admin.)","Atualizar situação cadastral e atividade","https://www.receita.fazenda.gov.br/pessoajuridica/cnpj/cnpjreva/cnpjreva_solicitacao.asp","Consulta pública","ATUALIZAR"
