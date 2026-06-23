@@ -1,7 +1,7 @@
 # Pipeline Cognitivo Corporativo — Arquitetura Técnica
 
-**Versão:** 1.0  
-**Data:** 2026-06-15  
+**Versão:** 2.0  
+**Data:** 2026-06-23  
 **Classificação:** Uso Interno — Governança Jurídica
 
 ---
@@ -45,13 +45,13 @@ Sistema integrado de investigação patrimonial automatizada, combinando infraes
 
 ## Módulos
 
-| # | Módulo | Arquivo | Função Principal |
-|---|--------|---------|-----------------|
-| 1 | Briefing | `01-briefing.md` | Inteligência diária integrada |
-| 2 | System Health Check | `02-health-check.md` | Monitoramento de infraestrutura e fraude |
-| 3 | Dependency Update Check | `03-dependency-update.md` | Atualização de bases e detecção de inconsistências |
-| 4 | Flaky Test Tracker | `04-flaky-tracker.md` | Validação estatística e ocultação patrimonial |
-| 5 | PR Review Digest | `05-pr-review-digest.md` | Governança jurídica e relatórios finais |
+| # | Módulo | Arquivo | Função Tecnológica | Função Jurídica |
+|---|--------|---------|-------------------|-----------------|
+| 1 | Briefing | `01-briefing.md` | Agregação de fontes + daily intelligence report | Atualização do CLO sobre bloqueios, códigos SISBAJUD e movimentações suspeitas |
+| 2 | System Health Check | `02-health-check.md` | Monitoramento de APIs CVM, Datadog, Sentry, SISBAJUD | Verificação de inconsistências de PL, divergências IRPF × CVM, sinais de ocultação |
+| 3 | Dependency Update Check | `03-dependency-update.md` | Atualização de bases CVM, IRPF, extratos, FATCA/CRS | Detecção de classes retroativas, side‑pockets, alterações de regulamento, novos SPVs |
+| 4 | Flaky Test Tracker | `04-flaky-tracker.md` | Identificação de inconsistências estatísticas e padrões anômalos | Teste de iliquidez, esvaziamento pré-ordem e ocultação sistêmica |
+| 5 | PR Review Digest | `05-pr-review-digest.md` | Consolidação de relatórios, pareceres e análises | Enquadramento penal/civil e revisão de decisões pendentes |
 
 ---
 
@@ -101,6 +101,29 @@ Os ativos e movimentações identificados pelo pipeline são analisados sob os s
 |--------|-------------|------|
 | 98 | Não respondeu | Gerar alerta automático; peticionar intimação |
 | 13 | Respondeu sem saldo | Cruzar com IRPF e extratos anteriores |
+
+---
+
+## Conclusão — O Pipeline como Sistema Integrado
+
+Cada módulo alimenta o próximo em cadeia sequencial e lógica:
+
+| Estágio | Módulo | Produto para o Próximo |
+|---------|--------|------------------------|
+| 1 | Briefing | Contexto humano + jurídico do dia |
+| 2 | Health Check | Estabilidade técnica + mapa de inconsistências |
+| 3 | Dependency Check | Bases atualizadas + alertas de alterações suspeitas |
+| 4 | Flaky Tracker | Inconsistências validadas + evidências priorizadas |
+| 5 | PR Digest | Governança + decisões jurídicas + documentos finais |
+
+O resultado é um **sistema de investigação patrimonial automatizado**, capaz de:
+
+- Detectar fraude patrimonial por padrões estatísticos e temporais
+- Mapear ocultação via FIPs, SPVs e contas interpostas
+- Identificar ativos penhoráveis e refutar alegações de impenhorabilidade
+- Desmontar alegações de iliquidez com base em PL real e movimentações
+- Reconstruir o whole money trail de ponta a ponta
+- Produzir relatórios jurídicos de alto impacto para CLO, IDPJ, COAF e MPF
 
 ---
 
