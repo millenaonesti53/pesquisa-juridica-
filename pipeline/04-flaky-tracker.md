@@ -1,6 +1,6 @@
-# Módulo 4 — Flaky Test Tracker
+# 🧪 Módulo 4 — Flaky Test Tracker
 
-**Pipeline Cognitivo Corporativo | Estágio 4/5**
+**Pipeline Cognitivo Corporativo (PhD TI) | Estágio 4/5**
 
 ---
 
@@ -22,6 +22,15 @@ Testar a consistência das alegações do devedor e identificar padrões de ocul
 3. **Teste de ocultação sistêmica** — múltiplas instituições apresentam o mesmo padrão?
 
 ## Rotina Integrada
+
+### Resumo — Marcações Flaky Ativas
+
+| Instituição | Classificação | Evidência Principal |
+|-------------|---------------|---------------------|
+| BTG | FLAKY — saldo zero repetido | CDB R$ 650.758,60 com movimentação prévia |
+| Itaú | FLAKY — esvaziamento tático | -98,8% correlacionado com intimação judicial |
+| FRAM | FLAKY — não resposta sistemática | Código 98 repetido em múltiplas ordens |
+| OSLO | FLAKY — não resposta sistemática | Código 98 repetido; possível coordenação com FRAM |
 
 ### Casos Marcados como "Flaky" (Inconsistentes)
 

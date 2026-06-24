@@ -1,6 +1,6 @@
-# Módulo 1 — Briefing
+# 🌅 Módulo 1 — Briefing
 
-**Pipeline Cognitivo Corporativo | Estágio 1/5**
+**Pipeline Cognitivo Corporativo (PhD TI) | Estágio 1/5**
 
 ---
 
@@ -32,14 +32,19 @@ Atualizar o CLO (Chief Legal Officer) e o Núcleo de Governança sobre:
 ### Processamento
 
 ```
-Para cada instituição monitorada:
-  1. Verificar código SISBAJUD mais recente
-  2. Comparar saldo atual × histórico
-  3. Classificar risco (normal / atenção / crítico)
-  4. Gerar alerta se:
+Passo 1 — Carregar Whole Money Trail do dia anterior
+Passo 2 — Atualizar status das instituições:
+  - Código 98: não respondeu → escalar alerta
+  - Código 13: respondeu sem saldo → cruzar com IRPF e extratos
+Passo 3 — Para cada instituição monitorada:
+  a. Verificar código SISBAJUD mais recente
+  b. Comparar saldo atual × histórico
+  c. Classificar risco (normal / atenção / crítico)
+  d. Gerar alerta se:
      - Código 98 (não respondeu)
      - Código 13 com histórico de saldo positivo
      - Variação > 50% sem justificativa registrada
+Passo 4 — Gerar alertas automáticos por instituição
 ```
 
 ### Alertas Automáticos — Gatilhos Ativos

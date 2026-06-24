@@ -1,6 +1,6 @@
-# Módulo 5 — PR Review Digest
+# 🔍 Módulo 5 — PR Review Digest
 
-**Pipeline Cognitivo Corporativo | Estágio 5/5**
+**Pipeline Cognitivo Corporativo (PhD TI) | Estágio 5/5**
 
 ---
 
@@ -11,7 +11,17 @@ Consolidar todos os outputs dos módulos anteriores em documentos estruturados:
 - Relatórios técnicos para o CLO
 - Pareceres jurídicos para o IDPJ
 - Minutas para COAF e MPF
-- Mapa de ativos penhoráveis
+- Mapa de ativos penhoráveis atualizado
+
+### Documentos Gerados por Ciclo do Pipeline
+
+| Documento | Destinatário | Arquivo |
+|-----------|--------------|---------|
+| Relatório executivo | CLO | `notas/relatorio-clo-[data].md` |
+| Parecer jurídico | IDPJ | `notas/parecer-idpj-[data].md` |
+| Minuta investigativa | COAF/MPF | `notas/minuta-coaf-[data].md` |
+| Mapa de ativos | Processo judicial | `pesquisas/mapa-ativos-penhoraveis.md` |
+| Whole Money Trail | Reconstituição financeira | `pesquisas/whole-money-trail.md` |
 
 ## Função Jurídica
 
