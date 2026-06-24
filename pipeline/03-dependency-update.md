@@ -1,6 +1,6 @@
-# Módulo 3 — Dependency Update Check
+# 🔄 Módulo 3 — Dependency Update Check
 
-**Pipeline Cognitivo Corporativo | Estágio 3/5**
+**Pipeline Cognitivo Corporativo (PhD TI) | Estágio 3/5**
 
 ---
 
@@ -33,6 +33,14 @@ Identificar alterações estruturais suspeitas em veículos patrimoniais:
 | Receita Federal | Semanal | IRPF, CNPJ | Portal |
 | Bancos (SISBAJUD) | Por demanda | Extratos, saldos | SISBAJUD |
 | FATCA/CRS | Mensal | Ativos internacionais | Relatórios IRS/OCDE |
+
+### Padrões de Fraude Detectados
+
+Este módulo identificou os seguintes padrões nos dados atualizados:
+
+- **Bonifácio FIP** — criado pós-litígio (art. 792 CPC);
+- **Side-pocket no FRAM** — segregação suspeita de ativos sem justificativa econômica;
+- **Inconsistência temporal no Ajaccio** — data de operação incompatível com cronologia declarada (falsidade/simulação, art. 167 CC).
 
 ### Casos Identificados
 

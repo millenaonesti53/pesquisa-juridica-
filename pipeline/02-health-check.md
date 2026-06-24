@@ -1,6 +1,6 @@
-# Módulo 2 — System Health Check
+# 🩺 Módulo 2 — System Health Check
 
-**Pipeline Cognitivo Corporativo | Estágio 2/5**
+**Pipeline Cognitivo Corporativo (PhD TI) | Estágio 2/5**
 
 ---
 
@@ -23,6 +23,24 @@ Verificar sinais de manipulação ou ocultação patrimonial:
 4. **Sinais de ocultação** — movimentações abruptas sem lastro documental
 
 ## Rotina Integrada
+
+### Detecção Automática — Ativos Identificados
+
+O módulo detecta e marca como **risco crítico** os seguintes ativos rastreados:
+
+| Ativo | Instituição | Valor Detectado | Sinal |
+|-------|-------------|-----------------|-------|
+| FRAM XIV FIP | FRAM | R$ 3.877.255,47 | Código 98 — não respondeu |
+| LIG | Itaú | R$ 1.250.000,00 | Esvaziamento tático |
+| CDB | BTG | R$ 650.758,60 | Saldo zero repetido |
+| Conta corrente | Itaú | R$ 469.575 → R$ 5.491 | Variação abrupta -98,8% |
+
+### Critérios de Risco Crítico
+
+- Instituições que não respondem (código 98);
+- Contas com variação abrupta de saldo sem lastro documental;
+- Divergência entre PL declarado e valor rastreável;
+- Side-pockets ou classes de cotas criadas após o início do litígio.
 
 ### Ativos sob Monitoramento Ativo
 

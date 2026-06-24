@@ -1,7 +1,9 @@
-# Pipeline Cognitivo Corporativo — Arquitetura Técnica
+# Pipeline Cognitivo Corporativo — Diagrama Técnico (PhD TI)
 
-**Versão:** 1.0  
-**Data:** 2026-06-15  
+**Integração entre Tecnologia, Governança Jurídica e Investigação Patrimonial**
+
+**Versão:** 2.0  
+**Data:** 2026-06-24  
 **Classificação:** Uso Interno — Governança Jurídica
 
 ---
@@ -12,32 +14,32 @@ Sistema integrado de investigação patrimonial automatizada, combinando infraes
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                        BRIEFING                              │
+│                        🌅 BRIEFING                           │
 │  (Contexto humano + síntese jurídica + agenda investigativa) │
 └───────────────┬──────────────────────────────────────────────┘
                 │
                 ▼
 ┌──────────────────────────────────────────────────────────────┐
-│                 SYSTEM HEALTH CHECK                          │
-│  (Infraestrutura, FIPs, APIs CVM, SISBAJUD, bancos)          │
+│                 🩺 SYSTEM HEALTH CHECK                        │
+│  (Infraestrutura, FIPs, APIs CVM, SISBAJUD, bancos)           │
 └───────────────┬──────────────────────────────────────────────┘
                 │
                 ▼
 ┌──────────────────────────────────────────────────────────────┐
-│             DEPENDENCY UPDATE CHECK                          │
-│  (Atualização de bases: CVM, IRPF, extratos, FATCA/CRS)      │
+│             🔄 DEPENDENCY UPDATE CHECK                        │
+│  (Atualização de bases: CVM, IRPF, extratos, FATCA/CRS)       │
 └───────────────┬──────────────────────────────────────────────┘
                 │
                 ▼
 ┌──────────────────────────────────────────────────────────────┐
-│               FLAKY TEST TRACKER                             │
-│  (Testes de consistência: PLs, classes, códigos SISBAJUD)    │
+│               🧪 FLAKY TEST TRACKER                           │
+│  (Testes de consistência: PLs, classes, códigos SISBAJUD)     │
 └───────────────┬──────────────────────────────────────────────┘
                 │
                 ▼
 ┌──────────────────────────────────────────────────────────────┐
-│               PR REVIEW DIGEST                               │
-│  (Governança: decisões jurídicas, pareceres, relatórios)     │
+│               🔍 PR REVIEW DIGEST                             │
+│  (Governança: decisões jurídicas, pareceres, relatórios)      │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -104,10 +106,33 @@ Os ativos e movimentações identificados pelo pipeline são analisados sob os s
 
 ---
 
+## Conclusão — O Pipeline Cognitivo Corporativo
+
+Cada módulo alimenta o próximo de forma encadeada:
+
+| Módulo | Saída para o próximo |
+|--------|---------------------|
+| 🌅 Briefing | Contexto humano + jurídico |
+| 🩺 Health Check | Estabilidade técnica + detecção de fraude |
+| 🔄 Dependency Check | Atualização de dados + inconsistências |
+| 🧪 Flaky Tracker | Validação estatística + ocultação |
+| 🔍 PR Digest | Governança + decisões jurídicas |
+
+O resultado é um **sistema de investigação patrimonial automatizado**, capaz de:
+
+- detectar fraude estruturada;
+- mapear ocultação patrimonial em múltiplas camadas;
+- identificar ativos penhoráveis e refutar alegações de impenhorabilidade;
+- desmontar alegações de iliquidez de FIPs;
+- reconstruir o **Whole Money Trail** completo;
+- produzir relatórios jurídicos de alto impacto para CLO, IDPJ, COAF e MPF.
+
+---
+
 ## Referências aos Módulos Detalhados
 
-- [`01-briefing.md`](01-briefing.md)
-- [`02-health-check.md`](02-health-check.md)
-- [`03-dependency-update.md`](03-dependency-update.md)
-- [`04-flaky-tracker.md`](04-flaky-tracker.md)
-- [`05-pr-review-digest.md`](05-pr-review-digest.md)
+- [`01-briefing.md`](01-briefing.md) — 🌅 Inteligência diária integrada
+- [`02-health-check.md`](02-health-check.md) — 🩺 Monitoramento de infraestrutura e fraude
+- [`03-dependency-update.md`](03-dependency-update.md) — 🔄 Atualização de bases e detecção de inconsistências
+- [`04-flaky-tracker.md`](04-flaky-tracker.md) — 🧪 Validação estatística e ocultação patrimonial
+- [`05-pr-review-digest.md`](05-pr-review-digest.md) — 🔍 Governança jurídica e relatórios finais
