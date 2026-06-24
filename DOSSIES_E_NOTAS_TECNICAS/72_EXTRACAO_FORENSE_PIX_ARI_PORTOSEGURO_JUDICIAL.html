@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>72 — Extração Forense · PIX Ari Gorenstein · Porto Seguro · Contas Judiciais</title>
+<style>
+  @page { size: A4; margin: 16mm 14mm 16mm 14mm; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9.5pt; line-height: 1.4; color: #15212e; margin: 0; }
+  h1 { font-size: 16pt; color: #1b3a5b; margin: 0 0 4pt 0; text-align: center; letter-spacing: .3pt; }
+  h2 { font-size: 12pt; color: #1b3a5b; margin: 12pt 0 5pt 0; border-bottom: 1.5px solid #1b3a5b; padding-bottom: 2pt; text-transform: uppercase; letter-spacing: .4pt; }
+  h3 { font-size: 10.5pt; color: #b00020; margin: 8pt 0 3pt 0; }
+  .capa { border: 2px solid #1b3a5b; padding: 10pt 14pt; margin-bottom: 12pt; background: #f5f8fc; }
+  .capa .conf { font-size: 8pt; letter-spacing: .8pt; color: #b00020; font-weight: bold; text-align: center; }
+  .capa .sub { font-size: 10pt; color: #555; text-align: center; font-style: italic; margin-top: 4pt; }
+  .badge { display: inline-block; padding: 1pt 7pt; font-size: 8pt; letter-spacing: .3pt; font-weight: bold; border-radius: 2pt; }
+  .b-vermelho { background: #b00020; color: #fff; }
+  .b-laranja { background: #c89000; color: #fff; }
+  .b-verde { background: #0a5f2e; color: #fff; }
+  .b-azul { background: #1b3a5b; color: #fff; }
+  table { width: 100%; border-collapse: collapse; margin: 4pt 0; font-size: 8.5pt; }
+  th, td { border: 0.5px solid #1b3a5b; padding: 3pt 5pt; vertical-align: top; text-align: left; }
+  th { background: #1b3a5b; color: #fff; font-weight: 700; font-size: 8pt; text-transform: uppercase; letter-spacing: .2pt; }
+  .right { text-align: right; }
+  .center { text-align: center; }
+  tr.ari td { background: #eef6f0; }
+  tr.crit td { background: #fdecef; }
+  .destaque { background: #fdecef; border-left: 4px solid #b00020; padding: 7pt 10pt; margin: 6pt 0; }
+  .achado { background: #eef6f0; border-left: 4px solid #0a5f2e; padding: 7pt 10pt; margin: 6pt 0; }
+  .nota { background: #fff8e1; padding: 5pt 9pt; border-left: 2pt solid #c89000; margin: 5pt 0; font-size: 9pt; }
+  .reserva { background: #f3f3f3; border-left: 3px solid #555; padding: 6pt 10pt; margin: 7pt 0; font-size: 8.5pt; font-style: italic; color: #444; }
+  p { margin: 4pt 0; }
+</style>
+</head>
+<body>
+
+<div class="capa">
+  <div class="conf">CONFIDENCIAL · USO RESTRITO DA EQUIPE · INSTRUMENTO TÉCNICO DE APOIO À DECISÃO</div>
+  <h1>72 — Extração Forense de PIX/Transferências</h1>
+  <div class="sub">PIX e transferências de Ari Gorenstein · Depósitos de contas judiciais · PIX Porto Seguro</div>
+  <div class="sub">Bradesco Celular · Ag. 884 · Cta. 190534-1 · Titular: Millena Onesti Gorenstein · Período: 01/01/2025 a 24/06/2026</div>
+  <div style="margin-top: 7pt; text-align: center;">
+    <span class="badge b-azul">74 folhas analisadas</span>
+    <span class="badge b-verde">7 PIX de Ari · R$ 214.129,08</span>
+    <span class="badge b-laranja">30 PIX Porto Seguro · R$ 62.524,90</span>
+    <span class="badge b-vermelho">0 depósitos judiciais</span>
+  </div>
+</div>
+
+<h2>I — Síntese executiva</h2>
+
+<table>
+  <tr><th>Categoria</th><th>Qt</th><th>Soma (R$)</th><th>Janela</th><th>Observação forense</th></tr>
+  <tr class="ari">
+    <td><b>A · PIX de Ari Gorenstein (alimentante)</b></td>
+    <td class="center">7</td>
+    <td class="right"><b>214.129,08</b></td>
+    <td>23/01/2026 a 09/06/2026</td>
+    <td><b>ZERO PIX direto de Ari nos primeiros 12 meses</b> (01/2025-22/01/2026). Primeiro aporte em 23/01/2026.</td>
+  </tr>
+  <tr>
+    <td><b>B · PIX Porto Seguro (reembolsos)</b></td>
+    <td class="center">30</td>
+    <td class="right"><b>62.524,90</b></td>
+    <td>02/01/2025 a 02/02/2026</td>
+    <td>Reembolsos médicos de plano de saúde · valores fragmentados</td>
+  </tr>
+  <tr class="crit">
+    <td><b>C · Depósitos de contas judiciais</b></td>
+    <td class="center">0</td>
+    <td class="right">—</td>
+    <td>—</td>
+    <td><b>NENHUM</b> lançamento rotulado "CONTA JUDICIAL", "DEPÓSITO JUDICIAL", "TJSP", "ALVARÁ", "CEF JUDICIAL" em 18 meses</td>
+  </tr>
+  <tr>
+    <td>D · Resgates Vida e Previdência (contexto)</td>
+    <td class="center">9</td>
+    <td class="right">677.857,67</td>
+    <td>21/05/2025 a 24/06/2026</td>
+    <td>Recursos próprios da titular · descapitalização patrimonial pessoal para custeio</td>
+  </tr>
+  <tr>
+    <td>E · TEDs/PIX a patronos (contexto)</td>
+    <td class="center">8</td>
+    <td class="right">285.000,00</td>
+    <td>16/07/2025 a 24/06/2026</td>
+    <td>Salum (banca anterior) + Dr. Luiz/Dra. Michele (nova banca)</td>
+  </tr>
+</table>
+
+<h2>II — Achado forense central</h2>
+
+<div class="destaque">
+  <p><b>Cross-check com IRPF 2024 de Ari Gorenstein (Doc 67 V-12):</b> pensão declarada por Ari para Millena = <b>R$ 240.000,00/ano</b>.</p>
+  <p>Em 18 meses (01/01/2025 a 24/06/2026), pensão esperada = R$ 360.000,00. Pensão recebida via PIX direto de Ari = <b>R$ 214.129,08</b>.</p>
+  <p><b>SHORTFALL: R$ 145.870,92 (40,5% abaixo do valor declarado em IR).</b></p>
+  <p>O valor recebido corresponde a apenas <b>7 lançamentos em 18 meses</b>, todos concentrados entre 23/01/2026 e 09/06/2026 — ou seja, <b>12 meses sem qualquer PIX direto rotulado com o nome do alimentante</b>. A movimentação inicia-se imediatamente após a constituição da procuração matriz da nova banca (03/06/2026), com aceleração em maio-junho/2026.</p>
+</div>
+
+<div class="achado">
+  <p><b>Confirmação convergente:</b> não há, no período de 18 meses, <b>qualquer crédito identificado como proveniente de conta judicial, alvará, depósito vinculado ao processo, transferência da CEF/BB-JUDICIAL ou descrição equivalente</b>. Isto confirma documentalmente que os valores identificados/bloqueados em SISBAJUD nas Execuções de Alimentos (R$ 84.856.714,65 visíveis em fls. 418 · R$ 42.428.357,32 bloqueio efetivo · R$ 31.925.193,31 retidos no BTG por 33 meses · Docs 64, 69, 70) <b>NÃO foram transferidos ao patrimônio disponível da exequente</b>.</p>
+</div>
+
+<h2>III — Tabela A · PIX RECEBIDOS DE ARI GORENSTEIN</h2>
+
+<table>
+  <tr><th>#</th><th>Data</th><th>Valor (R$)</th><th>Docto</th><th>Histórico</th><th>Observação</th></tr>
+  <tr class="ari"><td>1</td><td>23/01/2026</td><td class="right">78.521,53</td><td>1214472</td><td>PIX RECEBIDO REM: Ari Gorenstein 23/01</td><td>Primeiro PIX direto em 12 meses</td></tr>
+  <tr class="ari"><td>2</td><td>01/04/2026</td><td class="right">50.000,00</td><td>1023531</td><td>PIX RECEBIDO REM: Ari Gorenstein 01/04</td><td>Aporte de Páscoa/Pessach</td></tr>
+  <tr class="ari"><td>3</td><td>01/04/2026</td><td class="right">23.807,55</td><td>1029492</td><td>PIX RECEBIDO REM: Ari Gorenstein 01/04</td><td>Segundo aporte mesmo dia</td></tr>
+  <tr class="ari"><td>4</td><td>04/05/2026</td><td class="right">24.300,00</td><td>1643556</td><td>PIX RECEBIDO REM: ARI GORENSTEIN 04/05</td><td>Mensal 05/2026 — parc. 1</td></tr>
+  <tr class="ari"><td>5</td><td>04/05/2026</td><td class="right">6.600,00</td><td>1646008</td><td>PIX RECEBIDO REM: ARI GORENSTEIN 04/05</td><td>Mensal 05/2026 — parc. 2</td></tr>
+  <tr class="ari"><td>6</td><td>03/06/2026</td><td class="right">24.300,00</td><td>1432525</td><td>PIX RECEBIDO REM: ARI GORENSTEIN 03/06</td><td>Mensal 06/2026 — parc. 1</td></tr>
+  <tr class="ari"><td>7</td><td>09/06/2026</td><td class="right">6.600,00</td><td>1422170</td><td>PIX RECEBIDO REM: ARI GORENSTEIN 09/06</td><td>Mensal 06/2026 — parc. 2</td></tr>
+  <tr><th colspan="2">TOTAL</th><th class="right">214.129,08</th><th colspan="3">7 lançamentos · 18 meses</th></tr>
+</table>
+
+<h2>IV — Tabela B · PIX PORTO SEGURO (reembolsos médicos)</h2>
+
+<table>
+  <tr><th>#</th><th>Data</th><th>Valor (R$)</th><th>Docto</th><th>Histórico</th></tr>
+  <tr><td>1</td><td>02/01/2025</td><td class="right">1.000,00</td><td>0900542</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>2</td><td>06/01/2025</td><td class="right">800,00</td><td>1350245</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>3</td><td>07/01/2025</td><td class="right">1.000,00</td><td>1004505</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>4</td><td>09/01/2025</td><td class="right">1.250,00</td><td>0931466</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>5</td><td>12/02/2025</td><td class="right">800,00</td><td>0714487</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>6</td><td>13/02/2025</td><td class="right">2.534,20</td><td>0728429</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>7</td><td>13/02/2025</td><td class="right">1.013,68</td><td>1535401</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>8</td><td>14/03/2025</td><td class="right">800,00</td><td>0715151</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>9</td><td>17/03/2025</td><td class="right">3.547,88</td><td>1329464</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>10</td><td>01/04/2025</td><td class="right">800,00</td><td>0714139</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>11</td><td>02/04/2025</td><td class="right">4.000,00</td><td>1220298</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>12</td><td>24/04/2025</td><td class="right">1.865,18</td><td>1351358</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>13</td><td>25/04/2025</td><td class="right">5.068,40</td><td>0848230</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>14</td><td>25/04/2025</td><td class="right">1.013,68</td><td>1505012</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>15</td><td>06/05/2025</td><td class="right">800,00</td><td>0720313</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>16</td><td>09/06/2025</td><td class="right">2.150,00</td><td>0714387</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>17</td><td>10/06/2025</td><td class="right">1.267,10</td><td>1321210</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>18</td><td>16/06/2025</td><td class="right">1.520,52</td><td>1320380</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>19</td><td>18/07/2025</td><td class="right">3.041,04</td><td>0721003</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>20</td><td>21/07/2025</td><td class="right">780,00</td><td>0718198</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>21</td><td>21/07/2025</td><td class="right">760,26</td><td>1330504</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>22</td><td>21/07/2025</td><td class="right">800,00</td><td>1330507</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>23</td><td>22/10/2025</td><td class="right">5.045,18</td><td>1314063</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO</td></tr>
+  <tr><td>24</td><td>24/10/2025</td><td class="right">4.561,56</td><td>0709203</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>25</td><td>24/10/2025</td><td class="right">4.561,56</td><td>1313344</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO S</td></tr>
+  <tr><td>26</td><td>29/12/2025</td><td class="right">1.680,00</td><td>1313574</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO</td></tr>
+  <tr><td>27</td><td>30/12/2025</td><td class="right">900,00</td><td>1522502</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO</td></tr>
+  <tr><td>28</td><td>28/01/2026</td><td class="right">5.321,82</td><td>1314145</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO</td></tr>
+  <tr><td>29</td><td>30/01/2026</td><td class="right">9.629,96</td><td>1314473</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO</td></tr>
+  <tr><td>30</td><td>02/02/2026</td><td class="right">900,00</td><td>1629235</td><td>PIX RECEBIDO REM: PORTO SEGURO SEGURO</td></tr>
+  <tr><th colspan="2">TOTAL</th><th class="right">62.524,90</th><th colspan="2">30 lançamentos</th></tr>
+</table>
+
+<h2>V — Tabela C · DEPÓSITOS DE CONTAS JUDICIAIS</h2>
+
+<div class="destaque">
+  <p><b>RESULTADO DA BUSCA: nenhum lançamento corresponde ao critério.</b></p>
+  <p>Foram pesquisados nas 74 folhas dos dois extratos os padrões: "CONTA JUDICIAL", "DEPÓSITO JUDICIAL", "TJSP", "ALVARÁ", "CEF JUDICIAL", "BB JUDICIAL", "TJ SP", "JUDICIAL", "JUSTIÇA". Resultado: <b>zero correspondências</b>.</p>
+  <p><b>Implicação probatória:</b> os valores localizados/bloqueados em SISBAJUD nas execuções de alimentos (R$ 84.856.714,65 identificados em fls. 418 do divórcio · R$ 42.428.357,32 efetivamente bloqueados em 02/05/2023 · R$ 31.925.193,31 retidos no BTG Ag. 0001 Cta. 110486 por 33 meses · cf. Docs 64, 66, 69, 70) NÃO foram, em momento algum dos 18 meses cobertos, transferidos para a conta corrente da exequente. Confirma documentalmente o achado central do Doc 69 (Parecer MS · 65-80% de probabilidade contra BTG).</p>
+</div>
+
+<h2>VI — Tabela D · RESGATES VIDA E PREVIDÊNCIA (contexto)</h2>
+
+<div class="nota">
+  Estes lançamentos NÃO são depósitos judiciais — são resgates parciais/totais de plano de previdência pessoal da titular junto ao Bradesco Vida e Previdência. A materialidade (<b>R$ 677.857,67 em 13 meses</b>) é forensemente relevante porque demonstra que a alimentada custeou-se por <b>descapitalização patrimonial pessoal</b> enquanto o patrimônio do alimentante permaneceu incrustado em fundos opacos sob bloqueio SISBAJUD inerte.
+</div>
+
+<table>
+  <tr><th>#</th><th>Data</th><th>Valor (R$)</th><th>Docto</th><th>Histórico</th></tr>
+  <tr><td>1</td><td>21/05/2025</td><td class="right">78.169,84</td><td>2124683</td><td>RESGATE PARCIAL 05/2025</td></tr>
+  <tr><td>2</td><td>16/06/2025</td><td class="right">160.006,36</td><td>0270029</td><td>RESGATE PARCIAL 06/2025</td></tr>
+  <tr><td>3</td><td>11/08/2025</td><td class="right">48.664,74</td><td>6298807</td><td>RESGATE PARCIAL 08/2025</td></tr>
+  <tr><td>4</td><td>02/10/2025</td><td class="right">49.134,29</td><td>5138554</td><td>RESGATE PARCIAL 10/2025</td></tr>
+  <tr><td>5</td><td>08/12/2025</td><td class="right">58.768,97</td><td>6316129</td><td>RESGATE PARCIAL 12/2025</td></tr>
+  <tr><td>6</td><td>14/01/2026</td><td class="right">51.214,01</td><td>0298695</td><td>RESGATE PARCIAL 01/2026</td></tr>
+  <tr><td>7</td><td>12/03/2026</td><td class="right">54.615,43</td><td>0311019</td><td>RESGATE TOTAL 03/2026</td></tr>
+  <tr><td>8</td><td>03/06/2026</td><td class="right">76.847,23</td><td>5151529</td><td>RESGATE PARCIAL 06/2026</td></tr>
+  <tr><td>9</td><td>24/06/2026</td><td class="right">100.436,80</td><td>3307138</td><td>RESGATE PARCIAL 06/2026</td></tr>
+  <tr><th colspan="2">TOTAL</th><th class="right">677.857,67</th><th colspan="2">9 resgates · 13 meses</th></tr>
+</table>
+
+<h2>VII — Tabela E · TEDs e PIX a PATRONOS (contexto)</h2>
+
+<table>
+  <tr><th>Data</th><th>Valor (R$)</th><th>Histórico</th><th>Observação</th></tr>
+  <tr><td>16/07/2025</td><td class="right">20.000,00</td><td>TED DEST. Salum advogados</td><td>1ª tentativa · devolvida mesmo dia</td></tr>
+  <tr><td>21/07/2025</td><td class="right">20.000,00</td><td>TED DEST. Salum advogados</td><td>2ª tentativa · devolvida</td></tr>
+  <tr><td>21/07/2025</td><td class="right">20.000,00</td><td>TED DEST. Salum advogados asso</td><td>3ª tentativa · efetiva</td></tr>
+  <tr><td>29/08/2025</td><td class="right">20.000,00</td><td>PIX ENVIADO DES: SALUM ADVOGADOS ASSOC</td><td>Honorários banca anterior · PIX</td></tr>
+  <tr><td>15/06/2026</td><td class="right">45.000,00</td><td>TED DEST. Luiz Carlos guiesele</td><td>Nova banca · devolvida</td></tr>
+  <tr><td>16/06/2026</td><td class="right">45.000,00</td><td>TED DEST. Michelle Pinheiro Hi</td><td>Reenvio para Dra. Michele</td></tr>
+  <tr><td>16/06/2026</td><td class="right">45.000,00</td><td>PIX ENVIADO DES: MICHELE PINHEIRO HILG</td><td>PIX honorários Dra. Michele</td></tr>
+  <tr><td>24/06/2026</td><td class="right">80.000,00</td><td>TED DEST. Luiz Carlos G. Jr</td><td>1ª tentativa · devolvida</td></tr>
+  <tr><td>24/06/2026</td><td class="right">80.000,00</td><td>TED DEST. Luiz Carlos G. Jr</td><td>2ª tentativa · efetiva</td></tr>
+  <tr><th>SAÍDAS EFETIVAS (excl. devoluções)</th><th class="right">285.000,00</th><th colspan="2">Salum R$ 40.000 · Nova banca R$ 170.000 + reenvios</th></tr>
+</table>
+
+<h2>VIII — Tabela F · Recebimentos de bancas anteriores (contexto)</h2>
+
+<table>
+  <tr><th>Data</th><th>Valor (R$)</th><th>Docto</th><th>Histórico</th><th>Observação</th></tr>
+  <tr><td>04/04/2025</td><td class="right">22.710,04</td><td>1130065</td><td>PIX RECEBIDO REM: CANTAGALLO E C A ASSO</td><td>Devolução/restituição</td></tr>
+  <tr><td>16/06/2025</td><td class="right">7.100,78</td><td>0943015</td><td>PIX RECEBIDO REM: CANTAGALLO E C A ASSO</td><td>Devolução/restituição</td></tr>
+  <tr><td>26/06/2025</td><td class="right">88.068,75</td><td>5600676</td><td>TED-TRANSF ELET DISPON REMET.CANTAGALLO</td><td>Devolução de retenção</td></tr>
+  <tr><td>03/10/2025</td><td class="right">−35.000,00</td><td>9432368</td><td>TED DEST. Fabio Corrêa eleuter (SAÍDA)</td><td>Pagamento honorários</td></tr>
+  <tr><td>16/10/2025</td><td class="right">74.293,24</td><td>8091223</td><td>TED-TRANSF ELET DISPON REMET.FABIO CORREA ELEUTER</td><td>Devolução honorários</td></tr>
+  <tr><td>23/10/2025</td><td class="right">46.982,97</td><td>2025008</td><td>TED-TRANSF ELET DISPON REMET.FABIO CORREA ELEUTER</td><td>Devolução honorários</td></tr>
+</table>
+
+<h2>IX — Metodologia</h2>
+
+<table>
+  <tr><th>Item</th><th>Descrição</th></tr>
+  <tr><td><b>Fontes primárias</b></td><td>Extrato 1: EXTRATO_JAN_2025__JAN_2026.pdf · 51 folhas · auto-impressão Bradesco Celular 24/06/2026 11h05. Extrato 2: EXTRATO_JAN_2026_JUNH2026.pdf · 23 folhas · mesma origem.</td></tr>
+  <tr><td><b>Conta</b></td><td>Agência 884 · Conta 190534-1 · Titular: MILLENA ONESTI GORENSTEIN.</td></tr>
+  <tr><td><b>Totais aferidos</b></td><td>Extrato 1: Crédito R$ 6.825.195,67 · Débito R$ 6.817.657,72 · Saldo final R$ 12.955,62. Extrato 2: Crédito R$ 506.127,34 · Débito R$ 518.877,10. Últimos lançamentos: Crédito R$ 180.436,86 · Débito R$ 161.070,01 · Saldo 24/06/2026 R$ 19.572,66.</td></tr>
+  <tr><td><b>Critério A (Ari)</b></td><td>"PIX RECEBIDO" + REM contendo "Ari Gorenstein" ou "ARI GORENSTEIN". NÃO inclui transferências de CPFs sob controle presumido (Apoio Administrativa, E-Vino, Anacapri, Lumina EI, Bonifácio FIP) por não estarem rotuladas com o nome do alimentante nesta conta corrente.</td></tr>
+  <tr><td><b>Critério B (Porto Seguro)</b></td><td>"PIX RECEBIDO" + REM contendo "PORTO SEGURO SEGURO". Padrão consistente com reembolsos médicos do plano de saúde da titular.</td></tr>
+  <tr><td><b>Critério C (judicial)</b></td><td>Pesquisa exaustiva por padrões "CONTA JUDICIAL", "DEPÓSITO JUDICIAL", "TJSP", "ALVARÁ", "CEF JUDICIAL", "BB JUDICIAL", "JUDICIAL", "JUSTIÇA". Resultado nulo.</td></tr>
+</table>
+
+<h2>X — Reserva técnica</h2>
+
+<div class="reserva">
+  Instrumento técnico de apoio à decisão (CPC art. 472). Extração manual a partir dos PDFs do extrato bancário Bradesco Celular (auto-impressão pela titular). A verificação primária das movimentações é responsabilidade da banca constituída — este documento é referência analítica, não substitui laudo CRC nem perícia oficial. Patronos: Dra. Michele P. Hilgenberg (OAB/SC 41.607) + Dr. Luiz Carlos Guieseler Junior (OAB/PR 44.937) · procuração matriz de 03/06/2026 (gov.br) · fls. 1065 da guarda · sociedades individuais CNPJ 50.470.567/0001-08 e 10.544.554/0001-03 · redação técnica em coautoria com a constituinte (CPC art. 112). Anexa-se ao acervo 00-71 como Doc 72 — sucede o Doc 71.
+</div>
+
+</body>
+</html>
