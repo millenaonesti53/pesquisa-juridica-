@@ -2,7 +2,7 @@
 
 **Classificação:** Confidencial — uso interno  
 **Status:** Em atualização contínua  
-**Última atualização:** 2026-06-15
+**Última atualização:** 2026-06-26
 
 ---
 
@@ -16,13 +16,20 @@ Compilação dos ativos identificados como passíveis de penhora, com status do 
 
 | # | Ativo | Tipo | Instituição | Valor Estimado | Bloqueio | Impenhorabilidade Alegada | Refutação |
 |---|-------|------|-------------|----------------|----------|--------------------------|-----------|
-| 1 | FRAM XIV FIP | Cotas de FIP | FRAM | R$ 3.877.255,47 | Ordem enviada — cód. 98 | Iliquidez do fundo | Ver seção 3.1 |
-| 2 | LIG | Letra Imobiliária Garantida | Itaú | R$ 1.250.000,00 | Esvaziado pós-intimação | A verificar | Ver seção 3.2 |
-| 3 | CDB | Certificado de Depósito Bancário | BTG | R$ 650.758,60 | Saldo zero reportado | — | Ver seção 3.3 |
-| 4 | Bonifácio FIP | Cotas de FIP | A identificar | A apurar | Não bloqueado | A verificar | Ver seção 3.4 |
-| 5 | Conta Itaú | Conta corrente | Itaú | R$ 5.491,00 (remanescente) | — | — | Rastrear transferências |
+| 1 | FIP Ajaccio Multiestratégia (CNPJ 37.381.595/0001-82) | Cotas de FIP | FRAM/Oslo Capital DTVM (GIIN 0W2JW5.99999.SL.076) | R$ 84.856.714,65 (SISBAJUD 18/05/2023) | Ordem enviada — cód. 98 + reiteração | Iliquidez do fundo | Ver seção 3.1 |
+| 2 | Conta BTG / CDB | Conta + Título | BTG Pactual Ag. 0001, Cta. 110486 | R$ 31.925.193,31 (ordem judicial 26/05/2023 — retida 33+ meses) | Ordem de transferência não cumprida | — | Ver seção 3.3 |
+| 3 | LIG | Letra Imobiliária Garantida | Itaú | R$ 1.250.000,00 | Esvaziado pós-intimação | A verificar | Ver seção 3.2 |
+| 4 | Conta Itaú | Conta corrente | Itaú | R$ 5.491,00 (remanescente; era R$ 469.575,00) | — | — | Rastrear transferências |
+| 5 | Depósito a prazo Oslo | TPF D+0 | Oslo Capital DTVM | R$ 27.799,79 (SISBAJUD 31/03/2026) | Cumprido (L2) | Alega iliquidez em outros produtos | Paradoxo Oslo Soberano |
+| 6 | Bonifácio FIP (CNPJ 59.402.540/0001-44) | Cotas de FIP | A identificar | A apurar | **Não bloqueado — urgente** | A verificar | Ver seção 3.4 |
+| 7 | JP2R PTE LTD (Singapura — UEN 201840728Z) | Offshore | Singapura | A apurar | Não bloqueado | — | Cooperação FATCA/MLAT |
+| 8 | Anacapri / Brescia / Cetara LP (Delaware) | Offshore LLC | Delaware/EUA | A apurar | Não bloqueado | — | Cooperação DRCI/MJSP + MLAT |
+| 9 | Pagamento E-Vino → Apoio Administrativa → Ari (29/01/2025) | Transferência irregular | — | R$ 749.183,38 | Não bloqueado | — | Renda ativa não declarada + CPC 792, IV |
 
-**Total estimado identificado:** R$ 5.778.014,07 (+ Bonifácio FIP a apurar)
+**Total identificado com valores confirmados:** R$ 118.713.883,47 (bloqueio SISBAJUD 18/05/2023) + ativos offshore a apurar  
+**Total da ordem de transferência pendente:** R$ 31.925.193,31 (33+ meses de descumprimento)  
+**Transferência efetiva à conta judicial:** ~R$ 5.250.000,00 (a confirmar via certidão)  
+**Remanescente estimado pendente:** R$ 37.100.000,00+ (corrigidos pela SELIC)
 
 ---
 
