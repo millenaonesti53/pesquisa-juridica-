@@ -2,7 +2,7 @@
 
 **Classificação:** Confidencial — uso interno  
 **Status:** Em atualização contínua  
-**Última atualização:** 2026-06-15
+**Última atualização:** 2026-06-27
 
 ---
 
@@ -19,10 +19,14 @@ Compilação dos ativos identificados como passíveis de penhora, com status do 
 | 1 | FRAM XIV FIP | Cotas de FIP | FRAM | R$ 3.877.255,47 | Ordem enviada — cód. 98 | Iliquidez do fundo | Ver seção 3.1 |
 | 2 | LIG | Letra Imobiliária Garantida | Itaú | R$ 1.250.000,00 | Esvaziado pós-intimação | A verificar | Ver seção 3.2 |
 | 3 | CDB | Certificado de Depósito Bancário | BTG | R$ 650.758,60 | Saldo zero reportado | — | Ver seção 3.3 |
-| 4 | Bonifácio FIP | Cotas de FIP | A identificar | A apurar | Não bloqueado | A verificar | Ver seção 3.4 |
-| 5 | Conta Itaú | Conta corrente | Itaú | R$ 5.491,00 (remanescente) | — | — | Rastrear transferências |
+| 4 | BTG Pactual | Depósitos múltiplos (retenção) | BTG | R$ 31.925.193,31 | Ordem não cumprida >33 meses | — | Ver seção 3.3 |
+| 5 | Bonifácio FIP | Cotas de FIP | A identificar (CNPJ 59.402.540/0001-44) | A apurar | **Não bloqueado — URGENTE** | A verificar | Ver seção 3.4 |
+| 6 | Conta Itaú | Conta corrente | Itaú | R$ 5.491,00 (remanescente) | — | — | Rastrear transferências |
+| 7 | JP2R PTE LTD | Entidade offshore | Singapura | A apurar | Não bloqueado | — | FATCA/CRS |
+| 8 | Anacapri / Brescia / Cetara | Entidades offshore | Delaware (EUA) | A apurar | Não bloqueado | — | FATCA/CRS |
 
-**Total estimado identificado:** R$ 5.778.014,07 (+ Bonifácio FIP a apurar)
+**Total confirmado (nacionais):** R$ 37.703.207,38 (+ Bonifácio FIP e offshore a apurar)  
+**Total identificado original:** R$ 5.778.014,07 (ativos nacionais sem BTG retenção prolongada)
 
 ---
 
@@ -84,13 +88,16 @@ Compilação dos ativos identificados como passíveis de penhora, com status do 
 
 ---
 
-## Ações Urgentes
+## Ações Urgentes — Atualizado 27/06/2026
 
-| Prioridade | Ação | Fundamento | Prazo |
-|------------|------|------------|-------|
-| 1 | Peticionar bloqueio do Bonifácio FIP | Art. 792 CPC | Imediato |
-| 2 | Requerer extrato BTG dos últimos 24 meses | Art. 774 CPC | Esta semana |
-| 3 | Rastrear destino das transferências Itaú | Art. 792 CPC | Esta semana |
-| 4 | Peticionar multa FRAM/OSLO por cód. 98 | Art. 774 CPC | Esta semana |
-| 5 | Representar ao BCB sobre FRAM/OSLO | Lei 4.595/64 | Este mês |
-| 6 | Representar ao COAF | Lei 9.613/98 | Este mês |
+| Prioridade | Ação | Fundamento | Prazo | Status |
+|------------|------|------------|-------|--------|
+| 1 | **Substituição de patrocínio** (renúncia 15/05/2026 — 15 processos críticos) | Exigência processual | URGENTE | Pendente |
+| 2 | Peticionar bloqueio do Bonifácio FIP (CNPJ 59.402.540/0001-44) | Art. 792, IV CPC | Imediato | Pendente |
+| 3 | Peticionar multa FRAM/OSLO por cód. 98 sistemático | Art. 774 CPC | Esta semana | Pendente |
+| 4 | Representar ao BCB e CVM sobre FRAM/OSLO | Lei 4.595/64 | Esta semana | Pendente |
+| 5 | Requerer extrato BTG dos últimos 24 meses | Art. 774 CPC | Esta semana | Pendente |
+| 6 | Rastrear destino das transferências Itaú (R$ 464.084,00) | Art. 792 CPC | Esta semana | Pendente |
+| 7 | Impugnar perita do 2º estudo psicossocial (antes da realização) | CPC | Verificar prazo | Pendente |
+| 8 | Representar ao COAF — movimentações suspeitas coordenadas | Lei 9.613/98 | Este mês | Pendente |
+| 9 | Acionar FATCA/CRS para entidades offshore (JP2R, Delaware) | Lei 9.613/98 | Este mês | Pendente |

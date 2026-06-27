@@ -2,7 +2,7 @@
 
 **Classificação:** Confidencial — uso interno  
 **Status:** Em construção  
-**Última atualização:** 2026-06-15
+**Última atualização:** 2026-06-27
 
 ---
 
@@ -33,11 +33,22 @@ Reconstruir o caminho completo dos recursos investigados, desde a origem até os
 | CDB | Título | BTG | R$ 650.758,60 | SISBAJUD |
 | Bonifácio FIP | FIP | A identificar | A apurar | CVM |
 
+### BTG Pactual — Retenção Prolongada
+
+| Ativo | Valor Retido | Período | Status |
+|-------|-------------|---------|--------|
+| Depósitos (múltiplos) | R$ 31.925.193,31 | >33 meses | Ordem não cumprida — CRÍTICO |
+
 ### Ativos Internacionais / FATCA-CRS
 
-| Jurisdição | Veículo | Valor | Fonte | Status |
-|------------|---------|-------|-------|--------|
-| A apurar | — | — | FATCA/CRS | Consulta pendente |
+| Jurisdição | Veículo | Identificação | Valor | Status |
+|------------|---------|---------------|-------|--------|
+| Singapura | JP2R PTE LTD | UEN 201840728Z | A apurar | FATCA/CRS — investigar |
+| Delaware (EUA) | Anacapri | A confirmar | A apurar | FATCA/CRS — investigar |
+| Delaware (EUA) | Brescia | A confirmar | A apurar | FATCA/CRS — investigar |
+| Delaware (EUA) | Cetara | A confirmar | A apurar | FATCA/CRS — investigar |
+
+> **Nota:** Entidades offshore identificadas a partir dos documentos do repositório. CNPJs/registros devem ser confirmados via fontes primárias antes de uso em petições.
 
 ---
 
