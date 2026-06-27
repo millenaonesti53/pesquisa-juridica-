@@ -1,0 +1,9 @@
+item_nf,fornecedor,data,valor_R$,categoria_A_propter_rem_B_benfeitoria_C_consumo_proprio,essencial_S_N,vinculo_conservacao_bem_comum_S_N,compensavel_com_alimentos,prova_de_liquidez,efeito_contra_o_executado,fonte,status
+"[exemplo — preencher quando o relatório Mansano for juntado]","","","","","","","NÃO (REsp 1.954.452/SP)","SIM","","Mansano fls. [CONFERIR]","PENDENTE"
+"[NF 01]","","","","A/B/C","","","NÃO","SIM","Vínculo 1 (liquidez) + Vínculo 2","","PENDENTE"
+"[NF 02]","","","","A/B/C","","","NÃO","SIM","","","PENDENTE"
+"[NF 03]","","","","A/B/C","","","NÃO","SIM","","","PENDENTE"
+"REGRA — Categoria A (propter rem: IPTU, condomínio, conservação estrutural)","—","—","—","A","S","S","NÃO — vedada compensação com crédito alimentar (REsp 1.954.452/SP)","SIM","Compensação negada; ainda assim prova liquidez","Doutrina/STJ","REGRA"
+"REGRA — Categoria B (benfeitoria útil/voluptuária — CC 96-97, 1.219)","—","—","—","B","N","parcial","NÃO — não se compensa com alimentos","SIM","Compensação negada; revela gasto não essencial","CC arts. 96-97 e 1.219","REGRA"
+"REGRA — Categoria C (consumo pessoal / benefício próprio)","—","—","—","C","N","N","NÃO — não é despesa do bem comum","SIM","Triplo: não compensável + prova liquidez + dilapidação/violência patrimonial (Lei 11.340 art. 7º IV)","CC art. 1.660; Lei 11.340/06","REGRA"
+"TOTAIS — a calcular após preenchimento","—","—","[somar]","% A / % B / % C","—","—","0 compensável","100% prova de liquidez","Quanto maior o % B+C, mais forte a tese","—","PENDENTE"
