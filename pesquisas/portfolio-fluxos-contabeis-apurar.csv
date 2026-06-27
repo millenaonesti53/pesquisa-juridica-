@@ -1,0 +1,13 @@
+id,fluxo_ou_eixo_contabil,origem,destino,valor_R$,natureza_contabil,enquadramento_em_tese,diligencia,status
+"F1","Cisão E-Vino → RT127","E-Vino (17.392.519/0001-65)","RT127 (NIRE 35.238.272.663)","57.180.967,46","Redução de capital / transferência de participação","Fraude contra credores (CC 158) — pré-ajuizamento","JUCESP + extratos; rastrear destino final (Berlim?)","CONFERIR"
+"F2","Repasse operacional → conta-tubo","E-Vino","Ari Apoio Adm. (17.867.118/0001-14)","[a apurar — extratos]","Despesa/serviço com saldo de passagem","Confusão patrimonial / IDPJ (CC 50)","Extrato bancário do MEI + da E-Vino","CONFERIR extrato"
+"F3","Conta-tubo → pessoa física","Ari Apoio Adm.","Requerido (PF)","[a apurar — extratos]","Distribuição/PIX/TED em <24h","Confusão patrimonial (CC 50)","Extrato PF e PJ","CONFERIR extrato"
+"F4","Non-compete","E-Vino / ecossistema","Requerido (PF)","749.183,38","Multa de não-concorrência (Cláusula 10.1.7)","Contraprestação na constância (comunicável)","Comprovante + Acordo de Cotistas","CONFERIR"
+"F5","Uso do non-compete","Requerido (PF)","Aquisição imobiliária (Pluri Pinheiros)","382.362,37","Pagamento à vista","Incompatível com alegação de miserabilidade","Comprovante de aquisição","CONFERIR"
+"F6","Bloqueio SISBAJUD localizado","Instituições financeiras","Conta judicial","84.856.714,65 (localizado) / 42.428.357,32 (bloqueio 50%)","Constrição de ativos","Reflexo direto da meação","Autos / SISBAJUD","CONFERIDO autos"
+"F7","Desbloqueio sem ordem (a apurar)","BTG Pactual","Contas do Requerido","2.960.039,61","Liberação administrativa","Possível descumprimento (CPC 77)","Protocolo SISBAJUD + autos","CONFERIR"
+"F8","Retenção sem envio (a apurar)","BTG Pactual","(retido)","31.925.193,31","Bloqueio efetuado não transferido","Possível descumprimento (CPC 77)","ID SISBAJUD + autos","CONFERIR"
+"F9","Mútuo conversível","Volimo FIP (36.642.430/0001-54)","E-Vino (ações)","[a apurar]","Mútuo conversível em ações","Diluição em janela de litígio","CVM + Acordo","CONFERIR"
+"F10","Aporte/subscrição em litispendência","Cessionário / Bonifácio FIP","E-Vino (ações novas)","[a apurar]","Subscrição de capital","Conflito de interesse / diluição","CVM","CONFERIR"
+"F11","Dívida externa","Requerido (PF)","Wine in Black GmbH (Berlim)","€ 2.276.136,00","Passivo pessoal no exterior","Origem de passivo artificial a apurar","Carta credor + CBE/BACEN","CONFERIR"
+"F12","Participação offshore (cotistas)","Anacapri / Brescia / Cetara","FIP Ajaccio (cotas)","[a apurar]","Participação de não residente","UBO (IN RFB 2.119/2022) / CRS","RFB + Acordo de Cotistas","CONFERIR"
