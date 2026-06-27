@@ -174,3 +174,21 @@ Ver `pesquisas/notificacoes-checklist-conferir.csv` — rastreador de todos os i
 ---
 
 > **Conclusão:** o pacote é **utilizável e bem construído**. Os ajustes críticos são **três**: (i) o eixo argumentativo da iliquidez (docs 01 e 05); (ii) a premissa SISBAJUD da NT Cotistas (doc 03); (iii) a separação FATCA × UBO (doc 07). Mais o **sequenciamento estratégico** (Seção 8). Feitos esses, o conjunto fica robusto. **Nada deve ser protocolado sem a conferência dos [CONFERIR] pelo advogado responsável.**
+
+---
+
+## 11. Índice das versões aprimoradas (pacote completo)
+
+Todas as 7 minutas foram aprimoradas e versionadas em forma Manifesto-compliant (notificante por papel + placeholder; dado de saúde fora da camada versionada; entidades por CNPJ):
+
+| # | Arquivo aprimorado | Principal correção aplicada |
+|---|---|---|
+| 01 | `01-oslo-capital-APRIMORADA.md` | Eixo iliquidez → capacidade operacional + dever independente de liquidez + Cláusula 9.7 |
+| 02 | `02-empresas-operacionais-APRIMORADA.md` | Cisão 2021 reenquadrada como **fraude contra credores (CC 158)**, não fraude à execução; §5 condicionado a extrato |
+| 03 | `03-cotistas-fundos-APRIMORADA.md` | Premissa SISBAJUD → **indagação precisa** sobre participação do Requerido |
+| 04 | `04-noticia-crime-falsum-APRIMORADA.md` | 3 lacunas de tipicidade (presença física × procuração; autoria; público × particular) |
+| 05 | `05-denuncia-cvm-APRIMORADA.md` | Eixo iliquidez corrigido; valoração técnica deixada à CVM |
+| 06 | `06-representacao-anbima-APRIMORADA.md` | Pré-condição de adesão; dispositivos específicos a citar |
+| 07 | `07-fatca-ubo-receita-APRIMORADA.md` | UBO/CRS (IN RFB 2.119/2022) como eixo principal; FATCA subsidiário |
+
+**Próximo passo recomendado:** decidir o **sequenciamento** (Seção 8) com a advocacia antes de qualquer envio — a indisponibilidade judicial das cotas deve preceder as notificações extrajudiciais à administradora e às empresas, para preservar o efeito-surpresa.
