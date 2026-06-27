@@ -5,7 +5,7 @@
 >
 > **Sob o [MANIFESTO.md](../MANIFESTO.md):** partes pelo papel (Alimentante = Requerido/ex-cônjuge; Alimentanda/Alimentandos = Requerente e filhos); CPF apenas do Requerido (público dos autos); **CPF da Requerente e dados sensíveis dos filhos NÃO reproduzidos**; entidades por CNPJ; sem rótulo criminal categórico; **[CONFERIR]** no que depende dos autos.
 >
-> ⚠️ **Limite de cognição:** a **íntegra dos autos 1012537-07** (PDF "integra até 27-06") **não foi disponibilizada** a esta análise. O diagnóstico apoia-se em referências cruzadas do acervo (Parecer v11, 8 blocos, nota Mansano, Saladerie/CEO Familiar) e **deve ser confirmado peça a peça** na íntegra antes de qualquer uso.
+> ⚠️ **Limite de cognição:** a **íntegra dos autos 1012537-07** não foi disponibilizada. **ATUALIZAÇÃO:** os Docs 98 e 99 (pareceres recebidos posteriormente) **confirmam o estado processual com fls. reais** — ver `consolidacao-validacao-docs-97-98-99.md`. Em síntese confirmada: **tutela de redução INDEFERIDA** (fls. 375/376; parecer MP fls. 1544/1546); **MP acolheu** "mensalidade menor ≠ custo menor" e "custo cresce com a idade" (fls. 1546); **renda confessada R$ 50.000/mês** na Vila Porto International Business S.A. (fls. 911/940); **patrimônio admitido > R$ 32 MM**; **reconvenção dos filhos pede majoração para R$ 30.000** (fls. 911/940); **autor quer pagar R$ 5.000** (fls. 421/435); **prisão civil** por inadimplemento (fls. 1545). A íntegra ainda deve ser conferida peça a peça antes do uso forense.
 
 ---
 
