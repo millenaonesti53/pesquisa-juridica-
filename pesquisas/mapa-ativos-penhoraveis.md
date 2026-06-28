@@ -2,7 +2,7 @@
 
 **Classificação:** Confidencial — uso interno  
 **Status:** Em atualização contínua  
-**Última atualização:** 2026-06-15
+**Última atualização:** 2026-06-28
 
 ---
 
@@ -17,12 +17,15 @@ Compilação dos ativos identificados como passíveis de penhora, com status do 
 | # | Ativo | Tipo | Instituição | Valor Estimado | Bloqueio | Impenhorabilidade Alegada | Refutação |
 |---|-------|------|-------------|----------------|----------|--------------------------|-----------|
 | 1 | FRAM XIV FIP | Cotas de FIP | FRAM | R$ 3.877.255,47 | Ordem enviada — cód. 98 | Iliquidez do fundo | Ver seção 3.1 |
-| 2 | LIG | Letra Imobiliária Garantida | Itaú | R$ 1.250.000,00 | Esvaziado pós-intimação | A verificar | Ver seção 3.2 |
-| 3 | CDB | Certificado de Depósito Bancário | BTG | R$ 650.758,60 | Saldo zero reportado | — | Ver seção 3.3 |
-| 4 | Bonifácio FIP | Cotas de FIP | A identificar | A apurar | Não bloqueado | A verificar | Ver seção 3.4 |
-| 5 | Conta Itaú | Conta corrente | Itaú | R$ 5.491,00 (remanescente) | — | — | Rastrear transferências |
+| 2 | BTG — Retenção judicial | Ordem ativa | BTG Pactual | R$ 31.925.193,31 | 34 meses sem cumprimento | — | Cumprimento forçado (art. 774 CPC) |
+| 3 | LIG | Letra Imobiliária Garantida | Itaú | R$ 1.250.000,00 | Esvaziado pós-intimação | A verificar | Ver seção 3.2 |
+| 4 | CDB | Certificado de Depósito Bancário | BTG Pactual | R$ 650.758,60 | Saldo zero reportado | — | Ver seção 3.3 |
+| 5 | Bonifácio FIP | Cotas de FIP | A identificar | A apurar | **NÃO BLOQUEADO** | A verificar | Ver seção 3.4 |
+| 6 | Conta Itaú | Conta corrente | Itaú | R$ 5.491,00 (remanescente) | — | — | Rastrear transferências |
+| 7 | JP2R PTE LTD | Offshore (Singapura) | — | A apurar | Não identificado | — | FATCA/CRS pendente |
+| 8 | Anacapri / Brescia / Cetara | Offshore (Delaware) | — | A apurar | Não identificado | — | Investigação pendente |
 
-**Total estimado identificado:** R$ 5.778.014,07 (+ Bonifácio FIP a apurar)
+**Total estimado identificado (nacionais confirmados):** R$ 37.703.207,38 (+ Bonifácio FIP + offshore a apurar)
 
 ---
 
@@ -86,11 +89,15 @@ Compilação dos ativos identificados como passíveis de penhora, com status do 
 
 ## Ações Urgentes
 
-| Prioridade | Ação | Fundamento | Prazo |
-|------------|------|------------|-------|
-| 1 | Peticionar bloqueio do Bonifácio FIP | Art. 792 CPC | Imediato |
-| 2 | Requerer extrato BTG dos últimos 24 meses | Art. 774 CPC | Esta semana |
-| 3 | Rastrear destino das transferências Itaú | Art. 792 CPC | Esta semana |
-| 4 | Peticionar multa FRAM/OSLO por cód. 98 | Art. 774 CPC | Esta semana |
-| 5 | Representar ao BCB sobre FRAM/OSLO | Lei 4.595/64 | Este mês |
-| 6 | Representar ao COAF | Lei 9.613/98 | Este mês |
+| Prioridade | Ação | Fundamento | Prazo | Status |
+|------------|------|------------|-------|--------|
+| 1 | **Contratar novo advogado** (15 processos sem representação) | Processual | Imediato | PENDENTE |
+| 2 | Peticionar bloqueio do Bonifácio FIP (CNPJ 59.402.540/0001-44) | Art. 792 CPC | Imediato | PENDENTE |
+| 3 | Peticionar cumprimento forçado ordem BTG (R$ 31.925.193,31) | Art. 774 CPC | Esta semana | PENDENTE |
+| 4 | Requerer extrato BTG dos últimos 24 meses (CDB) | Art. 774 CPC | Esta semana | PENDENTE |
+| 5 | Rastrear destino das transferências Itaú pós-esvaziamento | Art. 792 CPC | Esta semana | PENDENTE |
+| 6 | Peticionar multa FRAM por cód. 98 sistemático | Art. 774 CPC | Esta semana | PENDENTE |
+| 7 | Peticionar multa OSLO por cód. 98 sistemático | Art. 774 CPC | Esta semana | PENDENTE |
+| 8 | Representar ao BCB sobre FRAM e OSLO | Lei 4.595/64 | Este mês | PENDENTE |
+| 9 | Representar ao COAF com mapa de ocultação | Lei 9.613/98 | Este mês | PENDENTE |
+| 10 | Solicitar FATCA/CRS sobre JP2R PTE LTD e Delaware entities | OCDE/IRS | Este mês | PENDENTE |

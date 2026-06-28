@@ -2,7 +2,7 @@
 
 **Classificação:** Confidencial — uso interno  
 **Status:** Em construção  
-**Última atualização:** 2026-06-15
+**Última atualização:** 2026-06-28
 
 ---
 
@@ -29,15 +29,22 @@ Reconstruir o caminho completo dos recursos investigados, desde a origem até os
 | Ativo | Veículo | Instituição | Valor Estimado | Fonte |
 |-------|---------|-------------|----------------|-------|
 | FRAM XIV FIP | FIP | FRAM | R$ 3.877.255,47 | SISBAJUD / CVM |
+| BTG — Retenção judicial | Ordem ativa | BTG Pactual | R$ 31.925.193,31 | SISBAJUD (34 meses) |
 | LIG | Título | Itaú | R$ 1.250.000,00 | SISBAJUD |
-| CDB | Título | BTG | R$ 650.758,60 | SISBAJUD |
-| Bonifácio FIP | FIP | A identificar | A apurar | CVM |
+| CDB | Título | BTG Pactual | R$ 650.758,60 | SISBAJUD |
+| Bonifácio FIP | FIP | A identificar | A apurar | CVM (CNPJ 59.402.540/0001-44) |
+| Conta corrente | Conta | Itaú | R$ 5.491,00 (remanescente) | SISBAJUD |
+
+**Total estimado (ativos nacionais):** R$ 37.703.207,38 (excluindo Bonifácio FIP a apurar)
 
 ### Ativos Internacionais / FATCA-CRS
 
-| Jurisdição | Veículo | Valor | Fonte | Status |
-|------------|---------|-------|-------|--------|
-| A apurar | — | — | FATCA/CRS | Consulta pendente |
+| Jurisdição | Entidade | Identificação | Valor | Fonte | Status |
+|------------|----------|---------------|-------|-------|--------|
+| Singapura | JP2R PTE LTD | UEN 201840728Z | A apurar | FATCA/CRS | Consulta pendente |
+| Delaware, EUA | Anacapri | A verificar | A apurar | A identificar | Investigação pendente |
+| Delaware, EUA | Brescia | A verificar | A apurar | A identificar | Investigação pendente |
+| Delaware, EUA | Cetara | A verificar | A apurar | A identificar | Investigação pendente |
 
 ---
 
@@ -61,9 +68,14 @@ Modelo:
 | Entidade | CNPJ/CPF | Papel | Vínculo com Devedor |
 |----------|----------|-------|---------------------|
 | FRAM | A verificar | Gestora/Administradora | A apurar |
-| OSLO | A verificar | Gestora/Administradora | A apurar |
-| Bonifácio FIP | A verificar | Veículo patrimonial | A apurar |
-| Ajaccio | A verificar | A identificar | A apurar |
+| OSLO DTVM | A verificar | Gestora/Administradora | A apurar — investigar vínculos com FRAM |
+| Bonifácio FIP | 59.402.540/0001-44 | Veículo patrimonial (FIP) | Criado 11/02/2025 — pós-litígio |
+| Ajaccio FIP | A verificar | A identificar | Inconsistência temporal nos documentos |
+| BTG Pactual | A verificar | Instituição financeira | Retenção de R$ 31.925.193,31 por 34 meses |
+| JP2R PTE LTD | UEN 201840728Z (Singapura) | Entidade offshore | A apurar |
+| Anacapri | A verificar (Delaware) | Entidade offshore | A apurar |
+| Brescia | A verificar (Delaware) | Entidade offshore | A apurar |
+| Cetara | A verificar (Delaware) | Entidade offshore | A apurar |
 
 > **Nota:** CNPJs e CPFs devem ser preenchidos somente com dados verificados em fontes primárias (Receita Federal, CVM, SISBAJUD). Nunca inferir ou supor.
 
