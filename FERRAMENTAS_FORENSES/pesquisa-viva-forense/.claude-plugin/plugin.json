@@ -1,0 +1,8 @@
+{
+  "name": "pesquisa-viva-forense",
+  "version": "1.0.0",
+  "description": "Mantem a pesquisa juridico-forense do caso como ESTADO VIVO, versionavel e validavel, em vez de dossie estatico. Cada asercao carrega nivel probatorio (FATO comprovado nos autos; CONFERIR asseverado mas pendente; LINHA DE PROVA hipotese a confirmar). Gera o Doc 102 (revisao do Doc 101) em PDF e DOCX projetados do estado, integrando as 7 lacunas patrimoniais. Auditor critico revisa fragilidades probatorias. Politica cumulativo-expansiva: nunca deleta, so promove com motivo.",
+  "author": { "name": "Millena Onesti Gorenstein" },
+  "license": "MIT",
+  "keywords": ["forense", "pesquisa-viva", "saneamento", "partilha", "prova", "dossie"]
+}

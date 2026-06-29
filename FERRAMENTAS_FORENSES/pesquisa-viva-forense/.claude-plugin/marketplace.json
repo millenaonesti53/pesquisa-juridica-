@@ -1,0 +1,11 @@
+{
+  "name": "marketplace-forense-gorenstein",
+  "owner": { "name": "Millena Onesti Gorenstein" },
+  "plugins": [
+    {
+      "name": "pesquisa-viva-forense",
+      "source": "./",
+      "description": "Estado vivo da pesquisa forense + geracao do Doc 102 (PDF/DOCX) + auditor probatorio."
+    }
+  ]
+}

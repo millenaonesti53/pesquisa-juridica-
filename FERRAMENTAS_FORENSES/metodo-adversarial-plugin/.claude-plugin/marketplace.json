@@ -1,0 +1,13 @@
+{
+  "name": "metodo-adversarial-marketplace",
+  "owner": {
+    "name": "Millena Onesti Gorenstein"
+  },
+  "plugins": [
+    {
+      "name": "metodo-adversarial",
+      "source": "./",
+      "description": "Pre-mortem adversarial de teses juridicas e financeiras. Steelman do adversario, auditoria de impugnacao/objecao tecnica, mapa de vulnerabilidade e cenarios, com traducao em peca ou parecer. Nucleo metodologico + skill juridica + skill financeira + agente advogado-do-diabo."
+    }
+  ]
+}

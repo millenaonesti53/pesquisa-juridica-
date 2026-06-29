@@ -1,0 +1,23 @@
+{
+  "name": "metodo-adversarial",
+  "version": "1.0.0",
+  "description": "Metodo de analise adversarial por pre-mortem de tese, adaptando a arquitetura cognitiva da negociacao tatica (Chris Voss) ao trabalho juridico-forense e financeiro-contabil de alto risco. Reconstroi o melhor argumento do adversario (steelman), antecipa toda impugnacao antes que ela seja feita, mapeia vulnerabilidades em cenarios, e desemboca em peca (FATO-PROVA-NORMA-PEDIDO) ou parecer (Diagnostico-Evidencia-Implicacoes-Cenarios-Estrategia-Acao). Todo output e instrumento interno; protocolo/pericia exigem subscricao de profissional habilitado.",
+  "keywords": [
+    "juridico",
+    "forense",
+    "financeiro",
+    "contabil",
+    "pre-mortem",
+    "adversarial",
+    "valuation",
+    "litigio",
+    "peca-processual",
+    "parecer",
+    "steelman",
+    "impugnacao"
+  ],
+  "author": {
+    "name": "Millena Onesti Gorenstein"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,385 @@
+{
+  "caso": "Onesti x Gorenstein",
+  "processos": [
+    "1006744-58.2023.8.26.0011",
+    "1012537-07.2025.8.26.0011"
+  ],
+  "sucede": "Doc 101",
+  "seq": 22,
+  "asercoes": [
+    {
+      "id": "AS0001",
+      "frente": "partilha",
+      "nivel": "FATO",
+      "asercao": "Renda do reu de R$ 50.000/mes (Vila Porto International Business S.A.)",
+      "fonte": "reconvencao 1012537-07.2025",
+      "prova_necessaria": "",
+      "obs": "Confissao em peticao do proprio reu.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0002",
+      "frente": "partilha",
+      "nivel": "FATO",
+      "asercao": "Patrimonio do reu > R$ 32.000.000,00",
+      "fonte": "contestacao/reconvencao",
+      "prova_necessaria": "",
+      "obs": "Confissao em peticao.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0003",
+      "frente": "partilha",
+      "nivel": "FATO",
+      "asercao": "Oferta de aquisicao das cotas por > R$ 4.000.000,00 (Operacao Ricardo)",
+      "fonte": "Doc 90",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0004",
+      "frente": "partilha",
+      "nivel": "CONFERIR",
+      "asercao": "Reu e representante legal da Evino em processo ativo (TJMS 0926609-45.2024) apesar da alegada saida",
+      "fonte": "Doc 100 / Exato PF",
+      "prova_necessaria": "Certidao de objeto e pe TJMS 0926609-45.2024",
+      "obs": "Asseverado; pende certidao para fechar como FATO oponivel.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0005",
+      "frente": "partilha",
+      "nivel": "LINHA_DE_PROVA",
+      "asercao": "Valor e titularidade das cotas de Ari (Classes A+F, ~4,42%) no Ajaccio",
+      "fonte": "—",
+      "prova_necessaria": "Oficio CVM/OSLO: ficha de cotistas, valor e datas das cotas",
+      "obs": "Inversao do onus pretendida (assimetria + retencao + CNJ 492/2023).",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "LINHA_DE_PROVA"
+        }
+      ]
+    },
+    {
+      "id": "AS0006",
+      "frente": "partilha",
+      "nivel": "CONFERIR",
+      "asercao": "Iliquidez do FIP afirmada sem prova (sem politica/laudo/ata)",
+      "fonte": "fls. 1421-1423",
+      "prova_necessaria": "Exibicao do Acordo de Cotistas (Cl. 9.7, 10.1.7) e laudo",
+      "obs": "Afirmacao do reu desacompanhada de lastro documental.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0007",
+      "frente": "patrimonial",
+      "nivel": "CONFERIR",
+      "asercao": "Dicotomia dos ativos no SISBAJUD: a pesquisa retornou CAIXA, nao cotas. Ativos do CPF tratados como 'cotas iliquidas' sao, na origem, liquidez.",
+      "fonte": "Docs 89/90/93",
+      "prova_necessaria": "Detalhamento SISBAJUD por instituicao e natureza do ativo",
+      "obs": "Nucleo da contradicao 'iliquido la, liquido aqui'.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0008",
+      "frente": "patrimonial",
+      "nivel": "CONFERIR",
+      "asercao": "Ativos liquidos localizados: Itau ~R$ 10.000.000,00 (liquido), em contraste com cotas FRAM/Ajaccio apresentadas como iliquidas SEM documento comprobatorio",
+      "fonte": "[CONFERIR fls.]",
+      "prova_necessaria": "Extrato Itau + ausencia de lastro das cotas FRAM no SISBAJUD",
+      "obs": "LACUNA 3: contraste FRAM-sem-lastro x Itau-liquido a desenvolver.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0009",
+      "frente": "patrimonial",
+      "nivel": "FATO",
+      "asercao": "SISBAJUD localizou caixa de R$ 84,8 MM (nao cotas) no ambito da pesquisa",
+      "fonte": "Docs 89/90/93",
+      "prova_necessaria": "",
+      "obs": "Ja afirmado no Doc 101 como achado da pesquisa SISBAJUD.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0010",
+      "frente": "patrimonial",
+      "nivel": "LINHA_DE_PROVA",
+      "asercao": "R$ 5.000.000,00 desbloqueados indevidamente apos a dicotomia dos ativos (liberacao de numerario localizado como liquido, em desacordo com a constricao)",
+      "fonte": "[CONFERIR fls. da decisao/peticao de desbloqueio]",
+      "prova_necessaria": "Certidao da decisao de desbloqueio + extrato do fluxo dos R$ 5 MM apos liberacao",
+      "obs": "LACUNA 2: ausente no Doc 101. Cruzar com o padrao de desbloqueio coordenado.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "LINHA_DE_PROVA"
+        }
+      ]
+    },
+    {
+      "id": "AS0011",
+      "frente": "patrimonial",
+      "nivel": "LINHA_DE_PROVA",
+      "asercao": "Movimentacoes da Apoio Administrativa para Ari (fluxo Evino -> Apoio Adm. -> PF) como canal de transferencia de recursos a pessoa fisica",
+      "fonte": "Doc 101 II.5/VII (citado, nao desenvolvido)",
+      "prova_necessaria": "Exibicao de extratos da Apoio Adm.; pericia de reconstituicao do fluxo",
+      "obs": "LACUNA 1: condicionado a juntada de extrato (calibracao 02 herdada).",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "LINHA_DE_PROVA"
+        }
+      ]
+    },
+    {
+      "id": "AS0012",
+      "frente": "patrimonial",
+      "nivel": "LINHA_DE_PROVA",
+      "asercao": "Funcao de shadow director: Ari mantem controle fatico/gestao da Evino e do grupo apesar da 'saida' formal, com salario Vila Porto e papel de diretor de novos negocios",
+      "fonte": "Doc 100 (representante 2026); contrato Vila Porto 01/07/2025",
+      "prova_necessaria": "Atos societarios assinados pos-demissao; organograma; e-mails/atas de gestao",
+      "obs": "LACUNA 4: nomear como TESE de shadow director, nao so 'vinculo Vila Porto'.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "LINHA_DE_PROVA"
+        }
+      ]
+    },
+    {
+      "id": "AS0013",
+      "frente": "pensoes",
+      "nivel": "FATO",
+      "asercao": "Contrato Vila Porto Vinhos (mesmo setor; R$ 50k/mes) firmado 01/07/2025, viola a propria nao-concorrencia e estabelece renda nova",
+      "fonte": "contrato 01/07/2025",
+      "prova_necessaria": "",
+      "obs": "Ja no Doc 101 III.2.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0014",
+      "frente": "patrimonial",
+      "nivel": "LINHA_DE_PROVA",
+      "asercao": "Rendimentos de fundos declarados no IR de Ari (existencia e magnitude) — fonte de renda/patrimonio nao refletida na alegacao de 'receita zero'",
+      "fonte": "[CONFERIR DIRPF Ari]",
+      "prova_necessaria": "Exibicao da DIRPF completa (fichas de rendimentos e bens) + cruzamento",
+      "obs": "LACUNA 5: ausente no Doc 101.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "LINHA_DE_PROVA"
+        }
+      ]
+    },
+    {
+      "id": "AS0015",
+      "frente": "patrimonial",
+      "nivel": "LINHA_DE_PROVA",
+      "asercao": "Aumento de capital declarado no IR de Ari — incremento patrimonial que contradiz a narrativa de perda de renda",
+      "fonte": "[CONFERIR DIRPF Ari]",
+      "prova_necessaria": "Exibicao da DIRPF (evolucao patrimonial ano a ano); confronto com os atos societarios",
+      "obs": "LACUNA 6: ausente no Doc 101.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "LINHA_DE_PROVA"
+        }
+      ]
+    },
+    {
+      "id": "AS0016",
+      "frente": "patrimonial",
+      "nivel": "LINHA_DE_PROVA",
+      "asercao": "Cruzamento dos comprovantes trazidos no processo com os fundos registrados no IR: suspeita de coinvestimento nos fundos e/ou estrutura de fundos de fundos",
+      "fonte": "comprovantes nos autos [CONFERIR fls.] + DIRPF",
+      "prova_necessaria": "Pericia cruzando comprovantes processuais x fundos da DIRPF x ficha de cotistas CVM",
+      "obs": "LACUNA 7: tese de investigacao nova — coinvestimento / fundo de fundos.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "LINHA_DE_PROVA"
+        }
+      ]
+    },
+    {
+      "id": "AS0017",
+      "frente": "pensoes",
+      "nivel": "FATO",
+      "asercao": "Tutela de reducao de alimentos INDEFERIDA; prisao civil do reu por inadimplemento decretada",
+      "fonte": "fls. 375/376; parecer MP fls. 1544/1546; fls. 1545",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0018",
+      "frente": "pensoes",
+      "nivel": "FATO",
+      "asercao": "Padrao de cronometragem: 'demissao' da Evino em 02/12/2024, 3 dias antes da peticao de 05/12/2024 alegando 'receita zero'; non-compete R$ 749.183,38 em 29/01/2025",
+      "fonte": "autos revisional",
+      "prova_necessaria": "",
+      "obs": "Sustenta litigancia de ma-fe (CPC 80, II) e presuncao art. 400.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0019",
+      "frente": "pensoes",
+      "nivel": "FATO",
+      "asercao": "MP reconheceu: mensalidade menor (Camino->Modulo) != custo menor das criancas",
+      "fonte": "fls. 1544/1546",
+      "prova_necessaria": "",
+      "obs": "Nucleo contabil ja acolhido pelo MP.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0020",
+      "frente": "guarda",
+      "nivel": "FATO",
+      "asercao": "Guarda e visitas suspensas desde out/2024; medidas protetivas vigentes; IP em curso",
+      "fonte": "decisao out/2024; autos protetivas",
+      "prova_necessaria": "",
+      "obs": "Afastamento imposto pelo Estado — ilicito imputavel e a conduta dolosa anterior.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0021",
+      "frente": "guarda",
+      "nivel": "CONFERIR",
+      "asercao": "Uniao formal de Ari com filha de pessoa sob investigacao por suposto ilicito contra Caio como fato novo material",
+      "fonte": "[CONFERIR documento da uniao]",
+      "prova_necessaria": "Certidao/prova da uniao + do IP correlato",
+      "obs": "Mencionado no acervo; pende fechamento documental.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0022",
+      "frente": "transversal",
+      "nivel": "FATO",
+      "asercao": "Cinco alegacoes do reu contraditadas por prova (saida Evino; cotas iliquidas; receita zero; queda de gastos; ausencia de violencia) — autoriza reconhecimento do padrao",
+      "fonte": "Doc 101 secao V",
+      "prova_necessaria": "",
+      "obs": "Pede-se reconhecimento do PADRAO, nao nulidade global.",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    }
+  ]
+}
