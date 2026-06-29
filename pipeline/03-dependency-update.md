@@ -20,7 +20,7 @@ Identificar alterações estruturais suspeitas em veículos patrimoniais:
 
 1. **Criação retroativa de classes** — ex.: criação da Classe J após início do litígio
 2. **Side-pockets** — segregação de ativos ilíquidos sem justificativa econômica
-3. **Alterações de regulamento** — mudanças que dificultem a penhora
+3. **Alterações de regulamento** — mudanças que dificultem a penhora ou reduzam o PL nominal
 4. **Cisões e SPVs novas** — criação de Sociedades de Propósito Específico pós-ação judicial
 
 ## Rotina Integrada
@@ -73,6 +73,7 @@ Ação: cruzar datas com registros CVM e extratos bancários
 - [ ] Identificar cotistas atuais vs. cotistas na data da penhora
 - [ ] Checar CNPJs de administradoras e gestoras por vínculos com o devedor
 - [ ] Verificar se há participações cruzadas entre FIPs monitorados
+- [ ] Verificar logs FATCA/CRS para ativos internacionais não declarados
 
 ### Saída
 - Log de dependências atualizadas
