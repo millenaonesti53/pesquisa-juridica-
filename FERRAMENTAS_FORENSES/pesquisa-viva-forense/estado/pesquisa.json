@@ -5,7 +5,7 @@
     "1012537-07.2025.8.26.0011"
   ],
   "sucede": "Doc 101",
-  "seq": 22,
+  "seq": 29,
   "asercoes": [
     {
       "id": "AS0001",
@@ -378,6 +378,125 @@
           "data": "2026-06-29",
           "evento": "criada",
           "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0023",
+      "frente": "partilha",
+      "nivel": "FATO",
+      "asercao": "Reu concordou com o bloqueio das cotas (fls. 575, item 26) — renuncia tacita a qualquer alegacao de impenhorabilidade/iliquidez",
+      "fonte": "fls. 575, item 26",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0024",
+      "frente": "partilha",
+      "nivel": "CONFERIR",
+      "asercao": "Impenhorabilidade/iliquidez nao arguida no prazo do art. 854 §3º CPC (5 dias) — materia preclusa conforme Tema 1.235 STJ (impenhorabilidade nao e materia de ordem publica)",
+      "fonte": "art. 854 §3º CPC; Tema 1.235 STJ; fls. 575",
+      "prova_necessaria": "Certidao de que nao houve arguicao tempestiva de impenhorabilidade",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0025",
+      "frente": "partilha",
+      "nivel": "CONFERIR",
+      "asercao": "Acordao manteve a suspensao da liberacao com base na narrativa de cotas iliquidas, CONTRA a prova oficial do SISBAJUD (caixa) — vicio de fundamentacao (art. 489 §1º CPC) / error in procedendo, nao reexame de prova",
+      "fonte": "acordao; Docs 89/90/93",
+      "prova_necessaria": "Copia integral do acordao e da decisao de origem",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0026",
+      "frente": "patrimonial",
+      "nivel": "CONFERIR",
+      "asercao": "Agro Syrah Participacoes S.A. (23.699.696/0001-91), de que Ari e socio, controla a Vissimo Participacoes (dona de E-Vino e Grand Cru); Ajaccio (ex-FRAM XIII) controla diretamente a E-Vino",
+      "fonte": "Mapa da Fraude; docs societarios; Doc 92",
+      "prova_necessaria": "Contratos sociais/atas Agro Syrah e Vissimo; cadeia de controle",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0027",
+      "frente": "patrimonial",
+      "nivel": "FATO",
+      "asercao": "Identidade de endereco: Ari Gorenstein Apoio Administrativo e o Ajaccio FIP registrados no mesmo endereco (R. Dr. Eduardo de Souza Aranha 153, 4º andar) — confusao operacional PF/veiculo",
+      "fonte": "Doc 92 (CNPJ-check); Mapa da Fraude",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0028",
+      "frente": "patrimonial",
+      "nivel": "CONFERIR",
+      "asercao": "FRAM Capital XIV FIP liquidado voluntariamente em fev/2022 durante a reorganizacao; veiculos Ajaccio Investimento no Exterior e Easy Fundo Exterior sugerem migracao offshore de recursos em curso de litigio",
+      "fonte": "Mapa da Fraude; docs fundos; Doc 92",
+      "prova_necessaria": "Atas de liquidacao do FRAM XIV; regulamentos dos veiculos exterior; CBE/BACEN",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0029",
+      "frente": "patrimonial",
+      "nivel": "LINHA_DE_PROVA",
+      "asercao": "Empresas de fachada (Easy Prime, Ari Apoio) com CRF/FGTS ininterrupto e regular = ferramentas ativas de movimentacao/contratacao em nome do grupo, nao empresas inativas",
+      "fonte": "certidoes CRF/FGTS; Mapa da Fraude",
+      "prova_necessaria": "Extratos e contratos das empresas; cruzamento com folha/servicos do grupo",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "LINHA_DE_PROVA"
         }
       ]
     }
