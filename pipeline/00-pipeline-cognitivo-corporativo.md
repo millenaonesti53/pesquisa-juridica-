@@ -1,7 +1,9 @@
-# Pipeline Cognitivo Corporativo — Arquitetura Técnica
+# Pipeline Cognitivo Corporativo — Diagrama Técnico (PhD TI)
 
-**Versão:** 1.0  
-**Data:** 2026-06-15  
+**Integração entre Tecnologia, Governança Jurídica e Investigação Patrimonial**
+
+**Versão:** 2.0  
+**Data:** 2026-06-29  
 **Classificação:** Uso Interno — Governança Jurídica
 
 ---
@@ -40,6 +42,14 @@ Sistema integrado de investigação patrimonial automatizada, combinando infraes
 │  (Governança: decisões jurídicas, pareceres, relatórios)     │
 └──────────────────────────────────────────────────────────────┘
 ```
+
+Cada módulo alimenta o próximo:
+
+- **Briefing** → contexto humano + jurídico
+- **Health Check** → estabilidade técnica + detecção de fraude
+- **Dependency Check** → atualização de dados + inconsistências
+- **Flaky Tracker** → validação estatística + ocultação
+- **PR Digest** → governança + decisões jurídicas
 
 ---
 
@@ -104,10 +114,24 @@ Os ativos e movimentações identificados pelo pipeline são analisados sob os s
 
 ---
 
+## Capacidades do Sistema
+
+O resultado é um sistema de investigação patrimonial automatizado, capaz de:
+
+- Detectar fraude e mapear ocultação patrimonial
+- Identificar ativos penhoráveis com valor e status atualizados
+- Desmontar alegações de impenhorabilidade com base em evidências documentais
+- Reconstruir o *whole money trail* (rastreamento completo do fluxo financeiro)
+- Produzir relatórios jurídicos de alto impacto para CLO, IDPJ, COAF e MPF
+
+---
+
 ## Referências aos Módulos Detalhados
 
-- [`01-briefing.md`](01-briefing.md)
-- [`02-health-check.md`](02-health-check.md)
-- [`03-dependency-update.md`](03-dependency-update.md)
-- [`04-flaky-tracker.md`](04-flaky-tracker.md)
-- [`05-pr-review-digest.md`](05-pr-review-digest.md)
+| # | Módulo | Arquivo | Função Dupla |
+|---|--------|---------|-------------|
+| 1 | Briefing | [`01-briefing.md`](01-briefing.md) | Inteligência diária + alertas bancários |
+| 2 | System Health Check | [`02-health-check.md`](02-health-check.md) | Monitoramento técnico + detecção de fraude |
+| 3 | Dependency Update Check | [`03-dependency-update.md`](03-dependency-update.md) | Atualização de bases + inconsistências estruturais |
+| 4 | Flaky Test Tracker | [`04-flaky-tracker.md`](04-flaky-tracker.md) | Validação estatística + ocultação sistêmica |
+| 5 | PR Review Digest | [`05-pr-review-digest.md`](05-pr-review-digest.md) | Consolidação + enquadramento jurídico |

@@ -19,18 +19,25 @@ Verificar sinais de manipulação ou ocultação patrimonial:
 
 1. **Inconsistências de PL** — Patrimônio Líquido declarado vs. calculado
 2. **Divergências IRPF × CVM** — bens declarados à Receita vs. registros CVM
-3. **Ausência de resposta** — código 98 como possível obstrução
+3. **Ausência de resposta** — código 98 como possível obstrução intencional
 4. **Sinais de ocultação** — movimentações abruptas sem lastro documental
 
 ## Rotina Integrada
 
-### Ativos sob Monitoramento Ativo
+### Ativos Detectados sob Monitoramento Ativo
 
 | Ativo | Instituição | PL Registrado | Status | Risco |
 |-------|-------------|---------------|--------|-------|
-| FRAM XIV FIP | FRAM | R$ 3.877.255,47 | Sem resposta | CRÍTICO |
+| FRAM XIV FIP | FRAM | R$ 3.877.255,47 | Sem resposta (cód. 98) | CRÍTICO |
 | LIG | Itaú | R$ 1.250.000,00 | Esvaziamento tático | CRÍTICO |
 | CDB | BTG | R$ 650.758,60 | Saldo zero repetido | ALTO |
+
+### Marcação como Risco Crítico
+
+O sistema marca como risco crítico:
+
+- Instituições que não respondem às ordens SISBAJUD
+- Contas com variação abrupta inexplicada (ex.: Itaú R$ 469.575 → R$ 5.491)
 
 ### Verificações de Consistência
 
@@ -67,5 +74,5 @@ Para cada conta bancária:
 
 ### Saída
 - Relatório de saúde do sistema (técnico)
-- Mapa de inconsistências jurídicas
+- Mapa de inconsistências jurídicas identificadas
 - Alimenta o módulo 3 (Dependency Update Check)

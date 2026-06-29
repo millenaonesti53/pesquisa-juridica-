@@ -26,8 +26,8 @@ Atualizar o CLO (Chief Legal Officer) e o Núcleo de Governança sobre:
 ## Rotina Integrada
 
 ### Entrada
-- Whole Money Trail do dia anterior (atualizado)
-- Status das respostas bancárias pendentes
+- Carrega o **Whole Money Trail** do dia anterior (atualizado)
+- Status das respostas bancárias pendentes por instituição
 
 ### Processamento
 
@@ -42,6 +42,13 @@ Para cada instituição monitorada:
      - Variação > 50% sem justificativa registrada
 ```
 
+### Atualização de Status por Instituição
+
+| Código SISBAJUD | Significado | Ação Gerada |
+|-----------------|-------------|-------------|
+| 98 | Não respondeu | Alerta crítico + petição de intimação |
+| 13 | Respondeu sem saldo | Cruzar com IRPF + extratos anteriores |
+
 ### Alertas Automáticos — Gatilhos Ativos
 
 | Instituição | Gatilho | Prioridade |
@@ -54,6 +61,7 @@ Para cada instituição monitorada:
 ### Saída
 - Relatório de inteligência diária (formato: `notas/briefing-AAAA-MM-DD.md`)
 - Lista de pendências para o Health Check
+- Atualização de status no painel de monitoramento
 
 ---
 
@@ -74,8 +82,8 @@ Para cada instituição monitorada:
 |-------------|--------|-----------------|----------|-------|
 
 ## Alertas Ativos
-[Lista de alertas críticos]
+[Lista de alertas críticos com prioridade]
 
 ## Próximos Passos
-[Ações para o dia]
+[Ações para o dia, ordenadas por prioridade]
 ```

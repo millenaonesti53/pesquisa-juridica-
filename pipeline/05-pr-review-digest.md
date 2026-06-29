@@ -11,7 +11,7 @@ Consolidar todos os outputs dos módulos anteriores em documentos estruturados:
 - Relatórios técnicos para o CLO
 - Pareceres jurídicos para o IDPJ
 - Minutas para COAF e MPF
-- Mapa de ativos penhoráveis
+- Mapa de ativos penhoráveis atualizado
 
 ## Função Jurídica
 
@@ -118,8 +118,8 @@ Status atual: EM CONSTRUÇÃO — ver pesquisas/whole-money-trail.md
 
 ### Saída Final do Pipeline
 
-- `notas/relatorio-clo-[data].md` — relatório executivo
-- `notas/parecer-idpj-[data].md` — parecer jurídico estruturado
-- `notas/minuta-coaf-[data].md` — minuta para autoridades
+- `notas/relatorio-clo-[data].md` — relatório executivo para CLO
+- `notas/parecer-idpj-[data].md` — parecer jurídico estruturado para IDPJ
+- `notas/minuta-coaf-[data].md` — minuta para COAF/MPF
 - `pesquisas/mapa-ativos-penhoraveis.md` — mapa atualizado de ativos
-- `pesquisas/whole-money-trail.md` — reconstrução do fluxo financeiro
+- `pesquisas/whole-money-trail.md` — reconstrução do fluxo financeiro completo
