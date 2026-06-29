@@ -5,7 +5,7 @@
     "1012537-07.2025.8.26.0011"
   ],
   "sucede": "Doc 101",
-  "seq": 29,
+  "seq": 35,
   "asercoes": [
     {
       "id": "AS0001",
@@ -497,6 +497,108 @@
           "data": "2026-06-29",
           "evento": "criada",
           "nivel": "LINHA_DE_PROVA"
+        }
+      ]
+    },
+    {
+      "id": "AS0030",
+      "frente": "transversal",
+      "nivel": "FATO",
+      "asercao": "ACHADO-COROA: falsidade do regime matrimonial — Ari declara 'casado com separacao total de bens' no Acordo de Cotistas E-Vino (DocuSign), mas a certidao de casamento (11/08/2012) prova COMUNHAO PARCIAL; mecanismo que tenta excluir a meacao das cotas do FIP (art. 299 CP em tese; CC regime)",
+      "fonte": "Acordo de Cotistas x certidao de casamento (ambos nos autos)",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0031",
+      "frente": "partilha",
+      "nivel": "CONFERIR",
+      "asercao": "Subavaliacao ~14x: PL CVM do Ajaccio R$ 1.406.746.652,39 (comp. 11/2025) x valuation de R$ 100 mi atribuido na cessao a Ricardo (4,42% por R$ 4,42 mi); laudo PwC fixava equity E-Vino ~R$ 1,53 bi (2023)",
+      "fonte": "informe CVM 11/2025; Operacao Ricardo; laudo PwC",
+      "prova_necessaria": "Pericia: PL CVM x laudo PwC x preco da cessao, com data-base de cada avaliacao",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0032",
+      "frente": "partilha",
+      "nivel": "FATO",
+      "asercao": "Nao-concorrencia tarifada: Cl. 10.1.7/10.1.9 do Acordo preveem multa de R$ 30.000.000,00 por descumprimento + R$ 70.000,00/mes (corrigidos pelo CDI) a Ari enquanto sujeito a obrigacao; The Vine (importadora concorrente, Ari Founder&CEO) e descumprimento direto",
+      "fonte": "Acordo de Cotistas Cl. 10.1.7/10.1.9; The Vine (thevine.com.br; e-mails 24/02 e 25/03/2025)",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0033",
+      "frente": "guarda",
+      "nivel": "CONFERIR",
+      "asercao": "Documento de outorga com assinatura nao reconhecida por Millena",
+      "fonte": "alegacao da meeira; documento nos autos",
+      "prova_necessaria": "Pericia grafotecnica; representacao por falsidade",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0034",
+      "frente": "patrimonial",
+      "nivel": "CONFERIR",
+      "asercao": "Veiculos Vinci no exterior: Anacapri Investments LLC e Brescia Investments LLC (Delaware) como cotistas do FIP Ajaccio — camada offshore de opacidade",
+      "fonte": "grafo; acordo de cotistas",
+      "prova_necessaria": "Ficha de cotistas CVM/Vinci; titularidade e relacao com Ari",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0035",
+      "frente": "patrimonial",
+      "nivel": "CONFERIR",
+      "asercao": "Vinci Compass/VCP III assumiu a gestao do Ajaccio por aditivo de 09/02/2024 — DIVERGENCIA a reconciliar: regulamento de 25/05/2022 ja indicava Vinci como gestora (Doc 92); aditivo pode ser formalizacao posterior",
+      "fonte": "grafo (aditivo 09/02/2024) x Doc 92 (reg. 25/05/2022)",
+      "prova_necessaria": "Aditivo contratual de gestao + cotejo com o regulamento",
+      "obs": "",
+      "criado": "2026-06-29",
+      "historico": [
+        {
+          "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
         }
       ]
     }

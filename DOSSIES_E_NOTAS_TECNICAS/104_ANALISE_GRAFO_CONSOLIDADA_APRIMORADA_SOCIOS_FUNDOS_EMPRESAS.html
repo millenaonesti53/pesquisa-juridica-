@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>104 — Análise de Grafo Consolidada e Aprimorada · Sócios · Fundos · Empresas · Onesti × Gorenstein</title>
+<style>
+@page { size: A4; margin: 15mm 12mm 13mm 12mm; @bottom-center { content: "CONFIDENCIAL · uso restrito da equipe · Doc 104 · pág. " counter(page); font-size: 7pt; color: #888; } }
+body { font-family: "Garamond","EB Garamond",Georgia,serif; font-size: 9.2pt; line-height: 1.42; color: #1a1a1a; margin: 0; }
+h1 { font-size: 15pt; color: #6b1d1d; margin: 0 0 6pt 0; text-align: center; letter-spacing: .3pt; font-weight: 700; }
+h2 { font-size: 11.5pt; color: #6b1d1d; margin: 14pt 0 5pt 0; border-bottom: 1.5pt solid #6b1d1d; padding-bottom: 3pt; text-transform: uppercase; letter-spacing: .5pt; }
+.capa { border: 2pt solid #1a1714; padding: 12pt 14pt; margin-bottom: 10pt; background: #fbf9f4; text-align: center; }
+.conf { font-size: 7.5pt; letter-spacing: 1pt; color: #6b1d1d; font-weight: bold; }
+.sub { font-size: 9.5pt; color: #46403a; margin-top: 5pt; font-style: italic; }
+.painel { display:flex; gap:7pt; margin:8pt 0; }
+.painel .card { flex:1; border:1pt solid #d8d0c3; border-radius:4pt; padding:6pt; text-align:center; }
+.painel .num { font-size:15pt; font-weight:bold; color:#6b1d1d; } .painel .lbl { font-size:7pt; text-transform:uppercase; letter-spacing:.3pt; color:#857c70; }
+.spine { display:flex; align-items:stretch; gap:0; margin:8pt 0; }
+.sbox { flex:1; border:2pt solid #1a1714; border-radius:7pt; padding:8pt 10pt; background:#fff; }
+.sbox.p { border-color:#5b3a6b; } .sbox.f { border-color:#1d3a55; } .sbox.e { border-color:#8a6d3b; }
+.sbox .k { font-size:7pt; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:#857c70; }
+.sbox .t { font-weight:700; font-size:12pt; margin:2pt 0; } .sbox.p .t{color:#5b3a6b}.sbox.f .t{color:#1d3a55}.sbox.e .t{color:#8a6d3b}
+.sbox .d { font-size:8pt; color:#46403a; }
+.arrow { display:flex; flex-direction:column; justify-content:center; align-items:center; padding:0 5pt; min-width:90pt; }
+.arrow .lab { font-size:7.5pt; font-weight:700; color:#6b1d1d; text-align:center; line-height:1.2; } .arrow .ln { font-size:16pt; color:#857c70; }
+p { margin: 4pt 0; text-align: justify; }
+table { width:100%; border-collapse:collapse; margin:5pt 0; font-size:8pt; }
+th,td { border:0.5pt solid #d8d0c3; padding:3pt 5pt; vertical-align:top; }
+th { background:#6b1d1d; color:#fff; font-weight:600; font-size:7.2pt; text-transform:uppercase; }
+.crown { background:#f3e0dd; border-left:5pt solid #6b1d1d; padding:8pt 12pt; margin:8pt 0; }
+.crown b { color:#6b1d1d; }
+.dest { background:#f7eeed; border-left:3pt solid #6b1d1d; padding:6pt 11pt; margin:6pt 0; }
+.verde { background:#eef2ea; border-left:3pt solid #3a5a40; padding:6pt 11pt; margin:6pt 0; }
+.amarelo { background:#f6efe0; border-left:3pt solid #9a6b14; padding:6pt 11pt; margin:6pt 0; }
+.amarelo b{color:#7a5410} .verde b{color:#2f4a35}
+.lv { font-weight:700; font-size:7pt; color:#fff; border-radius:3px; padding:1pt 5pt; }
+.lv.fato{background:#3a5a40}.lv.conf{background:#9a6b14}.lv.linha{background:#274060}
+.id { font-family:"Courier New",monospace; font-weight:700; color:#6b1d1d; }
+.reserva { background:#f4f4f4; border-left:3pt solid #555; padding:6pt 11pt; margin:6pt 0; font-size:7.6pt; font-style:italic; color:#444; }
+ul,ol { margin:3pt 0 3pt 15pt; } li { margin:2pt 0; } small{font-size:7.4pt;color:#857c70}
+</style>
+</head>
+<body>
+
+<div class="capa">
+  <div class="conf">CONFIDENCIAL · USO RESTRITO DA EQUIPE · CPC art. 472 · ANÁLISE DE GRAFO CONSOLIDADA · NÃO PROTOCOLAR SEM SUBSCRIÇÃO</div>
+  <h1 style="margin-top: 8pt;">Análise de Grafo Consolidada e Aprimorada<br>Sócios · Fundos · Empresas</h1>
+  <div class="sub">Fusão das duas análises de grafo (37 + 43 asserções) + reconciliações periciais · UBO · liquidez seletiva · falsidade do regime · offshore Vinci</div>
+  <div class="sub" style="font-size: 8pt; color: #555;">Documento 104 · parecer de PhD perito contábil-forense · sucede o Doc 103 · ledger sincronizado em 35 asserções</div>
+</div>
+
+<div class="painel">
+  <div class="card"><div class="num">~R$ 1,4 bi</div><div class="lbl">PL FIP (≈100% E-Vino)</div></div>
+  <div class="card"><div class="num">R$ 5.812,88</div><div class="lbl">caixa do FIP</div></div>
+  <div class="card"><div class="num">R$ 4.164.091,53</div><div class="lbl">Itaú líquido (SISBAJUD PF)</div></div>
+  <div class="card"><div class="num">~14×</div><div class="lbl">gap de avaliação</div></div>
+  <div class="card"><div class="num">R$ 30 mi</div><div class="lbl">multa não-concorrência</div></div>
+</div>
+
+<h2>1 · Achado-coroa — falsidade do regime matrimonial</h2>
+<div class="crown">
+<b>Ari declarou "separação total de bens" no Acordo de Cotistas, onde a certidão prova comunhão parcial.</b> <span class="lv fato">FATO</span> <span class="id">AS0030</span>
+<table style="margin-top:5pt">
+<tr><th>Acordo de Cotistas E-Vino (DocuSign)</th><th>Certidão de casamento (Registro Civil)</th></tr>
+<tr><td>"ARI GORENSTEIN, casado com <b>separação total de bens</b>" — qualificação que blinda as cotas da meação</td><td>Regime: <b>COMUNHÃO PARCIAL DE BENS</b> · casamento 11/08/2012 · Ari × Millena Onesti</td></tr>
+</table>
+<p style="margin-top:5pt">Dois documentos em contradição direta, ambos nos autos. A declaração falsa do regime (i) sustenta <b>falsidade ideológica (art. 299 CP)</b>, em tese; (ii) é o <b>mecanismo</b> que exclui a meação de Millena das cotas do FIP; (iii) é <b>citável de imediato</b> (cotejo documental, sem perícia). <small>Calibração: caracterização penal "em tese", presunção de inocência preservada.</small></p>
+</div>
+
+<h2>2 · Espinha do controle — sócios → fundos → empresas</h2>
+<div class="spine">
+  <div class="sbox p"><div class="k">Sócio / UBO</div><div class="t">ARI GORENSTEIN</div><div class="d">Cotista FIP (Classes A+F ~4,42%) · diretor de fato · co-CEO→board E-Vino · Founder&CEO The Vine</div></div>
+  <div class="arrow"><div class="lab">cotista · [BLOQ] R$ 42,4 mi SISBAJUD</div><div class="ln">→</div></div>
+  <div class="sbox f"><div class="k">Fundo (FIP)</div><div class="t">FIP AJACCIO</div><div class="d">37.381.595/0001-82 · adm. OSLO (ex-FRAM) · gestão Vinci · PL R$ 1,4 bi · caixa R$ 5.812,88</div></div>
+  <div class="arrow"><div class="lab">detém 100,02% do PL (11.935.645 ações)</div><div class="ln">→</div></div>
+  <div class="sbox e"><div class="k">Empresa (ativo-alvo)</div><div class="t">E-VINO S.A.</div><div class="d">valuation PwC ~R$ 1,5 bi · cisão 31/12/2021 → RT127 · Ari diretor signatário</div></div>
+</div>
+
+<h2>3 · As três camadas + offshore</h2>
+<table>
+<tr><th>Sócios / pessoas</th><th>Fundos / gestão</th><th>Empresas / operação</th></tr>
+<tr>
+<td><b>Ari Gorenstein</b> (UBO, CPF 136.447.108-64) · <b>Millena</b> (meeira) · <b>Ricardo Costa</b> (cessionário, R$ 4,42 mi) · <b>Marcos Leal</b> (RT127/E-Vino) · Jerson Prochnow · Mafalda Gorenstein</td>
+<td><b>FIP Ajaccio</b> (37.381.595) · <b>OSLO ex-FRAM</b> (13.673.855) · <b>Vinci Compass</b> (gestora) · FRAM XIV (liquidado fev/2022) · Oslo Soberano FI RF (cota R$ 10.023,65) · <b>JP2R PTE LTD</b> (Singapura, offshore)</td>
+<td><b>E-Vino S.A.</b> (100% do FIP) · <b>Víssimo/Grand Cru</b> · <b>Agro Syrah</b> (23.699.696, topo) · <b>Apoio Adm.</b> (17.867.118, MEI Ari, contas Inter+Nu) · <b>The Vine</b> (concorrente) · RT127 · SPE Abecker · Vila Porto</td>
+</tr>
+</table>
+<div class="dest"><b>Camada offshore:</b> JP2R PTE LTD (Singapura, UEN 201840728Z) · <b>Anacapri</b> e <b>Brescia Investments LLC</b> (Delaware, veículos Vinci) · veículos "Ajaccio/Easy exterior". <span class="lv conf">CONFERIR</span> ficha de cotistas (AS0034/AS0035/AS0037).</div>
+
+<h2>4 · Reconciliações periciais (meu aprimoramento)</h2>
+<table>
+<tr><th>Ponto</th><th>Versão dos grafos</th><th>Reconciliação / correção</th></tr>
+<tr><td>Itaú líquido (SISBAJUD PF)</td><td>um grafo cita "~R$ 10 mi"; o outro, R$ 4.164.091,53</td><td><b>Adotar R$ 4.164.091,53</b> (Ag. 6560, fls. 420-424) — figura precisa do SISBAJUD; o "R$ 10 mi" era estimativa. Resolve o [CONFERIR] de AS0008.</td></tr>
+<tr><td>Gestão Vinci — data</td><td>"aditivo de 09/02/2024"</td><td><b>Divergência</b>: o regulamento de 25/05/2022 já indicava Vinci como gestora (Doc 92). O aditivo de 09/02/2024 é provável <b>formalização posterior</b>. Manter <span class="lv conf">CONFERIR</span> (AS0035) até cotejo.</td></tr>
+<tr><td>Cisão 31/12/2021 (E-Vino→RT127)</td><td>"CC 158; CPC 790/792 a aferir"</td><td><b>Calibrar: CC 158 (fraude contra credores)</b> — a cisão é <b>pré-ajuizamento</b> (divórcio jan/2023); CPC 792 só para atos pós-litispendência. Evita improcedência por enquadramento.</td></tr>
+<tr><td>Subavaliação ~14×</td><td>FATO em um, CONFERIR em outro</td><td>Manter <b>CONFERIR</b> (AS0031) até a perícia — datas-base distintas (PL 11/2025 × cessão × laudo 2023) devem ser cotejadas antes de afirmar dolo.</td></tr>
+<tr><td>Não-concorrência</td><td>R$ 30 mi multa + R$ 70k/mês</td><td>Confirmado como <b>FATO</b> (AS0032); o recebimento de R$ 749.183,38 (≈10,7 meses de R$ 70k) reconcilia com o estipêndio. The Vine = descumprimento.</td></tr>
+</table>
+
+<h2>5 · Demais achados consolidados</h2>
+<div class="verde"><b>Liquidez seletiva (FATO).</b> O FIP é <b>monoativo</b> (~100% E-Vino, caixa R$ 5.812,88). A "iliquidez" é <b>concentração num único ativo valioso</b>, não ausência de valor: o debate cabível é <b>liquidação/avaliação</b>, não impenhorabilidade. O SISBAJUD PF achou <b>dinheiro líquido</b> (Itaú R$ 4,16 mi), não "cotas".</div>
+<div class="amarelo"><b>Assembleia-fantasma de 31/12/2021</b> <span class="lv conf">CONFERIR</span> — Ari consta como secretário/diretor na cisão, mas estaria em <b>viagem internacional (Miami)</b>; impossibilidade material a provar pelo boarding pass. É a <b>mesma ata que instrui a cisão</b> — vício que contamina o ato (CC 167/158). + <b>Outorga com assinatura não reconhecida</b> por Millena (AS0033 — perícia grafotécnica).</div>
+
+<h2>6 · Novas asserções incorporadas ao estado vivo (ledger 35)</h2>
+<table>
+<tr><th>ID (ledger)</th><th>Asserção</th><th>Nível</th></tr>
+<tr><td class="id">AS0030</td><td>Falsidade do regime matrimonial (separação total × comunhão parcial)</td><td><span class="lv fato">FATO</span></td></tr>
+<tr><td class="id">AS0031</td><td>Subavaliação ~14× (PL CVM R$ 1,4 bi × cessão R$ 100 mi)</td><td><span class="lv conf">CONFERIR</span></td></tr>
+<tr><td class="id">AS0032</td><td>Não-concorrência tarifada (R$ 30 mi + R$ 70k/mês); The Vine = descumprimento</td><td><span class="lv fato">FATO</span></td></tr>
+<tr><td class="id">AS0033</td><td>Outorga com assinatura não reconhecida por Millena</td><td><span class="lv conf">CONFERIR</span></td></tr>
+<tr><td class="id">AS0034</td><td>Anacapri / Brescia Investments LLC (Delaware) — cotistas offshore Vinci</td><td><span class="lv conf">CONFERIR</span></td></tr>
+<tr><td class="id">AS0035</td><td>Vinci assumiu a gestão por aditivo 09/02/2024 (divergência com reg. 25/05/2022 a reconciliar)</td><td><span class="lv conf">CONFERIR</span></td></tr>
+</table>
+<p><small>Estado vivo consolidado: <b>35 asserções</b> — FATO=14 · CONFERIR=13 · LINHA_DE_PROVA=8. (Os grafos enviados referenciam um estado paralelo de 37/43 do plugin forense-persistencia; aqui mantém-se o ledger pesquisa-viva, com IDs próprios.)</small></p>
+
+<h2>7 · Pedidos probatórios que o grafo ordena</h2>
+<ol>
+<li><b>Representação por falsidade (art. 299 CP)</b> — regime matrimonial (AS0030, cotejo já documental) e assinatura/outorga (AS0033, grafotécnica).</li>
+<li><b>Ofício CVM/OSLO/Vinci</b> — ficha de cotistas do FIP (JP2R, Anacapri, Brescia, posição de Ari), valuations e datas-base → AS0005/0031/0034/0035.</li>
+<li><b>Perícia contábil única</b> — PL CVM × laudo PwC × cessão Ricardo × oferta (subavaliação) + fluxo Evino→Apoio→PF.</li>
+<li><b>Boarding pass / registro de viagem (31/12/2021)</b> → nulidade da assembleia de cisão.</li>
+<li><b>Indisponibilidade</b> das cotas/ativo <b>antes</b> de qualquer notificação ampla (sequenciamento anti tip-off) + prioridade de tramitação.</li>
+</ol>
+
+<h2>8 · Reserva técnica</h2>
+<div class="reserva">
+Consolidação aprimorada das duas análises de grafo recebidas (37 e 43 asserções, plugin forense-persistencia) com o estado vivo do ledger pesquisa-viva (sincronizado em 35 asserções) e o acervo (Docs 89-103). Reconciliações periciais aplicadas: Itaú R$ 4.164.091,53 (não "~R$ 10 mi"); gestão Vinci (aditivo 09/02/2024 × regulamento 25/05/2022 — divergência a cotejar); cisão 31/12/2021 = fraude contra credores (CC 158, pré-ajuizamento), não fraude à execução (CPC 792). O achado-coroa (falsidade do regime) baseia-se no cotejo Acordo de Cotistas × certidão de casamento, ambos nos autos; a caracterização penal (art. 299 CP) é apresentada em tese. A subavaliação ~14× permanece CONFERIR até perícia (datas-base distintas). Valores e fls. reproduzem os grafos/autos e dependem de confirmação por certidão. Preserva-se a presunção de inocência/boa-fé. Documento de apoio sujeito à subscrição dos patronos: Dra. Michele P. Hilgenberg (OAB/SC 41.607) e Dr. Luiz Carlos Guieseler Junior (OAB/PR 44.937), procuração de 03/06/2026 (fls. 1065) e CPC art. 112. CONFIDENCIAL · uso restrito da equipe.
+</div>
+
+</body>
+</html>
