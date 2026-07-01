@@ -5,7 +5,7 @@
     "1012537-07.2025.8.26.0011"
   ],
   "sucede": "Doc 101",
-  "seq": 40,
+  "seq": 41,
   "asercoes": [
     {
       "id": "AS0001",
@@ -684,6 +684,23 @@
           "data": "2026-07-01",
           "evento": "criada",
           "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0041",
+      "frente": "transversal",
+      "nivel": "FATO",
+      "asercao": "Verificacao jurisprudencial (deep-research, 83 agentes, 637 buscas) CONFIRMOU: CNJ 492/2023 (17/03/2023, com ressalva PDL 89/23 pendente), Tema 1.235 STJ (existe, mas objeto vinculante e art.833-X CPC/40 SM, recalibrado para reforco analogico), Lei 15.384/2026 (violencia vicaria = inciso VI art.7 LMP, vicaricidio CP 121-B). Nenhuma citacao refutada; 4-5 itens (arts. CPC isolados, Belem do Para) pendem conferencia final por serem dispositivos estaveis nao controversos",
+      "fonte": "Doc 107 (deep-research 30/06/2026)",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-07-01",
+      "historico": [
+        {
+          "data": "2026-07-01",
+          "evento": "criada",
+          "nivel": "FATO"
         }
       ]
     }
