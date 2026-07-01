@@ -5,7 +5,7 @@
     "1012537-07.2025.8.26.0011"
   ],
   "sucede": "Doc 101",
-  "seq": 35,
+  "seq": 40,
   "asercoes": [
     {
       "id": "AS0001",
@@ -597,6 +597,91 @@
       "historico": [
         {
           "data": "2026-06-29",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0036",
+      "frente": "pensoes",
+      "nivel": "FATO",
+      "asercao": "DIVERGENCIA FATAL: Ari declarou a RFB pagar R$ 528.000,00/ano de pensao em 2024 (R$ 44.000/mes) enquanto pedia ao juizo de familia reduzir para R$ 5.000/mes (revisional) — 8,8x; litigancia de ma-fe (CPC 80 II), duas versoes ao Fisco e ao Juizo",
+      "fonte": "DIRPF AC 2024 (Pagamentos Efetuados) x peticao 05/12/2024 rev. 1012537-07.2025",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-07-01",
+      "historico": [
+        {
+          "data": "2026-07-01",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0037",
+      "frente": "patrimonial",
+      "nivel": "FATO",
+      "asercao": "IR prova 97,94% da renda de 2024 declarada como isenta/exclusiva: tributavel R$ 33.087,85 de R$ 1.604.281,06 total (2,06%); Apoio Admin (MEI capital R$ 1.000) rendeu R$ 845.013,80 em 2024; patrimonio declarado R$ 23,06 MM em 31/12/2024 (+R$ 2,06 MM em 1 ano)",
+      "fonte": "DIRPF AC 2020-2024; recibo 27/05/2025",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-07-01",
+      "historico": [
+        {
+          "data": "2026-07-01",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0038",
+      "frente": "patrimonial",
+      "nivel": "FATO",
+      "asercao": "Ativos liquidos na propria DIRPF de Ari: LIG R$ 1.250.000,00 (Itau) + fundos BTG R$ 1.544.728,63 (come-cotas); 6 fundos BTG aparecem SIMULTANEAMENTE nos relatorios SISBAJUD (alegados iliquidos) e na DIRPF como aplicacoes pessoais; mesma BTG que retem R$ 31,9 MM da ordem SISBAJUD",
+      "fonte": "DIRPF AC 2024; SISBAJUD fls. 410/418/490-508",
+      "prova_necessaria": "",
+      "obs": "",
+      "criado": "2026-07-01",
+      "historico": [
+        {
+          "data": "2026-07-01",
+          "evento": "criada",
+          "nivel": "FATO"
+        }
+      ]
+    },
+    {
+      "id": "AS0039",
+      "frente": "patrimonial",
+      "nivel": "CONFERIR",
+      "asercao": "Conta Banco C6 nas ILHAS CAYMAN (Pais 137, FATCA/CRS) declarada na DIRPF AC 2024 — canal cross-border ativo compativel com eixo Wine in Black/JP2R/LLCs Delaware; saldo simbolico mas existencia confirma estrutura offshore",
+      "fonte": "DIRPF AC 2024, bens grupo 06 cod 01",
+      "prova_necessaria": "Quebra de sigilo internacional C6 Cayman + reporte FATCA/CRS 5 anos (RFB)",
+      "obs": "",
+      "criado": "2026-07-01",
+      "historico": [
+        {
+          "data": "2026-07-01",
+          "evento": "criada",
+          "nivel": "CONFERIR"
+        }
+      ]
+    },
+    {
+      "id": "AS0040",
+      "frente": "patrimonial",
+      "nivel": "CONFERIR",
+      "asercao": "3 imoveis adquiridos APOS o ajuizamento do divorcio (ex.: Apt. 163 Bioarq em 15/10/2023, R$ 494.324,31, apos penhora das cotas ago/2023) + ganho de capital declarado R$ 0,00 apesar da conferencia Evino->Ajaccio e da Operacao Ricardo — fraude a execucao (CPC 792 IV) em tese",
+      "fonte": "DIRPF AC 2024 (bens imoveis; demonstrativo ganho de capital 'sem informacoes')",
+      "prova_necessaria": "Matriculas + datas de aquisicao; demonstrativo de ganho de capital da conferencia",
+      "obs": "",
+      "criado": "2026-07-01",
+      "historico": [
+        {
+          "data": "2026-07-01",
           "evento": "criada",
           "nivel": "CONFERIR"
         }
