@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>111 — Alerta de Verificação: Precedentes Não Confirmados no "Plano de Ação Judicial em 10 Passos"</title>
+<style>
+@page { size: A4; margin: 16mm 13mm 14mm 13mm; @bottom-center { content: "CONFIDENCIAL · uso restrito da equipe · Doc 111 · pág. " counter(page); font-size: 7pt; color: #888; } }
+body { font-family: "Garamond","EB Garamond",Georgia,serif; font-size: 9.3pt; line-height: 1.44; color: #1a1a1a; margin: 0; }
+h1 { font-size: 15pt; color: #a33; margin: 0 0 6pt 0; text-align: center; letter-spacing: .3pt; font-weight: 700; }
+h2 { font-size: 12pt; color: #2d4a3e; margin: 14pt 0 5pt 0; border-bottom: 1.5pt solid #2d4a3e; padding-bottom: 3pt; text-transform: uppercase; letter-spacing: .5pt; }
+.capa { border: 2pt solid #a33; padding: 12pt 14pt; margin-bottom: 10pt; background: #fdf0ef; text-align: center; }
+.conf { font-size: 7.5pt; letter-spacing: 1pt; color: #a33; font-weight: bold; }
+.sub { font-size: 9.5pt; color: #1a1a1a; margin-top: 5pt; font-style: italic; }
+.citacao { font-size: 10pt; font-style: italic; color: #a33; text-align: center; padding: 8pt 18pt; border-top: 1pt solid #a33; border-bottom: 1pt solid #a33; margin: 10pt 0; }
+p { margin: 4pt 0; text-align: justify; }
+table { width:100%; border-collapse:collapse; margin:5pt 0; font-size:8.2pt; }
+th,td { border:0.5pt solid #2d4a3e; padding:3pt 5pt; vertical-align:top; }
+th { background:#2d4a3e; color:#fff; font-weight:600; font-size:7.3pt; text-transform:uppercase; }
+.ok { background:#e0ffe0; color:#060; font-weight:bold; }
+.risco { background:#ffe0e0; color:#a00; font-weight:bold; }
+.dest { background:#fff4e8; border-left:3pt solid #c44a3a; padding:6pt 11pt; margin:6pt 0; }
+.dest b { color:#c44a3a; }
+.reserva { background:#f4f4f4; border-left:3pt solid #555; padding:6pt 11pt; margin:6pt 0; font-size:7.7pt; font-style:italic; color:#444; }
+ul,ol { margin:3pt 0 3pt 16pt; } li { margin:1.5pt 0; }
+</style>
+</head>
+<body>
+
+<div class="capa">
+  <div class="conf">CONFIDENCIAL · USO RESTRITO DA EQUIPE · ALERTA DE INTEGRIDADE CITACIONAL · NÃO PROTOCOLAR SEM SUBSCRIÇÃO</div>
+  <h1 style="margin-top: 8pt;">Alerta de Verificação</h1>
+  <div class="sub">6 de 7 precedentes/normas adicionais citados no "Plano de Ação Judicial em 10 Passos" (upload externo) NÃO foram confirmados nesta verificação independente</div>
+  <div class="sub" style="font-size: 9pt; color:#a33; font-weight:bold;">Recomendação: NÃO citar esses itens em qualquer peça até confirmação direta em fonte primária</div>
+</div>
+
+<div class="citacao">
+  "O documento uploadado afirma que 'toda citação normativa/jurisprudencial foi verificada nesta pesquisa e traz fonte'. Uma verificação independente e adversarial não confirmou essa afirmação para 6 dos 7 itens adicionais — inclusive dois cuja própria nomenclatura ('Informativo 731' com a tese descrita; 'Controvérsia 276') não corresponde ao padrão de indexação do STJ, indício de possível fabricação."
+</div>
+
+<h2>I — O que foi verificado e por quê</h2>
+<p>O arquivo <code>Plano_Acao_Judicial_10_Passos_MOGxAG.md</code>, recebido nesta sessão, apresenta um roteiro estratégico de 10 passos com uma "Nota de transparência metodológica" afirmando que toda citação foi verificada com fonte. Como esse plano seria a espinha dorsal de qualquer peça futura — e como dois dos precedentes citados (Informativo 731/STJ e REsp 1.965.982/SP) sustentam pedidos centrais (distribuição dinâmica do ônus da prova e desconsideração da personalidade jurídica do próprio FIP Ajaccio), esta equipe rodou uma verificação adversarial independente (27 agentes, 167 buscas/fetches) sobre os 8 itens jurisprudenciais/normativos do plano antes de incorporá-los ao roteiro definitivo.</p>
+
+<h2>II — Resultado por item</h2>
+<table>
+<tr><th>#</th><th>Item citado no Plano</th><th>Veredito</th><th>Observação</th></tr>
+<tr><td>1</td><td>Súmula 197/STJ (divórcio sem prévia partilha)</td><td class="ok">CONFIRMADO</td><td>Teor literal, órgão (2ª Seção) e datas (julgamento 08/10/1997, DJ 22/10/1997) corretos. Positivado no art. 1.581 do CC/2002. <b>Único item que sobreviveu à verificação de 3 votos.</b></td></tr>
+<tr><td>2</td><td>Súmula 375/STJ (fraude à execução — registro da penhora/má-fé do terceiro)</td><td class="risco">NÃO CONFIRMADO</td><td>Nenhuma fonte fetchada corroborou o teor citado nesta rodada. Não usar sem conferência direta em stj.jus.br.</td></tr>
+<tr><td>3</td><td>"Informativo 731/STJ" (3ª Turma, Min. Villas Bôas Cueva, 29/03/2022 — ônus da prova sobre benfeitorias em partilha)</td><td class="risco">NÃO CONFIRMADO</td><td>Nenhuma fonte localizou este informativo com esta tese. <b>Sustenta o Passo 3 do plano (ônus dinâmico) — não citar até localizar o número real do REsp/AgInt subjacente.</b></td></tr>
+<tr><td>4</td><td>"Controvérsia 276/STJ" (alimentos entre ex-cônjuges — caráter excepcional/transitório salvo incapacidade laborativa)</td><td class="risco">NÃO CONFIRMADO — SUSPEITA DE ERRO DE NOMENCLATURA</td><td>O STJ não usa "Controvérsia" como nomenclatura de precedente qualificado — usa "Tema" para recursos repetitivos/IAC. Forte indício de erro ou invenção. <b>Sustenta o Passo 5 (alimentos protetivos) — não citar.</b></td></tr>
+<tr><td>5</td><td>REsp 1.965.982/SP (3ª Turma, 05/04/2022 — desconsideração da personalidade jurídica pode atingir FIP)</td><td class="risco">NÃO CONFIRMADO</td><td>Não localizado com a ementa descrita. <b>Sustenta o Passo 8 (IDPJ sobre o Ajaccio) — não citar o número do processo até confirmação; a tese em si (CC 50 + CPC 133-137) permanece válida independentemente do precedente.</b></td></tr>
+<tr><td>6</td><td>Lei nº 15.411/2026 (altera art. 12-C LMP — afastamento por risco patrimonial)</td><td class="risco">NÃO CONFIRMADO NESTA RODADA</td><td>Norma de 2026 muito recente; não localizada/corroborada nas fontes fetchadas. <b>Sustenta parte do Passo 10 — checar diretamente em planalto.gov.br antes de citar.</b></td></tr>
+<tr><td>7</td><td>Provimento CNJ 222/2026 (violência patrimonial no extrajudicial)</td><td class="risco">NÃO CONFIRMADO NESTA RODADA</td><td>Não corroborado nas fontes fetchadas nesta síntese (nota: uma verificação anterior desta equipe, Doc 109, já havia tratado de um provimento CNJ 222/2026 com data diferente citada por outra fonte — <b>há divergência de datas entre fontes que precisa ser resolvida diretamente em atos.cnj.jus.br antes de qualquer uso</b>).</td></tr>
+<tr><td>8</td><td>Jurisprudência genérica do STJ sobre desconsideração inversa por esvaziamento patrimonial pré-divórcio</td><td class="risco">NÃO CONFIRMADO COMO PRECEDENTE ESPECÍFICO</td><td>Existe doutrina e prática consolidada sobre o tema, mas nenhum precedente específico do STJ foi localizado e confirmado nesta rodada com os fatos descritos.</td></tr>
+</table>
+
+<h2>III — O que isso significa para o roteiro definitivo</h2>
+<div class="dest">
+<b>A arquitetura estratégica dos 10 passos permanece sólida</b> — nenhum dos passos depende, para funcionar, do precedente específico não confirmado. CPC art. 373, §1º já fundamenta por si só o ônus dinâmico (Passo 3); CC art. 50 c/c CPC arts. 133-137 já fundamentam por si só o IDPJ sobre o FIP (Passo 8), independentemente de o REsp 1.965.982/SP existir com o teor descrito; a excepcionalidade/transitoriedade dos alimentos entre ex-cônjuges é doutrina STJ consolidada mesmo sem o número exato do "precedente qualificado". <b>O que muda é a forma de cita-los na peça: como fundamento legal direto, com reforço doutrinário genérico, sem números de processo/lei não confirmados.</b>
+</div>
+<div class="dest">
+<b>Risco se não corrigido:</b> citar em petição protocolável um "Informativo 731" ou uma "Controvérsia 276" inexistentes (ou uma lei/provimento de 2026 com número/data incorretos) expõe a parte a impugnação técnica pela parte adversa, risco de descrédito da peça inteira, e, em tese, risco de litigância de má-fé (CPC art. 80) caso se demonstre que a citação foi usada sem verificação. Por isso o roteiro definitivo (próximo documento) substitui cada citação não confirmada por fundamento seguro (texto legal direto) e marca [CONFERIR] onde um precedente específico ainda seria desejável mas não obrigatório.
+</div>
+
+<h2>IV — Nota metodológica e reserva técnica</h2>
+<div class="reserva">
+Verificação realizada por workflow de deep-research adversarial (27 agentes, 13 fontes fetchadas, 3 afirmações efetivamente extraídas e verificadas por 3 votos independentes — 2 confirmadas, 1 refutada quanto a detalhe de órgão julgador; os demais 7 itens não geraram afirmações corroboráveis nas fontes localizadas). Instrumento técnico de apoio, sujeito à subscrição dos patronos habilitados (Dra. Michele P. Hilgenberg — OAB/SC 41.607 · Dr. Luiz Carlos Guieseler Junior — OAB/PR 44.937) antes de qualquer uso processual. Este alerta não afirma que os itens 2-8 sejam necessariamente falsos — apenas que não puderam ser confirmados nesta rodada de pesquisa, e que a prudência processual exige confirmação direta em fonte primária (stj.jus.br, planalto.gov.br, cnj.jus.br) antes de qualquer citação em peça protocolável.
+</div>
+
+</body>
+</html>
