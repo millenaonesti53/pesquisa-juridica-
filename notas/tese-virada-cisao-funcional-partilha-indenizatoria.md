@@ -36,16 +36,34 @@ Tradução processual: **a tutela deve ser útil agora e completa ao final** —
 | **CC art. 1.322** (coisa indivisível: adjudicação com indenização) | Base da **partilha por equivalente econômico** | Lei — direto |
 | **STJ — lucros/dividendos ao ex-cônjuge não sócio até o pagamento dos haveres** | Frutos da meação enquanto o Requerido retém o ativo | Verificado (STJ, 15/10/2025) [CONFERIR nº] |
 | **STJ — juros e correção sobre cotas quando a administração ficou com o ex-cônjuge** | Recompõe a retenção | Verificado [CONFERIR nº] |
-| **Informativo 731/STJ** (ônus dinâmico em partilha) | Distribuição dinâmica quanto às estruturas societárias | Verificado (3ª T, 29/03/2022) |
-| **Controvérsia 276/STJ** (alimentos entre ex-cônjuges: transitórios, salvo impossibilidade de reinserção) | Fundamenta "alimentos protetivos", não eternos | Verificado |
-| **REsp 1.965.982/SP** (desconsideração pode atingir fundos de investimento) | IDPJ sobre o Ajaccio/veículos | Verificado (3ª T, 05/04/2022) |
-| **Súmula 375/STJ** + distinção fraude à execução × contra credores | Reenquadra a cisão RT127 (CC 158, pauliana) | Verificado |
+| **Informativo 731/STJ** (ônus dinâmico em partilha) | Distribuição dinâmica quanto às estruturas societárias — o **CPC 373, §1º** já basta | **[CONFERIR]** — não confirmado na verificação adversarial (Doc 111) |
+| **Controvérsia 276/STJ** (alimentos entre ex-cônjuges: transitórios, salvo impossibilidade de reinserção) | Fundamenta "alimentos protetivos" — a **jurisprudência consolidada** basta | **[CONFERIR]** (Doc 111) |
+| **REsp 1.965.982/SP** (desconsideração pode atingir fundos) | IDPJ sobre o Ajaccio/veículos — **CC 50 + CPC 133-137** bastam | **[CONFERIR]** (Doc 111) |
+| **Súmula 375/STJ** + distinção fraude à execução × contra credores | Reenquadra a cisão RT127 (CC 158, pauliana) | **[CONFERIR]** (Doc 111) — a distinção legal (CC 158 × CPC 792) é segura por si |
 | **CPC arts. 396-404, 400** (exibição + presunção) | Converte opacidade em consequência | Lei — direto |
 | **Res. CNJ 492/2023** (perspectiva de gênero) | Calibragem hermenêutica | Verificado (vigente) |
 | **Lei 15.411/2026** (art. 12-C LMP — risco patrimonial) · **Provimento CNJ 222/2026** | Reforço normativo da violência patrimonial | **[CONFERIR na fonte oficial]** — legislação de 2026, fora da base desta análise; usar só com checagem direta |
 | STF sigilo (HC 198.643 / ADI 4.709 / HC 245.697) | Justa causa p/ quebra de sigilo | **[A CONFIRMAR]** — preferir **REsp 2.126.879/SP** (alimentante) já verificado |
 
-> **Disciplina:** os itens de **2026** e os **HC do STF** **não** devem ser citados como certos sem checagem no repositório oficial. O que é lei vigente e precedente já verificado sustenta a tese **sem** depender deles.
+> **Disciplina (recalibrada pela verificação adversarial — Doc 111/112):** na checagem independente, **apenas a Súmula 197/STJ** confirmou-se com segurança. Todos os demais precedentes nomeados (Súmula 375, Informativo 731, Controvérsia 276, REsp 1.965.982) e a legislação de 2026 (Lei 15.411; Provimento CNJ 222) **não foram confirmados** e ficam **[CONFERIR]**. **Ponto forte:** cada passo da tese sustenta-se **diretamente no texto legal** (CPC 356/357/373§1º/374/396-404; CC 1.322/1.660/158; LMP) — o precedente nomeado é **reforço desejável, não indispensável**. Nada de citar número não conferido em peça protocolável.
+
+---
+
+## 2-A. CAMADA CONSTITUCIONAL — chave STF (o que torna a virada não só conveniente, mas devida)
+
+A tese não é apenas técnica-processual: é **imposição constitucional**. Cinco vetores, em chave STF:
+
+1. **Tutela jurisdicional efetiva e *tempestiva* (CF art. 5º, XXXV).** A inafastabilidade não garante só o *acesso*, mas a *efetividade* da tutela. Condicionar o divórcio, o mínimo existencial e a meação por equivalente à reconstrução integral do grupo econômico do Requerido converte a garantia em **tutela meramente formal** — o oposto do que o art. 5º, XXXV assegura. O julgamento antecipado parcial (CPC 356) é a **concretização** desse dever.
+
+2. **Razoável duração e meios de celeridade (CF art. 5º, LXXVIII).** A demora, num quadro de assimetria, deixa de ser tempo neutro e vira **dano** — mantém a parte vulnerável dependente de quem controla valores, documentos e o próprio tempo. A modulação por capítulos é o **meio** que assegura a celeridade que a Constituição exige.
+
+3. **Igualdade conjugal e dever de coibir a violência familiar (CF art. 226, §§ 5º e 8º).** O §5º impõe igualdade **material** entre os cônjuges; o §8º impõe ao Estado **criar mecanismos para coibir a violência** no âmbito da família. A violência **patrimonial** é espécie (LMP art. 7º, IV). Uma condução processual que perpetua a dependência econômica **viola** o §8º por omissão.
+
+4. **Proibição da proteção insuficiente (*Untermassverbot*) — recepcionada pelo STF.** O Estado viola direitos fundamentais não só por excesso, mas por **proteção deficiente**. O STF, ao julgar a Lei Maria da Penha (**ADC 19** e **ADI 4.424**, 2012), assentou o dever estatal de proteção reforçada à mulher. Transposto ao processo: **a jurisdição que não neutraliza a assimetria patrimonial protege de forma insuficiente** — e é sindicável por isso.
+
+5. **Perspectiva de gênero + convencionalidade.** Res. CNJ 492/2023 (vigente) torna o Protocolo de Julgamento com Perspectiva de Gênero **dever funcional**; no plano convencional, a **Convenção de Belém do Pará** (Decreto 1.973/1996), a **CEDAW** e o **Caso Maria da Penha v. Brasil** (CIDH 12.051/2001) impõem **devida diligência** — que inclui **não** deixar o processo reproduzir a violência que deveria coibir.
+
+> **Formulação-síntese (para memorial, sem acusar subjetivamente a magistratura):** *"Quando o processo mantém a parte vulnerável dependente de quem controla valores e documentos, apesar de patrimônio já identificado, a jurisdição deixa de neutralizar a violência patrimonial e passa a reproduzir seus efeitos objetivos — o que a leitura constitucional (art. 5º XXXV e LXXVIII; art. 226 §§5º e 8º) e a proibição da proteção insuficiente não toleram."* O foco é o **efeito institucional da condução**, não a intenção do juízo.
 
 ---
 
