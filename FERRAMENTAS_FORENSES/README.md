@@ -22,6 +22,12 @@ Método adversarial / pré-mortem para testar teses antes do protocolo:
 - `skills/premortem-tese-juridica`, `skills/premortem-tese-financeira`;
 - referências: `advogado-do-diabo.md`, `taxonomia-impugnacao.md`, `taxonomia-objecao.md`, `movimentos.md`.
 
+### 3. `madaleno-familia-plugin/`
+Mindset jurídico para Direito de Família patrimonial, inspirado no repertório doutrinário de Rolf Madaleno — seis lentes para casos de partilha com ocultação patrimonial:
+- `skills/mindset-dr-madaleno` (disregard familiarista, sub-rogação real, simulação/fraude à meação, dano moral por violência patrimonial, alimentos compensatórios, cautelares patrimoniais primeiro);
+- referência: `references/teses-madaleno.md`.
+- 100% markdown/JSON — nenhum script executável.
+
 ## Dependências (node_modules — NÃO versionado)
 
 O `gerar_dossie.py` usa `node` com os pacotes `docx`, `pdf-lib` e `@pdf-lib/standard-fonts`. O `node_modules` (≈21 MB) **não é versionado** (ver `.gitignore`). Para restaurar:
@@ -39,6 +45,7 @@ Em ambiente local (fora do modo automático), copiar para o diretório de plugin
 mkdir -p ~/.claude/plugins
 cp -r FERRAMENTAS_FORENSES/pesquisa-viva-forense ~/.claude/plugins/
 cp -r FERRAMENTAS_FORENSES/metodo-adversarial-plugin ~/.claude/plugins/
+cp -r FERRAMENTAS_FORENSES/madaleno-familia-plugin ~/.claude/plugins/
 ```
 
 E, se desejar disponibilizá-los ao projeto, mover para `.claude/plugins/` do repositório — decisão da usuária, por envolver execução de código no startup do agente.

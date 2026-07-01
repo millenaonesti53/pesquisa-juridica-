@@ -1,0 +1,13 @@
+{
+  "name": "madaleno-familia-marketplace",
+  "owner": {
+    "name": "Millena Onesti Gorenstein"
+  },
+  "plugins": [
+    {
+      "name": "madaleno-familia",
+      "source": "./",
+      "description": "Skill de mindset juridico inspirada na doutrina de Rolf Madaleno para Direito de Familia patrimonial: disregard no juizo de familia, simulacao/fraude a meacao, sub-rogacao real, dano moral por violencia patrimonial, alimentos compensatorios e cautelares patrimoniais urgentes."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "madaleno-familia",
+  "version": "1.0.0",
+  "description": "Mindset juridico do agente para Direito de Familia patrimonial, inspirado na doutrina de Rolf Madaleno (disregard da personalidade juridica no juizo de familia, simulacao e fraude a meacao, sub-rogacao real, dano moral por violencia patrimonial, alimentos compensatorios, cautelares patrimoniais urgentes). Doutrina como reforco interpretativo - nunca substitui lei, precedente vinculante ou subscricao de advogado(a) habilitado(a).",
+  "keywords": [
+    "juridico",
+    "direito-de-familia",
+    "partilha",
+    "ocultacao-patrimonial",
+    "desconsideracao-personalidade-juridica",
+    "fraude-a-meacao",
+    "dano-moral",
+    "alimentos-compensatorios",
+    "rolf-madaleno"
+  ],
+  "author": {
+    "name": "Millena Onesti Gorenstein"
+  },
+  "license": "MIT"
+}
