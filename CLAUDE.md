@@ -6,7 +6,7 @@ Repositório para pesquisas jurídicas ampliadas e aprofundadas.
 Apoiar a produção de notas técnicas, pareceres e relatórios analítico-sanatórios em matéria jurídica, com foco em análise documental (PDFs, decisões, regulamentos) e organização de evidências.
 
 ## Convenções para o Claude
-- Idioma padrão das respostas e commits: **português (Brasil)**.
+- Idioma padrão de **todas as entregas**: **português (Brasil)** — respostas no chat, mensagens de commit, descrições de Pull Request, comentários em código, nomes de arquivo de documentos e o conteúdo de notas técnicas, pareceres e relatórios. Só usar outro idioma quando a fonte original exigir (ex.: citação literal em idioma estrangeiro) ou o usuário pedir explicitamente.
 - Citações jurídicas devem manter formatação original (lei/artigo/inciso, jurisprudência com tribunal e número).
 - Nunca inventar números de processo, datas ou trechos de acórdão — se não houver fonte no repo, declarar explicitamente.
 - Documentos sensíveis (CPF, CNPJ, dados patrimoniais) devem ser tratados como confidenciais; não publicar em PRs nem em commits.
