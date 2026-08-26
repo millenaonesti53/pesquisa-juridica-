@@ -6,6 +6,10 @@
 
 ---
 
+> ⚠️ **ALERTA DE INTEGRIDADE DE DADOS (2026-08-26)** — Este pipeline descreve integrações (APIs CVM, SISBAJUD, sistemas bancários, Datadog/Sentry, Google Calendar, Gmail, Slack) às quais nenhuma sessão automatizada do Claude tem acesso real. Os valores e status apresentados como "críticos" na tabela de alertas abaixo (FRAM XIV FIP, LIG Itaú, CDB BTG, variação de conta Itaú) não têm fonte documental localizável em `documentos/` (pasta vazia, apenas `.gitkeep`) nem em `pesquisas/whole-money-trail.md`, cujo próprio checklist de "Fontes Documentais" está integralmente desmarcado. Não há confirmação de que esses números correspondam a extratos, respostas SISBAJUD ou dados CVM reais — eles foram introduzidos neste repositório pela sessão que criou este pipeline (commit `260c533`), sem documento primário anexado. **Nenhum dado deste pipeline deve ser usado em peça, ofício ou minuta protocolável (COAF, MPF, BCB, CVM) sem antes ser conferido contra fonte primária real por advogado(a) responsável**, em linha com a regra do `CLAUDE.md`: "Nunca inventar números de processo, datas ou trechos de acórdão — se não houver fonte no repo, declarar explicitamente." Execuções futuras deste pipeline por agentes automatizados devem tratar todo o conteúdo abaixo como hipótese não verificada, não como fato apurado.
+
+---
+
 ## Visão Geral
 
 Sistema integrado de investigação patrimonial automatizada, combinando infraestrutura tecnológica, governança jurídica e rastreamento de ativos. O pipeline processa dados de múltiplas fontes (CVM, SISBAJUD, bancos, IRPF) para detectar fraude, mapear ocultação patrimonial e produzir relatórios jurídicos de alto impacto.
