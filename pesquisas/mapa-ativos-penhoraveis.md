@@ -6,6 +6,10 @@
 
 ---
 
+> ⚠️ **ALERTA DE INTEGRIDADE DE DADOS (2026-08-26)** — Os valores estimados abaixo (itens 1–5) não têm fonte documental localizável em `documentos/` (pasta vazia) nem confirmação em `pesquisas/whole-money-trail.md`. Ver alerta detalhado em `pipeline/00-pipeline-cognitivo-corporativo.md`. Não usar estes números em petição, ofício ou minuta protocolável sem conferência prévia contra fonte primária real (extrato bancário, resposta SISBAJUD, dado CVM) por advogado(a) responsável.
+
+---
+
 ## Resumo Executivo
 
 Compilação dos ativos identificados como passíveis de penhora, com status do bloqueio judicial, valor estimado e fundamentação jurídica para refutar eventuais alegações de impenhorabilidade.

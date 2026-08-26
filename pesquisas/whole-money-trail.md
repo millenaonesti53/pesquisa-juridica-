@@ -6,6 +6,10 @@
 
 ---
 
+> ⚠️ **ALERTA DE INTEGRIDADE DE DADOS (2026-08-26)** — Os valores da tabela "Ativos Identificados" abaixo (FRAM XIV FIP R$ 3.877.255,47; LIG Itaú R$ 1.250.000,00; CDB BTG R$ 650.758,60) estão marcados como oriundos de "SISBAJUD / CVM", mas nenhum documento primário correspondente foi localizado em `documentos/` (pasta vazia) e o checklist de "Fontes Documentais" abaixo está integralmente desmarcado. Não há como confirmar, a partir do conteúdo deste repositório, que esses números refletem extratos, respostas SISBAJUD ou dados CVM reais. Trate como **hipótese não verificada** até conferência contra fonte primária — não usar em petição, ofício ou representação a autoridades (COAF, MPF, BCB, CVM) sem essa conferência.
+
+---
+
 ## Objetivo
 
 Reconstruir o caminho completo dos recursos investigados, desde a origem até os veículos atuais de ocultação patrimonial, produzindo evidências para execução judicial e representação às autoridades competentes.
