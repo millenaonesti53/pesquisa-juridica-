@@ -2,7 +2,7 @@
 
 **Classificação:** Confidencial — uso interno  
 **Status:** Em atualização contínua  
-**Última atualização:** 2026-06-15
+**Última atualização:** 2026-09-07
 
 ---
 
@@ -21,8 +21,10 @@ Compilação dos ativos identificados como passíveis de penhora, com status do 
 | 3 | CDB | Certificado de Depósito Bancário | BTG | R$ 650.758,60 | Saldo zero reportado | — | Ver seção 3.3 |
 | 4 | Bonifácio FIP | Cotas de FIP | A identificar | A apurar | Não bloqueado | A verificar | Ver seção 3.4 |
 | 5 | Conta Itaú | Conta corrente | Itaú | R$ 5.491,00 (remanescente) | — | — | Rastrear transferências |
+| 6 | FIP Ajaccio (cotas de Ari Gorenstein) | Cotas de FIP | Oslo Capital DTVM (administradora) | R$ 77,6 milhões (05/2023, dado CVM citado em e-mail — **não confirmado por documento primário**) vs. R$ 11,2 milhões declarado em IRPF | Objeto de requerimento de ofício à CVM/Oslo (17/08/2026) — ainda não expedido/confirmado nesta rotina | "Iliquidez"/"falta de valuation" alegada pela parte contrária | Ver seção 3.5 |
 
-**Total estimado identificado:** R$ 5.778.014,07 (+ Bonifácio FIP a apurar)
+**Total estimado identificado (itens 1–5, confirmados no acervo desde 15/06/2026):** R$ 5.778.014,07 (+ Bonifácio FIP a apurar)
+**Item 6 (FIP Ajaccio) não está somado ao total acima** — o valor de R$ 77,6 milhões tem como única fonte, até o momento, um e-mail interno (17/08/2026), não um documento primário CVM/Livro de Registro de Cotas. Não usar em petição sem confirmação.
 
 ---
 
@@ -71,6 +73,27 @@ Compilação dos ativos identificados como passíveis de penhora, com status do 
 
 ---
 
+### 3.5 FIP Ajaccio — Discrepância CVM × IRPF e Manobra de Cotistas
+
+**Base legal:** art. 835, IX, CPC; art. 792, IV, CPC; art. 50 CC.
+
+**Status:** Linha de investigação aberta em 17/08/2026 (base: e-mail de Millena Onesti a Dr. Luiz Guieseler, Dra. Michele e Wanderson Castilho/ENETSEC, confirmado por Wanderson em 18/08/2026). **Nenhum documento primário foi anexado ao repositório até esta rotina (07/09/2026) — tratar como hipótese a confirmar, não como fato estabelecido.**
+
+**Pontos levantados no e-mail (a verificar em fonte primária antes de qualquer uso processual):**
+
+1. Fundo originalmente "Fram Capital XIII FIP", reclassificado pela Resolução CVM 578 com características de private equity/holding — impacta metodologia de avaliação e liquidez.
+2. Redução do número de cotistas pessoa física de 5 para 4 entre abril e agosto de 2025, coincidindo com ingresso de investidores não residentes — hipótese de cessão de cotas para ocultação patrimonial.
+3. Posição de Ari Gorenstein no fundo em 05/2023: R$ 77,6 milhões segundo dado CVM citado no e-mail, contra R$ 11,2 milhões declarados no IRPF do mesmo período.
+
+**Documentos requeridos (conforme e-mail) para confirmar a linha de investigação:**
+- Livro de Registro de Cotas Nominativas do FIP Ajaccio (CNPJ 37.381.595/0001-82), transferências desde 01/2023
+- Carteira de ativos do fundo em 30/05/2023
+- Laudos de valuation da E-Vino S.A. (2023 até presente)
+
+**Pendência de governança:** solicitação de parecer técnico ao Prof. Sílvio Venosa sobre este mesmo fundo foi **recusada em 12/08/2026** (fora da especialidade do professor) — buscar parecerista alternativo em direito societário/mercado de capitais.
+
+---
+
 ### 3.4 Bonifácio FIP — Criação Pós-Litígio
 
 **Base legal:** art. 792, IV, CPC; art. 50 CC.
@@ -94,3 +117,6 @@ Compilação dos ativos identificados como passíveis de penhora, com status do 
 | 4 | Peticionar multa FRAM/OSLO por cód. 98 | Art. 774 CPC | Esta semana |
 | 5 | Representar ao BCB sobre FRAM/OSLO | Lei 4.595/64 | Este mês |
 | 6 | Representar ao COAF | Lei 9.613/98 | Este mês |
+| 7 | Confirmar protocolo do ofício à CVM/Oslo Capital DTVM sobre FIP Ajaccio (Livro de Cotas, carteira, laudos E-Vino) | Base: e-mail 17/08/2026 | Verificar com Dr. Luiz/Dra. Michele |
+| 8 | Obter documento primário que confirme R$ 77,6 MM (posição CVM) vs. R$ 11,2 MM (IRPF) antes de citar em peça | Art. 835, IX, CPC | Antes de qualquer petição sobre o item 6 |
+| 9 | Recontratar parecerista técnico (área societária/mercado de capitais) após recusa do Prof. Sílvio Venosa | — | Assim que possível |
